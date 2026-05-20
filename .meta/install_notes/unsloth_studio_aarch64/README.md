@@ -1,10 +1,17 @@
 # Unsloth Studio on NVIDIA DGX Spark (GB10 / aarch64)
 
+> ⚠️ **Parallel install path — NOT the production training path.**
+> For this repo (`accounting`), production training runs in the NGC
+> container at `models/recipes/dgx_spark/`. These notes cover the
+> standalone Unsloth Studio install (UI + GGUF chat + Studio-side
+> fine-tuning) and are kept as alternative-recipe reference only.
+
 Replicable install guide for getting **Unsloth Studio** running on an NVIDIA
 DGX Spark workstation. The stock `unsloth.ai` installer fails on aarch64
 because one of its pinned audio dependencies (`torchcodec==0.10.0`) has no
 aarch64 wheel; this guide installs the core stack, then patches in the
-remaining non-audio extras and Studio backend deps by hand.
+remaining non-audio extras and Studio backend deps by hand, and builds
+`llama-server` from `llama.cpp` so Studio can actually serve GGUF models.
 
 If you do not need audio/video features (TTS, ASR, audio datasets) this
 produces a fully working Studio install. If you DO need audio, see
@@ -38,8 +45,11 @@ optionally use a different PyTorch CUDA build.
    missing):
    ```
    sudo apt update
-   sudo apt install -y curl git unzip ffmpeg ca-certificates
+   sudo apt install -y curl git unzip ffmpeg ca-certificates \
+                       cmake ninja-build build-essential libcurl4-openssl-dev
    ```
+   The last line covers the llama.cpp + `llama-server` build that Studio
+   needs to serve GGUF models (Gemma 4, Qwen3 GGUFs, etc.).
 
 2. **NVIDIA driver + CUDA**. DGX Spark systems ship pre-configured. Verify:
    ```
@@ -108,8 +118,33 @@ What it does:
    subprocess shutdown issues in Studio".
 3. **Installs the Studio backend deps** that were never run (`structlog`,
    `fastapi`, `diceware`, `ddgs`, `ruamel.yaml`).
+4. **Builds llama.cpp's `llama-server` with CUDA** at
+   `~/.unsloth/llama.cpp/build/bin/llama-server` so Studio can serve
+   GGUF models. Auto-detects the GPU compute capability (GB10 → sm_121).
+   Skipped on re-runs if the binary already exists.
 
-Total runtime: ~1–2 minutes on a DGX Spark.
+   The script pins llama.cpp to a verified SHA
+   (`ad277572619fcfb6ddd38f4c6437283a4b2b8636`, mid-May 2026) so
+   upstream-master breakage cannot break the build. Bump by exporting
+   `LLAMA_CPP_SHA=<new_sha>` before running the script.
+
+5. **Splits the HuggingFace cache** by appending
+   `export HF_HOME=~/.cache/huggingface-studio` to
+   `~/.local/share/unsloth/studio.conf` (sourced by the launcher).
+   Prevents the recurring "Permission denied on `~/.cache/huggingface/`"
+   failure when something else on the host — most notably the NGC
+   container at `models/recipes/dgx_spark/` — writes into the default
+   HF cache as root. Studio gets its own cache; the container keeps the
+   default; they never collide. Override with `HF_HOME_STUDIO=<path>`.
+
+Total runtime: ~3–5 minutes on a DGX Spark (~2 min of that is the
+llama.cpp build, single-shot — re-runs are instant).
+
+> 💡 **Before re-running on an existing install:** kill any running
+> Studio first (`pkill -f 'unsloth studio'` or close it from the
+> system tray). The script does not stop Studio for you; running it
+> against a live server is harmless but the new `llama-server` won't
+> be picked up until Studio is restarted.
 
 ### Step 3 — Verify
 
@@ -176,11 +211,90 @@ re-run `complete-install.sh` immediately after.
 This also applies to any in-app "update" that calls the installer under
 the hood. Worth checking release notes before clicking update buttons.
 
+### Desktop icon opens a terminal window that closes instantly
+
+Symptom: double-clicking "Unsloth Studio" in the GNOME app launcher
+pops a terminal that vanishes in under a second; the browser never
+opens. This means the launcher invoked `unsloth studio` but the process
+exited immediately, almost always due to a missing Python module in the
+venv (we hit `ModuleNotFoundError: structlog` and similar during
+bring-up). To diagnose, run it manually from a stable terminal:
+
+```
+unsloth studio
+```
+
+The traceback will tell you which import failed. If it's a Studio
+backend dep, re-run `complete-install.sh` to top everything up.
+
 ### `openenv-core requires gradio`
 
 You will see this warning during the fix script. It is harmless —
 Unsloth's `extras.txt` deliberately comments out gradio because Studio's
 UI is React + FastAPI, not Gradio. Studio doesn't import gradio.
+
+### "Permission denied" on `~/.cache/huggingface/...` during training
+
+Symptom (in the Studio UI):
+
+```
+Failed to check dataset format: [Errno 13] Permission denied:
+'/home/zi/.cache/huggingface/datasets/json/default-XXXXXXXXXXX'
+```
+
+Root cause: another process — usually the NGC container at
+`models/recipes/dgx_spark/`, but anything `sudo`-ed that uses
+`huggingface_hub` qualifies — wrote into `~/.cache/huggingface/` as
+root. Studio runs as your host user and can no longer create files
+under those root-owned directories.
+
+`complete-install.sh` now prevents this going forward by giving Studio
+its own cache at `~/.cache/huggingface-studio` (see Step 2 bullet 5).
+For the legacy mess that's already there, reclaim ownership once:
+
+```
+sudo chown -R $USER:$USER ~/.cache/huggingface
+```
+
+Long-term, to stop the container from creating root-owned files at
+all, add `--user $(id -u):$(id -g)` to the `docker run` in Leo's
+recipe — that's an orchestrator-level change, separate from these
+install notes.
+
+### Raw `unsloth studio` ignores Studio's HF cache
+
+The HF_HOME split lives in `~/.local/share/unsloth/studio.conf`,
+which is sourced only by the launcher (desktop icon /
+`launch-studio.sh`). If you run `unsloth studio` directly from a
+terminal, either prefix the command:
+
+```
+HF_HOME=~/.cache/huggingface-studio unsloth studio
+```
+
+…or add the export to your `~/.bashrc`. The launcher path is fine
+either way.
+
+### GGUF models fail with "llama-server binary not found"
+
+If you ever see:
+
+```
+Invalid model: llama-server binary not found — cannot load GGUF models.
+Run setup.sh to build it, or set LLAMA_SERVER_PATH.
+```
+
+the `complete-install.sh` step that builds llama.cpp didn't run, or the
+binary was deleted. Studio looks for `llama-server` in this order:
+
+1. `$LLAMA_SERVER_PATH` (direct path to a binary)
+2. `$UNSLOTH_LLAMA_CPP_PATH/build/bin/llama-server` (custom dir)
+3. `~/.unsloth/llama.cpp/build/bin/llama-server` ← **what we build**
+4. `llama-server` on `PATH` (system install)
+
+Re-run `complete-install.sh` to rebuild it. (There is no shipped
+`setup.sh` despite what the error message says — that text predates the
+pip-installed Studio.)
 
 ---
 
@@ -204,9 +318,11 @@ them under `MeCab` and `openai-whisper` respectively.
 ## File layout in this directory
 
 ```
-README.md         this guide
-complete-install.sh    idempotent script that runs Step 2 above
+README.md             this guide
+complete-install.sh   idempotent script that runs Step 2 above
 ```
 
-The fix script is safe to re-run; pip will no-op on packages already at
-the correct version.
+The install script is safe to re-run:
+- pip is a no-op on packages already at the correct version,
+- the llama.cpp clone is skipped if the directory already exists,
+- the llama-server build is skipped if the binary is already present.
