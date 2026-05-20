@@ -91,7 +91,7 @@ at the end. **Do not panic** — most of the install survived; only the
 From the repo root:
 
 ```
-bash .meta/install_notes/unsloth_studio_aarch64/fix-unsloth.sh
+bash .meta/install_notes/unsloth_studio_aarch64/complete-install.sh
 ```
 
 (The script lives alongside this README. Safe to re-run — pip is a no-op
@@ -171,7 +171,7 @@ Blackwell:
 
 `curl ... install.sh | sh` **recreates the venv from scratch** and
 reinstalls the same broken pins. Don't re-run it casually. If you do,
-re-run `fix-unsloth.sh` immediately after.
+re-run `complete-install.sh` immediately after.
 
 This also applies to any in-app "update" that calls the installer under
 the hood. Worth checking release notes before clicking update buttons.
@@ -205,7 +205,7 @@ them under `MeCab` and `openai-whisper` respectively.
 
 ```
 README.md         this guide
-fix-unsloth.sh    idempotent script that runs Step 2 above
+complete-install.sh    idempotent script that runs Step 2 above
 ```
 
 The fix script is safe to re-run; pip will no-op on packages already at
