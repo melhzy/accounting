@@ -25,6 +25,10 @@ models/runs/*/gguf_*/
 models/runs/*/executed_notebook.ipynb
 models/runs/*/launch.log*
 models/runs/*/README.md
+# Trained weights live outside git; reproducibility lives in manifest.json
+models/runs/*/adapter_model.safetensors
+models/runs/*/tokenizer.json
+models/runs/*/training_args.bin
 
 # HF cache (in case someone sets HF_HOME inside the repo)
 hf_cache/
