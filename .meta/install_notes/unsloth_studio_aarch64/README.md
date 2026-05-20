@@ -88,11 +88,14 @@ at the end. **Do not panic** — most of the install survived; only the
 
 ### Step 2 — Apply the aarch64 fix script
 
+From the repo root:
+
 ```
-bash /home/zi/Documents/GitHub/accounting/dgx_spark/fix-unsloth.sh
+bash .meta/install_notes/unsloth_studio_aarch64/fix-unsloth.sh
 ```
 
-(Path is this directory; the script is committed alongside this README.)
+(The script lives alongside this README. Safe to re-run — pip is a no-op
+on packages already at the correct version.)
 
 What it does:
 1. **Skips the audio-only extras** (`descript-audio-codec`,
