@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.DS_Store
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Word lockfiles (open .docx files)
+~$*.docx
+~$*.xlsx
+
+# Unsloth's autogen on first import
+unsloth_compiled_cache/
+
+# Training artifacts — large, reproducible from the recipe + data. Per ROADMAP
+# version-tracking, the manifest.json/test_metrics.json under each run live in
+# the repo by convention, but the adapter weights and checkpoints do not.
+models/runs/*/adapter/
+models/runs/*/checkpoints/
+models/runs/*/gguf_*/
+
+# HF cache (in case someone sets HF_HOME inside the repo)
+hf_cache/

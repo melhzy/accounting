@@ -1,0 +1,348 @@
+About the Codification (v 5.11)
+February 2023 (v 5.11)
+FASB Accounting Standards Codification® About the Codification (v 5.11)
+About the Codification version numbers – About the Codification contains a version number indicating the degree of change within a particular version. Versions ending with ".0" represent substantive changes to the text, whereas versions ending with a number other than zero represent editorial or clerical corrections.
+Page FASB Accounting Standards Codification® ..................................................................................................3
+Codification Research System .......................................................................................................... 4
+Content Matters .................................................................................................................................. 5
+Population of codified standards as of July 1, 2009 .................................................................... 5
+Standards issued by standard setters other than the SEC ........................................................ 5
+Standards issued by the SEC .................................................................................................... 6
+Cross-referencing between standards and Accounting Standards Updates and the Codification 6
+Grandfathered content excluded from the Codification as of July 1, 2009 ................................ 7
+General ....................................................................................................................................... 7
+Non-GAAP ..................................................................................................................................... 7
+Governmental accounting standards ............................................................................................. 7
+Structure and Style Matters ............................................................................................................... 8
+Classification codes ....................................................................................................................... 8
+Topical structure ............................................................................................................................ 8
+Accounting Standards Codification Hierarchy ........................................................................ 8
+Topics ......................................................................................................................................... 8
+Subtopics .................................................................................................................................... 9
+Sections ...................................................................................................................................... 9
+Subsections................................................................................................................................. 13
+Paragraph groups ....................................................................................................................... 14
+Paragraphs ...................................................................................................................................14
+Referencing the Codification in notes to financial statements and other documents .................14
+Broad references in notes to financial statements ....................................................................14
+Detailed references in other documents ....................................................................................14
+Content-related structure and style matters ...................................................................................15
+© 2023 Financial Accounting Foundation
+2 of 23
+February 2023 (v 5.11)
+Page
+Intersecting content.....................................................................................................................15
+Editorial standards, style, and other matters .............................................................................15
+Glossary .......................................................................................................................................16
+Show All in One Page ................................................................................................................16
+General Codification matters .............................................................................................................17
+Materiality .......................................................................................................................................17
+Ongoing standard-setting process ......................................................................................................18
+Effective date and superseded standards .......................................................................................18
+Ongoing standard-setting process ................................................................................................. 18
+Pending Content ..............................................................................................................................18
+Maintenance Updates......................................................................................................................19
+Feedback ..........................................................................................................................................19
+GAAP Financial Reporting Taxonomy and SEC Reporting Taxonomy.........................................21
+Background .....................................................................................................................................21
+Section 75,GAAP Taxonomy Elements ........................................................................................21
+Codification Paragraphs .................................................................................................................22
+© 2023 Financial Accounting Foundation
+3 of 23
+February 2023 (v 5.11)
+FASB Accounting Standards Codification®
+Welcome to the Financial Accounting Standards Board (FASB) Accounting Standards Codification® (Codification).
+The FASB Accounting Standards Codification® is the source of authoritative generally accepted accounting principles (GAAP) recognized by the FASB to be applied to nongovernmental entities. The Codification is effective for interim and annual periods ending after September 15, 2009. All previous level (a)-(d) US GAAP standards issued by a standard setter are superseded. Level (a)–(d) US GAAP refers to the previous accounting hierarchy. All other accounting literature not included in the Codification will be considered nonauthoritative. See Codification Topic 105, Generally Accepted Accounting Principles, for additional details.
+The Codification structure is significantly different from the structure of previous standards. This document provides information that will help in obtaining a good understanding of the Codification structure, content, and style.
+© 2023 Financial Accounting Foundation
+4 of 23
+February 2023 (v 5.11)
+Codification Research System
+The FASB Accounting Standards Codification® Research System (Codification Research System) streamlines the research process. The Codification Research System has numerous features to assist users with research.
+The benefit of performing research using the Codification is that users can identify all related content in one location much more easily than researching the thousands of previous standards. The FASB suggests the following steps when conducting research:
+1. Browse the topical structure and related tables of contents. Because all related content is organized topically, users should be able to identify most content by topical browsing. Based on direct feedback, more than ninety percent of users responded that they know the Topic that they need to research.
+2. Users should use the text search feature only for very specific items (for example, guidance about inducements). Text search is based on specific language. Deviations from a selected search expression will lead to certain relevant content being excluded from search results. The Codification Research System does incorporate certain tools to help overcome the issue, but searching will always be constrained.
+© 2023 Financial Accounting Foundation
+5 of 23
+February 2023 (v 5.11)
+Content Matters
+Population of codified standards as of July 1, 2009
+Standards issued by standard setters other than the SEC
+The Codification includes all authoritative literature (defined as level (a)–(d) US GAAP of the previous US GAAP hierarchy) issued by a standard setter. It does not include standards for state and local governments. The source of the standards was the as-amended versions as provided by the standard setter. Therefore, the Codification does not identify documents that solely amend other standards. For example, FASB Statement No. 149, Amendment of Statement 133 on Derivative Instruments and Hedging Activities, is an amendment of FASB Statement No. 133, Accounting for Derivative Instruments and Hedging Activities, so the content of Statement 149 is included through the as-amended version of Statement 133.
+As of July 1, 2009, the Codification was composed of the following literature issued by various standard setters:
+1. Financial Accounting Standards Board (FASB)
+a. Statements (FAS) b. Interpretations (FIN) c. Technical Bulletins (FTB) d. Staff Positions (FSP) e. Staff Implementation Guides (Q&A) f. Statement No. 138 Examples. 2. Emerging Issues Task Force (EITF)
+a. Abstracts b. Topic D.
+3. Derivative Implementation Group (DIG) Issues 4. Accounting Principles Board (APB) Opinions 5. Accounting Research Bulletins (ARB) 6. Accounting Interpretations (AIN) 7. American Institute of Certified Public Accountants (AICPA)
+a. Statements of Position (SOP) b. Audit and Accounting Guides (AAG)—only incremental accounting guidance c. Practice Bulletins (PB), including the Notices to Practitioners elevated to Practice
+Bulletin status by Practice Bulletin 1
+d. Technical Inquiry Service (TIS)—only for Software Revenue Recognition.
+© 2023 Financial Accounting Foundation
+6 of 23
+February 2023 (v 5.11)
+Standards issued by the SEC
+To increase the utility of the Codification for public companies, portions of authoritative content issued by the SEC and selected SEC staff interpretations and administrative guidance have been included for reference in the Codification, such as:
+1. Regulation S-X (SX) 2. Financial Reporting Releases (FRR)/Accounting Series Releases (ASR) 3. Interpretive Releases (IR) 4. SEC Staff guidance in: a. Staff Accounting Bulletins (SAB) b. EITF Topic D and SEC Staff Observer comments.
+The section titled Securities and Exchange Commission (SEC) Sections provides technical information on how SEC content is presented.
+The SEC Sections do not contain the entire population of SEC rules, regulations, interpretive releases, and staff guidance. For example, the Codification does not include all content related to matters outside the basic financial statements, such as Management's Discussion and Analysis (MD&A), or to auditing or independence matters.
+Content in the SEC Sections is expected to change over time in accordance with the SEC's normal procedures for making changes to SEC rules, regulations, interpretive releases, and staff guidance. The SEC's normal update procedures are not changed by the inclusion of SEC content in the Codification, and, accordingly, there may be delays between the release of the SEC's changes and updates to the Codification.
+The Codification does not replace or affect guidance issued by the SEC or its staff for public companies in their filings with the SEC. Furthermore, the content labeled as SEC staff guidance does not constitute rules or interpretations of the SEC, nor does such guidance bear official Commission approval.
+If you find any discrepancies between the SEC content as presented in the Codification and the underlying SEC content, please use the content feedback feature of the online Codification Research System to submit your comments.
+Cross-referencing between standards and Accounting Standards Updates and the Codification The Codification includes a Cross Reference report that allows users to identify where previous standards reside in the Codification, or the standards contained in a specific location in the Codification. Similarly, the report displays a detailed list of all content included in the Codification together with the specific location(s) within the Codification.
+1. If the Cross Reference report lists the source of the content, then the FASB deemed the content as authoritative material for purposes of the Codification.
+2. If the Cross Reference report does not list the source of the content from existing authoritative literature, then the FASB deemed it as superseded or nonessential. Although, in a limited number of cases, the source for authoritative content does not
+© 2023 Financial Accounting Foundation
+7 of 23
+February 2023 (v 5.11)
+appear because the FASB replaced the content with content from other standards.
+For each piece of standards content used in the Codification, the Cross Reference report includes the following information:
+1. Standards. Standard type, year (if applicable), number, and paragraph. 2. Codification. Topic, Subtopic, Section, and paragraph.
+Grandfathered content excluded from the Codification as of July 1, 2009
+General
+The authoritative release of the Codification as of July 1, 2009, excludes grandfathered material. Users need to access the relevant standards for such grandfathered items. See Codification Section 105-10-70 for a discussion of grandfathered material.
+Non-GAAP The FASB concluded that the Codification represents authoritative US GAAP. Therefore, the Codification does not include guidance for non-GAAP matters such as:
+1. Other Comprehensive Basis of Accounting (OCBOA) 2. Cash Basis 3. Income Tax Basis 4. Regulatory Accounting Principles (RAP).
+Governmental accounting standards The Codification does not include governmental accounting standards.
+© 2023 Financial Accounting Foundation
+8 of 23
+February 2023 (v 5.11)
+Structure and Style Matters
+Classification codes The FASB developed a hybrid classification system specifically for the Codification.
+The following is the structure of the classification system:
+XXX-YY-ZZ-PP where XXX = Topic, YY = Subtopic, ZZ = Section, PP = Paragraph In
+the case of SEC content, an “S” precedes the Section number.
+Topical structure
+Accounting Standards Codification Hierarchy
+Topics
+Topics represent a collection of related guidance. For example, Leases is a Topic. The Topics correlate very closely to standards issued by the International Accounting Standards Board (IASB).
+The Topics reside in Areas which can be categorized as follows:
+1. The General Principles Area (Topic Codes 105–199).
+2. The Presentation Area (Topic Codes 205–299) addresses how information is presented in the financial statements.
+3. The Assets, Liabilities, and Equity Areas (Topic Codes 305–399, 405–499, and 505–599, respectively) contain guidance about accounting for assets, liabilities, and equity (e.g., cash, accounts payable, additional paid-in capital).
+4. The Revenue and Expenses Areas (Topic Codes 605–699 and 705–799, respectively) contain guidance about accounting for revenues, expenses, gains, and losses.
+5. The Broad Transactions Area (Topic Codes 805–899) contains guidance about various financial statement accounts and its Topics are generally event or transaction-oriented for example, business combinations, derivatives, nonmonetary transactions).
+6. The Industry Area (Topic Codes 905–999) contains guidance about specific industries or types of activity.
+Industry and Broad Transaction Topics
+The following approach was applied for placing content into the Codification Topics:
+1. First filter—Industry content. If a piece of content related solely to a single industry, the content was placed in that particular industry.
+2. Second filter—Broad transaction content. If a piece of content did not relate to a single industry and it related to a broad transaction, the content was placed in that broad transaction.
+3. For all other content that did not meet the industry or broad transaction filters, the content was authored in a general Topic.
+© 2023 Financial Accounting Foundation
+9 of 23
+February 2023 (v 5.11)
+One of the goals of the Codification was to eliminate redundant content, which can result in user confusion general guidance in the Industry Topics, Industry Topics only contain incremental industry-specific guidance. The entities within the scope of the industry must follow the industry- specific guidance and all other relevant guidance contained in other Topics that does not conflict with the industry guidance.
+To provide consistency, the Codification segregates Industry Topics into Subtopics that mirror the general Topic structure. This provides multiple ways to access the content—by Industry Topic or by general Topic.
+Subtopics
+Subtopics represent subsets of a Topic and are generally distinguished by type or by scope. For example, Operating Leases and Capital Leases are two Subtopics of the Leases Topic distinguished by type of lease. Each Topic contains an Overall Subtopic that generally represents the pervasive guidance for the Topic. Each additional Subtopic represents incremental or unique guidance not contained in the Overall Subtopic. In some cases, the Overall Subtopic represents overall guidance. In other cases, the Overall Subtopic may not contain overall guidance but, instead, may represent miscellaneous content that does not fit into another Subtopic.
+Subtopics unique to a Topic use classification numbers between 00 and 99. In addition, Topics— primarily Industry Topics—may contain Subtopics that mirror the general Topics. For example, the general Receivables Topic is 310, the general Inventory Topic is 330, and the Agriculture Topic is 905. The Agriculture Topic may include Subtopics for Receivables, Inventory, and so forth. The Subtopic classification number is the classification number of the related Topic. In this case:
+1. Agriculture—Receivables is 905-310. 2. Agriculture—Inventory is 905-330.
+For additional details, see the discussion under the heading titled Intersecting content.
+Sections
+Sections represent the nature of the content in a Subtopic such as Recognition, Measurement, Disclosure, and so forth. Every Subtopic uses the same Sections. If there is no content for a Section then the Section will not display.
+Similar to Topics, Sections correlate very closely with Sections of individual International Financial Reporting Standards.
+The Sections of each Subtopic are as follows:
+XXX-YY-ZZ where XXX = Topic, YY = Subtopic, ZZ = Section
+XXX-YY-00 XXX-YY-05 XXX-YY-10 XXX-YY-15
+Status Overview and Background Objectives Scope and Scope Exceptions
+XXX-YY-20
+Glossary
+© 2023 Financial Accounting Foundation
+10 of 23
+February 2023 (v 5.11)
+XXX-YY-25 XXX-YY-30
+Recognition Initial Measurement
+XXX-YY-35
+Subsequent Measurement
+XXX-YY-40 XXX-YY-45 XXX-YY-50 XXX-YY-55 XXX-YY-60 XXX-YY-65 XXX-YY-70 XXX-YY-75
+Derecognition Other Presentation Matters Disclosure Implementation Guidance and Illustrations Relationships Transition and Open Effective Date Information Grandfathered Guidance XBRL Elements
+The following is a description of the Sections:
+XXX
+YY-00
+Status
+This Section includes references to the Accounting Standards Updates that affect the
+Subtopic. For example, the Section includes information similar to the following:
+1. 2. 3.
+Paragraph 310-10-35-1A added by Accounting Standards Update 2022-01. Paragraph 360-10-35-7 amended by Accounting Standards Update 2014-09. Paragraph 810-10-50-5 superseded by Accounting Standards Update 2009-17.
+XXX-YY-05 Overview and Background
+This Section provides a general overview and background on the Subtopic. It does not provide
+historical background of the standard setter, due process, or similar items. It may contain certain material generally considered useful to a user to understand the typical situations required by the standard. This Section does not summarize the requirements of the Subtopic.
+XXX-YY-10
+Objectives
+When available, the Objectives Section states the high-level objectives of the Subtopic but does
+not discuss the main principles of the Subtopic.
+XXX-YY-15
+Scope and Scope Exceptions
+This Section outlines the items (for example, the entities, transactions, instruments, or events) to which the guidance in the Subtopic does or does not apply. It does not contain actual accounting or reporting guidance (for example, subsequent measurement).
+In cases where a Topic contains multiple Subtopics, the Overall Subtopic typically contains the pervasive scope for the entire Topic, including the other Subtopics. The remaining Subtopics then refer to the Overall Subtopic and address the specific exceptions from the pervasive Overall Scope. Users must be aware that the Overall Scope Section is not a summary but, instead, represents the scope for the Overall Subtopic and the baseline for the other Subtopics, which may include different scope inclusions or exclusions.
+© 2023 Financial Accounting Foundation
+11 of 23
+February 2023 (v 5.11)
+In many circumstances, guidance codified in a Subtopic may apply equally to all items within the Subtopic’s scope. However, certain codified guidance within the Subtopic may apply only to a subset of items (such as restricted scope guidance). In those circumstances, the restricted scope language was placed with the restricted scope guidance. For example, if a certain measurement standard was allowed only for a specific transaction, then the restricted scope would appear only in the corresponding measurement Section together with the specific measurement requirement.
+As described in the discussion under the heading titled Intersecting content, the majority of
+Industry Subtopics intersect with General Topics. In these cases, users must be cognizant of the Industry Topic scope and the related General Topic scope.
+XXX-YY-20 Glossary
+This Section contains all the glossary terms used in the Subtopic.
+The Master Glossary contains all terms identified as glossary terms throughout the Codification.
+Clicking on any term in the Master Glossary will display where the term is used. The Master Glossary may contain identical terms with different definitions, some of which may not be appropriate for a particular Subtopic. For any particular Subtopic, users should only use the glossary terms included in the particular Subtopic Glossary Section (Section 20).
+XXX-YY-25
+Recognition
+This Section addresses the criteria, timing, and location (within the financial statements) for
+recognizing a particular item.
+XXX-YY-30
+Initial Measurement
+This Section addresses the criteria and amounts used to measure a particular item at date of
+recognition. In many cases, this Section may be empty because the initial standards did not include initial measurement.
+XXX-YY-35
+Subsequent Measurement
+This Section relates almost exclusively to assets, liabilities, and equity. It addresses the criteria and amounts used to measure a particular asset, liability, or equity item subsequent to the date of recognition (for example, impairment, fair value changes, depreciation, amortization, and similar items).
+XXX-YY-40
+Derecognition
+This Section relates almost exclusively to assets, liabilities, and equity. It addresses the criteria,
+the method to determine the amount of basis, and the timing to be used when derecognizing a particular asset, liability, or equity item for purposes of determining gain or loss, if any.
+XXX
+YY-45
+Other Presentation Matters
+This Section includes other presentation matters related to the Subtopic. Some examples include:
+1. 2. 3.
+Specific balance sheet classification Specific cash flow requirements Specific effect on earnings per share.
+XXX-YY-50 Disclosure
+© 2023 Financial Accounting Foundation
+12 of 23
+February 2023 (v 5.11)
+This Section contains specific disclosure requirements for a Subtopic. It does not include general
+disclosure requirements that may reside in the Notes to Financial Statement Topic and other general presentation Topics. This Section may include references to general disclosure requirements that encompass the items addressed by the Subtopic. For example, the Receivables Subtopic contains a link to the general financial instrument disclosure requirements that relate to receivables.
+XXX-YY-55
+Implementation Guidance and Illustrations
+This Section contains implementation guidance and illustrations, which are an integral part of the standards. The Codification separates implementation guidance and illustrations from the main body of the standards but provides references and links in both directions.
+This Section provides guidance relating to the standards in simplified and generalized situations.
+Applying the standards to actual situations requires judgment, and the implementation guidance and illustrations are intended to aid in making those judgments. The implementation guidance and illustrations assume that all items addressed are material to the entity. Because the implementation guidance and illustrations cannot address all possible variations, users must consider carefully the facts and circumstances in actual situations when applying the provisions of the Subtopic.
+XXX-YY-60
+Relationships
+This Section includes references to other Subtopics that may contain guidance related to the
+Subtopic. The references point to content in another Topic that is the object of the other Topic or the material otherwise relates to the particular Topic. For example, the Income Taxes Topic may have discussions of LIFO reserves as the object of an illustration or example. In this case, the Relationships Section of the Inventory Topic would refer to the LIFO material in the relevant Income Taxes Subtopic.
+The relationships provide simple references to the relevant content but do not include a
+complete description of the relationship. In addition, the Section does not contain requirements.
+While the goal is to include as many relevant relationships as possible, users should not assume
+that the lists are exhaustive.
+© 2023 Financial Accounting Foundation
+13 of 23
+February 2023 (v 5.11)
+XXX-YY-65
+Transition and Open Effective Date Information
+This Section contains references to paragraphs within the Subtopic that have open transition
+guidance.
+The transition guidance will appear in an emphasized manner in the text of the standards Sections. After the transition period lapses, the Codification Research System will remove the outdated guidance and the emphasis on the new content.
+[NOTE: The Codification was written with an assumed effective date of December 31, 2008. As a result, transition and open effective date guidance for dates before December 31, 2008, is not in the Codification (despite the fact that the effective date may not have occurred yet) because of its imminent removal as authoritative content. As such, there is no transition or effective date information in the Codification for such guidance. Users can search the original standards.]
+XXX-YY-70
+Grandfathered Guidance
+This Section contains descriptions, references, and transition periods for content grandfathered
+after July 1, 2009, by an Accounting Standards Update. See Codification Section 105- 10-70 and the grandfathered content section for more information about grandfathered materials.
+XXX-YY-75
+XBRL Elements
+This Section contains the related XBRL Elements for the Subtopic.
+Securities and Exchange Commission (SEC) Sections
+As noted in the section titled Standards issued by the SEC, SEC content is included for reference to improve the usefulness of the Codification for public companies. The system attempts to embed relevant SEC content for reference in the same Topics and Subtopics as all other content. The goal was to place SEC content within applicable Sections, using unique SEC Section codes to distinguish the content. An “S” precedes the SEC Section codes.
+SEC content has developed through different mechanisms and is not as easily codified using
+the same model as the non-SEC content without modifying existing rules, regulations, and so forth. Instead, all original SEC content remains essentially intact in the S99-SEC Materials Sections, except that SEC Observer comments made at EITF meetings are no longer shown with the related material from EITF Issues, and some Observer comments have been edited for appropriate context. The other SEC Sections contain links to the relevant content within the S99-SEC Materials Sections.
+The Codification Research System will display the SEC content in separate Section
+following non-SEC content.
+Subsections
+Subsections are a further segregation of a Section and, except for the General Subsection, occur in a limited number of cases. Each Section has at least one Subsection, usually General. A Section may contain additional Subsections as a means of filtering content related to multiple Sections of the same Subtopic. Unlike a Section, a Subsection is not numbered. A Subsection differs from a paragraph heading because the Codification Research System provides a feature to combine all
+© 2023 Financial Accounting Foundation
+14 of 23
+February 2023 (v 5.11)
+Subsection content for a Topic, for example, the Receivables—Overall Subtopic includes Subsections for Acquisition, Development, and Construction Arrangements. This allows a user to combine all content related to acquisition, development, and construction arrangements.
+Paragraph groups
+Paragraph groups represent a series of related paragraphs under the same paragraph heading. The Topic structure allows paragraph groups to be subordinated to other paragraph groups because of dependencies. As a result, the paragraph groups are presented in a hierarchy. Within the Codification, one “>” symbol or a combination with one or more “·” symbols precede each paragraph group heading. The number of “·” symbols followed by a “>” symbol identifies the hierarchy among paragraph groups. For example, the following illustrates the hierarchy of the paragraph group headings in Section 740-10-45:
+>Statement of Financial Position Classification of Income Tax Accounts ·> Tax Accounts, Other Than Deferred ·· > Unrecognized Tax Benefits.
+When pending content text reflects a wording change in a heading, the hierarchical structure will be the same. However, the text will show “>” symbols instead of “·” symbols for heading text changes made prior to July 25, 2022.
+Paragraphs
+To ensure accurate links, paragraph numbers will not change over time. The content of a paragraph may be amended, but the paragraph number will remain constant.
+New paragraphs will be inserted between existing paragraphs using a letter extension. For example, a new paragraph inserted between paragraphs 50-5 and 50-6 would be 50-5A.
+Referencing the Codification in notes to financial statements and other documents References to the Codification follow an established pattern.
+Broad references in notes to financial statements
+While the FASB does not provide guidance on how specific requirements of GAAP are referred to in notes to financial statements the FASB encourages the use of plain English to describe the broad Topic. For example, to refer to the requirements of the Derivatives and Hedging Topic, we suggest a reference similar to “as required by the Derivatives and Hedging Topic of the FASB Accounting Standards Codification.”
+Detailed references in other documents
+For purposes of establishing a consistent referencing approach for items such as working papers, articles, textbooks, and other similar items, the FASB suggests the following approach for referencing Codification content from outside the Codification:
+1. FASB ASC {Codification reference}, for example:
+a. Topics—FASB ASC Topic 310 [, Receivables]
+© 2023 Financial Accounting Foundation
+15 of 23
+February 2023 (v 5.11)
+b. Subtopics—FASB ASC Subtopic 310-10 [, Receivables—Overall]
+c. Sections—FASB ASC Section 310-10-15 [, Receivables—Overall—Scope]
+d. Paragraph—FASB ASC paragraph 310-10-15-2
+e. Subparagraph—FASB ASC subparagraph 310-10-15-2(a).
+Content-related structure and style matters
+Intersecting content
+As noted in the industry discussion under the heading titled Topics, Industry Subtopics mirror the general Topic structure both in title and classification code, and the content resides in the Industry Topic. The use of a consistent code allows the FASB to create one version of the content that resides in a single location but allows users to access the same content from multiple locations in the navigation structure. For example, a user can access the system from the perspective of the agriculture industry looking for inventory content. Alternatively, the user could access inventory and find the agriculture industry content. In this case, Codification Topic 330 represents Inventory and Codification Topic 905 represents the Agriculture Industry.
+As noted above, industry content resides in the Industry Topic. Therefore, Codification Subtopic 905-330 represents the Inventory Subtopic of the Agriculture Industry. When browsing Codification Topic 330, users will see Subtopic 905—Agriculture. That represents an intersection link to the content in Codification Subtopic 905-330.
+In the case of intersecting content, users must be cognizant of the industry scope and the scope of the general Topic. To continue the previous example, the user of Codification Subtopic 905-330 (Agriculture/Inventory) must be cognizant of the scopes for Codification Topic 905 (Agriculture) and Codification Topic 330 (Inventory).
+Editorial standards, style, and other matters
+Entity vs. other forms
+Standards before July 1, 2009, used numerous terms to describe an entity, such as company, organization, enterprise, firm, preparer, and so forth. To provide consistency, the FASB adopted the term entity as the appropriate term. As a result, entity replaces all previous uses of comparable terms.
+Comparable terms—shall and should
+Similar to the multiple terms used to refer to an entity, standards have used various words or phrases to refer to a requirement, such as should, shall, is required to, must, and others. The FASB believes such terms represent the same concept—the requirement to apply a standard.
+To establish consistency, the Codification uses the term shall throughout the standards Sections. The Implementation Guidance and Illustrations Sections typically address example scenarios, and the words would and should are used to indicate that these represent hypothetical situations. See the discussion under the heading titled Sections for a discussion of the Implementation Guidance and Illustrations Section.
+© 2023 Financial Accounting Foundation
+16 of 23
+February 2023 (v 5.11)
+Glossary
+Throughout the Codification process, glossary terms were identified either in the glossary or within the actual text of the standards. In many cases, a glossary term relates specifically to a particular Subtopic or Topic. The Master Glossary contains all terms identified as glossary terms throughout the Codification. Clicking on any term in the Master Glossary will display where the term is used. The Master Glossary may contain identical terms with different definitions, some of which may not be appropriate for a particular Subtopic.
+Each Subtopic includes a Glossary Section with the terms used in that Subtopic. The standards Sections indicate glossary references at the first occurrence of a term in every Subsection. For any particular Subtopic, users should only use the glossary terms included in the particular Subtopic Glossary Section (Section 20).
+Show all in one page
+In the Codification Research System at the top of the page in a Topic or a Subtopic, a user can click on “Show All in One Page.” In the Topic, the system will show all of the Subtopics and Sections in that Topic while in the Subtopic, the system will show all of the Sections in that Subtopic
+If the user clicks on "Show All in One Page" to join all Subtopics or Sections, the resulting page will not include section 75 XBRL Elements. If the user wants to see that Section, they will have to navigate specifically to that Section. Those Sections must be printed separately.
+© 2023 Financial Accounting Foundation
+17 of 23
+February 2023 (v 5.11)
+General Codification matters
+Materiality Codification Topic 105 includes a discussion of materiality. Over the years, various standards have included language stating that a standard is applicable if an item is material. Retaining such individual materiality references in the Codification could lead users to believe that materiality applies to one set of standards, but not another. This is not the case.
+© 2023 Financial Accounting Foundation
+18 of 23
+February 2023 (v 5.11)
+Ongoing standard-setting process
+Effective date and superseded standards With the issuance of FASB Statement No. 168, The FASB Accounting Standards Codification® and the Hierarchy of Generally Accepted Accounting Principles, the FASB approved the Codification as the source of authoritative US GAAP for nongovernmental entities for interim and annual periods ending after September 15, 2009. The Codification supersedes all existing non-SEC standards. The Codification Research System will include the superseded standards for archive purposes.
+Ongoing standard-setting process The results of the ongoing standard-setting activity will be an Accounting Standards Update composed of the background and basis for conclusions together with an appendix of Accounting Standards Update Instructions. The title of the combined set will be Accounting Standards Update YYYY-XX, where YYYY is the year issued and XX is the sequential number for each Accounting Standards Update with that year. For example, the combined numbers would be 2009-01, 2009-02, and so forth. All authoritative US GAAP issued by the FASB will be issued in this format, regardless of the form in which such guidance may have been issued previously (for example, EITF Abstracts, FASB Staff Positions, FASB Statements, FASB Interpretations, and so forth). Accounting Standards Updates also will be issued for amendments to the SEC content in the Codification.
+The FASB will organize the contents of Accounting Standards Updates using the same Section headings as those used in the Codification. The contents of the Accounting Standards Update Instructions will include marked changes. However, the Codification itself will not display marked changes in the body of the Codification, other than in an archived version of the Accounting Standards Update Instructions.
+The FASB does not consider new Accounting Standards Updates as authoritative in their own right and will not amend Accounting Standards Updates. Instead, the Accounting Standards Updates serve only to provide background information about the issue, update the Codification, and provide the basis for conclusions on changes in the Codification. An Accounting Standards Update is a transient document to initiate the Board’s process of creating Accounting Standards Update Instructions. The Accounting Standards Update Instructions will be the source used to update the Codification and the instructions will be available on the website. The FASB will update the Codification Research System and release a new Accounting Standards Update concurrently.
+Pending Content As the FASB amends existing Codification paragraphs, both the current paragraph and the updated paragraph will reside in the Codification until such time that the new guidance is completely effective for all entities. During that period, the Codification Research System will emphasize the newly amended paragraph as Pending Content and will provide a link to the related transition guidance. The intent of the Pending Content boxes is to provide users with information about how a paragraph will change when new guidance becomes authoritative.
+© 2023 Financial Accounting Foundation
+19 of 23
+February 2023 (v 5.11)
+When an amended paragraph is fully effective, the outdated guidance will be removed from the paragraph and the amended paragraph will remain without the Pending Content box.
+Given different fiscal year-ends, the Pending Content boxes must remain in the system for a period of time sufficient for all entities to obtain the authoritative guidance that applies to their circumstances. After that period of time, the original content is removed and the Pending Content no longer appears as pending. The model to be applied when calculating the “roll-off” date is as follows:
+The expected roll-off date should be six months following the latest fiscal year-end that an “extreme entity” (that is, an entity who adopts at the latest possible date allowed by the transition) could have applied the original requirements.
+a. Assume an Accounting Standards Update has an effective date for fiscal years beginning after November 15, 20X1. This would result in the latest fiscal year - end that an “extreme entity” could have applied the original requirements as beginning on November 15, 20X1, and ending November 14, 20X2. b. Applying this model would result in a roll-off date of May 14, 20X3.
+Note: The purpose of the six-month period is to allow sufficient time for an entity to be aware of the change during its financial statement preparation and audit processes and to access the content without the need to use the archive feature. In the event that an entity does not complete its financial statements within six months, the entity can still access the previous content using the Codification archive feature.
+Maintenance Updates While the intent is to produce error-free content, any publishing process inadvertently may have irregularities. To accommodate the immediate nature of the necessary corrections, the FASB issues Maintenance Updates. These documents are prepared by the FASB staff and are not addressed by the Board. Maintenance Updates provide nonsubstantive corrections to the Codification, such as editorial corrections, link-related changes, and source fragment information changes (used for Cross Reference and the Print with Sources). Maintenance Updates appear on the Codification website under Other Sources.
+Feedback The FASB asks for constituent feedback on the Codification system and content. The Codification Research System allows users to submit content feedback at the paragraph level. Once submitted, the content feedback will be analyzed and processed, as necessary. In the event that the feedback requires a change to the Codification, the revision will be made in an Accounting Standards Update.
+The FASB staff will evaluate feedback and consult with the Board as necessary.
+The FASB requests the following types of feedback:
+1. Overall, non-content-related matters. Please use the feedback link on the home page. In particular, we would like feedback that addresses Codification Research System functionality and performance.
+2. Content-related matters. Please access the most relevant paragraph to provide the feedback
+© 2023 Financial Accounting Foundation
+20 of 23
+February 2023 (v 5.11)
+and use the paragraph level feedback feature to submit your comments. In particular, we would like feedback that addresses: a. Fatal errors of any type b. Questions about or concerns with US GAAP requirements.
+© 2023 Financial Accounting Foundation
+21 of 23
+February 2023 (v 5.11)
+GAAP Taxonomy
+Background The GAAP Financial Reporting Taxonomy and SEC Reporting Taxonomy (collectively referred to as the “GAAP Taxonomy”) are lists of computer-readable tags in XBRL (eXtensible Business Reporting Language) format that are available for preparers to assign to their financial statements. The GAAP Taxonomy is essentially a dictionary of financial statement terms for GAAP requirements and common reporting practices as provided in the Codification. The elements in the GAAP Taxonomy allow computers to automatically search for, assemble, and process data so it can be readily accessed and analyzed by investors, analysts, journalists, and regulators. The GAAP Taxonomy is required in the creation of XBRL interactive data filings (i.e., XBRL-formatted financial statements) submitted to the SEC.
+Including the GAAP Taxonomy elements in the Codification assists preparers in selecting the most appropriate element to be used for their filing to the SEC in XBRL format for the specific reporting requirement. As the Codification is updated, the GAAP Taxonomy is likewise updated for elements referenced to the Codification. However, while the Codification is updated throughout the year, improvements to the GAAP Taxonomy are released annually for acceptance by the SEC. As a result, the elements contained in the Codification may be inconsistent with an SEC-accepted version of the GAAP Taxonomy, which is static upon its release annually. The elements that are new or modified in a development GAAP Taxonomy (not yet released and accepted by the SEC) will be noted as Pending_addition or Pending_removal.
+Section 75, XBRL Elements The GAAP Taxonomy elements that are referenced to the guidance in a Codification Subtopic are listed in the Subtopic’s Section 75. Links from the GAAP Taxonomy elements to the SEC guidance in a Subtopic are listed in the Subtopic’s Section S75, also titled, XBRL Elements.
+If a Subtopic contains both Sections 75 and S75, navigating to either Section within the Codification Research System (the System) will open a webpage that contains the content of both Sections. On such webpages, the SEC Section content will be shown in its entirety below the FASB Section content, in a box having a black “Securities and Exchange Commission (SEC)” header.
+In Section 75, each GAAP Taxonomy element’s listing includes:
+ A standard label for the element.  The element’s name.  Citations of paragraphs in the Subtopic that are referenced by the element.  Citations of paragraphs in other Subtopics that are referenced by the element.
+Within the System, each paragraph citation in a GAAP Taxonomy element’s listing is a link that can be clicked to navigate to cited paragraph.
+There is no change history for the links from the GAAP Taxonomy to the Codification. However, the GAAP Taxonomy includes information on new, revised, or deprecated elements that
+© 2023 Financial Accounting Foundation
+22 of 23
+February 2023 (v 5.11)
+indicate when an element was modified and the nature of the change since the last annual release of the GAAP Taxonomy.
+Codification Paragraphs The elements from the GAAP Taxonomy that are referenced to a Codification paragraph are included within the “See XBRL Elements” option to the right of the paragraph under the ellipsis. If present, elements will be displayed immediately in a pop-up window to the right under “XBRL Elements” and will be linked to a Section 75. If there are no elements linked to a paragraph, “No XBRL Reference available” will appear in the pop-up window under “XBRL Elements.”
+The GAAP Taxonomy elements that are listed in the pop-up window are grouped according to paragraph or subparagraph and by reference role. The reference role is assigned based on the origin of the element. For example, a disclosureRef role refers to documentation that details an explanation of the reporting requirements and an exampleRef role refers to documentation that illustrates, by example, the application of the concept. Within each role group, elements are listed in alphabetical order.
+Each element label listed in the box is a link to the information for the element found in Section 75 of that Subtopic and clicking on the element label in Section 75 will open the related Codification content.
+© 2023 Financial Accounting Foundation
+23 of 23

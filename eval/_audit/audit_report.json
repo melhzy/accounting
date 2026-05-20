@@ -1,0 +1,2438 @@
+{
+  "generated_at": "2026-05-20T02:45:09.754764+00:00",
+  "chapters": {
+    "01": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter01_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 11,
+        "schema_match": true,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic"
+        ],
+        "n_data_rows": 186,
+        "n_real_questions": 186,
+        "n_header_artifacts": 0,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 186,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 186,
+        "qnum_type_int": 0,
+        "bloom_counts": {
+          "Remember": 114,
+          "Understand": 56,
+          "Evaluate": 3,
+          "Create": 2,
+          "Apply": 9,
+          "Analyze": 2
+        },
+        "bloom_dual_label_rows": 0,
+        "qtype_counts": {
+          "True/False": 27,
+          "Multiple Choice": 80,
+          "Matching": 50,
+          "Essay/Problem": 29
+        },
+        "difficulty_counts": {
+          "1 Easy": 87,
+          "2 Medium": 89,
+          "3 Hard": 10
+        },
+        "lo_code_only": 0,
+        "lo_full_text": 186,
+        "lo_missing": 0,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "HORIZONTAL_BAR": 172,
+          "EN_DASH": 14,
+          "EM_DASH": 4
+        },
+        "header_artifact_samples": []
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter01_TB_AnswerKey.docx",
+        "n_paragraphs_total": 2219,
+        "n_paragraphs_nonempty": 1917,
+        "n_question_markers": 186,
+        "n_answer_lines": 136,
+        "qnum_max_seen": 186,
+        "n_tables": 3,
+        "table_total_rows": 15,
+        "table_total_cells": 45,
+        "codepoint_inventory": {
+          "HORIZONTAL_BAR": 171,
+          "EN_DASH": 10,
+          "EM_DASH": 4
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 3,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 5,
+            "probe_preview": "Secondary market",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 1,
+            "table_rows": 5,
+            "probe_preview": "Investing decisions",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 2,
+            "table_rows": 5,
+            "probe_preview": "Purchase Services",
+            "matched_in_excel": false
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 50
+    },
+    "02": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter02_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 11,
+        "schema_match": true,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic"
+        ],
+        "n_data_rows": 180,
+        "n_real_questions": 179,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 179,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 177,
+        "qnum_type_int": 2,
+        "bloom_counts": {
+          "Remember": 28,
+          "Understand": 53,
+          "Analyze": 83,
+          "Apply": 26
+        },
+        "bloom_dual_label_rows": 11,
+        "qtype_counts": {
+          "True/False": 16,
+          "Multiple Choice": 59,
+          "Matching": 40,
+          "Essay/Problem": 64
+        },
+        "difficulty_counts": {
+          "1 Easy": 52,
+          "2 Medium": 107,
+          "3 Hard": 20
+        },
+        "lo_code_only": 0,
+        "lo_full_text": 179,
+        "lo_missing": 0,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "HORIZONTAL_BAR": 61,
+          "EN_DASH": 9,
+          "DIVISION_SIGN": 6,
+          "MULTIPLICATION_SIGN": 19,
+          "EM_DASH": 16
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter02_TB_AnswerKey.docx",
+        "n_paragraphs_total": 2357,
+        "n_paragraphs_nonempty": 1901,
+        "n_question_markers": 179,
+        "n_answer_lines": 139,
+        "qnum_max_seen": 179,
+        "n_tables": 122,
+        "table_total_rows": 568,
+        "table_total_cells": 1868,
+        "codepoint_inventory": {
+          "HORIZONTAL_BAR": 61,
+          "NBSP": 6,
+          "EN_DASH": 5,
+          "MULTIPLICATION_SIGN": 25,
+          "DIVISION_SIGN": 6
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 122,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 2,
+            "probe_preview": "Prepaid rent",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 61,
+            "table_rows": 2,
+            "probe_preview": "Classification",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 121,
+            "table_rows": 15,
+            "probe_preview": "5.Sold merchandise on credit\n (the sale only, not the cost of the merchandise).",
+            "matched_in_excel": true
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 40
+    },
+    "03": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter03_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 11,
+        "schema_match": true,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic"
+        ],
+        "n_data_rows": 175,
+        "n_real_questions": 174,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 174,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 162,
+        "qnum_type_int": 12,
+        "bloom_counts": {
+          "Remember": 52,
+          "Understand": 63,
+          "Analyze": 49,
+          "Apply": 34
+        },
+        "bloom_dual_label_rows": 24,
+        "qtype_counts": {
+          "True/False": 23,
+          "Multiple Choice": 64,
+          "Matching": 44,
+          "Essay/Problem": 43
+        },
+        "difficulty_counts": {
+          "1 Easy": 60,
+          "2 Medium": 75,
+          "3 Hard": 39
+        },
+        "lo_code_only": 0,
+        "lo_full_text": 174,
+        "lo_missing": 0,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "HORIZONTAL_BAR": 241,
+          "EN_DASH": 21,
+          "EM_DASH": 15,
+          "DIVISION_SIGN": 11,
+          "MULTIPLICATION_SIGN": 6,
+          "RIGHT_SINGLE_QUOTE": 5
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter03_TB_AnswerKey.docx",
+        "n_paragraphs_total": 2656,
+        "n_paragraphs_nonempty": 2219,
+        "n_question_markers": 174,
+        "n_answer_lines": 130,
+        "qnum_max_seen": 174,
+        "n_tables": 38,
+        "table_total_rows": 235,
+        "table_total_cells": 1230,
+        "codepoint_inventory": {
+          "HORIZONTAL_BAR": 241,
+          "EN_DASH": 11,
+          "EM_DASH": 15,
+          "DIVISION_SIGN": 11,
+          "MULTIPLICATION_SIGN": 6,
+          "RIGHT_SINGLE_QUOTE": 5
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 38,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 23,
+            "probe_preview": "Allowance for uncollectible accounts",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 19,
+            "table_rows": 2,
+            "probe_preview": "Cash sale of land for a gain",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 37,
+            "table_rows": 2,
+            "probe_preview": "Record annual depreciation\non office equipment",
+            "matched_in_excel": true
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 44
+    },
+    "04": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter04_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 11,
+        "schema_match": true,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic"
+        ],
+        "n_data_rows": 219,
+        "n_real_questions": 218,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 218,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 218,
+        "qnum_type_int": 0,
+        "bloom_counts": {
+          "Remember": 54,
+          "Understand": 66,
+          "Analyze": 32,
+          "Apply": 79,
+          "Create": 2
+        },
+        "bloom_dual_label_rows": 15,
+        "qtype_counts": {
+          "True/False": 27,
+          "Multiple Choice": 100,
+          "Matching": 40,
+          "Essay/Problem": 51
+        },
+        "difficulty_counts": {
+          "1 Easy": 59,
+          "2 Medium": 104,
+          "3 Hard": 55
+        },
+        "lo_code_only": 42,
+        "lo_full_text": 176,
+        "lo_missing": 0,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "HORIZONTAL_BAR": 251,
+          "NBSP": 2,
+          "EN_DASH": 19,
+          "MULTIPLICATION_SIGN": 6,
+          "EM_DASH": 7
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter04_TB_AnswerKey.docx",
+        "n_paragraphs_total": 3244,
+        "n_paragraphs_nonempty": 2649,
+        "n_question_markers": 218,
+        "n_answer_lines": 176,
+        "qnum_max_seen": 218,
+        "n_tables": 57,
+        "table_total_rows": 436,
+        "table_total_cells": 2316,
+        "codepoint_inventory": {
+          "HORIZONTAL_BAR": 251,
+          "NBSP": 2,
+          "MULTIPLICATION_SIGN": 14,
+          "EN_DASH": 16,
+          "EM_DASH": 7
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 57,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 2,
+            "probe_preview": "Loss on discontinued operations",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 28,
+            "table_rows": 8,
+            "probe_preview": "Accounts receivable (net)",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 56,
+            "table_rows": 8,
+            "probe_preview": "Return on assets- 5 yr. avg.",
+            "matched_in_excel": false
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 42
+    },
+    "05": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter05_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 11,
+        "schema_match": true,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic"
+        ],
+        "n_data_rows": 321,
+        "n_real_questions": 320,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 316,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [
+          1,
+          2
+        ],
+        "qnum_type_string": 320,
+        "qnum_type_int": 0,
+        "bloom_counts": {
+          "Remember": 109,
+          "Understand": 37,
+          "Analyze": 41,
+          "Apply": 129,
+          "Create": 3
+        },
+        "bloom_dual_label_rows": 4,
+        "qtype_counts": {
+          "True/False": 83,
+          "Multiple Choice": 149,
+          "Essay/Problem": 88
+        },
+        "difficulty_counts": {
+          "1 Easy": 135,
+          "2 Medium": 132,
+          "3 Hard": 48,
+          "": 5
+        },
+        "lo_code_only": 72,
+        "lo_full_text": 243,
+        "lo_missing": 5,
+        "answer_empty_by_type": {
+          "Essay/Problem": 4
+        },
+        "options_bleed_rows_first20": [
+          [
+            294,
+            0.95
+          ],
+          [
+            319,
+            0.95
+          ]
+        ],
+        "n_options_bleed_rows": 2,
+        "codepoint_inventory": {
+          "HORIZONTAL_BAR": 358,
+          "EN_DASH": 25,
+          "MULTIPLICATION_SIGN": 68,
+          "DIVISION_SIGN": 11,
+          "EM_DASH": 4,
+          "ELLIPSIS": 9
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter05_TB_AnswerKey.docx",
+        "n_paragraphs_total": 4880,
+        "n_paragraphs_nonempty": 4024,
+        "n_question_markers": 324,
+        "n_answer_lines": 316,
+        "qnum_max_seen": 316,
+        "n_tables": 68,
+        "table_total_rows": 277,
+        "table_total_cells": 1208,
+        "codepoint_inventory": {
+          "HORIZONTAL_BAR": 359,
+          "MULTIPLICATION_SIGN": 116,
+          "EN_DASH": 55,
+          "DIVISION_SIGN": 23,
+          "NBSP": 3,
+          "EM_DASH": 4,
+          "ELLIPSIS": 9
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 68,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 7,
+            "probe_preview": "Contract billings:",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 34,
+            "table_rows": 4,
+            "probe_preview": "Contract cost:",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 67,
+            "table_rows": 3,
+            "probe_preview": "Franchise fee revenue",
+            "matched_in_excel": false
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 4
+    },
+    "06": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter06_TB_AnswerKey_121217_Processed.xlsx",
+        "n_columns": 12,
+        "schema_match": false,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "Explanation",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic"
+        ],
+        "n_data_rows": 157,
+        "n_real_questions": 157,
+        "n_header_artifacts": 0,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 157,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 0,
+        "qnum_type_int": 157,
+        "bloom_counts": {
+          "Remember": 18,
+          "Analyze": 18,
+          "Apply": 79,
+          "Understand": 37,
+          "Evaluate": 4,
+          "Create": 1
+        },
+        "bloom_dual_label_rows": 0,
+        "qtype_counts": {
+          "True/False": 15,
+          "Multiple Choice": 59,
+          "Matching": 31,
+          "Essay/Problem": 52
+        },
+        "difficulty_counts": {
+          "1 Easy": 46,
+          "2 Medium": 40,
+          "3 Hard": 71
+        },
+        "lo_code_only": 1,
+        "lo_full_text": 156,
+        "lo_missing": 0,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "HORIZONTAL_BAR": 125,
+          "MULTIPLICATION_SIGN": 124,
+          "DIVISION_SIGN": 10,
+          "EN_DASH": 3
+        },
+        "header_artifact_samples": []
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter06_TB_AnswerKey_121217.docx",
+        "n_paragraphs_total": 2347,
+        "n_paragraphs_nonempty": 1974,
+        "n_question_markers": 157,
+        "n_answer_lines": 127,
+        "qnum_max_seen": 157,
+        "n_tables": 9,
+        "table_total_rows": 54,
+        "table_total_cells": 326,
+        "codepoint_inventory": {
+          "HORIZONTAL_BAR": 122,
+          "MULTIPLICATION_SIGN": 116,
+          "DIVISION_SIGN": 10,
+          "NBSP": 1,
+          "EN_DASH": 3
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 9,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 17,
+            "probe_preview": "10.25262",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 4,
+            "table_rows": 7,
+            "probe_preview": "PVA of $1",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 8,
+            "table_rows": 4,
+            "probe_preview": "1.090",
+            "matched_in_excel": false
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 30
+    },
+    "07": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter07_TB_AnswerKey_010418_Processed.xlsx",
+        "n_columns": 13,
+        "schema_match": false,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "Explanation",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic",
+          "Question Type"
+        ],
+        "n_data_rows": 225,
+        "n_real_questions": 224,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 224,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 0,
+        "qnum_type_int": 224,
+        "bloom_counts": {
+          "Remember": 48,
+          "Understand": 55,
+          "Analyze": 17,
+          "Apply": 98,
+          "Create": 4,
+          "Evaluate": 2
+        },
+        "bloom_dual_label_rows": 0,
+        "qtype_counts": {
+          "True/False": 30,
+          "Multiple Choice": 102,
+          "Matching": 35,
+          "Essay/Problem": 57
+        },
+        "difficulty_counts": {
+          "1 Easy": 67,
+          "2 Medium": 101,
+          "3 Hard": 56
+        },
+        "lo_code_only": 47,
+        "lo_full_text": 177,
+        "lo_missing": 0,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "HORIZONTAL_BAR": 153,
+          "EN_DASH": 49,
+          "MULTIPLICATION_SIGN": 65,
+          "DIVISION_SIGN": 6,
+          "EM_DASH": 1
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter07_TB_AnswerKey_010418.docx",
+        "n_paragraphs_total": 3500,
+        "n_paragraphs_nonempty": 2809,
+        "n_question_markers": 224,
+        "n_answer_lines": 189,
+        "qnum_max_seen": 224,
+        "n_tables": 99,
+        "table_total_rows": 319,
+        "table_total_cells": 1333,
+        "codepoint_inventory": {
+          "HORIZONTAL_BAR": 153,
+          "EN_DASH": 47,
+          "MULTIPLICATION_SIGN": 54,
+          "NBSP": 2,
+          "DIVISION_SIGN": 5,
+          "EM_DASH": 1
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 99,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 6,
+            "probe_preview": "Commercial paper, purchased on 11/1/2018,\nmature on 1/30/2019",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 49,
+            "table_rows": 3,
+            "probe_preview": "Sales discounts forfeited",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 98,
+            "table_rows": 1,
+            "probe_preview": "Beg. Bal. 91,809\nAllowances from acquisitions\n1,851\nProvisions charged to operat",
+            "matched_in_excel": false
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 35
+    },
+    "08": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter08_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 14,
+        "schema_match": false,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "Explanation",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic",
+          "Question Type",
+          "Blooms"
+        ],
+        "n_data_rows": 188,
+        "n_real_questions": 187,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 187,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 0,
+        "qnum_type_int": 187,
+        "bloom_counts": {
+          "Remember": 36,
+          "Understand": 58,
+          "Apply": 74,
+          "Analyze": 10
+        },
+        "bloom_dual_label_rows": 1,
+        "qtype_counts": {
+          "True/False": 16,
+          "Multiple Choice": 79,
+          "Matching": 40,
+          "Essay/Problem": 52
+        },
+        "difficulty_counts": {
+          "1 Easy": 66,
+          "2 Medium": 57,
+          "3 Hard": 64
+        },
+        "lo_code_only": 0,
+        "lo_full_text": 187,
+        "lo_missing": 0,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "EM_DASH": 55,
+          "NBSP": 32,
+          "MULTIPLICATION_SIGN": 34,
+          "DIVISION_SIGN": 22
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter08_TB_AnswerKey.docx",
+        "n_paragraphs_total": 2641,
+        "n_paragraphs_nonempty": 2190,
+        "n_question_markers": 187,
+        "n_answer_lines": 147,
+        "qnum_max_seen": 187,
+        "n_tables": 85,
+        "table_total_rows": 542,
+        "table_total_cells": 2753,
+        "codepoint_inventory": {
+          "EM_DASH": 45,
+          "NBSP": 16,
+          "MULTIPLICATION_SIGN": 18,
+          "DIVISION_SIGN": 21
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 85,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 9,
+            "probe_preview": "Discounts [($400,000 − $5,000) × 1%)]",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 42,
+            "table_rows": 9,
+            "probe_preview": "Purchases ($30,000 x 0.98)",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 84,
+            "table_rows": 1,
+            "probe_preview": "If the inventory had been valued using the first-in, first-out (FIFO) method, in",
+            "matched_in_excel": false
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 40
+    },
+    "09": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter09_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 14,
+        "schema_match": false,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "Explanation",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic",
+          "Question Type",
+          "Blooms"
+        ],
+        "n_data_rows": 196,
+        "n_real_questions": 195,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 193,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [
+          1,
+          2
+        ],
+        "qnum_type_string": 0,
+        "qnum_type_int": 195,
+        "bloom_counts": {
+          "Remember": 46,
+          "Understand": 48,
+          "Apply": 91,
+          "Analyze": 3
+        },
+        "bloom_dual_label_rows": 0,
+        "qtype_counts": {
+          "True/False": 19,
+          "Essay/Problem": 56,
+          "Multiple Choice": 80,
+          "Matching": 40
+        },
+        "difficulty_counts": {
+          "1 Easy": 73,
+          "": 2,
+          "3 Hard": 56,
+          "2 Medium": 64
+        },
+        "lo_code_only": 0,
+        "lo_full_text": 193,
+        "lo_missing": 2,
+        "answer_empty_by_type": {
+          "Essay/Problem": 2
+        },
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "EN_DASH": 39,
+          "NBSP": 5,
+          "MULTIPLICATION_SIGN": 47,
+          "EM_DASH": 23,
+          "DIVISION_SIGN": 32
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter09_TB_AnswerKey.docx",
+        "n_paragraphs_total": 2779,
+        "n_paragraphs_nonempty": 2193,
+        "n_question_markers": 195,
+        "n_answer_lines": 153,
+        "qnum_max_seen": 193,
+        "n_tables": 126,
+        "table_total_rows": 877,
+        "table_total_cells": 6473,
+        "codepoint_inventory": {
+          "EN_DASH": 39,
+          "NBSP": 4,
+          "MULTIPLICATION_SIGN": 22,
+          "EM_DASH": 14,
+          "DIVISION_SIGN": 9
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 126,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 4,
+            "probe_preview": "Selling price",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 63,
+            "table_rows": 11,
+            "probe_preview": "Large animals:",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 125,
+            "table_rows": 4,
+            "probe_preview": "Selling price",
+            "matched_in_excel": true
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 42
+    },
+    "10": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter10_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 14,
+        "schema_match": false,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "Explanation",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic",
+          "Question Type",
+          "Option"
+        ],
+        "n_data_rows": 195,
+        "n_real_questions": 194,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 194,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 0,
+        "qnum_type_int": 194,
+        "bloom_counts": {
+          "Remember": 62,
+          "Understand": 50,
+          "Apply": 80,
+          "Analyze": 1,
+          "Create": 1
+        },
+        "bloom_dual_label_rows": 0,
+        "qtype_counts": {
+          "True/False": 15,
+          "Multiple Choice": 95,
+          "Matching": 45,
+          "Essay/Problem": 39
+        },
+        "difficulty_counts": {
+          "1 Easy": 86,
+          "2 Medium": 56,
+          "3 Hard": 52
+        },
+        "lo_code_only": 0,
+        "lo_full_text": 194,
+        "lo_missing": 0,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "NBSP": 2,
+          "MULTIPLICATION_SIGN": 113,
+          "EN_DASH": 9,
+          "DIVISION_SIGN": 4,
+          "EM_DASH": 10
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter10_TB_AnswerKey.docx",
+        "n_paragraphs_total": 2769,
+        "n_paragraphs_nonempty": 2326,
+        "n_question_markers": 194,
+        "n_answer_lines": 149,
+        "qnum_max_seen": 194,
+        "n_tables": 89,
+        "table_total_rows": 482,
+        "table_total_cells": 2718,
+        "codepoint_inventory": {
+          "NBSP": 2,
+          "MULTIPLICATION_SIGN": 76,
+          "DIVISION_SIGN": 4,
+          "EM_DASH": 9
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 89,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 3,
+            "probe_preview": "Cash Outflow",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 44,
+            "table_rows": 5,
+            "probe_preview": "Capitalized interest",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 88,
+            "table_rows": 7,
+            "probe_preview": "Interest capitalized in 2018:\n$800,000 × 8% × 9/12 =",
+            "matched_in_excel": false
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 45
+    },
+    "11": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter11_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 14,
+        "schema_match": false,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "Explanation",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic",
+          "Question Type",
+          "Option"
+        ],
+        "n_data_rows": 229,
+        "n_real_questions": 228,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 228,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 0,
+        "qnum_type_int": 228,
+        "bloom_counts": {
+          "Remember": 46,
+          "Understand": 67,
+          "Analyze": 12,
+          "Apply": 103
+        },
+        "bloom_dual_label_rows": 0,
+        "qtype_counts": {
+          "True/False": 21,
+          "Multiple Choice": 108,
+          "Matching": 40,
+          "Essay/Problem": 59
+        },
+        "difficulty_counts": {
+          "1 Easy": 97,
+          "2 Medium": 60,
+          "3 Hard": 71
+        },
+        "lo_code_only": 0,
+        "lo_full_text": 228,
+        "lo_missing": 0,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [
+          [
+            201,
+            0.93
+          ]
+        ],
+        "n_options_bleed_rows": 1,
+        "codepoint_inventory": {
+          "EM_DASH": 79,
+          "EN_DASH": 69,
+          "DIVISION_SIGN": 73,
+          "MULTIPLICATION_SIGN": 113,
+          "NBSP": 13
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter11_TB_AnswerKey.docx",
+        "n_paragraphs_total": 3312,
+        "n_paragraphs_nonempty": 2770,
+        "n_question_markers": 228,
+        "n_answer_lines": 188,
+        "qnum_max_seen": 228,
+        "n_tables": 70,
+        "table_total_rows": 405,
+        "table_total_cells": 1633,
+        "codepoint_inventory": {
+          "EM_DASH": 73,
+          "EN_DASH": 66,
+          "DIVISION_SIGN": 55,
+          "MULTIPLICATION_SIGN": 98,
+          "NBSP": 13
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 70,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 3,
+            "probe_preview": "Loss on sale of equipment",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 35,
+            "table_rows": 3,
+            "probe_preview": "Depreciable base = $40,000 — 4,000 =",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 69,
+            "table_rows": 4,
+            "probe_preview": "Advertising specifically focused on trademark development",
+            "matched_in_excel": true
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 40
+    },
+    "12": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter12_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 14,
+        "schema_match": false,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "Explanation",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic",
+          "Question Type",
+          "Option"
+        ],
+        "n_data_rows": 217,
+        "n_real_questions": 217,
+        "n_header_artifacts": 0,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 217,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 0,
+        "qnum_type_int": 217,
+        "bloom_counts": {
+          "Remember": 70,
+          "Understand": 57,
+          "Apply": 64,
+          "Analyze": 24,
+          "Evaluate": 3,
+          "Create": 1
+        },
+        "bloom_dual_label_rows": 4,
+        "qtype_counts": {
+          "True/False": 25,
+          "Multiple Choice": 110,
+          "Matching": 33,
+          "Essay/Problem": 49
+        },
+        "difficulty_counts": {
+          "1 Easy": 43,
+          "2 Medium": 117,
+          "3 Hard": 55,
+          "": 2
+        },
+        "lo_code_only": 0,
+        "lo_full_text": 215,
+        "lo_missing": 2,
+        "answer_empty_by_type": {
+          "Essay/Problem": 1
+        },
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "EM_DASH": 147,
+          "NBSP": 6,
+          "MULTIPLICATION_SIGN": 18,
+          "EN_DASH": 60,
+          "PLUS_MINUS": 3,
+          "HORIZONTAL_BAR": 48,
+          "DIVISION_SIGN": 2,
+          "ELLIPSIS": 1
+        },
+        "header_artifact_samples": []
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter12_TB_AnswerKey.docx",
+        "n_paragraphs_total": 2933,
+        "n_paragraphs_nonempty": 2464,
+        "n_question_markers": 221,
+        "n_answer_lines": 184,
+        "qnum_max_seen": 217,
+        "n_tables": 65,
+        "table_total_rows": 420,
+        "table_total_cells": 2190,
+        "codepoint_inventory": {
+          "EM_DASH": 127,
+          "NBSP": 5,
+          "MULTIPLICATION_SIGN": 14,
+          "HORIZONTAL_BAR": 48,
+          "EN_DASH": 9,
+          "DIVISION_SIGN": 1,
+          "ELLIPSIS": 1
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 65,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 5,
+            "probe_preview": "Income\nstatement loss\non investments",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 32,
+            "table_rows": 3,
+            "probe_preview": "Alternative (combining all entries):",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 64,
+            "table_rows": 5,
+            "probe_preview": "Loss on debt securities",
+            "matched_in_excel": false
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 33
+    },
+    "13": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter13_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 14,
+        "schema_match": false,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "Explanation",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic",
+          "Question Type",
+          "Option"
+        ],
+        "n_data_rows": 218,
+        "n_real_questions": 217,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 217,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 0,
+        "qnum_type_int": 217,
+        "bloom_counts": {
+          "Remember": 43,
+          "Understand": 87,
+          "Analyze": 23,
+          "Apply": 61,
+          "Evaluate": 2,
+          "Create": 2
+        },
+        "bloom_dual_label_rows": 1,
+        "qtype_counts": {
+          "True/False": 19,
+          "Multiple Choice": 84,
+          "Matching": 62,
+          "Essay/Problem": 52
+        },
+        "difficulty_counts": {
+          "1 Easy": 47,
+          "2 Medium": 125,
+          "3 Hard": 45
+        },
+        "lo_code_only": 0,
+        "lo_full_text": 217,
+        "lo_missing": 0,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "EM_DASH": 194,
+          "MULTIPLICATION_SIGN": 34,
+          "DIVISION_SIGN": 11,
+          "NBSP": 5,
+          "HORIZONTAL_BAR": 22,
+          "EN_DASH": 7
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter13_TB_AnswerKey.docx",
+        "n_paragraphs_total": 2909,
+        "n_paragraphs_nonempty": 2502,
+        "n_question_markers": 217,
+        "n_answer_lines": 155,
+        "qnum_max_seen": 217,
+        "n_tables": 43,
+        "table_total_rows": 402,
+        "table_total_cells": 1564,
+        "codepoint_inventory": {
+          "EM_DASH": 187,
+          "MULTIPLICATION_SIGN": 26,
+          "DIVISION_SIGN": 3,
+          "HORIZONTAL_BAR": 22,
+          "EN_DASH": 7
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 43,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 4,
+            "probe_preview": "Total interest expense",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 21,
+            "table_rows": 6,
+            "probe_preview": "Fiscal Year-End",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 42,
+            "table_rows": 6,
+            "probe_preview": "[$2 x (2,000,000 x 70%) ÷ 5]",
+            "matched_in_excel": true
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 62
+    },
+    "14": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter14_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 14,
+        "schema_match": false,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "Explanation",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic",
+          "Question Type",
+          "Option"
+        ],
+        "n_data_rows": 262,
+        "n_real_questions": 261,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 261,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 0,
+        "qnum_type_int": 261,
+        "bloom_counts": {
+          "Remember": 37,
+          "Understand": 65,
+          "Analyze": 48,
+          "Apply": 111
+        },
+        "bloom_dual_label_rows": 0,
+        "qtype_counts": {
+          "True/False": 12,
+          "Multiple Choice": 144,
+          "Matching": 39,
+          "Essay/Problem": 66
+        },
+        "difficulty_counts": {
+          "1 Easy": 29,
+          "2 Medium": 147,
+          "3 Hard": 84,
+          "": 1
+        },
+        "lo_code_only": 0,
+        "lo_full_text": 261,
+        "lo_missing": 0,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "MULTIPLICATION_SIGN": 123,
+          "NBSP": 41,
+          "EM_DASH": 34,
+          "EN_DASH": 24,
+          "DIVISION_SIGN": 12
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter14_TB_AnswerKey.docx",
+        "n_paragraphs_total": 4116,
+        "n_paragraphs_nonempty": 3383,
+        "n_question_markers": 261,
+        "n_answer_lines": 222,
+        "qnum_max_seen": 261,
+        "n_tables": 76,
+        "table_total_rows": 592,
+        "table_total_cells": 4115,
+        "codepoint_inventory": {
+          "NBSP": 33,
+          "EM_DASH": 27,
+          "MULTIPLICATION_SIGN": 81,
+          "EN_DASH": 16,
+          "DIVISION_SIGN": 9
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 76,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 4,
+            "probe_preview": "$1,000 × 0.14205** =",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 38,
+            "table_rows": 4,
+            "probe_preview": "Paid-in capital – conversion feature (to balance)",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 75,
+            "table_rows": 5,
+            "probe_preview": "Entry for bond issuance",
+            "matched_in_excel": true
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 39
+    },
+    "15": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter15_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 14,
+        "schema_match": false,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "Explanation",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic",
+          "Question Type",
+          "Option"
+        ],
+        "n_data_rows": 313,
+        "n_real_questions": 310,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 2,
+        "qnum_min": 1,
+        "qnum_max": 310,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 0,
+        "qnum_type_int": 310,
+        "bloom_counts": {
+          "Understand": 74,
+          "Remember": 69,
+          "Analyze": 36,
+          "Apply": 128,
+          "Evaluate": 3
+        },
+        "bloom_dual_label_rows": 2,
+        "qtype_counts": {
+          "True/False": 9,
+          "Multiple Choice": 150,
+          "Matching": 45,
+          "Essay/Problem": 106
+        },
+        "difficulty_counts": {
+          "2 Medium": 169,
+          "1 Easy": 62,
+          "3 Hard": 77,
+          "": 2
+        },
+        "lo_code_only": 65,
+        "lo_full_text": 240,
+        "lo_missing": 5,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "HORIZONTAL_BAR": 673,
+          "MULTIPLICATION_SIGN": 266,
+          "NBSP": 27,
+          "EN_DASH": 178,
+          "EM_DASH": 4,
+          "DIVISION_SIGN": 60
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter15_TB_AnswerKey.docx",
+        "n_paragraphs_total": 6730,
+        "n_paragraphs_nonempty": 5444,
+        "n_question_markers": 316,
+        "n_answer_lines": 265,
+        "qnum_max_seen": 310,
+        "n_tables": 64,
+        "table_total_rows": 404,
+        "table_total_cells": 1926,
+        "codepoint_inventory": {
+          "HORIZONTAL_BAR": 671,
+          "MULTIPLICATION_SIGN": 243,
+          "NBSP": 30,
+          "EN_DASH": 172,
+          "EM_DASH": 4,
+          "DIVISION_SIGN": 58
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 64,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 9,
+            "probe_preview": "Decrease in\nBalance",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 32,
+            "table_rows": 8,
+            "probe_preview": "Is the asset of such a specialized nature that it is expected to have no alterna",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 63,
+            "table_rows": 9,
+            "probe_preview": "Term to maturity in years:",
+            "matched_in_excel": false
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 45
+    },
+    "16": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter16_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 14,
+        "schema_match": false,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "Explanation",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic",
+          "Question Type",
+          "Option"
+        ],
+        "n_data_rows": 182,
+        "n_real_questions": 181,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 181,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 0,
+        "qnum_type_int": 181,
+        "bloom_counts": {
+          "Remember": 32,
+          "Understand": 66,
+          "Apply": 77,
+          "Analyze": 7
+        },
+        "bloom_dual_label_rows": 1,
+        "qtype_counts": {
+          "True/False": 16,
+          "Multiple Choice": 96,
+          "Matching": 25,
+          "Essay/Problem": 44
+        },
+        "difficulty_counts": {
+          "1 Easy": 34,
+          "2 Medium": 96,
+          "3 Hard": 51
+        },
+        "lo_code_only": 0,
+        "lo_full_text": 181,
+        "lo_missing": 0,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "MULTIPLICATION_SIGN": 60,
+          "EN_DASH": 35,
+          "NBSP": 4,
+          "EM_DASH": 26
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter16_TB_AnswerKey.docx",
+        "n_paragraphs_total": 2530,
+        "n_paragraphs_nonempty": 2117,
+        "n_question_markers": 181,
+        "n_answer_lines": 156,
+        "qnum_max_seen": 181,
+        "n_tables": 105,
+        "table_total_rows": 651,
+        "table_total_cells": 3245,
+        "codepoint_inventory": {
+          "MULTIPLICATION_SIGN": 39,
+          "EN_DASH": 27,
+          "NBSP": 5,
+          "EM_DASH": 14
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 105,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 6,
+            "probe_preview": "Temporary difference-depreciation",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 52,
+            "table_rows": 2,
+            "probe_preview": "Amount of the tax benefit that management expects to sustain",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 104,
+            "table_rows": 3,
+            "probe_preview": "Percentage likelihood that the tax position will be sustained at this level",
+            "matched_in_excel": true
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 25
+    },
+    "17": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter17_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 14,
+        "schema_match": false,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "Explanation",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic",
+          "Question Type",
+          "Option"
+        ],
+        "n_data_rows": 252,
+        "n_real_questions": 251,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 251,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 0,
+        "qnum_type_int": 251,
+        "bloom_counts": {
+          "Evaluate": 3,
+          "Understand": 73,
+          "Remember": 70,
+          "Apply": 57,
+          "Analyze": 25,
+          "Create": 1
+        },
+        "bloom_dual_label_rows": 1,
+        "qtype_counts": {
+          "True/False": 12,
+          "Multiple Choice": 139,
+          "Matching": 37,
+          "Essay/Problem": 63
+        },
+        "difficulty_counts": {
+          "1 Easy": 69,
+          "2 Medium": 120,
+          "3 Hard": 39,
+          "": 23
+        },
+        "lo_code_only": 0,
+        "lo_full_text": 228,
+        "lo_missing": 23,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "MULTIPLICATION_SIGN": 97,
+          "NBSP": 17,
+          "EN_DASH": 5,
+          "EM_DASH": 9,
+          "DIVISION_SIGN": 9,
+          "HORIZONTAL_BAR": 1
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter17_TB_AnswerKey.docx",
+        "n_paragraphs_total": 3720,
+        "n_paragraphs_nonempty": 2966,
+        "n_question_markers": 330,
+        "n_answer_lines": 214,
+        "qnum_max_seen": 251,
+        "n_tables": 149,
+        "table_total_rows": 1057,
+        "table_total_cells": 4206,
+        "codepoint_inventory": {
+          "NBSP": 23,
+          "MULTIPLICATION_SIGN": 26,
+          "EN_DASH": 2,
+          "EM_DASH": 4,
+          "HORIZONTAL_BAR": 1
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 149,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 6,
+            "probe_preview": "Interest cost ($265,000 × 10%)",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 74,
+            "table_rows": 8,
+            "probe_preview": "Amortization of net prior service cost-OCI",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 148,
+            "table_rows": 3,
+            "probe_preview": "Loss-income statement (from change in assumption)",
+            "matched_in_excel": true
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 37
+    },
+    "18": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter18_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 13,
+        "schema_match": false,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "Explanation",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic",
+          "Question Type"
+        ],
+        "n_data_rows": 185,
+        "n_real_questions": 184,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 184,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 0,
+        "qnum_type_int": 184,
+        "bloom_counts": {
+          "Remember": 61,
+          "Understand": 37,
+          "Analyze": 43,
+          "Apply": 42,
+          "Evaluate": 1
+        },
+        "bloom_dual_label_rows": 0,
+        "qtype_counts": {
+          "True/False": 11,
+          "Multiple Choice": 118,
+          "Matching": 15,
+          "Essay/Problem": 40
+        },
+        "difficulty_counts": {
+          "1 Easy": 44,
+          "2 Medium": 103,
+          "3 Hard": 37
+        },
+        "lo_code_only": 0,
+        "lo_full_text": 184,
+        "lo_missing": 0,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [
+          [
+            162,
+            0.94
+          ]
+        ],
+        "n_options_bleed_rows": 1,
+        "codepoint_inventory": {
+          "DIVISION_SIGN": 20,
+          "MULTIPLICATION_SIGN": 117,
+          "EM_DASH": 58,
+          "NBSP": 3,
+          "EN_DASH": 56
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter18_TB_AnswerKey.docx",
+        "n_paragraphs_total": 2765,
+        "n_paragraphs_nonempty": 2161,
+        "n_question_markers": 184,
+        "n_answer_lines": 169,
+        "qnum_max_seen": 184,
+        "n_tables": 131,
+        "table_total_rows": 767,
+        "table_total_cells": 3199,
+        "codepoint_inventory": {
+          "NBSP": 18,
+          "EM_DASH": 15,
+          "MULTIPLICATION_SIGN": 48,
+          "DIVISION_SIGN": 8,
+          "EN_DASH": 19
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 131,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 6,
+            "probe_preview": "Common stock, $5 par; 20 million shares authorized; 15 million shares issued\nand",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 65,
+            "table_rows": 2,
+            "probe_preview": "Paid-in capital—excess of par",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 130,
+            "table_rows": 12,
+            "probe_preview": "Heirloom Watch Corporation\nBALANCE SHEET\nAt January 1, 2019 ($ in millions)",
+            "matched_in_excel": true
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 15
+    },
+    "19": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter19_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 13,
+        "schema_match": false,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "Explanation",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic",
+          "Question Type"
+        ],
+        "n_data_rows": 232,
+        "n_real_questions": 231,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 231,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 0,
+        "qnum_type_int": 231,
+        "bloom_counts": {
+          "Remember": 50,
+          "Understand": 48,
+          "Apply": 112,
+          "Analyze": 13,
+          "Evaluate": 7,
+          "Create": 1
+        },
+        "bloom_dual_label_rows": 0,
+        "qtype_counts": {
+          "True/False": 10,
+          "Multiple Choice": 132,
+          "Matching": 25,
+          "Essay/Problem": 64
+        },
+        "difficulty_counts": {
+          "1 Easy": 65,
+          "2 Medium": 113,
+          "3 Hard": 53
+        },
+        "lo_code_only": 1,
+        "lo_full_text": 230,
+        "lo_missing": 0,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "MULTIPLICATION_SIGN": 266,
+          "DIVISION_SIGN": 96,
+          "EN_DASH": 66,
+          "EM_DASH": 38,
+          "HORIZONTAL_BAR": 3
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter19_TB_AnswerKey.docx",
+        "n_paragraphs_total": 3715,
+        "n_paragraphs_nonempty": 2896,
+        "n_question_markers": 231,
+        "n_answer_lines": 206,
+        "qnum_max_seen": 231,
+        "n_tables": 146,
+        "table_total_rows": 519,
+        "table_total_cells": 2302,
+        "codepoint_inventory": {
+          "MULTIPLICATION_SIGN": 157,
+          "DIVISION_SIGN": 67,
+          "NBSP": 30,
+          "EM_DASH": 9,
+          "EN_DASH": 13,
+          "HORIZONTAL_BAR": 3
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 146,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 4,
+            "probe_preview": "shares represented by RSUs shares granted",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 73,
+            "table_rows": 4,
+            "probe_preview": "total compensation (300,000 shares × $12)",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 145,
+            "table_rows": 5,
+            "probe_preview": "Amount Vesting\n(shares in millions)",
+            "matched_in_excel": true
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 25
+    },
+    "20": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter20_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 13,
+        "schema_match": false,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "Explanation",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic",
+          "Question Type"
+        ],
+        "n_data_rows": 151,
+        "n_real_questions": 150,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 150,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 0,
+        "qnum_type_int": 150,
+        "bloom_counts": {
+          "Remember": 35,
+          "Understand": 48,
+          "Evaluate": 4,
+          "Analyze": 32,
+          "Apply": 33
+        },
+        "bloom_dual_label_rows": 2,
+        "qtype_counts": {
+          "True/False": 10,
+          "Multiple Choice": 96,
+          "Matching": 10,
+          "Essay/Problem": 34
+        },
+        "difficulty_counts": {
+          "1 Easy": 36,
+          "2 Medium": 76,
+          "3 Hard": 38
+        },
+        "lo_code_only": 0,
+        "lo_full_text": 150,
+        "lo_missing": 0,
+        "answer_empty_by_type": {},
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "EN_DASH": 25,
+          "MULTIPLICATION_SIGN": 42,
+          "DIVISION_SIGN": 22,
+          "EM_DASH": 2,
+          "HORIZONTAL_BAR": 1
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter20_TB_AnswerKey.docx",
+        "n_paragraphs_total": 2220,
+        "n_paragraphs_nonempty": 1825,
+        "n_question_markers": 150,
+        "n_answer_lines": 140,
+        "qnum_max_seen": 150,
+        "n_tables": 39,
+        "table_total_rows": 163,
+        "table_total_cells": 608,
+        "codepoint_inventory": {
+          "NBSP": 8,
+          "DIVISION_SIGN": 18,
+          "EN_DASH": 18,
+          "MULTIPLICATION_SIGN": 20,
+          "EM_DASH": 1,
+          "HORIZONTAL_BAR": 1
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 39,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 4,
+            "probe_preview": "([$72,000 – 3,600] × 5/15)",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 19,
+            "table_rows": 3,
+            "probe_preview": "2017: ($60,000 - 24,000) × 1/5 × 2 =",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 38,
+            "table_rows": 5,
+            "probe_preview": "Accumulated depreciation",
+            "matched_in_excel": true
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 10
+    },
+    "21": {
+      "excel": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\excel\\Spiceland9e_Chapter21_TB_AnswerKey_Processed.xlsx",
+        "n_columns": 13,
+        "schema_match": false,
+        "header_actual": [
+          "Question_Number",
+          "Question_Type",
+          "Question",
+          "Options",
+          "Answer",
+          "Explanation",
+          "AACSB",
+          "AICPA",
+          "Bloom's",
+          "Difficulty",
+          "Learning Objective",
+          "Topic",
+          "Question Type"
+        ],
+        "n_data_rows": 190,
+        "n_real_questions": 189,
+        "n_header_artifacts": 1,
+        "n_blank_rows": 0,
+        "qnum_min": 1,
+        "qnum_max": 189,
+        "qnum_gaps_first20": [],
+        "qnum_duplicates": [],
+        "qnum_type_string": 0,
+        "qnum_type_int": 189,
+        "bloom_counts": {
+          "Remember": 27,
+          "Understand": 71,
+          "Analyze": 22,
+          "Evaluate": 6,
+          "Apply": 60
+        },
+        "bloom_dual_label_rows": 0,
+        "qtype_counts": {
+          "True/False": 10,
+          "Multiple Choice": 119,
+          "Matching": 10,
+          "Essay/Problem": 50
+        },
+        "difficulty_counts": {
+          "2 Medium": 111,
+          "1 Easy": 39,
+          "3 Hard": 36,
+          "": 3
+        },
+        "lo_code_only": 0,
+        "lo_full_text": 186,
+        "lo_missing": 3,
+        "answer_empty_by_type": {
+          "Essay/Problem": 1
+        },
+        "options_bleed_rows_first20": [],
+        "n_options_bleed_rows": 0,
+        "codepoint_inventory": {
+          "EN_DASH": 19,
+          "NBSP": 3,
+          "EM_DASH": 27,
+          "HORIZONTAL_BAR": 20
+        },
+        "header_artifact_samples": [
+          {
+            "excel_row": 2,
+            "qnum": 0,
+            "question_preview": "Intermediate Accounting, 9e (Spiceland)"
+          }
+        ]
+      },
+      "word": {
+        "path": "D:\\Github\\accounting\\data\\Intermediate Financial Accounting test bank\\word\\Spiceland9e_Chapter21_TB_AnswerKey.docx",
+        "n_paragraphs_total": 2757,
+        "n_paragraphs_nonempty": 2251,
+        "n_question_markers": 199,
+        "n_answer_lines": 179,
+        "qnum_max_seen": 189,
+        "n_tables": 103,
+        "table_total_rows": 738,
+        "table_total_cells": 2528,
+        "codepoint_inventory": {
+          "EN_DASH": 18,
+          "NBSP": 7,
+          "EM_DASH": 25,
+          "HORIZONTAL_BAR": 22
+        }
+      },
+      "table_probe": {
+        "probed": 3,
+        "n_tables_total": 103,
+        "results": [
+          {
+            "table_idx": 0,
+            "table_rows": 9,
+            "probe_preview": "Minus Ending balance, Salaries payable",
+            "matched_in_excel": false
+          },
+          {
+            "table_idx": 51,
+            "table_rows": 6,
+            "probe_preview": "2.Operating activity, negative adjustment to net income",
+            "matched_in_excel": true
+          },
+          {
+            "table_idx": 102,
+            "table_rows": 18,
+            "probe_preview": "Wentworth Company\nStatement of Cash Flows\nFor the Year Ended December 31, 2018",
+            "matched_in_excel": true
+          }
+        ]
+      },
+      "delta_excel_vs_word_answers": 10
+    }
+  },
+  "totals": {
+    "excel_data_rows_all_chapters": 4473,
+    "excel_real_questions_all_chapters": 4453,
+    "excel_header_artifact_rows": 18,
+    "word_answer_lines_all_chapters": 3740,
+    "delta_real_vs_word_answers": 713,
+    "lo_code_only_rows": 228,
+    "lo_full_text_rows": 4185,
+    "options_bleed_rows": 4,
+    "bloom_dual_label_rows": 66,
+    "word_tables_total": 1687,
+    "table_probe_preserved": 29,
+    "table_probe_lost": 34
+  }
+}

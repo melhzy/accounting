@@ -1,0 +1,4349 @@
+{
+  "notebooks": [
+    {
+      "path": "notebooks/classification/AMD-bert_classification.py",
+      "name": "AMD-bert_classification.py",
+      "category": "classification",
+      "model": "BERT",
+      "task": "Classification",
+      "description": "Data Prep",
+      "size_bytes": 14319
+    },
+    {
+      "path": "notebooks/classification/bert_classification.py",
+      "name": "bert_classification.py",
+      "category": "classification",
+      "model": "BERT",
+      "task": "Classification",
+      "description": "Data Prep",
+      "size_bytes": 12938
+    },
+    {
+      "path": "notebooks/classification/Kaggle-bert_classification.py",
+      "name": "Kaggle-bert_classification.py",
+      "category": "classification",
+      "model": "BERT",
+      "task": "Classification",
+      "description": "Data Prep",
+      "size_bytes": 12560
+    },
+    {
+      "path": "notebooks/deepseek/AMD-Deepseek_OCR_(3B)-Eval.py",
+      "name": "AMD-Deepseek_OCR_(3B)-Eval.py",
+      "category": "deepseek",
+      "model": "Deepseek",
+      "task": "OCR",
+      "description": "Let's Evaluate Deepseek-OCR Baseline Performance on Persian Transcription",
+      "size_bytes": 32071
+    },
+    {
+      "path": "notebooks/deepseek/AMD-Deepseek_OCR_(3B)-Evaluation.py",
+      "name": "AMD-Deepseek_OCR_(3B)-Evaluation.py",
+      "category": "deepseek",
+      "model": "Deepseek",
+      "task": "OCR",
+      "description": "",
+      "size_bytes": 37557
+    },
+    {
+      "path": "notebooks/deepseek/AMD-Deepseek_OCR_(3B).py",
+      "name": "AMD-Deepseek_OCR_(3B).py",
+      "category": "deepseek",
+      "model": "Deepseek",
+      "task": "OCR",
+      "description": "Let's Evaluate Deepseek-OCR Baseline Performance on Persian Transcription",
+      "size_bytes": 32275
+    },
+    {
+      "path": "notebooks/deepseek/AMD-Deepseek_OCR_2_(3B).py",
+      "name": "AMD-Deepseek_OCR_2_(3B).py",
+      "category": "deepseek",
+      "model": "Deepseek",
+      "task": "OCR",
+      "description": "Let's Evaluate Deepseek-OCR Baseline Performance on Persian Transcription",
+      "size_bytes": 31688
+    },
+    {
+      "path": "notebooks/deepseek/Deepseek_OCR_(3B)-Eval.py",
+      "name": "Deepseek_OCR_(3B)-Eval.py",
+      "category": "deepseek",
+      "model": "Deepseek",
+      "task": "OCR",
+      "description": "Let's Evaluate Deepseek-OCR Baseline Performance on Persian Transcription",
+      "size_bytes": 30719
+    },
+    {
+      "path": "notebooks/deepseek/Deepseek_OCR_(3B)-Evaluation.py",
+      "name": "Deepseek_OCR_(3B)-Evaluation.py",
+      "category": "deepseek",
+      "model": "Deepseek",
+      "task": "OCR",
+      "description": "",
+      "size_bytes": 36199
+    },
+    {
+      "path": "notebooks/deepseek/Deepseek_OCR_(3B).py",
+      "name": "Deepseek_OCR_(3B).py",
+      "category": "deepseek",
+      "model": "Deepseek",
+      "task": "OCR",
+      "description": "Let's Evaluate Deepseek-OCR Baseline Performance on Persian Transcription",
+      "size_bytes": 30923
+    },
+    {
+      "path": "notebooks/deepseek/Deepseek_OCR_2_(3B).py",
+      "name": "Deepseek_OCR_2_(3B).py",
+      "category": "deepseek",
+      "model": "Deepseek",
+      "task": "OCR",
+      "description": "Let's Evaluate Deepseek-OCR Baseline Performance on Persian Transcription",
+      "size_bytes": 30336
+    },
+    {
+      "path": "notebooks/deepseek/Kaggle-Deepseek_OCR_(3B)-Eval.py",
+      "name": "Kaggle-Deepseek_OCR_(3B)-Eval.py",
+      "category": "deepseek",
+      "model": "Deepseek",
+      "task": "OCR",
+      "description": "Let's Evaluate Deepseek-OCR Baseline Performance on Persian Transcription",
+      "size_bytes": 30341
+    },
+    {
+      "path": "notebooks/deepseek/Kaggle-Deepseek_OCR_(3B)-Evaluation.py",
+      "name": "Kaggle-Deepseek_OCR_(3B)-Evaluation.py",
+      "category": "deepseek",
+      "model": "Deepseek",
+      "task": "OCR",
+      "description": "",
+      "size_bytes": 35821
+    },
+    {
+      "path": "notebooks/deepseek/Kaggle-Deepseek_OCR_(3B).py",
+      "name": "Kaggle-Deepseek_OCR_(3B).py",
+      "category": "deepseek",
+      "model": "Deepseek",
+      "task": "OCR",
+      "description": "Let's Evaluate Deepseek-OCR Baseline Performance on Persian Transcription",
+      "size_bytes": 30545
+    },
+    {
+      "path": "notebooks/deepseek/Kaggle-Deepseek_OCR_2_(3B).py",
+      "name": "Kaggle-Deepseek_OCR_2_(3B).py",
+      "category": "deepseek",
+      "model": "Deepseek",
+      "task": "OCR",
+      "description": "Let's Evaluate Deepseek-OCR Baseline Performance on Persian Transcription",
+      "size_bytes": 29958
+    },
+    {
+      "path": "notebooks/embeddings/All_MiniLM_L6_v2.py",
+      "name": "All_MiniLM_L6_v2.py",
+      "category": "embeddings",
+      "model": "all-MiniLM-L6-v2",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 15777
+    },
+    {
+      "path": "notebooks/embeddings/AMD-All_MiniLM_L6_v2.py",
+      "name": "AMD-All_MiniLM_L6_v2.py",
+      "category": "embeddings",
+      "model": "all-MiniLM-L6-v2",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 17158
+    },
+    {
+      "path": "notebooks/embeddings/AMD-BGE_M3.py",
+      "name": "AMD-BGE_M3.py",
+      "category": "embeddings",
+      "model": "BGE-M3",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 16916
+    },
+    {
+      "path": "notebooks/embeddings/AMD-ModernBert.py",
+      "name": "AMD-ModernBert.py",
+      "category": "embeddings",
+      "model": "ModernBERT",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 17041
+    },
+    {
+      "path": "notebooks/embeddings/BGE_M3.py",
+      "name": "BGE_M3.py",
+      "category": "embeddings",
+      "model": "BGE-M3",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 15535
+    },
+    {
+      "path": "notebooks/embeddings/Kaggle-All_MiniLM_L6_v2.py",
+      "name": "Kaggle-All_MiniLM_L6_v2.py",
+      "category": "embeddings",
+      "model": "all-MiniLM-L6-v2",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 15399
+    },
+    {
+      "path": "notebooks/embeddings/Kaggle-BGE_M3.py",
+      "name": "Kaggle-BGE_M3.py",
+      "category": "embeddings",
+      "model": "BGE-M3",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 15157
+    },
+    {
+      "path": "notebooks/embeddings/Kaggle-ModernBert.py",
+      "name": "Kaggle-ModernBert.py",
+      "category": "embeddings",
+      "model": "ModernBERT",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 15282
+    },
+    {
+      "path": "notebooks/embeddings/ModernBert.py",
+      "name": "ModernBert.py",
+      "category": "embeddings",
+      "model": "ModernBERT",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 15660
+    },
+    {
+      "path": "notebooks/ernie/AMD-ERNIE_4_5_21B_A3B_PT-Conversational.py",
+      "name": "AMD-ERNIE_4_5_21B_A3B_PT-Conversational.py",
+      "category": "ernie",
+      "model": "ERNIE",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 18832
+    },
+    {
+      "path": "notebooks/ernie/ERNIE_4_5_21B_A3B_PT-Conversational.py",
+      "name": "ERNIE_4_5_21B_A3B_PT-Conversational.py",
+      "category": "ernie",
+      "model": "ERNIE",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 17443
+    },
+    {
+      "path": "notebooks/ernie/Kaggle-ERNIE_4_5_21B_A3B_PT-Conversational.py",
+      "name": "Kaggle-ERNIE_4_5_21B_A3B_PT-Conversational.py",
+      "category": "ernie",
+      "model": "ERNIE",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 17065
+    },
+    {
+      "path": "notebooks/falcon/AMD-Falcon_H1-Alpaca.py",
+      "name": "AMD-Falcon_H1-Alpaca.py",
+      "category": "falcon",
+      "model": "Falcon",
+      "task": "Alpaca-SFT",
+      "description": "Instruction:",
+      "size_bytes": 7147
+    },
+    {
+      "path": "notebooks/falcon/AMD-Falcon_H1_(0.5B)-Alpaca.py",
+      "name": "AMD-Falcon_H1_(0.5B)-Alpaca.py",
+      "category": "falcon",
+      "model": "Falcon",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 20503
+    },
+    {
+      "path": "notebooks/falcon/Falcon_H1-Alpaca.py",
+      "name": "Falcon_H1-Alpaca.py",
+      "category": "falcon",
+      "model": "Falcon",
+      "task": "Alpaca-SFT",
+      "description": "Instruction:",
+      "size_bytes": 6542
+    },
+    {
+      "path": "notebooks/falcon/Falcon_H1_(0.5B)-Alpaca.py",
+      "name": "Falcon_H1_(0.5B)-Alpaca.py",
+      "category": "falcon",
+      "model": "Falcon",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 19606
+    },
+    {
+      "path": "notebooks/falcon/Kaggle-Falcon_H1_(0.5B)-Alpaca.py",
+      "name": "Kaggle-Falcon_H1_(0.5B)-Alpaca.py",
+      "category": "falcon",
+      "model": "Falcon",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 19228
+    },
+    {
+      "path": "notebooks/gemma/AMD-CodeGemma_(7B)-Conversational.py",
+      "name": "AMD-CodeGemma_(7B)-Conversational.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 21366
+    },
+    {
+      "path": "notebooks/gemma/AMD-EmbeddingGemma_(300M).py",
+      "name": "AMD-EmbeddingGemma_(300M).py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Embedding",
+      "description": "Data Prep",
+      "size_bytes": 18537
+    },
+    {
+      "path": "notebooks/gemma/AMD-FunctionGemma_(270M)-LMStudio.py",
+      "name": "AMD-FunctionGemma_(270M)-LMStudio.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Function-Calling",
+      "description": "Unsloth + LM Studio",
+      "size_bytes": 394221
+    },
+    {
+      "path": "notebooks/gemma/AMD-FunctionGemma_(270M)-Mobile-Actions.py",
+      "name": "AMD-FunctionGemma_(270M)-Mobile-Actions.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Function-Calling",
+      "description": "Data Prep",
+      "size_bytes": 16830
+    },
+    {
+      "path": "notebooks/gemma/AMD-FunctionGemma_(270M)-Multi-Turn-Tool-Calling.py",
+      "name": "AMD-FunctionGemma_(270M)-Multi-Turn-Tool-Calling.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Function-Calling",
+      "description": "",
+      "size_bytes": 12647
+    },
+    {
+      "path": "notebooks/gemma/AMD-FunctionGemma_(270M).py",
+      "name": "AMD-FunctionGemma_(270M).py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Function-Calling",
+      "description": "",
+      "size_bytes": 30098
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma2_(2B)-Alpaca.py",
+      "name": "AMD-Gemma2_(2B)-Alpaca.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 20440
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma2_(9B)-Alpaca.py",
+      "name": "AMD-Gemma2_(9B)-Alpaca.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 20095
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma3_(1B)-GRPO.py",
+      "name": "AMD-Gemma3_(1B)-GRPO.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 19178
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma3_(270M).py",
+      "name": "AMD-Gemma3_(270M).py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 17947
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma3_(270M)_Phone_Deployment.py",
+      "name": "AMD-Gemma3_(270M)_Phone_Deployment.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "On-device",
+      "description": "Data Prep",
+      "size_bytes": 14660
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma3_(27B)_A100-Conversational.py",
+      "name": "AMD-Gemma3_(27B)_A100-Conversational.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 18654
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma3_(4B)-Vision-GRPO.py",
+      "name": "AMD-Gemma3_(4B)-Vision-GRPO.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 20409
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma3_(4B)-Vision.py",
+      "name": "AMD-Gemma3_(4B)-Vision.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 19464
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma3_(4B).py",
+      "name": "AMD-Gemma3_(4B).py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 18540
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma3N_(2B)-Inference.py",
+      "name": "AMD-Gemma3N_(2B)-Inference.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Inference",
+      "description": "Launch sglang inference for unsloth/gemma-3n-E2B-it (https://huggingface.co/unsloth/gemma-3n-E2B-it)",
+      "size_bytes": 11390
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma3N_(4B)-Audio.py",
+      "name": "AMD-Gemma3N_(4B)-Audio.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Audio",
+      "description": "Data Prep",
+      "size_bytes": 21732
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma3N_(4B)-Conversational.py",
+      "name": "AMD-Gemma3N_(4B)-Conversational.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Conversational",
+      "description": "",
+      "size_bytes": 21711
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma3N_(4B)-Vision.py",
+      "name": "AMD-Gemma3N_(4B)-Vision.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 19414
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma4_(26B_A4B)-Text.py",
+      "name": "AMD-Gemma4_(26B_A4B)-Text.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Text",
+      "description": "Data Prep",
+      "size_bytes": 20541
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma4_(26B_A4B)-Vision.py",
+      "name": "AMD-Gemma4_(26B_A4B)-Vision.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 18418
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma4_(31B)-Text.py",
+      "name": "AMD-Gemma4_(31B)-Text.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Text",
+      "description": "Data Prep",
+      "size_bytes": 20559
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma4_(31B)-Vision.py",
+      "name": "AMD-Gemma4_(31B)-Vision.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 18414
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma4_(E2B)-Audio.py",
+      "name": "AMD-Gemma4_(E2B)-Audio.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Audio",
+      "description": "",
+      "size_bytes": 19952
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma4_(E2B)-Text.py",
+      "name": "AMD-Gemma4_(E2B)-Text.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Text",
+      "description": "",
+      "size_bytes": 21443
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma4_(E2B)-Vision.py",
+      "name": "AMD-Gemma4_(E2B)-Vision.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 18393
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma4_(E2B)_GRPO.py",
+      "name": "AMD-Gemma4_(E2B)_GRPO.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "GRPO",
+      "description": "",
+      "size_bytes": 32130
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma4_(E2B)_Reinforcement_Learning_2048_Game.py",
+      "name": "AMD-Gemma4_(E2B)_Reinforcement_Learning_2048_Game.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 32793
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma4_(E2B)_Reinforcement_Learning_Sudoku_Game.py",
+      "name": "AMD-Gemma4_(E2B)_Reinforcement_Learning_Sudoku_Game.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 31396
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma4_(E4B)-Audio.py",
+      "name": "AMD-Gemma4_(E4B)-Audio.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Audio",
+      "description": "",
+      "size_bytes": 19951
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma4_(E4B)-Text.py",
+      "name": "AMD-Gemma4_(E4B)-Text.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Text",
+      "description": "",
+      "size_bytes": 21468
+    },
+    {
+      "path": "notebooks/gemma/AMD-Gemma4_(E4B)-Vision.py",
+      "name": "AMD-Gemma4_(E4B)-Vision.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 18405
+    },
+    {
+      "path": "notebooks/gemma/CodeGemma_(7B)-Conversational.py",
+      "name": "CodeGemma_(7B)-Conversational.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 19986
+    },
+    {
+      "path": "notebooks/gemma/EmbeddingGemma_(300M).py",
+      "name": "EmbeddingGemma_(300M).py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Embedding",
+      "description": "Data Prep",
+      "size_bytes": 17156
+    },
+    {
+      "path": "notebooks/gemma/FunctionGemma_(270M)-LMStudio.py",
+      "name": "FunctionGemma_(270M)-LMStudio.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Function-Calling",
+      "description": "Unsloth + LM Studio",
+      "size_bytes": 393886
+    },
+    {
+      "path": "notebooks/gemma/FunctionGemma_(270M)-Mobile-Actions.py",
+      "name": "FunctionGemma_(270M)-Mobile-Actions.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Function-Calling",
+      "description": "Data Prep",
+      "size_bytes": 16464
+    },
+    {
+      "path": "notebooks/gemma/FunctionGemma_(270M)-Multi-Turn-Tool-Calling.py",
+      "name": "FunctionGemma_(270M)-Multi-Turn-Tool-Calling.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Function-Calling",
+      "description": "",
+      "size_bytes": 12281
+    },
+    {
+      "path": "notebooks/gemma/FunctionGemma_(270M).py",
+      "name": "FunctionGemma_(270M).py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Function-Calling",
+      "description": "",
+      "size_bytes": 28717
+    },
+    {
+      "path": "notebooks/gemma/Gemma2_(2B)-Alpaca.py",
+      "name": "Gemma2_(2B)-Alpaca.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 19060
+    },
+    {
+      "path": "notebooks/gemma/Gemma2_(9B)-Alpaca.py",
+      "name": "Gemma2_(9B)-Alpaca.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 18715
+    },
+    {
+      "path": "notebooks/gemma/Gemma3_(1B)-GRPO.py",
+      "name": "Gemma3_(1B)-GRPO.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 18577
+    },
+    {
+      "path": "notebooks/gemma/Gemma3_(270M).py",
+      "name": "Gemma3_(270M).py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 16566
+    },
+    {
+      "path": "notebooks/gemma/Gemma3_(270M)_Phone_Deployment.py",
+      "name": "Gemma3_(270M)_Phone_Deployment.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "On-device",
+      "description": "Data Prep",
+      "size_bytes": 13329
+    },
+    {
+      "path": "notebooks/gemma/Gemma3_(27B)_A100-Conversational.py",
+      "name": "Gemma3_(27B)_A100-Conversational.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 17267
+    },
+    {
+      "path": "notebooks/gemma/Gemma3_(4B)-Vision-GRPO.py",
+      "name": "Gemma3_(4B)-Vision-GRPO.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 19808
+    },
+    {
+      "path": "notebooks/gemma/Gemma3_(4B)-Vision.py",
+      "name": "Gemma3_(4B)-Vision.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 18084
+    },
+    {
+      "path": "notebooks/gemma/Gemma3_(4B).py",
+      "name": "Gemma3_(4B).py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 17159
+    },
+    {
+      "path": "notebooks/gemma/Gemma3N_(2B)-Inference.py",
+      "name": "Gemma3N_(2B)-Inference.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Inference",
+      "description": "Launch sglang inference for unsloth/gemma-3n-E2B-it (https://huggingface.co/unsloth/gemma-3n-E2B-it)",
+      "size_bytes": 9774
+    },
+    {
+      "path": "notebooks/gemma/Gemma3N_(4B)-Audio.py",
+      "name": "Gemma3N_(4B)-Audio.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Audio",
+      "description": "Data Prep",
+      "size_bytes": 20416
+    },
+    {
+      "path": "notebooks/gemma/Gemma3N_(4B)-Conversational.py",
+      "name": "Gemma3N_(4B)-Conversational.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Conversational",
+      "description": "",
+      "size_bytes": 20395
+    },
+    {
+      "path": "notebooks/gemma/Gemma3N_(4B)-Vision.py",
+      "name": "Gemma3N_(4B)-Vision.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 18099
+    },
+    {
+      "path": "notebooks/gemma/Gemma4_(26B_A4B)-Text.py",
+      "name": "Gemma4_(26B_A4B)-Text.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Text",
+      "description": "Data Prep",
+      "size_bytes": 19227
+    },
+    {
+      "path": "notebooks/gemma/Gemma4_(26B_A4B)-Vision.py",
+      "name": "Gemma4_(26B_A4B)-Vision.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 17104
+    },
+    {
+      "path": "notebooks/gemma/Gemma4_(31B)-Text.py",
+      "name": "Gemma4_(31B)-Text.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Text",
+      "description": "Data Prep",
+      "size_bytes": 19245
+    },
+    {
+      "path": "notebooks/gemma/Gemma4_(31B)-Vision.py",
+      "name": "Gemma4_(31B)-Vision.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 17100
+    },
+    {
+      "path": "notebooks/gemma/Gemma4_(E2B)-Audio.py",
+      "name": "Gemma4_(E2B)-Audio.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Audio",
+      "description": "Data Prep",
+      "size_bytes": 18651
+    },
+    {
+      "path": "notebooks/gemma/Gemma4_(E2B)-Text.py",
+      "name": "Gemma4_(E2B)-Text.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Text",
+      "description": "",
+      "size_bytes": 20142
+    },
+    {
+      "path": "notebooks/gemma/Gemma4_(E2B)-Vision.py",
+      "name": "Gemma4_(E2B)-Vision.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 17092
+    },
+    {
+      "path": "notebooks/gemma/Gemma4_(E2B)_GRPO.py",
+      "name": "Gemma4_(E2B)_GRPO.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "GRPO",
+      "description": "",
+      "size_bytes": 31824
+    },
+    {
+      "path": "notebooks/gemma/Gemma4_(E2B)_Reinforcement_Learning_2048_Game.py",
+      "name": "Gemma4_(E2B)_Reinforcement_Learning_2048_Game.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 31762
+    },
+    {
+      "path": "notebooks/gemma/Gemma4_(E2B)_Reinforcement_Learning_Sudoku_Game.py",
+      "name": "Gemma4_(E2B)_Reinforcement_Learning_Sudoku_Game.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 30353
+    },
+    {
+      "path": "notebooks/gemma/Gemma4_(E4B)-Audio.py",
+      "name": "Gemma4_(E4B)-Audio.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Audio",
+      "description": "Data Prep",
+      "size_bytes": 18650
+    },
+    {
+      "path": "notebooks/gemma/Gemma4_(E4B)-Text.py",
+      "name": "Gemma4_(E4B)-Text.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Text",
+      "description": "",
+      "size_bytes": 20152
+    },
+    {
+      "path": "notebooks/gemma/Gemma4_(E4B)-Vision.py",
+      "name": "Gemma4_(E4B)-Vision.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 17089
+    },
+    {
+      "path": "notebooks/gemma/HuggingFace Course-Gemma3_(1B)-GRPO.py",
+      "name": "HuggingFace Course-Gemma3_(1B)-GRPO.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 18938
+    },
+    {
+      "path": "notebooks/gemma/HuggingFace Course-Gemma3_(4B)-Vision-GRPO.py",
+      "name": "HuggingFace Course-Gemma3_(4B)-Vision-GRPO.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 20176
+    },
+    {
+      "path": "notebooks/gemma/Kaggle-CodeGemma_(7B)-Conversational.py",
+      "name": "Kaggle-CodeGemma_(7B)-Conversational.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 19608
+    },
+    {
+      "path": "notebooks/gemma/Kaggle-EmbeddingGemma_(300M).py",
+      "name": "Kaggle-EmbeddingGemma_(300M).py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Embedding",
+      "description": "Data Prep",
+      "size_bytes": 16778
+    },
+    {
+      "path": "notebooks/gemma/Kaggle-Gemma2_(2B)-Alpaca.py",
+      "name": "Kaggle-Gemma2_(2B)-Alpaca.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 18682
+    },
+    {
+      "path": "notebooks/gemma/Kaggle-Gemma2_(9B)-Alpaca.py",
+      "name": "Kaggle-Gemma2_(9B)-Alpaca.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 18337
+    },
+    {
+      "path": "notebooks/gemma/Kaggle-Gemma3_(1B)-GRPO.py",
+      "name": "Kaggle-Gemma3_(1B)-GRPO.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 17916
+    },
+    {
+      "path": "notebooks/gemma/Kaggle-Gemma3_(270M).py",
+      "name": "Kaggle-Gemma3_(270M).py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 16188
+    },
+    {
+      "path": "notebooks/gemma/Kaggle-Gemma3_(27B)_A100-Conversational.py",
+      "name": "Kaggle-Gemma3_(27B)_A100-Conversational.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 16889
+    },
+    {
+      "path": "notebooks/gemma/Kaggle-Gemma3_(4B)-Vision-GRPO.py",
+      "name": "Kaggle-Gemma3_(4B)-Vision-GRPO.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 19147
+    },
+    {
+      "path": "notebooks/gemma/Kaggle-Gemma3_(4B)-Vision.py",
+      "name": "Kaggle-Gemma3_(4B)-Vision.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 17706
+    },
+    {
+      "path": "notebooks/gemma/Kaggle-Gemma3_(4B).py",
+      "name": "Kaggle-Gemma3_(4B).py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 16781
+    },
+    {
+      "path": "notebooks/gemma/Kaggle-Gemma3N_(2B)-Inference.py",
+      "name": "Kaggle-Gemma3N_(2B)-Inference.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Inference",
+      "description": "Launch sglang inference for unsloth/gemma-3n-E2B-it (https://huggingface.co/unsloth/gemma-3n-E2B-it)",
+      "size_bytes": 9396
+    },
+    {
+      "path": "notebooks/gemma/Kaggle-Gemma3N_(4B)-Audio.py",
+      "name": "Kaggle-Gemma3N_(4B)-Audio.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Audio",
+      "description": "Data Prep",
+      "size_bytes": 20038
+    },
+    {
+      "path": "notebooks/gemma/Kaggle-Gemma3N_(4B)-Conversational.py",
+      "name": "Kaggle-Gemma3N_(4B)-Conversational.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Conversational",
+      "description": "",
+      "size_bytes": 20017
+    },
+    {
+      "path": "notebooks/gemma/Kaggle-Gemma3N_(4B)-Vision.py",
+      "name": "Kaggle-Gemma3N_(4B)-Vision.py",
+      "category": "gemma",
+      "model": "Gemma",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 17721
+    },
+    {
+      "path": "notebooks/glm/AMD-GLM_Flash_A100(80GB).py",
+      "name": "AMD-GLM_Flash_A100(80GB).py",
+      "category": "glm",
+      "model": "",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 19458
+    },
+    {
+      "path": "notebooks/glm/GLM_Flash_A100(80GB).py",
+      "name": "GLM_Flash_A100(80GB).py",
+      "category": "glm",
+      "model": "",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 18071
+    },
+    {
+      "path": "notebooks/gpt_oss/AMD-gpt-oss-(120B)_A100-Fine-tuning.py",
+      "name": "AMD-gpt-oss-(120B)_A100-Fine-tuning.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "",
+      "description": "Reasoning Effort",
+      "size_bytes": 20774
+    },
+    {
+      "path": "notebooks/gpt_oss/AMD-gpt-oss-(20B)-Fine-tuning.py",
+      "name": "AMD-gpt-oss-(20B)-Fine-tuning.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "",
+      "description": "Reasoning Effort",
+      "size_bytes": 18871
+    },
+    {
+      "path": "notebooks/gpt_oss/AMD-gpt-oss-(20B)-GRPO.py",
+      "name": "AMD-gpt-oss-(20B)-GRPO.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "GRPO",
+      "description": "",
+      "size_bytes": 29677
+    },
+    {
+      "path": "notebooks/gpt_oss/AMD-gpt-oss-(20B)_A100-GRPO.py",
+      "name": "AMD-gpt-oss-(20B)_A100-GRPO.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "GRPO",
+      "description": "",
+      "size_bytes": 29617
+    },
+    {
+      "path": "notebooks/gpt_oss/AMD-gpt_oss_(20B)_500K_Context_Fine_tuning.py",
+      "name": "AMD-gpt_oss_(20B)_500K_Context_Fine_tuning.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "Text",
+      "description": "Data Prep",
+      "size_bytes": 14702
+    },
+    {
+      "path": "notebooks/gpt_oss/AMD-gpt_oss_(20B)_GRPO_BF16.py",
+      "name": "AMD-gpt_oss_(20B)_GRPO_BF16.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "GRPO",
+      "description": "",
+      "size_bytes": 30691
+    },
+    {
+      "path": "notebooks/gpt_oss/AMD-gpt_oss_(20B)_Reinforcement_Learning_2048_Game.py",
+      "name": "AMD-gpt_oss_(20B)_Reinforcement_Learning_2048_Game.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 29549
+    },
+    {
+      "path": "notebooks/gpt_oss/AMD-gpt_oss_(20B)_Reinforcement_Learning_2048_Game_BF16.py",
+      "name": "AMD-gpt_oss_(20B)_Reinforcement_Learning_2048_Game_BF16.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 27306
+    },
+    {
+      "path": "notebooks/gpt_oss/AMD-gpt_oss_(20B)_Reinforcement_Learning_2048_Game_DGX_Spark.py",
+      "name": "AMD-gpt_oss_(20B)_Reinforcement_Learning_2048_Game_DGX_Spark.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 28003
+    },
+    {
+      "path": "notebooks/gpt_oss/AMD-gpt_oss_(20B)_Reinforcement_Learning_GRPO_Minesweeper_Game_BF16.py",
+      "name": "AMD-gpt_oss_(20B)_Reinforcement_Learning_GRPO_Minesweeper_Game_BF16.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "GRPO",
+      "description": "Goal",
+      "size_bytes": 35514
+    },
+    {
+      "path": "notebooks/gpt_oss/AMD-GPT_OSS_BNB_(20B)-Inference.py",
+      "name": "AMD-GPT_OSS_BNB_(20B)-Inference.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "Inference",
+      "description": "Reasoning Effort",
+      "size_bytes": 10734
+    },
+    {
+      "path": "notebooks/gpt_oss/AMD-GPT_OSS_MXFP4_(20B)-Inference.py",
+      "name": "AMD-GPT_OSS_MXFP4_(20B)-Inference.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "Inference",
+      "description": "Reasoning Effort",
+      "size_bytes": 10598
+    },
+    {
+      "path": "notebooks/gpt_oss/AMD-OpenEnv_gpt_oss_(20B)_Reinforcement_Learning_2048_Game.py",
+      "name": "AMD-OpenEnv_gpt_oss_(20B)_Reinforcement_Learning_2048_Game.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 24906
+    },
+    {
+      "path": "notebooks/gpt_oss/AMD-OpenEnv_gpt_oss_(20B)_Reinforcement_Learning_2048_Game_BF16.py",
+      "name": "AMD-OpenEnv_gpt_oss_(20B)_Reinforcement_Learning_2048_Game_BF16.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 25814
+    },
+    {
+      "path": "notebooks/gpt_oss/gpt-oss-(120B)_A100-Fine-tuning.py",
+      "name": "gpt-oss-(120B)_A100-Fine-tuning.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "",
+      "description": "Reasoning Effort",
+      "size_bytes": 19784
+    },
+    {
+      "path": "notebooks/gpt_oss/gpt-oss-(20B)-Fine-tuning.py",
+      "name": "gpt-oss-(20B)-Fine-tuning.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "",
+      "description": "Reasoning Effort",
+      "size_bytes": 17887
+    },
+    {
+      "path": "notebooks/gpt_oss/gpt-oss-(20B)-GRPO.py",
+      "name": "gpt-oss-(20B)-GRPO.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "GRPO",
+      "description": "",
+      "size_bytes": 29708
+    },
+    {
+      "path": "notebooks/gpt_oss/gpt-oss-(20B)_A100-GRPO.py",
+      "name": "gpt-oss-(20B)_A100-GRPO.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "GRPO",
+      "description": "",
+      "size_bytes": 29642
+    },
+    {
+      "path": "notebooks/gpt_oss/gpt_oss_(20B)_500K_Context_Fine_tuning.py",
+      "name": "gpt_oss_(20B)_500K_Context_Fine_tuning.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "Text",
+      "description": "Data Prep",
+      "size_bytes": 13712
+    },
+    {
+      "path": "notebooks/gpt_oss/gpt_oss_(20B)_GRPO_BF16.py",
+      "name": "gpt_oss_(20B)_GRPO_BF16.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "GRPO",
+      "description": "",
+      "size_bytes": 29701
+    },
+    {
+      "path": "notebooks/gpt_oss/gpt_oss_(20B)_Reinforcement_Learning_2048_Game.py",
+      "name": "gpt_oss_(20B)_Reinforcement_Learning_2048_Game.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 28989
+    },
+    {
+      "path": "notebooks/gpt_oss/gpt_oss_(20B)_Reinforcement_Learning_2048_Game_BF16.py",
+      "name": "gpt_oss_(20B)_Reinforcement_Learning_2048_Game_BF16.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 26055
+    },
+    {
+      "path": "notebooks/gpt_oss/gpt_oss_(20B)_Reinforcement_Learning_2048_Game_DGX_Spark.py",
+      "name": "gpt_oss_(20B)_Reinforcement_Learning_2048_Game_DGX_Spark.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 26756
+    },
+    {
+      "path": "notebooks/gpt_oss/gpt_oss_(20B)_Reinforcement_Learning_GRPO_Minesweeper_Game_BF16.py",
+      "name": "gpt_oss_(20B)_Reinforcement_Learning_GRPO_Minesweeper_Game_BF16.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "GRPO",
+      "description": "Goal",
+      "size_bytes": 34455
+    },
+    {
+      "path": "notebooks/gpt_oss/GPT_OSS_BNB_(20B)-Inference.py",
+      "name": "GPT_OSS_BNB_(20B)-Inference.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "Inference",
+      "description": "Reasoning Effort",
+      "size_bytes": 9974
+    },
+    {
+      "path": "notebooks/gpt_oss/GPT_OSS_MXFP4_(20B)-Inference.py",
+      "name": "GPT_OSS_MXFP4_(20B)-Inference.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "Inference",
+      "description": "Reasoning Effort",
+      "size_bytes": 9525
+    },
+    {
+      "path": "notebooks/gpt_oss/HuggingFace Course-gpt-oss-(20B)-GRPO.py",
+      "name": "HuggingFace Course-gpt-oss-(20B)-GRPO.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "GRPO",
+      "description": "",
+      "size_bytes": 29708
+    },
+    {
+      "path": "notebooks/gpt_oss/HuggingFace Course-gpt-oss-(20B)_A100-GRPO.py",
+      "name": "HuggingFace Course-gpt-oss-(20B)_A100-GRPO.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "GRPO",
+      "description": "",
+      "size_bytes": 29642
+    },
+    {
+      "path": "notebooks/gpt_oss/HuggingFace Course-gpt_oss_(20B)_GRPO_BF16.py",
+      "name": "HuggingFace Course-gpt_oss_(20B)_GRPO_BF16.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "GRPO",
+      "description": "",
+      "size_bytes": 30069
+    },
+    {
+      "path": "notebooks/gpt_oss/HuggingFace Course-gpt_oss_(20B)_Reinforcement_Learning_GRPO_Minesweeper_Game_BF16.py",
+      "name": "HuggingFace Course-gpt_oss_(20B)_Reinforcement_Learning_GRPO_Minesweeper_Game_BF16.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "GRPO",
+      "description": "Goal",
+      "size_bytes": 34455
+    },
+    {
+      "path": "notebooks/gpt_oss/Kaggle-gpt-oss-(120B)_A100-Fine-tuning.py",
+      "name": "Kaggle-gpt-oss-(120B)_A100-Fine-tuning.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "",
+      "description": "Reasoning Effort",
+      "size_bytes": 19784
+    },
+    {
+      "path": "notebooks/gpt_oss/Kaggle-gpt-oss-(20B)-Fine-tuning.py",
+      "name": "Kaggle-gpt-oss-(20B)-Fine-tuning.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "",
+      "description": "Reasoning Effort",
+      "size_bytes": 17887
+    },
+    {
+      "path": "notebooks/gpt_oss/Kaggle-gpt-oss-(20B)-GRPO.py",
+      "name": "Kaggle-gpt-oss-(20B)-GRPO.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "GRPO",
+      "description": "",
+      "size_bytes": 29708
+    },
+    {
+      "path": "notebooks/gpt_oss/Kaggle-gpt-oss-(20B)_A100-GRPO.py",
+      "name": "Kaggle-gpt-oss-(20B)_A100-GRPO.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "GRPO",
+      "description": "",
+      "size_bytes": 29642
+    },
+    {
+      "path": "notebooks/gpt_oss/Kaggle-gpt_oss_(20B)_500K_Context_Fine_tuning.py",
+      "name": "Kaggle-gpt_oss_(20B)_500K_Context_Fine_tuning.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "Text",
+      "description": "Data Prep",
+      "size_bytes": 13712
+    },
+    {
+      "path": "notebooks/gpt_oss/Kaggle-gpt_oss_(20B)_GRPO_BF16.py",
+      "name": "Kaggle-gpt_oss_(20B)_GRPO_BF16.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "GRPO",
+      "description": "",
+      "size_bytes": 29701
+    },
+    {
+      "path": "notebooks/gpt_oss/Kaggle-gpt_oss_(20B)_Reinforcement_Learning_GRPO_Minesweeper_Game_BF16.py",
+      "name": "Kaggle-gpt_oss_(20B)_Reinforcement_Learning_GRPO_Minesweeper_Game_BF16.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "GRPO",
+      "description": "Goal",
+      "size_bytes": 34455
+    },
+    {
+      "path": "notebooks/gpt_oss/Kaggle-GPT_OSS_BNB_(20B)-Inference.py",
+      "name": "Kaggle-GPT_OSS_BNB_(20B)-Inference.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "Inference",
+      "description": "Reasoning Effort",
+      "size_bytes": 9974
+    },
+    {
+      "path": "notebooks/gpt_oss/Kaggle-GPT_OSS_MXFP4_(20B)-Inference.py",
+      "name": "Kaggle-GPT_OSS_MXFP4_(20B)-Inference.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "Inference",
+      "description": "Reasoning Effort",
+      "size_bytes": 9525
+    },
+    {
+      "path": "notebooks/gpt_oss/OpenEnv_gpt_oss_(20B)_Reinforcement_Learning_2048_Game.py",
+      "name": "OpenEnv_gpt_oss_(20B)_Reinforcement_Learning_2048_Game.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 24764
+    },
+    {
+      "path": "notebooks/gpt_oss/OpenEnv_gpt_oss_(20B)_Reinforcement_Learning_2048_Game_BF16.py",
+      "name": "OpenEnv_gpt_oss_(20B)_Reinforcement_Learning_2048_Game_BF16.py",
+      "category": "gpt_oss",
+      "model": "gpt-oss",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 24565
+    },
+    {
+      "path": "notebooks/granite/AMD-Granite4.0.py",
+      "name": "AMD-Granite4.0.py",
+      "category": "granite",
+      "model": "Granite",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 25322
+    },
+    {
+      "path": "notebooks/granite/AMD-Granite4.0_350M.py",
+      "name": "AMD-Granite4.0_350M.py",
+      "category": "granite",
+      "model": "Granite",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 25350
+    },
+    {
+      "path": "notebooks/granite/Granite4.0.py",
+      "name": "Granite4.0.py",
+      "category": "granite",
+      "model": "Granite",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 24233
+    },
+    {
+      "path": "notebooks/granite/Granite4.0_350M.py",
+      "name": "Granite4.0_350M.py",
+      "category": "granite",
+      "model": "Granite",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 24512
+    },
+    {
+      "path": "notebooks/granite/Kaggle-Granite4.0.py",
+      "name": "Kaggle-Granite4.0.py",
+      "category": "granite",
+      "model": "Granite",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 24233
+    },
+    {
+      "path": "notebooks/granite/Kaggle-Granite4.0_350M.py",
+      "name": "Kaggle-Granite4.0_350M.py",
+      "category": "granite",
+      "model": "Granite",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 24512
+    },
+    {
+      "path": "notebooks/liquid_lfm/AMD-LFM2.5_(1.2B)-Conversational.py",
+      "name": "AMD-LFM2.5_(1.2B)-Conversational.py",
+      "category": "liquid_lfm",
+      "model": "",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 20116
+    },
+    {
+      "path": "notebooks/liquid_lfm/AMD-LFM2.5_(1.2B)-Text_Completion.py",
+      "name": "AMD-LFM2.5_(1.2B)-Text_Completion.py",
+      "category": "liquid_lfm",
+      "model": "",
+      "task": "Text",
+      "description": "Text Completion / Raw Text Training",
+      "size_bytes": 14084
+    },
+    {
+      "path": "notebooks/liquid_lfm/AMD-LFM2.5_(1.2B)-Translation.py",
+      "name": "AMD-LFM2.5_(1.2B)-Translation.py",
+      "category": "liquid_lfm",
+      "model": "",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 23661
+    },
+    {
+      "path": "notebooks/liquid_lfm/AMD-Liquid_LFM2-Conversational.py",
+      "name": "AMD-Liquid_LFM2-Conversational.py",
+      "category": "liquid_lfm",
+      "model": "",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 20068
+    },
+    {
+      "path": "notebooks/liquid_lfm/AMD-Liquid_LFM2_(1.2B)-Conversational.py",
+      "name": "AMD-Liquid_LFM2_(1.2B)-Conversational.py",
+      "category": "liquid_lfm",
+      "model": "",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 20069
+    },
+    {
+      "path": "notebooks/liquid_lfm/Kaggle-Liquid_LFM2_(1.2B)-Conversational.py",
+      "name": "Kaggle-Liquid_LFM2_(1.2B)-Conversational.py",
+      "category": "liquid_lfm",
+      "model": "",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 18518
+    },
+    {
+      "path": "notebooks/liquid_lfm/LFM2.5_(1.2B)-Conversational.py",
+      "name": "LFM2.5_(1.2B)-Conversational.py",
+      "category": "liquid_lfm",
+      "model": "",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 18663
+    },
+    {
+      "path": "notebooks/liquid_lfm/LFM2.5_(1.2B)-Text_Completion.py",
+      "name": "LFM2.5_(1.2B)-Text_Completion.py",
+      "category": "liquid_lfm",
+      "model": "",
+      "task": "Text",
+      "description": "Text Completion / Raw Text Training",
+      "size_bytes": 12703
+    },
+    {
+      "path": "notebooks/liquid_lfm/LFM2.5_(1.2B)-Translation.py",
+      "name": "LFM2.5_(1.2B)-Translation.py",
+      "category": "liquid_lfm",
+      "model": "",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 22272
+    },
+    {
+      "path": "notebooks/liquid_lfm/Liquid_LFM2-Conversational.py",
+      "name": "Liquid_LFM2-Conversational.py",
+      "category": "liquid_lfm",
+      "model": "",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 18166
+    },
+    {
+      "path": "notebooks/liquid_lfm/Liquid_LFM2_(1.2B)-Conversational.py",
+      "name": "Liquid_LFM2_(1.2B)-Conversational.py",
+      "category": "liquid_lfm",
+      "model": "",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 18896
+    },
+    {
+      "path": "notebooks/llama/Advanced_Llama3_1_(3B)_GRPO_LoRA.py",
+      "name": "Advanced_Llama3_1_(3B)_GRPO_LoRA.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 20472
+    },
+    {
+      "path": "notebooks/llama/Advanced_Llama3_2_(3B)_GRPO_LoRA.py",
+      "name": "Advanced_Llama3_2_(3B)_GRPO_LoRA.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 21418
+    },
+    {
+      "path": "notebooks/llama/AMD-Advanced_Llama3_1_(3B)_GRPO_LoRA.py",
+      "name": "AMD-Advanced_Llama3_1_(3B)_GRPO_LoRA.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 21665
+    },
+    {
+      "path": "notebooks/llama/AMD-Advanced_Llama3_2_(3B)_GRPO_LoRA.py",
+      "name": "AMD-Advanced_Llama3_2_(3B)_GRPO_LoRA.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 21114
+    },
+    {
+      "path": "notebooks/llama/AMD-Llama3.1_(8B)-Alpaca.py",
+      "name": "AMD-Llama3.1_(8B)-Alpaca.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 20321
+    },
+    {
+      "path": "notebooks/llama/AMD-Llama3.1_(8B)-GRPO.py",
+      "name": "AMD-Llama3.1_(8B)-GRPO.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 18318
+    },
+    {
+      "path": "notebooks/llama/AMD-Llama3.1_(8B)-Inference.py",
+      "name": "AMD-Llama3.1_(8B)-Inference.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Inference",
+      "description": "",
+      "size_bytes": 9703
+    },
+    {
+      "path": "notebooks/llama/AMD-Llama3.2_(11B)-Vision.py",
+      "name": "AMD-Llama3.2_(11B)-Vision.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 18680
+    },
+    {
+      "path": "notebooks/llama/AMD-Llama3.2_(1B)-RAFT.py",
+      "name": "AMD-Llama3.2_(1B)-RAFT.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "",
+      "description": "Retrieval Augmented Finetuning (RAFT) Cookbook Recipe!",
+      "size_bytes": 18833
+    },
+    {
+      "path": "notebooks/llama/AMD-Llama3.2_(1B_and_3B)-Conversational.py",
+      "name": "AMD-Llama3.2_(1B_and_3B)-Conversational.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 22301
+    },
+    {
+      "path": "notebooks/llama/AMD-Llama3.3_(70B)_A100-Conversational.py",
+      "name": "AMD-Llama3.3_(70B)_A100-Conversational.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 22314
+    },
+    {
+      "path": "notebooks/llama/AMD-Llama3_(8B)-Alpaca.py",
+      "name": "AMD-Llama3_(8B)-Alpaca.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 19346
+    },
+    {
+      "path": "notebooks/llama/AMD-Llama3_(8B)-Conversational.py",
+      "name": "AMD-Llama3_(8B)-Conversational.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 21265
+    },
+    {
+      "path": "notebooks/llama/AMD-Llama3_(8B)-Ollama.py",
+      "name": "AMD-Llama3_(8B)-Ollama.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 24112
+    },
+    {
+      "path": "notebooks/llama/AMD-Llama3_(8B)-ORPO.py",
+      "name": "AMD-Llama3_(8B)-ORPO.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "ORPO",
+      "description": "Data Prep",
+      "size_bytes": 18355
+    },
+    {
+      "path": "notebooks/llama/AMD-Llama_FP8_GRPO.py",
+      "name": "AMD-Llama_FP8_GRPO.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "GRPO",
+      "description": "GRPO chat template",
+      "size_bytes": 30623
+    },
+    {
+      "path": "notebooks/llama/AMD-Meta-Synthetic-Data-Llama3.1_(8B).py",
+      "name": "AMD-Meta-Synthetic-Data-Llama3.1_(8B).py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "",
+      "description": "Synthetic-data-kit",
+      "size_bytes": 29020
+    },
+    {
+      "path": "notebooks/llama/AMD-Meta_Synthetic_Data_Llama3_2_(3B).py",
+      "name": "AMD-Meta_Synthetic_Data_Llama3_2_(3B).py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Synthetic-Data",
+      "description": "Primary Goal",
+      "size_bytes": 21880
+    },
+    {
+      "path": "notebooks/llama/AMD-TinyLlama_(1.1B)-Alpaca.py",
+      "name": "AMD-TinyLlama_(1.1B)-Alpaca.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 19732
+    },
+    {
+      "path": "notebooks/llama/HuggingFace Course-Advanced_Llama3_1_(3B)_GRPO_LoRA.py",
+      "name": "HuggingFace Course-Advanced_Llama3_1_(3B)_GRPO_LoRA.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 21435
+    },
+    {
+      "path": "notebooks/llama/HuggingFace Course-Advanced_Llama3_2_(3B)_GRPO_LoRA.py",
+      "name": "HuggingFace Course-Advanced_Llama3_2_(3B)_GRPO_LoRA.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 21418
+    },
+    {
+      "path": "notebooks/llama/HuggingFace Course-Llama3.1_(8B)-GRPO.py",
+      "name": "HuggingFace Course-Llama3.1_(8B)-GRPO.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 18080
+    },
+    {
+      "path": "notebooks/llama/HuggingFace Course-Llama_FP8_GRPO.py",
+      "name": "HuggingFace Course-Llama_FP8_GRPO.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "GRPO",
+      "description": "GRPO chat template",
+      "size_bytes": 30373
+    },
+    {
+      "path": "notebooks/llama/Kaggle-Advanced_Llama3_1_(3B)_GRPO_LoRA.py",
+      "name": "Kaggle-Advanced_Llama3_1_(3B)_GRPO_LoRA.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 20397
+    },
+    {
+      "path": "notebooks/llama/Kaggle-Advanced_Llama3_2_(3B)_GRPO_LoRA.py",
+      "name": "Kaggle-Advanced_Llama3_2_(3B)_GRPO_LoRA.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 20757
+    },
+    {
+      "path": "notebooks/llama/Kaggle-Llama3.1_(8B)-Alpaca.py",
+      "name": "Kaggle-Llama3.1_(8B)-Alpaca.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 18563
+    },
+    {
+      "path": "notebooks/llama/Kaggle-Llama3.1_(8B)-GRPO.py",
+      "name": "Kaggle-Llama3.1_(8B)-GRPO.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 17056
+    },
+    {
+      "path": "notebooks/llama/Kaggle-Llama3.1_(8B)-Inference.py",
+      "name": "Kaggle-Llama3.1_(8B)-Inference.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Inference",
+      "description": "",
+      "size_bytes": 7944
+    },
+    {
+      "path": "notebooks/llama/Kaggle-Llama3.2_(11B)-Vision.py",
+      "name": "Kaggle-Llama3.2_(11B)-Vision.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 16922
+    },
+    {
+      "path": "notebooks/llama/Kaggle-Llama3.2_(1B)-RAFT.py",
+      "name": "Kaggle-Llama3.2_(1B)-RAFT.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "",
+      "description": "Retrieval Augmented Finetuning (RAFT) Cookbook Recipe!",
+      "size_bytes": 17139
+    },
+    {
+      "path": "notebooks/llama/Kaggle-Llama3.2_(1B_and_3B)-Conversational.py",
+      "name": "Kaggle-Llama3.2_(1B_and_3B)-Conversational.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 20543
+    },
+    {
+      "path": "notebooks/llama/Kaggle-Llama3.3_(70B)_A100-Conversational.py",
+      "name": "Kaggle-Llama3.3_(70B)_A100-Conversational.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 20550
+    },
+    {
+      "path": "notebooks/llama/Kaggle-Llama3_(8B)-Alpaca.py",
+      "name": "Kaggle-Llama3_(8B)-Alpaca.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 17588
+    },
+    {
+      "path": "notebooks/llama/Kaggle-Llama3_(8B)-Conversational.py",
+      "name": "Kaggle-Llama3_(8B)-Conversational.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 19507
+    },
+    {
+      "path": "notebooks/llama/Kaggle-Llama3_(8B)-Ollama.py",
+      "name": "Kaggle-Llama3_(8B)-Ollama.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 22354
+    },
+    {
+      "path": "notebooks/llama/Kaggle-Llama3_(8B)-ORPO.py",
+      "name": "Kaggle-Llama3_(8B)-ORPO.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "ORPO",
+      "description": "Data Prep",
+      "size_bytes": 16596
+    },
+    {
+      "path": "notebooks/llama/Kaggle-Llama_FP8_GRPO.py",
+      "name": "Kaggle-Llama_FP8_GRPO.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "GRPO",
+      "description": "GRPO chat template",
+      "size_bytes": 29353
+    },
+    {
+      "path": "notebooks/llama/Kaggle-Meta-Synthetic-Data-Llama3.1_(8B).py",
+      "name": "Kaggle-Meta-Synthetic-Data-Llama3.1_(8B).py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "",
+      "description": "Synthetic-data-kit",
+      "size_bytes": 28394
+    },
+    {
+      "path": "notebooks/llama/Kaggle-Meta_Synthetic_Data_Llama3_2_(3B).py",
+      "name": "Kaggle-Meta_Synthetic_Data_Llama3_2_(3B).py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Synthetic-Data",
+      "description": "Primary Goal",
+      "size_bytes": 20749
+    },
+    {
+      "path": "notebooks/llama/Kaggle-TinyLlama_(1.1B)-Alpaca.py",
+      "name": "Kaggle-TinyLlama_(1.1B)-Alpaca.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 17973
+    },
+    {
+      "path": "notebooks/llama/Llama3.1_(8B)-Alpaca.py",
+      "name": "Llama3.1_(8B)-Alpaca.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 18941
+    },
+    {
+      "path": "notebooks/llama/Llama3.1_(8B)-GRPO.py",
+      "name": "Llama3.1_(8B)-GRPO.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 17717
+    },
+    {
+      "path": "notebooks/llama/Llama3.1_(8B)-Inference.py",
+      "name": "Llama3.1_(8B)-Inference.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Inference",
+      "description": "",
+      "size_bytes": 8322
+    },
+    {
+      "path": "notebooks/llama/Llama3.2_(11B)-Vision.py",
+      "name": "Llama3.2_(11B)-Vision.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 17300
+    },
+    {
+      "path": "notebooks/llama/Llama3.2_(1B)-RAFT.py",
+      "name": "Llama3.2_(1B)-RAFT.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "",
+      "description": "Retrieval Augmented Finetuning (RAFT) Cookbook Recipe!",
+      "size_bytes": 17517
+    },
+    {
+      "path": "notebooks/llama/Llama3.2_(1B_and_3B)-Conversational.py",
+      "name": "Llama3.2_(1B_and_3B)-Conversational.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 20921
+    },
+    {
+      "path": "notebooks/llama/Llama3.3_(70B)_A100-Conversational.py",
+      "name": "Llama3.3_(70B)_A100-Conversational.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 20928
+    },
+    {
+      "path": "notebooks/llama/Llama3_(8B)-Alpaca.py",
+      "name": "Llama3_(8B)-Alpaca.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 17966
+    },
+    {
+      "path": "notebooks/llama/Llama3_(8B)-Conversational.py",
+      "name": "Llama3_(8B)-Conversational.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 19885
+    },
+    {
+      "path": "notebooks/llama/Llama3_(8B)-Ollama.py",
+      "name": "Llama3_(8B)-Ollama.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 22732
+    },
+    {
+      "path": "notebooks/llama/Llama3_(8B)-ORPO.py",
+      "name": "Llama3_(8B)-ORPO.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "ORPO",
+      "description": "Data Prep",
+      "size_bytes": 16974
+    },
+    {
+      "path": "notebooks/llama/Llama_FP8_GRPO.py",
+      "name": "Llama_FP8_GRPO.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "GRPO",
+      "description": "GRPO chat template",
+      "size_bytes": 30014
+    },
+    {
+      "path": "notebooks/llama/Meta-Synthetic-Data-Llama3.1_(8B).py",
+      "name": "Meta-Synthetic-Data-Llama3.1_(8B).py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "",
+      "description": "Synthetic-data-kit",
+      "size_bytes": 29207
+    },
+    {
+      "path": "notebooks/llama/Meta_Synthetic_Data_Llama3_2_(3B).py",
+      "name": "Meta_Synthetic_Data_Llama3_2_(3B).py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Synthetic-Data",
+      "description": "Primary Goal",
+      "size_bytes": 22072
+    },
+    {
+      "path": "notebooks/llama/TinyLlama_(1.1B)-Alpaca.py",
+      "name": "TinyLlama_(1.1B)-Alpaca.py",
+      "category": "llama",
+      "model": "Llama",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 18351
+    },
+    {
+      "path": "notebooks/mistral/AMD-Magistral_(24B)-Reasoning-Conversational.py",
+      "name": "AMD-Magistral_(24B)-Reasoning-Conversational.py",
+      "category": "mistral",
+      "model": "Magistral",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 18319
+    },
+    {
+      "path": "notebooks/mistral/AMD-Mistral_(7B)-Text_Completion.py",
+      "name": "AMD-Mistral_(7B)-Text_Completion.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "Text",
+      "description": "Text Completion / Raw Text Training",
+      "size_bytes": 15154
+    },
+    {
+      "path": "notebooks/mistral/AMD-Mistral_Nemo_(12B)-Alpaca.py",
+      "name": "AMD-Mistral_Nemo_(12B)-Alpaca.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 20861
+    },
+    {
+      "path": "notebooks/mistral/AMD-Mistral_Small_(22B)-Alpaca.py",
+      "name": "AMD-Mistral_Small_(22B)-Alpaca.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 20570
+    },
+    {
+      "path": "notebooks/mistral/AMD-Mistral_v0.3_(7B)-Alpaca.py",
+      "name": "AMD-Mistral_v0.3_(7B)-Alpaca.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 19614
+    },
+    {
+      "path": "notebooks/mistral/AMD-Mistral_v0.3_(7B)-Conversational.py",
+      "name": "AMD-Mistral_v0.3_(7B)-Conversational.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 21642
+    },
+    {
+      "path": "notebooks/mistral/AMD-Mistral_v0.3_(7B)-CPT.py",
+      "name": "AMD-Mistral_v0.3_(7B)-CPT.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 24568
+    },
+    {
+      "path": "notebooks/mistral/AMD-Mistral_v0.3_(7B)-GRPO.py",
+      "name": "AMD-Mistral_v0.3_(7B)-GRPO.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 17945
+    },
+    {
+      "path": "notebooks/mistral/HuggingFace Course-Mistral_v0.3_(7B)-GRPO.py",
+      "name": "HuggingFace Course-Mistral_v0.3_(7B)-GRPO.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 17711
+    },
+    {
+      "path": "notebooks/mistral/Kaggle-Magistral_(24B)-Reasoning-Conversational.py",
+      "name": "Kaggle-Magistral_(24B)-Reasoning-Conversational.py",
+      "category": "mistral",
+      "model": "Magistral",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 16552
+    },
+    {
+      "path": "notebooks/mistral/Kaggle-Mistral_(7B)-Text_Completion.py",
+      "name": "Kaggle-Mistral_(7B)-Text_Completion.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "Text",
+      "description": "Text Completion / Raw Text Training",
+      "size_bytes": 13395
+    },
+    {
+      "path": "notebooks/mistral/Kaggle-Mistral_Nemo_(12B)-Alpaca.py",
+      "name": "Kaggle-Mistral_Nemo_(12B)-Alpaca.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 19103
+    },
+    {
+      "path": "notebooks/mistral/Kaggle-Mistral_Small_(22B)-Alpaca.py",
+      "name": "Kaggle-Mistral_Small_(22B)-Alpaca.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 18812
+    },
+    {
+      "path": "notebooks/mistral/Kaggle-Mistral_v0.3_(7B)-Alpaca.py",
+      "name": "Kaggle-Mistral_v0.3_(7B)-Alpaca.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 17856
+    },
+    {
+      "path": "notebooks/mistral/Kaggle-Mistral_v0.3_(7B)-Conversational.py",
+      "name": "Kaggle-Mistral_v0.3_(7B)-Conversational.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 19884
+    },
+    {
+      "path": "notebooks/mistral/Kaggle-Mistral_v0.3_(7B)-CPT.py",
+      "name": "Kaggle-Mistral_v0.3_(7B)-CPT.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 22809
+    },
+    {
+      "path": "notebooks/mistral/Kaggle-Mistral_v0.3_(7B)-GRPO.py",
+      "name": "Kaggle-Mistral_v0.3_(7B)-GRPO.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 16683
+    },
+    {
+      "path": "notebooks/mistral/Magistral_(24B)-Reasoning-Conversational.py",
+      "name": "Magistral_(24B)-Reasoning-Conversational.py",
+      "category": "mistral",
+      "model": "Magistral",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 16930
+    },
+    {
+      "path": "notebooks/mistral/Mistral_(7B)-Text_Completion.py",
+      "name": "Mistral_(7B)-Text_Completion.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "Text",
+      "description": "Text Completion / Raw Text Training",
+      "size_bytes": 13773
+    },
+    {
+      "path": "notebooks/mistral/Mistral_Nemo_(12B)-Alpaca.py",
+      "name": "Mistral_Nemo_(12B)-Alpaca.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 19481
+    },
+    {
+      "path": "notebooks/mistral/Mistral_Small_(22B)-Alpaca.py",
+      "name": "Mistral_Small_(22B)-Alpaca.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 19190
+    },
+    {
+      "path": "notebooks/mistral/Mistral_v0.3_(7B)-Alpaca.py",
+      "name": "Mistral_v0.3_(7B)-Alpaca.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 18234
+    },
+    {
+      "path": "notebooks/mistral/Mistral_v0.3_(7B)-Conversational.py",
+      "name": "Mistral_v0.3_(7B)-Conversational.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 20262
+    },
+    {
+      "path": "notebooks/mistral/Mistral_v0.3_(7B)-CPT.py",
+      "name": "Mistral_v0.3_(7B)-CPT.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 23187
+    },
+    {
+      "path": "notebooks/mistral/Mistral_v0.3_(7B)-GRPO.py",
+      "name": "Mistral_v0.3_(7B)-GRPO.py",
+      "category": "mistral",
+      "model": "Mistral",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 17344
+    },
+    {
+      "path": "notebooks/nemotron/AMD-NeMo-Gym-Multi-Environment.py",
+      "name": "AMD-NeMo-Gym-Multi-Environment.py",
+      "category": "nemotron",
+      "model": "",
+      "task": "",
+      "description": "",
+      "size_bytes": 23611
+    },
+    {
+      "path": "notebooks/nemotron/AMD-NeMo-Gym-Sudoku.py",
+      "name": "AMD-NeMo-Gym-Sudoku.py",
+      "category": "nemotron",
+      "model": "",
+      "task": "",
+      "description": "",
+      "size_bytes": 20450
+    },
+    {
+      "path": "notebooks/nemotron/AMD-Nemotron-3-Nano-30B-A3B_A100.py",
+      "name": "AMD-Nemotron-3-Nano-30B-A3B_A100.py",
+      "category": "nemotron",
+      "model": "",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 19514
+    },
+    {
+      "path": "notebooks/nemotron/AMD-Nemotron-Nano-3-30B-A3B_A100.py",
+      "name": "AMD-Nemotron-Nano-3-30B-A3B_A100.py",
+      "category": "nemotron",
+      "model": "",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 19624
+    },
+    {
+      "path": "notebooks/nemotron/Kaggle-Nemotron-3-Nano-30B-A3B_A100.py",
+      "name": "Kaggle-Nemotron-3-Nano-30B-A3B_A100.py",
+      "category": "nemotron",
+      "model": "",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 18324
+    },
+    {
+      "path": "notebooks/nemotron/Kaggle-Nemotron-Nano-3-30B-A3B_A100.py",
+      "name": "Kaggle-Nemotron-Nano-3-30B-A3B_A100.py",
+      "category": "nemotron",
+      "model": "",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 18434
+    },
+    {
+      "path": "notebooks/nemotron/NeMo-Gym-Multi-Environment.py",
+      "name": "NeMo-Gym-Multi-Environment.py",
+      "category": "nemotron",
+      "model": "",
+      "task": "",
+      "description": "",
+      "size_bytes": 22880
+    },
+    {
+      "path": "notebooks/nemotron/NeMo-Gym-Sudoku.py",
+      "name": "NeMo-Gym-Sudoku.py",
+      "category": "nemotron",
+      "model": "",
+      "task": "",
+      "description": "",
+      "size_bytes": 19263
+    },
+    {
+      "path": "notebooks/nemotron/Nemotron-3-Nano-30B-A3B_A100.py",
+      "name": "Nemotron-3-Nano-30B-A3B_A100.py",
+      "category": "nemotron",
+      "model": "",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 18324
+    },
+    {
+      "path": "notebooks/nemotron/Nemotron-Nano-3-30B-A3B_A100.py",
+      "name": "Nemotron-Nano-3-30B-A3B_A100.py",
+      "category": "nemotron",
+      "model": "",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 18434
+    },
+    {
+      "path": "notebooks/ocr/AMD-Paddle_OCR_(1B)_Vision.py",
+      "name": "AMD-Paddle_OCR_(1B)_Vision.py",
+      "category": "ocr",
+      "model": "",
+      "task": "OCR",
+      "description": "Data Prep",
+      "size_bytes": 17866
+    },
+    {
+      "path": "notebooks/ocr/Kaggle-Paddle_OCR_(1B)_Vision.py",
+      "name": "Kaggle-Paddle_OCR_(1B)_Vision.py",
+      "category": "ocr",
+      "model": "",
+      "task": "OCR",
+      "description": "Data Prep",
+      "size_bytes": 16108
+    },
+    {
+      "path": "notebooks/ocr/Paddle_OCR_(1B)_Vision.py",
+      "name": "Paddle_OCR_(1B)_Vision.py",
+      "category": "ocr",
+      "model": "",
+      "task": "OCR",
+      "description": "Data Prep",
+      "size_bytes": 16486
+    },
+    {
+      "path": "notebooks/other/AMD-Synthetic_Data_Hackathon.py",
+      "name": "AMD-Synthetic_Data_Hackathon.py",
+      "category": "other",
+      "model": "",
+      "task": "Synthetic-Data",
+      "description": "Synthetic Data Generation",
+      "size_bytes": 16349
+    },
+    {
+      "path": "notebooks/other/AMD-Unsloth_Studio.py",
+      "name": "AMD-Unsloth_Studio.py",
+      "category": "other",
+      "model": "",
+      "task": "",
+      "description": "",
+      "size_bytes": 2959
+    },
+    {
+      "path": "notebooks/other/Kaggle-Unsloth_Studio.py",
+      "name": "Kaggle-Unsloth_Studio.py",
+      "category": "other",
+      "model": "",
+      "task": "",
+      "description": "",
+      "size_bytes": 2959
+    },
+    {
+      "path": "notebooks/other/Synthetic_Data_Hackathon.py",
+      "name": "Synthetic_Data_Hackathon.py",
+      "category": "other",
+      "model": "",
+      "task": "Synthetic-Data",
+      "description": "Synthetic Data Generation",
+      "size_bytes": 14067
+    },
+    {
+      "path": "notebooks/other/Unsloth_Studio.py",
+      "name": "Unsloth_Studio.py",
+      "category": "other",
+      "model": "",
+      "task": "",
+      "description": "",
+      "size_bytes": 2959
+    },
+    {
+      "path": "notebooks/phi/AMD-Phi_3.5_Mini-Conversational.py",
+      "name": "AMD-Phi_3.5_Mini-Conversational.py",
+      "category": "phi",
+      "model": "Phi",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 22076
+    },
+    {
+      "path": "notebooks/phi/AMD-Phi_3_Medium-Conversational.py",
+      "name": "AMD-Phi_3_Medium-Conversational.py",
+      "category": "phi",
+      "model": "Phi",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 21151
+    },
+    {
+      "path": "notebooks/phi/AMD-Phi_4-Conversational.py",
+      "name": "AMD-Phi_4-Conversational.py",
+      "category": "phi",
+      "model": "Phi",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 21597
+    },
+    {
+      "path": "notebooks/phi/AMD-Phi_4_(14B)-GRPO.py",
+      "name": "AMD-Phi_4_(14B)-GRPO.py",
+      "category": "phi",
+      "model": "Phi",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 18223
+    },
+    {
+      "path": "notebooks/phi/HuggingFace Course-Phi_4_(14B)-GRPO.py",
+      "name": "HuggingFace Course-Phi_4_(14B)-GRPO.py",
+      "category": "phi",
+      "model": "Phi",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 17983
+    },
+    {
+      "path": "notebooks/phi/Kaggle-Phi_3.5_Mini-Conversational.py",
+      "name": "Kaggle-Phi_3.5_Mini-Conversational.py",
+      "category": "phi",
+      "model": "Phi",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 20318
+    },
+    {
+      "path": "notebooks/phi/Kaggle-Phi_3_Medium-Conversational.py",
+      "name": "Kaggle-Phi_3_Medium-Conversational.py",
+      "category": "phi",
+      "model": "Phi",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 19393
+    },
+    {
+      "path": "notebooks/phi/Kaggle-Phi_4-Conversational.py",
+      "name": "Kaggle-Phi_4-Conversational.py",
+      "category": "phi",
+      "model": "Phi",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 19839
+    },
+    {
+      "path": "notebooks/phi/Kaggle-Phi_4_(14B)-GRPO.py",
+      "name": "Kaggle-Phi_4_(14B)-GRPO.py",
+      "category": "phi",
+      "model": "Phi",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 16961
+    },
+    {
+      "path": "notebooks/phi/Phi_3.5_Mini-Conversational.py",
+      "name": "Phi_3.5_Mini-Conversational.py",
+      "category": "phi",
+      "model": "Phi",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 20696
+    },
+    {
+      "path": "notebooks/phi/Phi_3_Medium-Conversational.py",
+      "name": "Phi_3_Medium-Conversational.py",
+      "category": "phi",
+      "model": "Phi",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 19771
+    },
+    {
+      "path": "notebooks/phi/Phi_4-Conversational.py",
+      "name": "Phi_4-Conversational.py",
+      "category": "phi",
+      "model": "Phi",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 20217
+    },
+    {
+      "path": "notebooks/phi/Phi_4_(14B)-GRPO.py",
+      "name": "Phi_4_(14B)-GRPO.py",
+      "category": "phi",
+      "model": "Phi",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 17622
+    },
+    {
+      "path": "notebooks/qwen/AMD-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.py",
+      "name": "AMD-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "GRPO Chat Template",
+      "size_bytes": 29122
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen2.5_(3B)-GRPO.py",
+      "name": "AMD-Qwen2.5_(3B)-GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 18327
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen2.5_(7B)-Alpaca.py",
+      "name": "AMD-Qwen2.5_(7B)-Alpaca.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 20606
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen2.5_Coder_(1.5B)-Tool_Calling.py",
+      "name": "AMD-Qwen2.5_Coder_(1.5B)-Tool_Calling.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Function-Calling",
+      "description": "Tool Calling",
+      "size_bytes": 122873
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen2.5_Coder_(14B)-Conversational.py",
+      "name": "AMD-Qwen2.5_Coder_(14B)-Conversational.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 22395
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen2.5_VL_(7B)-Vision.py",
+      "name": "AMD-Qwen2.5_VL_(7B)-Vision.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 18414
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen2_(7B)-Alpaca.py",
+      "name": "AMD-Qwen2_(7B)-Alpaca.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 19687
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen2_5_7B_VL_GRPO.py",
+      "name": "AMD-Qwen2_5_7B_VL_GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 22062
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen2_VL_(7B)-Vision.py",
+      "name": "AMD-Qwen2_VL_(7B)-Vision.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 18393
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_(0.6B)-Reasoning-Conversational-ExecuTorch.py",
+      "name": "AMD-Qwen3_(0.6B)-Reasoning-Conversational-ExecuTorch.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 12657
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_(0_6B)-Phone_Deployment.py",
+      "name": "AMD-Qwen3_(0_6B)-Phone_Deployment.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "On-device",
+      "description": "Data Prep",
+      "size_bytes": 14490
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_(14B)-Alpaca.py",
+      "name": "AMD-Qwen3_(14B)-Alpaca.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 19876
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_(14B)-Reasoning-Conversational.py",
+      "name": "AMD-Qwen3_(14B)-Reasoning-Conversational.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 20829
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_(14B).py",
+      "name": "AMD-Qwen3_(14B).py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 20748
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_(32B)_A100-Reasoning-Conversational.py",
+      "name": "AMD-Qwen3_(32B)_A100-Reasoning-Conversational.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 20880
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_(4B)-GRPO.py",
+      "name": "AMD-Qwen3_(4B)-GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "GRPO chat template",
+      "size_bytes": 29155
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_(4B)-Instruct.py",
+      "name": "AMD-Qwen3_(4B)-Instruct.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 19099
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_(4B)-Thinking.py",
+      "name": "AMD-Qwen3_(4B)-Thinking.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 19651
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_(4B)_Instruct-QAT.py",
+      "name": "AMD-Qwen3_(4B)_Instruct-QAT.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 18574
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_5_(0_8B)_Vision.py",
+      "name": "AMD-Qwen3_5_(0_8B)_Vision.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 20546
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_5_(2B)_Vision.py",
+      "name": "AMD-Qwen3_5_(2B)_Vision.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 20544
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_5_(4B)_Vision.py",
+      "name": "AMD-Qwen3_5_(4B)_Vision.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 20544
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_5_(4B)_Vision_GRPO.py",
+      "name": "AMD-Qwen3_5_(4B)_Vision_GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 22289
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_5_MoE.py",
+      "name": "AMD-Qwen3_5_MoE.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 16808
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_6_MoE.py",
+      "name": "AMD-Qwen3_6_MoE.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 16914
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_8B_FP8_GRPO.py",
+      "name": "AMD-Qwen3_8B_FP8_GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "GRPO chat template",
+      "size_bytes": 30623
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_Embedding_(0_6B).py",
+      "name": "AMD-Qwen3_Embedding_(0_6B).py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Embedding",
+      "description": "Data Prep",
+      "size_bytes": 17099
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_Embedding_(4B).py",
+      "name": "AMD-Qwen3_Embedding_(4B).py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Embedding",
+      "description": "Data Prep",
+      "size_bytes": 17395
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_MoE.py",
+      "name": "AMD-Qwen3_MoE.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "GRPO chat template",
+      "size_bytes": 17996
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_VL_(8B)-Vision-GRPO.py",
+      "name": "AMD-Qwen3_VL_(8B)-Vision-GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 22660
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen3_VL_(8B)-Vision.py",
+      "name": "AMD-Qwen3_VL_(8B)-Vision.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 20390
+    },
+    {
+      "path": "notebooks/qwen/AMD-Qwen_3_5_27B_A100(80GB).py",
+      "name": "AMD-Qwen_3_5_27B_A100(80GB).py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 19400
+    },
+    {
+      "path": "notebooks/qwen/AMD-TinyQwen3_MoE.py",
+      "name": "AMD-TinyQwen3_MoE.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "GRPO chat template",
+      "size_bytes": 17794
+    },
+    {
+      "path": "notebooks/qwen/DeepSeek_R1_0528_Qwen3_(8B)_GRPO.py",
+      "name": "DeepSeek_R1_0528_Qwen3_(8B)_GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "GRPO Chat Template",
+      "size_bytes": 28521
+    },
+    {
+      "path": "notebooks/qwen/HuggingFace Course-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.py",
+      "name": "HuggingFace Course-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "GRPO Chat Template",
+      "size_bytes": 28898
+    },
+    {
+      "path": "notebooks/qwen/HuggingFace Course-Qwen2.5_(3B)-GRPO.py",
+      "name": "HuggingFace Course-Qwen2.5_(3B)-GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 18088
+    },
+    {
+      "path": "notebooks/qwen/HuggingFace Course-Qwen2_5_7B_VL_GRPO.py",
+      "name": "HuggingFace Course-Qwen2_5_7B_VL_GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 21824
+    },
+    {
+      "path": "notebooks/qwen/HuggingFace Course-Qwen3_(4B)-GRPO.py",
+      "name": "HuggingFace Course-Qwen3_(4B)-GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "GRPO chat template",
+      "size_bytes": 28914
+    },
+    {
+      "path": "notebooks/qwen/HuggingFace Course-Qwen3_8B_FP8_GRPO.py",
+      "name": "HuggingFace Course-Qwen3_8B_FP8_GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "GRPO chat template",
+      "size_bytes": 30376
+    },
+    {
+      "path": "notebooks/qwen/HuggingFace Course-Qwen3_VL_(8B)-Vision-GRPO.py",
+      "name": "HuggingFace Course-Qwen3_VL_(8B)-Vision-GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 22682
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.py",
+      "name": "Kaggle-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "GRPO Chat Template",
+      "size_bytes": 27860
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen2.5_(3B)-GRPO.py",
+      "name": "Kaggle-Qwen2.5_(3B)-GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 17065
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen2.5_(7B)-Alpaca.py",
+      "name": "Kaggle-Qwen2.5_(7B)-Alpaca.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 18848
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen2.5_Coder_(1.5B)-Tool_Calling.py",
+      "name": "Kaggle-Qwen2.5_Coder_(1.5B)-Tool_Calling.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Function-Calling",
+      "description": "Tool Calling",
+      "size_bytes": 121170
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen2.5_Coder_(14B)-Conversational.py",
+      "name": "Kaggle-Qwen2.5_Coder_(14B)-Conversational.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 20637
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen2.5_VL_(7B)-Vision.py",
+      "name": "Kaggle-Qwen2.5_VL_(7B)-Vision.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 16656
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen2_(7B)-Alpaca.py",
+      "name": "Kaggle-Qwen2_(7B)-Alpaca.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 17929
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen2_5_7B_VL_GRPO.py",
+      "name": "Kaggle-Qwen2_5_7B_VL_GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 20800
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen2_VL_(7B)-Vision.py",
+      "name": "Kaggle-Qwen2_VL_(7B)-Vision.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 16635
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen3_(14B)-Alpaca.py",
+      "name": "Kaggle-Qwen3_(14B)-Alpaca.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 18118
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen3_(14B)-Reasoning-Conversational.py",
+      "name": "Kaggle-Qwen3_(14B)-Reasoning-Conversational.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 19070
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen3_(14B).py",
+      "name": "Kaggle-Qwen3_(14B).py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 18989
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen3_(32B)_A100-Reasoning-Conversational.py",
+      "name": "Kaggle-Qwen3_(32B)_A100-Reasoning-Conversational.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 19115
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen3_(4B)-GRPO.py",
+      "name": "Kaggle-Qwen3_(4B)-GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "GRPO chat template",
+      "size_bytes": 27893
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen3_(4B)-Instruct.py",
+      "name": "Kaggle-Qwen3_(4B)-Instruct.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 17340
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen3_(4B)-Thinking.py",
+      "name": "Kaggle-Qwen3_(4B)-Thinking.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 17892
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen3_(4B)_Instruct-QAT.py",
+      "name": "Kaggle-Qwen3_(4B)_Instruct-QAT.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 17195
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen3_8B_FP8_GRPO.py",
+      "name": "Kaggle-Qwen3_8B_FP8_GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "GRPO chat template",
+      "size_bytes": 29353
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen3_Embedding_(0_6B).py",
+      "name": "Kaggle-Qwen3_Embedding_(0_6B).py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Embedding",
+      "description": "Data Prep",
+      "size_bytes": 15340
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen3_Embedding_(4B).py",
+      "name": "Kaggle-Qwen3_Embedding_(4B).py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Embedding",
+      "description": "Data Prep",
+      "size_bytes": 15636
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen3_VL_(8B)-Vision-GRPO.py",
+      "name": "Kaggle-Qwen3_VL_(8B)-Vision-GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 20800
+    },
+    {
+      "path": "notebooks/qwen/Kaggle-Qwen3_VL_(8B)-Vision.py",
+      "name": "Kaggle-Qwen3_VL_(8B)-Vision.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 18632
+    },
+    {
+      "path": "notebooks/qwen/Qwen2.5_(3B)-GRPO.py",
+      "name": "Qwen2.5_(3B)-GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 17726
+    },
+    {
+      "path": "notebooks/qwen/Qwen2.5_(7B)-Alpaca.py",
+      "name": "Qwen2.5_(7B)-Alpaca.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 19226
+    },
+    {
+      "path": "notebooks/qwen/Qwen2.5_Coder_(1.5B)-Tool_Calling.py",
+      "name": "Qwen2.5_Coder_(1.5B)-Tool_Calling.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Function-Calling",
+      "description": "Tool Calling",
+      "size_bytes": 121548
+    },
+    {
+      "path": "notebooks/qwen/Qwen2.5_Coder_(14B)-Conversational.py",
+      "name": "Qwen2.5_Coder_(14B)-Conversational.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 21015
+    },
+    {
+      "path": "notebooks/qwen/Qwen2.5_VL_(7B)-Vision.py",
+      "name": "Qwen2.5_VL_(7B)-Vision.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 17034
+    },
+    {
+      "path": "notebooks/qwen/Qwen2_(7B)-Alpaca.py",
+      "name": "Qwen2_(7B)-Alpaca.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 18307
+    },
+    {
+      "path": "notebooks/qwen/Qwen2_5_7B_VL_GRPO.py",
+      "name": "Qwen2_5_7B_VL_GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 21461
+    },
+    {
+      "path": "notebooks/qwen/Qwen2_VL_(7B)-Vision.py",
+      "name": "Qwen2_VL_(7B)-Vision.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 17013
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_(0.6B)-Reasoning-Conversational-ExecuTorch.py",
+      "name": "Qwen3_(0.6B)-Reasoning-Conversational-ExecuTorch.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 11276
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_(0_6B)-Phone_Deployment.py",
+      "name": "Qwen3_(0_6B)-Phone_Deployment.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "On-device",
+      "description": "Data Prep",
+      "size_bytes": 14174
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_(14B)-Alpaca.py",
+      "name": "Qwen3_(14B)-Alpaca.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Alpaca-SFT",
+      "description": "Data Prep",
+      "size_bytes": 18496
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_(14B)-Reasoning-Conversational.py",
+      "name": "Qwen3_(14B)-Reasoning-Conversational.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 19448
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_(14B).py",
+      "name": "Qwen3_(14B).py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 19367
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_(32B)_A100-Reasoning-Conversational.py",
+      "name": "Qwen3_(32B)_A100-Reasoning-Conversational.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Conversational",
+      "description": "Data Prep",
+      "size_bytes": 19493
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_(4B)-GRPO.py",
+      "name": "Qwen3_(4B)-GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "GRPO chat template",
+      "size_bytes": 28554
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_(4B)-Instruct.py",
+      "name": "Qwen3_(4B)-Instruct.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 17718
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_(4B)-Thinking.py",
+      "name": "Qwen3_(4B)-Thinking.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 18270
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_(4B)_Instruct-QAT.py",
+      "name": "Qwen3_(4B)_Instruct-QAT.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 17195
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_5_(0_8B)_Vision.py",
+      "name": "Qwen3_5_(0_8B)_Vision.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 19645
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_5_(2B)_Vision.py",
+      "name": "Qwen3_5_(2B)_Vision.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 19643
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_5_(4B)_Vision.py",
+      "name": "Qwen3_5_(4B)_Vision.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 19643
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_5_(4B)_Vision_GRPO.py",
+      "name": "Qwen3_5_(4B)_Vision_GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 22214
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_5_MoE.py",
+      "name": "Qwen3_5_MoE.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Install flash-linear-attention and causal-conv-1d",
+      "size_bytes": 16214
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_6_MoE.py",
+      "name": "Qwen3_6_MoE.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Install flash-linear-attention and causal-conv-1d",
+      "size_bytes": 16214
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_8B_FP8_GRPO.py",
+      "name": "Qwen3_8B_FP8_GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "GRPO chat template",
+      "size_bytes": 30014
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_Embedding_(0_6B).py",
+      "name": "Qwen3_Embedding_(0_6B).py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Embedding",
+      "description": "Data Prep",
+      "size_bytes": 15718
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_Embedding_(4B).py",
+      "name": "Qwen3_Embedding_(4B).py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Embedding",
+      "description": "Data Prep",
+      "size_bytes": 16014
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_MoE.py",
+      "name": "Qwen3_MoE.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "GRPO chat template",
+      "size_bytes": 16606
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_VL_(8B)-Vision-GRPO.py",
+      "name": "Qwen3_VL_(8B)-Vision-GRPO.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "GRPO",
+      "description": "Data Prep",
+      "size_bytes": 20420
+    },
+    {
+      "path": "notebooks/qwen/Qwen3_VL_(8B)-Vision.py",
+      "name": "Qwen3_VL_(8B)-Vision.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 19010
+    },
+    {
+      "path": "notebooks/qwen/Qwen_3_5_27B_A100(80GB).py",
+      "name": "Qwen_3_5_27B_A100(80GB).py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 18493
+    },
+    {
+      "path": "notebooks/qwen/TinyQwen3_MoE.py",
+      "name": "TinyQwen3_MoE.py",
+      "category": "qwen",
+      "model": "Qwen",
+      "task": "",
+      "description": "GRPO chat template",
+      "size_bytes": 16410
+    },
+    {
+      "path": "notebooks/reasoning_rl/AMD-CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.py",
+      "name": "AMD-CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.py",
+      "category": "reasoning_rl",
+      "model": "",
+      "task": "Reasoning",
+      "description": "Dataset",
+      "size_bytes": 20337
+    },
+    {
+      "path": "notebooks/reasoning_rl/AMD-LFM2.5_(1.2B)-GRPO.py",
+      "name": "AMD-LFM2.5_(1.2B)-GRPO.py",
+      "category": "reasoning_rl",
+      "model": "",
+      "task": "GRPO",
+      "description": "GRPO chat template",
+      "size_bytes": 27834
+    },
+    {
+      "path": "notebooks/reasoning_rl/AMD-Ministral_3_(3B)_Reinforcement_Learning_Sudoku_Game.py",
+      "name": "AMD-Ministral_3_(3B)_Reinforcement_Learning_Sudoku_Game.py",
+      "category": "reasoning_rl",
+      "model": "",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 33309
+    },
+    {
+      "path": "notebooks/reasoning_rl/AMD-Openenv_wordle_grpo.py",
+      "name": "AMD-Openenv_wordle_grpo.py",
+      "category": "reasoning_rl",
+      "model": "",
+      "task": "GRPO",
+      "description": "Initialize the Environment",
+      "size_bytes": 31397
+    },
+    {
+      "path": "notebooks/reasoning_rl/CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.py",
+      "name": "CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.py",
+      "category": "reasoning_rl",
+      "model": "",
+      "task": "Reasoning",
+      "description": "Dataset",
+      "size_bytes": 18951
+    },
+    {
+      "path": "notebooks/reasoning_rl/Kaggle-CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.py",
+      "name": "Kaggle-CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.py",
+      "category": "reasoning_rl",
+      "model": "",
+      "task": "Reasoning",
+      "description": "Dataset",
+      "size_bytes": 18573
+    },
+    {
+      "path": "notebooks/reasoning_rl/Kaggle-Ministral_3_(3B)_Reinforcement_Learning_Sudoku_Game.py",
+      "name": "Kaggle-Ministral_3_(3B)_Reinforcement_Learning_Sudoku_Game.py",
+      "category": "reasoning_rl",
+      "model": "",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 31550
+    },
+    {
+      "path": "notebooks/reasoning_rl/LFM2.5_(1.2B)-GRPO.py",
+      "name": "LFM2.5_(1.2B)-GRPO.py",
+      "category": "reasoning_rl",
+      "model": "",
+      "task": "GRPO",
+      "description": "GRPO chat template",
+      "size_bytes": 27200
+    },
+    {
+      "path": "notebooks/reasoning_rl/Ministral_3_(3B)_Reinforcement_Learning_Sudoku_Game.py",
+      "name": "Ministral_3_(3B)_Reinforcement_Learning_Sudoku_Game.py",
+      "category": "reasoning_rl",
+      "model": "",
+      "task": "RL",
+      "description": "",
+      "size_bytes": 29781
+    },
+    {
+      "path": "notebooks/reasoning_rl/Openenv_wordle_grpo.py",
+      "name": "Openenv_wordle_grpo.py",
+      "category": "reasoning_rl",
+      "model": "",
+      "task": "GRPO",
+      "description": "Initialize the Environment",
+      "size_bytes": 31334
+    },
+    {
+      "path": "notebooks/speech/AMD-Whisper.py",
+      "name": "AMD-Whisper.py",
+      "category": "speech",
+      "model": "Whisper",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 17649
+    },
+    {
+      "path": "notebooks/speech/Kaggle-Whisper.py",
+      "name": "Kaggle-Whisper.py",
+      "category": "speech",
+      "model": "Whisper",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 15879
+    },
+    {
+      "path": "notebooks/speech/Whisper.py",
+      "name": "Whisper.py",
+      "category": "speech",
+      "model": "Whisper",
+      "task": "",
+      "description": "Data Prep",
+      "size_bytes": 16257
+    },
+    {
+      "path": "notebooks/tts/AMD-Llasa_TTS_(1B).py",
+      "name": "AMD-Llasa_TTS_(1B).py",
+      "category": "tts",
+      "model": "",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 28593
+    },
+    {
+      "path": "notebooks/tts/AMD-Llasa_TTS_(3B).py",
+      "name": "AMD-Llasa_TTS_(3B).py",
+      "category": "tts",
+      "model": "",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 28593
+    },
+    {
+      "path": "notebooks/tts/AMD-Orpheus_(3B)-TTS.py",
+      "name": "AMD-Orpheus_(3B)-TTS.py",
+      "category": "tts",
+      "model": "Orpheus",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 22252
+    },
+    {
+      "path": "notebooks/tts/AMD-Oute_TTS_(1B).py",
+      "name": "AMD-Oute_TTS_(1B).py",
+      "category": "tts",
+      "model": "",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 25911
+    },
+    {
+      "path": "notebooks/tts/AMD-Sesame_CSM_(1B)-TTS.py",
+      "name": "AMD-Sesame_CSM_(1B)-TTS.py",
+      "category": "tts",
+      "model": "",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 19545
+    },
+    {
+      "path": "notebooks/tts/AMD-Spark_TTS_(0_5B).py",
+      "name": "AMD-Spark_TTS_(0_5B).py",
+      "category": "tts",
+      "model": "",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 23018
+    },
+    {
+      "path": "notebooks/tts/Kaggle-Llasa_TTS_(1B).py",
+      "name": "Kaggle-Llasa_TTS_(1B).py",
+      "category": "tts",
+      "model": "",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 26866
+    },
+    {
+      "path": "notebooks/tts/Kaggle-Llasa_TTS_(3B).py",
+      "name": "Kaggle-Llasa_TTS_(3B).py",
+      "category": "tts",
+      "model": "",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 26866
+    },
+    {
+      "path": "notebooks/tts/Kaggle-Orpheus_(3B)-TTS.py",
+      "name": "Kaggle-Orpheus_(3B)-TTS.py",
+      "category": "tts",
+      "model": "Orpheus",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 20532
+    },
+    {
+      "path": "notebooks/tts/Kaggle-Oute_TTS_(1B).py",
+      "name": "Kaggle-Oute_TTS_(1B).py",
+      "category": "tts",
+      "model": "",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 25133
+    },
+    {
+      "path": "notebooks/tts/Kaggle-Sesame_CSM_(1B)-TTS.py",
+      "name": "Kaggle-Sesame_CSM_(1B)-TTS.py",
+      "category": "tts",
+      "model": "",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 17836
+    },
+    {
+      "path": "notebooks/tts/Kaggle-Spark_TTS_(0_5B).py",
+      "name": "Kaggle-Spark_TTS_(0_5B).py",
+      "category": "tts",
+      "model": "",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 21275
+    },
+    {
+      "path": "notebooks/tts/Llasa_TTS_(1B).py",
+      "name": "Llasa_TTS_(1B).py",
+      "category": "tts",
+      "model": "",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 27254
+    },
+    {
+      "path": "notebooks/tts/Llasa_TTS_(3B).py",
+      "name": "Llasa_TTS_(3B).py",
+      "category": "tts",
+      "model": "",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 27254
+    },
+    {
+      "path": "notebooks/tts/Orpheus_(3B)-TTS.py",
+      "name": "Orpheus_(3B)-TTS.py",
+      "category": "tts",
+      "model": "Orpheus",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 20910
+    },
+    {
+      "path": "notebooks/tts/Oute_TTS_(1B).py",
+      "name": "Oute_TTS_(1B).py",
+      "category": "tts",
+      "model": "",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 25511
+    },
+    {
+      "path": "notebooks/tts/Sesame_CSM_(1B)-TTS.py",
+      "name": "Sesame_CSM_(1B)-TTS.py",
+      "category": "tts",
+      "model": "",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 18203
+    },
+    {
+      "path": "notebooks/tts/Spark_TTS_(0_5B).py",
+      "name": "Spark_TTS_(0_5B).py",
+      "category": "tts",
+      "model": "",
+      "task": "TTS",
+      "description": "Data Prep",
+      "size_bytes": 21653
+    },
+    {
+      "path": "notebooks/vision/AMD-ERNIE_4_5_VL_28B_A3B_PT_Vision.py",
+      "name": "AMD-ERNIE_4_5_VL_28B_A3B_PT_Vision.py",
+      "category": "vision",
+      "model": "ERNIE",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 25307
+    },
+    {
+      "path": "notebooks/vision/AMD-LFM2.5_VL_(1.6B)-Vision.py",
+      "name": "AMD-LFM2.5_VL_(1.6B)-Vision.py",
+      "category": "vision",
+      "model": "",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 19628
+    },
+    {
+      "path": "notebooks/vision/AMD-Ministral_3_VL_(3B)_Vision.py",
+      "name": "AMD-Ministral_3_VL_(3B)_Vision.py",
+      "category": "vision",
+      "model": "",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 20181
+    },
+    {
+      "path": "notebooks/vision/AMD-Pixtral_(12B)-Vision.py",
+      "name": "AMD-Pixtral_(12B)-Vision.py",
+      "category": "vision",
+      "model": "Pixtral",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 16784
+    },
+    {
+      "path": "notebooks/vision/ERNIE_4_5_VL_28B_A3B_PT_Vision.py",
+      "name": "ERNIE_4_5_VL_28B_A3B_PT_Vision.py",
+      "category": "vision",
+      "model": "ERNIE",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 23935
+    },
+    {
+      "path": "notebooks/vision/Kaggle-ERNIE_4_5_VL_28B_A3B_PT_Vision.py",
+      "name": "Kaggle-ERNIE_4_5_VL_28B_A3B_PT_Vision.py",
+      "category": "vision",
+      "model": "ERNIE",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 23557
+    },
+    {
+      "path": "notebooks/vision/Kaggle-Ministral_3_VL_(3B)_Vision.py",
+      "name": "Kaggle-Ministral_3_VL_(3B)_Vision.py",
+      "category": "vision",
+      "model": "",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 18423
+    },
+    {
+      "path": "notebooks/vision/Kaggle-Pixtral_(12B)-Vision.py",
+      "name": "Kaggle-Pixtral_(12B)-Vision.py",
+      "category": "vision",
+      "model": "Pixtral",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 15026
+    },
+    {
+      "path": "notebooks/vision/LFM2.5_VL_(1.6B)-Vision.py",
+      "name": "LFM2.5_VL_(1.6B)-Vision.py",
+      "category": "vision",
+      "model": "",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 18216
+    },
+    {
+      "path": "notebooks/vision/Ministral_3_VL_(3B)_Vision.py",
+      "name": "Ministral_3_VL_(3B)_Vision.py",
+      "category": "vision",
+      "model": "",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 18801
+    },
+    {
+      "path": "notebooks/vision/Pixtral_(12B)-Vision.py",
+      "name": "Pixtral_(12B)-Vision.py",
+      "category": "vision",
+      "model": "Pixtral",
+      "task": "Vision",
+      "description": "Data Prep",
+      "size_bytes": 15404
+    },
+    {
+      "path": "notebooks/zephyr/AMD-Zephyr_(7B)-DPO.py",
+      "name": "AMD-Zephyr_(7B)-DPO.py",
+      "category": "zephyr",
+      "model": "",
+      "task": "DPO",
+      "description": "",
+      "size_bytes": 19333
+    },
+    {
+      "path": "notebooks/zephyr/Kaggle-Zephyr_(7B)-DPO.py",
+      "name": "Kaggle-Zephyr_(7B)-DPO.py",
+      "category": "zephyr",
+      "model": "",
+      "task": "DPO",
+      "description": "",
+      "size_bytes": 17574
+    },
+    {
+      "path": "notebooks/zephyr/Zephyr_(7B)-DPO.py",
+      "name": "Zephyr_(7B)-DPO.py",
+      "category": "zephyr",
+      "model": "",
+      "task": "DPO",
+      "description": "",
+      "size_bytes": 17952
+    }
+  ],
+  "archive": [
+    {
+      "path": "archive/original_versions/Advanced_Llama3_1_(3B)_GRPO_LoRA.py",
+      "name": "Advanced_Llama3_1_(3B)_GRPO_LoRA.py",
+      "size_bytes": 16278
+    },
+    {
+      "path": "archive/original_versions/Advanced_Llama3_2_(3B)_GRPO_LoRA.py",
+      "name": "Advanced_Llama3_2_(3B)_GRPO_LoRA.py",
+      "size_bytes": 19534
+    },
+    {
+      "path": "archive/original_versions/All_MiniLM_L6_v2.py",
+      "name": "All_MiniLM_L6_v2.py",
+      "size_bytes": 9668
+    },
+    {
+      "path": "archive/original_versions/bert_classification.py",
+      "name": "bert_classification.py",
+      "size_bytes": 9040
+    },
+    {
+      "path": "archive/original_versions/BGE_M3.py",
+      "name": "BGE_M3.py",
+      "size_bytes": 9575
+    },
+    {
+      "path": "archive/original_versions/CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.py",
+      "name": "CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.py",
+      "size_bytes": 14442
+    },
+    {
+      "path": "archive/original_versions/CodeGemma_(7B)-Conversational.py",
+      "name": "CodeGemma_(7B)-Conversational.py",
+      "size_bytes": 13960
+    },
+    {
+      "path": "archive/original_versions/Deepseek_OCR_(3B)-Eval.py",
+      "name": "Deepseek_OCR_(3B)-Eval.py",
+      "size_bytes": 27167
+    },
+    {
+      "path": "archive/original_versions/Deepseek_OCR_(3B)-Evaluation.py",
+      "name": "Deepseek_OCR_(3B)-Evaluation.py",
+      "size_bytes": 32772
+    },
+    {
+      "path": "archive/original_versions/Deepseek_OCR_(3B).py",
+      "name": "Deepseek_OCR_(3B).py",
+      "size_bytes": 25458
+    },
+    {
+      "path": "archive/original_versions/Deepseek_OCR_2_(3B).py",
+      "name": "Deepseek_OCR_2_(3B).py",
+      "size_bytes": 29701
+    },
+    {
+      "path": "archive/original_versions/DeepSeek_R1_0528_Qwen3_(8B)_GRPO.py",
+      "name": "DeepSeek_R1_0528_Qwen3_(8B)_GRPO.py",
+      "size_bytes": 23934
+    },
+    {
+      "path": "archive/original_versions/EmbeddingGemma_(300M).py",
+      "name": "EmbeddingGemma_(300M).py",
+      "size_bytes": 11090
+    },
+    {
+      "path": "archive/original_versions/ERNIE_4_5_21B_A3B_PT-Conversational.py",
+      "name": "ERNIE_4_5_21B_A3B_PT-Conversational.py",
+      "size_bytes": 11529
+    },
+    {
+      "path": "archive/original_versions/ERNIE_4_5_VL_28B_A3B_PT_Vision.py",
+      "name": "ERNIE_4_5_VL_28B_A3B_PT_Vision.py",
+      "size_bytes": 18394
+    },
+    {
+      "path": "archive/original_versions/Falcon_H1_(0.5B)-Alpaca.py",
+      "name": "Falcon_H1_(0.5B)-Alpaca.py",
+      "size_bytes": 14527
+    },
+    {
+      "path": "archive/original_versions/Gemma2_(2B)-Alpaca.py",
+      "name": "Gemma2_(2B)-Alpaca.py",
+      "size_bytes": 13008
+    },
+    {
+      "path": "archive/original_versions/Gemma2_(9B)-Alpaca.py",
+      "name": "Gemma2_(9B)-Alpaca.py",
+      "size_bytes": 12682
+    },
+    {
+      "path": "archive/original_versions/Gemma3_(1B)-GRPO.py",
+      "name": "Gemma3_(1B)-GRPO.py",
+      "size_bytes": 14156
+    },
+    {
+      "path": "archive/original_versions/Gemma3_(270M).py",
+      "name": "Gemma3_(270M).py",
+      "size_bytes": 12622
+    },
+    {
+      "path": "archive/original_versions/Gemma3_(27B)_A100-Conversational.py",
+      "name": "Gemma3_(27B)_A100-Conversational.py",
+      "size_bytes": 11788
+    },
+    {
+      "path": "archive/original_versions/Gemma3_(4B)-Vision-GRPO.py",
+      "name": "Gemma3_(4B)-Vision-GRPO.py",
+      "size_bytes": 13481
+    },
+    {
+      "path": "archive/original_versions/Gemma3_(4B)-Vision.py",
+      "name": "Gemma3_(4B)-Vision.py",
+      "size_bytes": 12459
+    },
+    {
+      "path": "archive/original_versions/Gemma3_(4B).py",
+      "name": "Gemma3_(4B).py",
+      "size_bytes": 13441
+    },
+    {
+      "path": "archive/original_versions/Gemma3N_(2B)-Inference.py",
+      "name": "Gemma3N_(2B)-Inference.py",
+      "size_bytes": 4328
+    },
+    {
+      "path": "archive/original_versions/Gemma3N_(4B)-Audio.py",
+      "name": "Gemma3N_(4B)-Audio.py",
+      "size_bytes": 16649
+    },
+    {
+      "path": "archive/original_versions/Gemma3N_(4B)-Conversational.py",
+      "name": "Gemma3N_(4B)-Conversational.py",
+      "size_bytes": 16706
+    },
+    {
+      "path": "archive/original_versions/Gemma3N_(4B)-Vision.py",
+      "name": "Gemma3N_(4B)-Vision.py",
+      "size_bytes": 14150
+    },
+    {
+      "path": "archive/original_versions/gpt-oss-(120B)_A100-Fine-tuning.py",
+      "name": "gpt-oss-(120B)_A100-Fine-tuning.py",
+      "size_bytes": 13716
+    },
+    {
+      "path": "archive/original_versions/gpt-oss-(20B)-Fine-tuning.py",
+      "name": "gpt-oss-(20B)-Fine-tuning.py",
+      "size_bytes": 13711
+    },
+    {
+      "path": "archive/original_versions/gpt-oss-(20B)-GRPO.py",
+      "name": "gpt-oss-(20B)-GRPO.py",
+      "size_bytes": 29226
+    },
+    {
+      "path": "archive/original_versions/gpt-oss-(20B)_A100-GRPO.py",
+      "name": "gpt-oss-(20B)_A100-GRPO.py",
+      "size_bytes": 29165
+    },
+    {
+      "path": "archive/original_versions/gpt_oss_(20B)_500K_Context_Fine_tuning.py",
+      "name": "gpt_oss_(20B)_500K_Context_Fine_tuning.py",
+      "size_bytes": 9563
+    },
+    {
+      "path": "archive/original_versions/gpt_oss_(20B)_GRPO_BF16.py",
+      "name": "gpt_oss_(20B)_GRPO_BF16.py",
+      "size_bytes": 24181
+    },
+    {
+      "path": "archive/original_versions/gpt_oss_(20B)_Reinforcement_Learning_GRPO_Minesweeper_Game_BF16.py",
+      "name": "gpt_oss_(20B)_Reinforcement_Learning_GRPO_Minesweeper_Game_BF16.py",
+      "size_bytes": 33578
+    },
+    {
+      "path": "archive/original_versions/GPT_OSS_BNB_(20B)-Inference.py",
+      "name": "GPT_OSS_BNB_(20B)-Inference.py",
+      "size_bytes": 4512
+    },
+    {
+      "path": "archive/original_versions/GPT_OSS_MXFP4_(20B)-Inference.py",
+      "name": "GPT_OSS_MXFP4_(20B)-Inference.py",
+      "size_bytes": 7788
+    },
+    {
+      "path": "archive/original_versions/Granite4.0.py",
+      "name": "Granite4.0.py",
+      "size_bytes": 19792
+    },
+    {
+      "path": "archive/original_versions/Granite4.0_350M.py",
+      "name": "Granite4.0_350M.py",
+      "size_bytes": 20210
+    },
+    {
+      "path": "archive/original_versions/Liquid_LFM2_(1.2B)-Conversational.py",
+      "name": "Liquid_LFM2_(1.2B)-Conversational.py",
+      "size_bytes": 14779
+    },
+    {
+      "path": "archive/original_versions/Llama3.1_(8B)-Alpaca.py",
+      "name": "Llama3.1_(8B)-Alpaca.py",
+      "size_bytes": 12939
+    },
+    {
+      "path": "archive/original_versions/Llama3.1_(8B)-GRPO.py",
+      "name": "Llama3.1_(8B)-GRPO.py",
+      "size_bytes": 12820
+    },
+    {
+      "path": "archive/original_versions/Llama3.1_(8B)-Inference.py",
+      "name": "Llama3.1_(8B)-Inference.py",
+      "size_bytes": 2624
+    },
+    {
+      "path": "archive/original_versions/Llama3.2_(11B)-Vision.py",
+      "name": "Llama3.2_(11B)-Vision.py",
+      "size_bytes": 11676
+    },
+    {
+      "path": "archive/original_versions/Llama3.2_(1B)-RAFT.py",
+      "name": "Llama3.2_(1B)-RAFT.py",
+      "size_bytes": 11578
+    },
+    {
+      "path": "archive/original_versions/Llama3.2_(1B_and_3B)-Conversational.py",
+      "name": "Llama3.2_(1B_and_3B)-Conversational.py",
+      "size_bytes": 15053
+    },
+    {
+      "path": "archive/original_versions/Llama3.3_(70B)_A100-Conversational.py",
+      "name": "Llama3.3_(70B)_A100-Conversational.py",
+      "size_bytes": 15100
+    },
+    {
+      "path": "archive/original_versions/Llama3_(8B)-Alpaca.py",
+      "name": "Llama3_(8B)-Alpaca.py",
+      "size_bytes": 11940
+    },
+    {
+      "path": "archive/original_versions/Llama3_(8B)-Conversational.py",
+      "name": "Llama3_(8B)-Conversational.py",
+      "size_bytes": 13928
+    },
+    {
+      "path": "archive/original_versions/Llama3_(8B)-Ollama.py",
+      "name": "Llama3_(8B)-Ollama.py",
+      "size_bytes": 17157
+    },
+    {
+      "path": "archive/original_versions/Llama3_(8B)-ORPO.py",
+      "name": "Llama3_(8B)-ORPO.py",
+      "size_bytes": 11052
+    },
+    {
+      "path": "archive/original_versions/Llama_FP8_GRPO.py",
+      "name": "Llama_FP8_GRPO.py",
+      "size_bytes": 23840
+    },
+    {
+      "path": "archive/original_versions/Llasa_TTS_(1B).py",
+      "name": "Llasa_TTS_(1B).py",
+      "size_bytes": 21334
+    },
+    {
+      "path": "archive/original_versions/Llasa_TTS_(3B).py",
+      "name": "Llasa_TTS_(3B).py",
+      "size_bytes": 21334
+    },
+    {
+      "path": "archive/original_versions/Magistral_(24B)-Reasoning-Conversational.py",
+      "name": "Magistral_(24B)-Reasoning-Conversational.py",
+      "size_bytes": 12686
+    },
+    {
+      "path": "archive/original_versions/Meta-Synthetic-Data-Llama3.1_(8B).py",
+      "name": "Meta-Synthetic-Data-Llama3.1_(8B).py",
+      "size_bytes": 21683
+    },
+    {
+      "path": "archive/original_versions/Meta_Synthetic_Data_Llama3_2_(3B).py",
+      "name": "Meta_Synthetic_Data_Llama3_2_(3B).py",
+      "size_bytes": 14504
+    },
+    {
+      "path": "archive/original_versions/Ministral_3_(3B)_Reinforcement_Learning_Sudoku_Game.py",
+      "name": "Ministral_3_(3B)_Reinforcement_Learning_Sudoku_Game.py",
+      "size_bytes": 29383
+    },
+    {
+      "path": "archive/original_versions/Ministral_3_VL_(3B)_Vision.py",
+      "name": "Ministral_3_VL_(3B)_Vision.py",
+      "size_bytes": 14997
+    },
+    {
+      "path": "archive/original_versions/Mistral_(7B)-Text_Completion.py",
+      "name": "Mistral_(7B)-Text_Completion.py",
+      "size_bytes": 8186
+    },
+    {
+      "path": "archive/original_versions/Mistral_Nemo_(12B)-Alpaca.py",
+      "name": "Mistral_Nemo_(12B)-Alpaca.py",
+      "size_bytes": 13326
+    },
+    {
+      "path": "archive/original_versions/Mistral_Small_(22B)-Alpaca.py",
+      "name": "Mistral_Small_(22B)-Alpaca.py",
+      "size_bytes": 13015
+    },
+    {
+      "path": "archive/original_versions/Mistral_v0.3_(7B)-Alpaca.py",
+      "name": "Mistral_v0.3_(7B)-Alpaca.py",
+      "size_bytes": 12084
+    },
+    {
+      "path": "archive/original_versions/Mistral_v0.3_(7B)-Conversational.py",
+      "name": "Mistral_v0.3_(7B)-Conversational.py",
+      "size_bytes": 14195
+    },
+    {
+      "path": "archive/original_versions/Mistral_v0.3_(7B)-CPT.py",
+      "name": "Mistral_v0.3_(7B)-CPT.py",
+      "size_bytes": 17221
+    },
+    {
+      "path": "archive/original_versions/Mistral_v0.3_(7B)-GRPO.py",
+      "name": "Mistral_v0.3_(7B)-GRPO.py",
+      "size_bytes": 10624
+    },
+    {
+      "path": "archive/original_versions/ModernBert.py",
+      "name": "ModernBert.py",
+      "size_bytes": 9641
+    },
+    {
+      "path": "archive/original_versions/Nemotron-3-Nano-30B-A3B_A100.py",
+      "name": "Nemotron-3-Nano-30B-A3B_A100.py",
+      "size_bytes": 16653
+    },
+    {
+      "path": "archive/original_versions/Nemotron-Nano-3-30B-A3B_A100.py",
+      "name": "Nemotron-Nano-3-30B-A3B_A100.py",
+      "size_bytes": 16653
+    },
+    {
+      "path": "archive/original_versions/Orpheus_(3B)-TTS.py",
+      "name": "Orpheus_(3B)-TTS.py",
+      "size_bytes": 15121
+    },
+    {
+      "path": "archive/original_versions/Oute_TTS_(1B).py",
+      "name": "Oute_TTS_(1B).py",
+      "size_bytes": 23564
+    },
+    {
+      "path": "archive/original_versions/Paddle_OCR_(1B)_Vision.py",
+      "name": "Paddle_OCR_(1B)_Vision.py",
+      "size_bytes": 10810
+    },
+    {
+      "path": "archive/original_versions/Phi_3.5_Mini-Conversational.py",
+      "name": "Phi_3.5_Mini-Conversational.py",
+      "size_bytes": 14842
+    },
+    {
+      "path": "archive/original_versions/Phi_3_Medium-Conversational.py",
+      "name": "Phi_3_Medium-Conversational.py",
+      "size_bytes": 13853
+    },
+    {
+      "path": "archive/original_versions/Phi_4-Conversational.py",
+      "name": "Phi_4-Conversational.py",
+      "size_bytes": 14374
+    },
+    {
+      "path": "archive/original_versions/Phi_4_(14B)-GRPO.py",
+      "name": "Phi_4_(14B)-GRPO.py",
+      "size_bytes": 12762
+    },
+    {
+      "path": "archive/original_versions/Pixtral_(12B)-Vision.py",
+      "name": "Pixtral_(12B)-Vision.py",
+      "size_bytes": 9703
+    },
+    {
+      "path": "archive/original_versions/Qwen2.5_(3B)-GRPO.py",
+      "name": "Qwen2.5_(3B)-GRPO.py",
+      "size_bytes": 12845
+    },
+    {
+      "path": "archive/original_versions/Qwen2.5_(7B)-Alpaca.py",
+      "name": "Qwen2.5_(7B)-Alpaca.py",
+      "size_bytes": 13245
+    },
+    {
+      "path": "archive/original_versions/Qwen2.5_Coder_(1.5B)-Tool_Calling.py",
+      "name": "Qwen2.5_Coder_(1.5B)-Tool_Calling.py",
+      "size_bytes": 116323
+    },
+    {
+      "path": "archive/original_versions/Qwen2.5_Coder_(14B)-Conversational.py",
+      "name": "Qwen2.5_Coder_(14B)-Conversational.py",
+      "size_bytes": 15162
+    },
+    {
+      "path": "archive/original_versions/Qwen2.5_VL_(7B)-Vision.py",
+      "name": "Qwen2.5_VL_(7B)-Vision.py",
+      "size_bytes": 11425
+    },
+    {
+      "path": "archive/original_versions/Qwen2_(7B)-Alpaca.py",
+      "name": "Qwen2_(7B)-Alpaca.py",
+      "size_bytes": 12302
+    },
+    {
+      "path": "archive/original_versions/Qwen2_5_7B_VL_GRPO.py",
+      "name": "Qwen2_5_7B_VL_GRPO.py",
+      "size_bytes": 16693
+    },
+    {
+      "path": "archive/original_versions/Qwen2_VL_(7B)-Vision.py",
+      "name": "Qwen2_VL_(7B)-Vision.py",
+      "size_bytes": 11404
+    },
+    {
+      "path": "archive/original_versions/Qwen3_(14B)-Alpaca.py",
+      "name": "Qwen3_(14B)-Alpaca.py",
+      "size_bytes": 14340
+    },
+    {
+      "path": "archive/original_versions/Qwen3_(14B)-Reasoning-Conversational.py",
+      "name": "Qwen3_(14B)-Reasoning-Conversational.py",
+      "size_bytes": 15396
+    },
+    {
+      "path": "archive/original_versions/Qwen3_(14B).py",
+      "name": "Qwen3_(14B).py",
+      "size_bytes": 13539
+    },
+    {
+      "path": "archive/original_versions/Qwen3_(32B)_A100-Reasoning-Conversational.py",
+      "name": "Qwen3_(32B)_A100-Reasoning-Conversational.py",
+      "size_bytes": 13673
+    },
+    {
+      "path": "archive/original_versions/Qwen3_(4B)-GRPO.py",
+      "name": "Qwen3_(4B)-GRPO.py",
+      "size_bytes": 24089
+    },
+    {
+      "path": "archive/original_versions/Qwen3_(4B)-Instruct.py",
+      "name": "Qwen3_(4B)-Instruct.py",
+      "size_bytes": 13599
+    },
+    {
+      "path": "archive/original_versions/Qwen3_(4B)-Thinking.py",
+      "name": "Qwen3_(4B)-Thinking.py",
+      "size_bytes": 14155
+    },
+    {
+      "path": "archive/original_versions/Qwen3_(4B)_Instruct-QAT.py",
+      "name": "Qwen3_(4B)_Instruct-QAT.py",
+      "size_bytes": 11120
+    },
+    {
+      "path": "archive/original_versions/Qwen3_8B_FP8_GRPO.py",
+      "name": "Qwen3_8B_FP8_GRPO.py",
+      "size_bytes": 23854
+    },
+    {
+      "path": "archive/original_versions/Qwen3_Embedding_(0_6B).py",
+      "name": "Qwen3_Embedding_(0_6B).py",
+      "size_bytes": 9893
+    },
+    {
+      "path": "archive/original_versions/Qwen3_Embedding_(4B).py",
+      "name": "Qwen3_Embedding_(4B).py",
+      "size_bytes": 10090
+    },
+    {
+      "path": "archive/original_versions/Qwen3_VL_(8B)-Vision-GRPO.py",
+      "name": "Qwen3_VL_(8B)-Vision-GRPO.py",
+      "size_bytes": 15420
+    },
+    {
+      "path": "archive/original_versions/Qwen3_VL_(8B)-Vision.py",
+      "name": "Qwen3_VL_(8B)-Vision.py",
+      "size_bytes": 13361
+    },
+    {
+      "path": "archive/original_versions/Sesame_CSM_(1B)-TTS.py",
+      "name": "Sesame_CSM_(1B)-TTS.py",
+      "size_bytes": 12254
+    },
+    {
+      "path": "archive/original_versions/Spark_TTS_(0_5B).py",
+      "name": "Spark_TTS_(0_5B).py",
+      "size_bytes": 15749
+    },
+    {
+      "path": "archive/original_versions/TinyLlama_(1.1B)-Alpaca.py",
+      "name": "TinyLlama_(1.1B)-Alpaca.py",
+      "size_bytes": 12302
+    },
+    {
+      "path": "archive/original_versions/Unsloth_Studio.py",
+      "name": "Unsloth_Studio.py",
+      "size_bytes": 1092
+    },
+    {
+      "path": "archive/original_versions/Whisper.py",
+      "name": "Whisper.py",
+      "size_bytes": 14677
+    },
+    {
+      "path": "archive/original_versions/Zephyr_(7B)-DPO.py",
+      "name": "Zephyr_(7B)-DPO.py",
+      "size_bytes": 12442
+    }
+  ],
+  "kaggle": [
+    "Gemma4_(31B)-Text.py",
+    "Gemma4_(E4B)-Text.py"
+  ],
+  "tests": [
+    "__init__.py",
+    "conftest.py",
+    "test_notebook_amd_install_parity.py",
+    "test_notebook_api_drift.py",
+    "test_notebook_json_validity.py",
+    "test_notebook_pin_consistency.py",
+    "test_python_scripts_regen_parity.py"
+  ],
+  "utilities": [
+    "fix_html_tags.py",
+    "fix_templates.py",
+    "lint_workflow_triggers.py",
+    "notebook_inventory.py",
+    "replace_text.py",
+    "scan_packages.py",
+    "Template_Notebook.py",
+    "update_all_notebooks.py",
+    "update_max_seq_length.py",
+    "verify_comment_only_diff.py"
+  ]
+}

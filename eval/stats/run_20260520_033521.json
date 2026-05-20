@@ -1,0 +1,213 @@
+{
+  "generated_at": "2026-05-20T03:35:21.925366+00:00",
+  "total_records": 4453,
+  "jsonl_sha256": "95f1ae448c693088b893758ffd24f667aed08593bc107611c9af722ff8f54e4b",
+  "jsonl_bytes": 7384205,
+  "totals": {
+    "bloom_dual_label": 66,
+    "records_emitted": 4453,
+    "records_with_tables": 1043,
+    "tables_attached": 1687,
+    "explanation_word_fallback": 746,
+    "header_artifact_dropped": 18,
+    "mc_mislabel_reclassified_to_essay": 10,
+    "lo_excel_internal_fallback": 228,
+    "answer_word_fallback": 6,
+    "fragment_detected": 1,
+    "id_collision_disambiguated": 2,
+    "options_bleed_dropped": 4,
+    "bloom_fallback_or_disagreement": 15,
+    "answer_empty": 2,
+    "explanation_metadata_stripped": 3,
+    "row_skipped_no_qnum": 2
+  },
+  "per_chapter": {
+    "01": {
+      "bloom_dual_label": 0,
+      "records_emitted": 186,
+      "records_with_tables": 3,
+      "tables_attached": 3,
+      "explanation_word_fallback": 14
+    },
+    "02": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 11,
+      "records_emitted": 179,
+      "records_with_tables": 68,
+      "tables_attached": 122,
+      "explanation_word_fallback": 28
+    },
+    "03": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 24,
+      "records_emitted": 174,
+      "explanation_word_fallback": 31,
+      "records_with_tables": 26,
+      "tables_attached": 38,
+      "mc_mislabel_reclassified_to_essay": 3
+    },
+    "04": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 15,
+      "records_emitted": 218,
+      "explanation_word_fallback": 48,
+      "records_with_tables": 46,
+      "tables_attached": 57,
+      "lo_excel_internal_fallback": 42,
+      "mc_mislabel_reclassified_to_essay": 6
+    },
+    "05": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 4,
+      "records_emitted": 320,
+      "explanation_word_fallback": 186,
+      "records_with_tables": 32,
+      "tables_attached": 68,
+      "answer_word_fallback": 4,
+      "fragment_detected": 1,
+      "id_collision_disambiguated": 2,
+      "lo_excel_internal_fallback": 72,
+      "options_bleed_dropped": 2
+    },
+    "06": {
+      "bloom_dual_label": 0,
+      "records_emitted": 157,
+      "records_with_tables": 8,
+      "tables_attached": 9,
+      "explanation_word_fallback": 40,
+      "lo_excel_internal_fallback": 1
+    },
+    "07": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 0,
+      "records_emitted": 224,
+      "records_with_tables": 43,
+      "tables_attached": 99,
+      "explanation_word_fallback": 39,
+      "lo_excel_internal_fallback": 47
+    },
+    "08": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 1,
+      "records_emitted": 187,
+      "records_with_tables": 60,
+      "tables_attached": 85,
+      "explanation_word_fallback": 17,
+      "bloom_fallback_or_disagreement": 10
+    },
+    "09": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 0,
+      "records_emitted": 195,
+      "answer_word_fallback": 2,
+      "records_with_tables": 83,
+      "tables_attached": 126,
+      "explanation_word_fallback": 19,
+      "bloom_fallback_or_disagreement": 5
+    },
+    "10": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 0,
+      "records_emitted": 194,
+      "records_with_tables": 57,
+      "tables_attached": 89,
+      "explanation_word_fallback": 13
+    },
+    "11": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 0,
+      "records_emitted": 228,
+      "records_with_tables": 44,
+      "tables_attached": 70,
+      "explanation_word_fallback": 21,
+      "options_bleed_dropped": 1
+    },
+    "12": {
+      "bloom_dual_label": 4,
+      "records_emitted": 217,
+      "records_with_tables": 41,
+      "tables_attached": 65,
+      "explanation_word_fallback": 16,
+      "answer_empty": 1
+    },
+    "13": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 1,
+      "records_emitted": 217,
+      "records_with_tables": 36,
+      "tables_attached": 43,
+      "explanation_word_fallback": 23
+    },
+    "14": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 0,
+      "records_emitted": 261,
+      "records_with_tables": 69,
+      "tables_attached": 76,
+      "explanation_word_fallback": 34
+    },
+    "15": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 2,
+      "records_emitted": 310,
+      "records_with_tables": 47,
+      "tables_attached": 64,
+      "explanation_metadata_stripped": 3,
+      "explanation_word_fallback": 94,
+      "lo_excel_internal_fallback": 65,
+      "mc_mislabel_reclassified_to_essay": 1,
+      "row_skipped_no_qnum": 2
+    },
+    "16": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 1,
+      "records_emitted": 181,
+      "records_with_tables": 70,
+      "tables_attached": 105,
+      "explanation_word_fallback": 11
+    },
+    "17": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 1,
+      "records_emitted": 251,
+      "records_with_tables": 75,
+      "tables_attached": 149,
+      "explanation_word_fallback": 31
+    },
+    "18": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 0,
+      "records_emitted": 184,
+      "records_with_tables": 69,
+      "tables_attached": 131,
+      "explanation_word_fallback": 12,
+      "options_bleed_dropped": 1
+    },
+    "19": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 0,
+      "records_emitted": 231,
+      "records_with_tables": 83,
+      "tables_attached": 146,
+      "explanation_word_fallback": 42,
+      "lo_excel_internal_fallback": 1
+    },
+    "20": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 2,
+      "records_emitted": 150,
+      "records_with_tables": 27,
+      "tables_attached": 39,
+      "explanation_word_fallback": 18
+    },
+    "21": {
+      "header_artifact_dropped": 1,
+      "bloom_dual_label": 0,
+      "records_emitted": 189,
+      "records_with_tables": 56,
+      "tables_attached": 103,
+      "explanation_word_fallback": 9,
+      "answer_empty": 1
+    }
+  }
+}

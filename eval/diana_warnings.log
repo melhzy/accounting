@@ -1,0 +1,45 @@
+ch03 row132: 'Multiple Choice' with non-letter Answer (len=1741); reclassified to 'Essay/Problem'
+ch03 row134: 'Multiple Choice' with non-letter Answer (len=568); reclassified to 'Essay/Problem'
+ch03 row135: 'Multiple Choice' with non-letter Answer (len=988); reclassified to 'Essay/Problem'
+ch04 row178: 'Multiple Choice' with non-letter Answer (len=333); reclassified to 'Essay/Problem'
+ch04 row179: 'Multiple Choice' with non-letter Answer (len=879); reclassified to 'Essay/Problem'
+ch04 row181: 'Multiple Choice' with non-letter Answer (len=902); reclassified to 'Essay/Problem'
+ch04 row182: 'Multiple Choice' with non-letter Answer (len=533); reclassified to 'Essay/Problem'
+ch04 row183: 'Multiple Choice' with non-letter Answer (len=408); reclassified to 'Essay/Problem'
+ch04 row184: 'Multiple Choice' with non-letter Answer (len=864); reclassified to 'Essay/Problem'
+ch05 row237: Essay Answer empty in Excel, filled from Word
+ch05 row238: Essay Answer empty in Excel, filled from Word
+ch05 row239: Essay Answer empty in Excel, filled from Word
+ch05 row239: fragment row (short prompt, missing metadata)
+ch05 row239: id collision on ch05_q0001_es; assigned ch05_q0001_es_dup01
+ch05 row240: Essay Answer empty in Excel, filled from Word
+ch05 row240: id collision on ch05_q0002_es; assigned ch05_q0002_es_dup01
+ch05 row294: Options-bleed (overlap≥0.80), Options set to null
+ch05 row319: Options-bleed (overlap≥0.80), Options set to null
+ch08 row146: Bloom's empty, used Blooms fallback
+ch08 row147: Bloom's empty, used Blooms fallback
+ch08 row148: Bloom's empty, used Blooms fallback
+ch08 row149: Bloom's empty, used Blooms fallback
+ch08 row150: Bloom's empty, used Blooms fallback
+ch08 row151: Bloom's empty, used Blooms fallback
+ch08 row152: Bloom's empty, used Blooms fallback
+ch08 row153: Bloom's empty, used Blooms fallback
+ch08 row154: Bloom's empty, used Blooms fallback
+ch08 row155: Bloom's empty, used Blooms fallback
+ch09 row4: Essay Answer empty in Excel, filled from Word
+ch09 row6: Essay Answer empty in Excel, filled from Word
+ch09 row177: Bloom's empty, used Blooms fallback
+ch09 row178: Bloom's empty, used Blooms fallback
+ch09 row179: Bloom's empty, used Blooms fallback
+ch09 row180: Bloom's empty, used Blooms fallback
+ch09 row181: Bloom's empty, used Blooms fallback
+ch11 row201: Options-bleed (overlap≥0.80), Options set to null
+ch12 row200: Essay Answer empty in BOTH Excel and Word
+ch15 row29: stripped Explanation bleed (Difficulty,Topic,Learning Objective,Bloom's,AACSB,Accessible/AICPA)
+ch15 row32: stripped Explanation bleed (Difficulty,Topic,Learning Objective,Bloom's,AACSB,Accessible/AICPA)
+ch15 row108: stripped Explanation bleed (Bloom's,AACSB,Accessible/AICPA)
+ch15 row266: 'Multiple Choice' with non-letter Answer (len=437); reclassified to 'Essay/Problem'
+ch15 row313: missing/unparseable Question_Number
+ch15 row314: missing/unparseable Question_Number
+ch18 row162: Options-bleed (overlap≥0.80), Options set to null
+ch21 row143: Essay Answer empty in BOTH Excel and Word

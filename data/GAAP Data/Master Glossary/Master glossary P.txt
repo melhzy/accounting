@@ -1,0 +1,923 @@
+1/26/2026, 3:33 AM
+Glossary Term Usage |
+A printed document that serves as evidence of payment of the fare for air transportation. It authorizes carriage between the points and via the routing indicated and also shows the passenger's name, class of service, carrier(s), flight number(s), dates of travel, and all conditions of the contract of carriage. Generally, this takes the form of the standard Air Traffic Conference ticket, which is composed of an auditor's
+, agent's coupon, flight coupon(s), and passenger's coupon. The auditor's coupon is the
+initial document used to record a sale. Flight coupons represent each flight segment (leg) of the passenger's itinerary. Flight coupons are lifted (detached from the ticket booklet) by the carrier providing the transportation service at the boarding point as evidence of the service rendered, although today this process is entirely electronic for the vast majority of ticket sales and boarding transactions.
+Glossary Term Usage |
+,
+,
+,
+,
+,
+,
+,
+,
+An entity that has a controlling financial interest in one or more subsidiaries. (Also, an entity that is the primary beneficiary of a variable interest entity.)
+Glossary Term Usage |
+The effect of the difference between local and U.S. inflation for the year on net assets (that is, shareholders' equity) measured in nominal dollars. If only the differential rates of U.S. and local inflation are reflected in the exchange rates (parity), the parity adjustment and the translation adjustment net to zero. Therefore, the sum of the parity adjustment and the translation adjustment represents the effect of exchange rate changes in excess of (or less than) that needed to maintain purchasing power parity between the functional currency and the dollar.
+Glossary Term Usage |
+,
+Any employee or former employee, or any member or former member of a trade or other employee association, or the beneficiaries of those individuals, for whom there are pension plan benefits or other accumulated plan benefits.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Glossary Term Usage |
+An annuity contract that provides for the purchaser to participate in the investment performance and possibly other experience (for example, mortality experience) of the insurance entity. Under a participating annuity contract, the insurance entity ordinarily pays dividends to the purchaser.
+Glossary Term Usage |
+,
+Insurance in which the policyholder is entitled to participate in the earnings or surplus of the insurance entity. The participation occurs through the distribution of dividends to policyholders.
+Glossary Term Usage |
+Paragraph
+defines the term participating interest.
+Glossary Term Usage |
+A party to a Superfund site that has acknowledged potential involvement with respect to the site. Active
+may participate in the various administrative, negotiation, monitoring,
+and remediation activities related to the site. Others may adopt a passive stance and simply monitor the activities and decisions of the more involved potentially responsible parties. This passive stance could result from a variety of factors such as the entity's lack of experience, limited internal resources, or relative involvement at a site. This category of potentially responsible parties (both active and passive) is also referred to as players.
+Glossary Term Usage |
+The ability to block or participate in the actions through which an entity exercises the power to direct the activities of a VIE that most significantly impact the VIE's economic performance. Participating rights do not require the holders of such rights to have the ability to initiate actions.
+Glossary Term Usage |
+,
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Master Glossary
+Participating rights allow the limited partners or noncontrolling shareholders to block or participate in certain significant financial and operating decisions of the limited partnership or corporation that are made in the ordinary course of business. Participating rights do not require the holders of such rights to have the ability to initiate actions.
+Glossary Term Usage |
+Glossary Term Usage |
+Parties involved in the production of a film may be compensated in part by contingent payments based on the financial results of a film pursuant to contractual formulas (participations) and by contingent amounts due under provisions of collective bargaining agreements (residuals). Such parties are collectively referred to as participants, and such costs are collectively referred to as participation costs. Participations may be given to creative talent, such as actors or writers, or to entities from whom distribution rights are licensed.
+Glossary Term Usage |
+A purchaser's right under a
+contract to receive future dividends or retroactive
+rate credits from the insurance entity.
+Glossary Term Usage |
+Contractual rights of security holders to receive dividends or returns from the security issuer's profits, cash flows, or returns on investments.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+States Government.
+1/26/2026, 3:33 AM
+Master Glossary
+Glossary Term Usage |
+The amount of business done with a cooperative by one of its patrons. Patronage is measured by either the quantity or value of commodities received from patrons by a marketing cooperative and the quantity or value of the goods and services sold to patrons by a supply cooperative.
+Glossary Term Usage |
+Patronage earnings distributed, or allocated, to individual patrons on the basis of each patron's proportionate share of total patronage. Such allocations, which include notification to the patron, may be made on a qualified or nonqualified basis.
+Glossary Term Usage |
+The excess of a cooperative's revenues over its costs arising from transactions done with or for its patrons. Generally a significant portion of those earnings is allocated to the cooperative's patrons in the form of cash, allocated equities, or both.
+Glossary Term Usage |
+Any individual, trust, estate, partnership, corporation, or
+with or for whom a
+cooperative does business on a cooperative basis, whether a
+or
+.
+Glossary Term Usage |
+A plan that has a benefit formula that bases benefits or benefit coverage on compensation, such as a final-pay or career-average-pay plan.
+Glossary Term Usage |
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+States Government.
+1/26/2026, 3:33 AM
+Master Glossary
+A payment provision specifies a fixed or determinable settlement to be made if the underlying behaves in a specified manner.
+Glossary Term Usage |
+Bonds in which the issuer has the option at each interest payment date of making interest payments in cash or in additional debt securities. Those additional debt securities are referred to as baby or bunny bonds. Baby bonds generally have the same terms, including maturity dates and interest rates, as the original bonds (parent payment-in-kind bonds). Interest on baby bonds may also be paid in cash or in additional like-kind debt securities at the option of the issuer.
+Glossary Term Usage |
+,
+The period during which the contract holder is receiving periodic payments from an annuity, also referred to as the annuitization phase.
+Glossary Term Usage |
+Any requirement that is imposed or can be imposed on the
+by the
+agreement or by factors
+outside the lease agreement to do any of the following:
+a. Disburse cash
+b. Incur or assume a liability
+c. Perform services
+d. Surrender or transfer an asset or rights to an asset or otherwise forego an economic benefit, or suffer an economic detriment. Factors to consider in determining whether an economic detriment may be incurred include, but are not limited to, all of the following:
+1. The uniqueness of purpose or location of the
+2. The availability of a comparable replacement asset
+3. The relative importance or significance of the underlying asset to the continuation of the lessee's line of business or service to its customers
+4. The existence of leasehold improvements or other assets whose value would be impaired by the lessee vacating or discontinuing use of the underlying asset
+5. Adverse tax consequences
+6. The ability or willingness of the lessee to bear the cost associated with relocation or replacement of the underlying asset at market rental rates or to tolerate other parties using the underlying asset.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+States Government.
+1/26/2026, 3:33 AM
+Glossary Term Usage |
+The basis for determining payments to which participants may be entitled under a pension plan. Pension benefit formulas usually refer to the employee's service or compensation or both. Sometimes referred to as a plan's benefit formula or benefit formula.
+Glossary Term Usage |
+,
+,
+Periodic (usually monthly) payments made pursuant to the terms of the pension plan to a person who has retired from employment or to that person's beneficiary.
+Glossary Term Usage |
+,
+The assets of a pension plan held by a funding agency.
+Glossary Term Usage |
+The current cost of providing postretirement health care benefits for one year at each age from the youngest age to the oldest age at which plan participants are expected to receive benefits under the plan. See
+.
+Glossary Term Usage |
+December 16, 2027;
+December 16, 2027
+Performance requirements are what an entity needs the software to do (for example, functions or features).
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Master Glossary
+Glossary Term Usage |
+,
+A condition affecting the vesting, exercisability, exercise price, or other pertinent factors used in determining the fair value of an award that relates to both of the following:
+a. Rendering service or delivering goods for a specified (either explicitly or implicitly) period of time
+b. Achieving a specified performance target that is defined solely by reference to the grantor's own operations (or activities) or by reference to the grantee's performance related to the grantor's own operations (or activities).
+Attaining a specified growth rate in return on assets, obtaining regulatory approval to market a specified product, selling shares in an initial public offering or other financing event, and a change in control are examples of performance conditions. A performance target also may be defined by reference to the same performance measure of another entity or group of entities. For example, attaining a growth rate in earnings per share (EPS) that exceeds the average growth rate in EPS of other entities in the same industry is a performance condition. A performance target might pertain to the performance of the entity as a whole or to some part of the entity, such as a division, or to the performance of the grantee if such performance is in accordance with the terms of the award and solely relates to the grantor's own operations (or activities).
+December 16, 2026;
+December 16, 2026
+1. For share-based payments in which a grantor acquires goods or services to be used or consumed in the grantor’s own operations, a condition affecting the vesting, exercisability, exercise price, or other pertinent factors used in determining the fair value of an award that relates to both of the following: a. Rendering service or delivering goods for a specified (either explicitly or implicitly) period of time
+b. Achieving a specified performance target that is defined solely by reference to the grantor's own operations (or activities) or by reference to the grantee's performance related to the grantor's own operations (or activities).
+Attaining a specified growth rate in return on assets, obtaining regulatory approval to market a specified product, selling shares in an initial public offering or other financing event, and a change in control are examples of performance conditions. A performance target also may be defined by reference to the same performance measure of another entity or group of entities. For example, attaining a growth rate in earnings per share (EPS) that exceeds the average growth rate in EPS of other entities in the same industry is a performance condition. A performance target might pertain to the performance of the entity as a whole or to some part of the entity, such as a division, or to the performance of the grantee if such performance is in accordance with the terms of the award and solely relates to the grantor's own operations (or activities).
+2. For share-based consideration payable to a
+that can result in a reduction of the
+transaction price in accordance with Topic
+, a condition affecting the vesting, exercisability,
+exercise price, or other pertinent factors used in determining the fair value of an award that relates to any of the following:
+a. Achieving a specified performance target that is defined solely by reference to the grantor’s own operations (or activities) or by reference to the grantee’s (the customer’s) performance related to the grantor’s own operations (or activities)
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+States Government.
+1/26/2026, 3:33 AM
+Master Glossary
+b. The grantee’s purchase (or potential purchase) of the grantor’s goods or services from either the grantor or the grantor’s customers
+c. A purchase (or potential purchase) of the grantor’s goods or services from either the grantee or the grantee’s customers.
+The performance targets listed in this definition for employee and nonemployee awards (for example, a change in control) are also examples of performance conditions for share-based consideration payable to a customer.
+Glossary Term Usage |
+,
+A performance indicator reports results of operations. A performance indicator and the income from continuing operations reported by for-profit health care entities generally are consistent, except for transactions that clearly are not applicable to one kind of entity (for example, for-profit health care entities typically would not receive contributions, and not-for-profit health care entities would not award stock compensation). That is, a performance indicator is analogous to income from continuing operations of a for-profit entity.
+Glossary Term Usage |
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+A promise in a
+with a
+to transfer to the customer either:
+a. A good or service (or a bundle of goods or services) that is distinct
+b. A series of distinct goods or services that are substantially the same and that have the same pattern of transfer to the customer.
+Glossary Term Usage |
+An irrevocable undertaking by a guarantor to make payments in the event a specified third party fails to perform under a nonfinancial contractual obligation.
+Glossary Term Usage |
+The total period of time that an asset is used to fulfill a
+with a customer (including the sum of
+any nonconsecutive periods of time).
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+States Government.
+1/26/2026, 3:33 AM
+Master Glossary
+Glossary Term Usage |
+A type of
+. See paragraph
+.
+Glossary Term Usage |
+An entity that invests in mortgage loans for its own account, for example, an insurance entity, commercial or mutual savings bank, savings and loan association, pension plan, real estate investment trust, or Federal National Mortgage Association (FNMA).
+Glossary Term Usage |
+See
+.
+Glossary Term Usage |
+An arrangement in which a donor establishes and funds a perpetual trust administered by an individual or entity other than the not-for-profit entity (NFP) that is the beneficiary. Under the terms of the trust, the NFP has the irrevocable right to receive the income earned on the trust assets in perpetuity, but never receives the assets held in trust. Distributions received by the NFP may be restricted by the donor.
+Definition 1 | Glossary Term Usage |
+The length of time a shareholder owns shares of a particular fund or class of shares of a fund before redemption.
+Definition 2 | Glossary Term Usage |
+The complement of the
+, persistency is the renewal quality of insurance contracts, that is,
+the number of insureds that keep their insurance in force during a period. Persistency varies by plan of insurance, age at issue, year of issue, frequency of premium payment, and other factors.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+States Government.
+1/26/2026, 3:33 AM
+Glossary Term Usage |
+A sales inducement credited to the contract holder account balance at the end of a specified period if the contract remains in force at that date, thus increasing the account value at the end of the specified period.
+Glossary Term Usage |
+A document filed in a court of bankruptcy, initiating proceedings under the
+.
+Glossary Term Usage |
+,
+A contractually or physically distinguishable portion of a real estate project (including time-sharing projects). That portion is distinguishable from other portions based on shared characteristics such as:
+a. Units a developer has declared or legally registered to be for sale
+b. Units linked to an owners association
+c. Units to be constructed during a particular time period
+d. How a developer plans to build the real estate project.
+Glossary Term Usage |
+Any method of recognition of allowable costs in rates that meets all of the following criteria:
+a. The method was adopted by the regulator in connection with a major, newly completed plant of the regulated entity or of one of its suppliers or a major plant scheduled for completion in the near future.
+b. The method defers the rates intended to recover allowable costs beyond the period in which those allowable costs would be charged to expense under generally accepted accounting principles (GAAP) applicable to entities in general.
+c. The method defers the rates intended to recover allowable costs beyond the period in which those rates would have been ordered under the rate-making methods routinely used prior to 1982 by that regulator for similar allowable costs of that regulated entity.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Definition 1 | Glossary Term Usage |
+A form of settling a financial instrument under which both of the following conditions are met:
+a. The party designated in the contract as the buyer delivers the full stated amount of cash or other
+financial instruments to the seller.
+b. The seller delivers the full stated number of shares of stock or other financial instruments or
+nonfinancial instruments to the buyer.
+Definition 2 | Glossary Term Usage |
+The party designated in the contract as the buyer delivers the full stated amount of cash to the seller, and the seller delivers the full stated number of shares to the buyer.
+See
+.
+Glossary Term Usage |
+An arrangement that is mutually understood by an employer and its employees, whereby an employer undertakes to provide its employees with benefits after they retire in exchange for their services over a specified period of time, upon attaining a specified age while in service, or a combination of both. A plan may be written or it may be implied by a well-defined, although perhaps unwritten, practice of paying postretirement benefits or from oral representations made to current or former employees. See
+.
+Glossary Term Usage |
+The person or group of persons responsible for the content and issuance of a plan's financial statements in much the same way that management is responsible for the content and issuance of a business entity's financial statements.
+Glossary Term Usage |
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Master Glossary
+A change in the existing terms of a plan or the initiation of a new plan. A plan amendment may increase benefits (a positive plan amendment), or reduce or eliminate benefits (a negative plan amendment), including those benefits attributed to years of service already rendered.
+Definition 1 | Glossary Term Usage |
+,
+Assets—usually stocks, bonds, and other investments (except certain insurance contracts as noted in paragraph
+)—that have been segregated and restricted (usually in a trust) to be used for
+a health and welfare plan (which can include active, terminated, and retired employees or their dependents or beneficiaries). The amount of plan assets includes amounts contributed by the employer, and by plan participants for a contributory plan, and amounts earned from investing the contributions, less benefits, income taxes, and other expenses incurred. Plan assets ordinarily cannot be withdrawn by the employer except under certain circumstances when a plan has assets in excess of obligations and the employer has taken certain steps to satisfy existing obligations. Securities of the employer held by the plan are includable in plan assets provided they are transferable. Assets not segregated in a trust, or otherwise effectively restricted, so that they cannot be used by the employer for other purposes are not plan assets, even though the employer may intend that those assets be used to provide health and welfare benefits, which may include postretirement benefits. Those assets shall be accounted for in the same manner as other employer assets of a similar nature and with similar restrictions. If a plan has liabilities other than for benefits, those nonbenefit obligations are considered as reductions of plan assets. Amounts accrued by the employer but not yet paid to the plan are not plan assets. If a trust arrangement explicitly provides that segregated assets are available to satisfy claims of creditors in bankruptcy, such a provision would effectively permit those assets to be used for other purposes at the discretion of the employer. It is not necessary to determine that a trust is bankruptcy- proof for the assets of the trust to qualify as plan assets. However, assets held in a trust that explicitly provides that such assets are available to the general creditors of the employer in the event of the employer's bankruptcy would not qualify as plan assets.
+Definition 2 | Glossary Term Usage |
+,
+Assets—usually stocks, bonds, and other investments—that have been segregated and restricted, usually in a trust, to provide for pension benefits. The amount of plan assets includes amounts contributed by the employer, and by employees for a contributory plan, and amounts earned from investing the contributions, less benefits paid. Plan assets ordinarily cannot be withdrawn by the employer except under certain circumstances when a plan has assets in excess of obligations and the employer has taken certain steps to satisfy existing obligations. Assets not segregated in a trust or otherwise effectively restricted so that they cannot be used by the employer for other purposes are not plan assets even though it may be intended that such assets be used to provide pensions. If a plan has liabilities other than for benefits, those nonbenefit obligations may be considered as reductions of plan assets. Amounts accrued by the employer but not yet paid to the plan are not plan assets. Securities of the employer held by the plan are includable in plan assets provided they are transferable.
+See
+.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+States Government.
+1/26/2026, 3:33 AM
+Glossary Term Usage |
+An event that significantly reduces the expected years of future service of present employees or eliminates for a significant number of employees the accrual of defined benefits for some or all of their future services.
+Glossary Term Usage |
+The characteristics of the plan population including geographical distribution, age, sex, and marital status.
+Glossary Term Usage |
+The plan of reorganization, including all exhibits and schedules thereto, as it may be amended from time to time, that is adopted by the board of directors of the demutualizing entity, pursuant to which the entity demutualizes.
+Glossary Term Usage |
+An agreement formulated in
+proceedings under the supervision of the
+that enables the debtor to continue in business. The plan, once confirmed, may affect the rights of undersecured creditors, secured creditors, and stockholders as well as those of unsecured creditors. Before a plan is confirmed by the Bankruptcy Court, it must comply with general provisions of the
+. Those provisions mandate, for example, that the plan is feasible, the plan is in the
+best interest of the creditors, and, if an impaired class does not accept the plan, the plan must be determined to be fair and equitable before it can be confirmed.
+Glossary Term Usage |
+Any employee or former employee who has rendered service in the credited service period and is expected to receive employer-provided benefits under the postretirement benefit plan, including benefits to or for any beneficiaries and covered dependents. See
+.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Glossary Term Usage |
+An event in which the pension plan is frozen and no further benefits accrue. Future service may continue to be the basis for vesting of nonvested benefits existing at the date of suspension. The plan may still hold assets, pay benefits already accrued, and receive additional employer contributions for any unfunded benefits. Employees may or may not continue working for the employer.
+Glossary Term Usage |
+An event in which the pension plan or postretirement benefit plan ceases to exist and all benefits are settled by the purchase of insurance contracts (for example, annuities) or by other means. The plan may or may not be replaced by another plan. A plan termination with a replacement plan may or may not be in substance a plan termination for accounting purposes.
+Glossary Term Usage |
+See
+.
+Glossary Term Usage |
+A real estate development that consists of separate lots with contiguous or noncontiguous common areas and facilities owned and maintained by a common interest realty association in which owners have stock or a membership interest.
+Glossary Term Usage |
+A type of
+. See paragraph
+.
+Glossary Term Usage |
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Purchased vacation credits that a buyer may redeem for occupancy at various sites. The number of points redeemed depends on such factors as unit type and size, site location, and season.
+Glossary Term Usage |
+,
+At any point in time, this is the amount held by the insurance entity on behalf of the policyholder. This balance may be held in a general account, a separate account (a legally segregated account), or a combination of both on the insurance entity's balance sheet. This account includes premiums received from the policyholder, plus any credited income, less any relevant charges (acquisition costs, cost of insurance, and so forth). (Note: The use of this glossary term is not consistent among legal contracts. When determining the applicability of this term, the economic substance of the item shall be taken into consideration.)
+Glossary Term Usage |
+Additional values applied to a policy through dividends, increases in fund values, accumulation values or accumulation account values or extensions of coverages.
+Glossary Term Usage |
+A trust in which donors are assigned a specific number of units based on the proportion of the fair value of their contributions to the total fair value of the pooled income fund on the date of the donor's entry to the pooled fund. Until a donor's death, the donor (or the donor's designated beneficiary or beneficiaries) is paid the actual income (as defined under the arrangement) earned on the donor's assigned units. Upon the donor's death, the value of these assigned units reverts to the NFP.
+Glossary Term Usage |
+A marketing cooperative that receives its members' agricultural products without obligation to pay a fixed price and commingles those products into single or multiple pools for processing and marketing purposes. Pool periods may vary from a week to a year or longer, depending on the product involved. Generally profits or losses are allocated to patrons upon closing of the pool.
+Glossary Term Usage |
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Pools are accounting control centers used for determining earnings and patronage refunds due to particular patrons, including the following:
+a. An open pool is an accounting control center that is not closed at the end of each accounting
+period. Open pools are sometimes used by marketing cooperatives for crops that may not be sold for two or more years after their receipt from patrons.
+b. A single pool cooperative determines net proceeds or patronage refunds on the basis of overall
+operating results for all commodities marketed during an accounting period.
+c. A multiple pool cooperative determines net proceeds or patronage refunds on the basis of
+separate commodities, departments, or accounting periods.
+Glossary Term Usage |
+,
+The level at which an entity develops and documents a systematic methodology to determine its allowance for credit losses. See paragraphs
+and
+.
+Glossary Term Usage |
+Liabilities incurred after the filing of a petition that are not associated with prebankruptcy events. Thus, these liabilities are not considered
+.
+Glossary Term Usage |
+See
+.
+Glossary Term Usage |
+,
+All forms of benefits, other than retirement income, provided by an employer to retirees. Those benefits may be defined in terms of specified benefits, such as health care, tuition assistance, or legal services, that are provided to retirees as the need for those benefits arises, such as certain health care benefits, or they may be defined in terms of monetary amounts that become payable on the occurrence of a specified event, such as life insurance benefits.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Glossary Term Usage |
+See
+.
+Glossary Term Usage |
+A form of postretirement benefit provided by an employer to retirees for defined health care services or coverage of defined health care costs, such as hospital and medical coverage, dental benefits, and eye care.
+Glossary Term Usage |
+A security or other contract that may entitle its holder to obtain common stock during the reporting period or after the end of the reporting period.
+Glossary Term Usage |
+Any individual, legal entity, or government—including owners, operators, transporters, or generators— potentially responsible for, or contributing to, the environmental impacts at a Superfund site. The Environmental Protection Agency has the authority to require potentially responsible parties, through administrative and legal actions, to remediate such sites. At early stages of the remediation process, the list of potentially responsible parties may be limited to a handful of entities that either were significant contributors of waste to the site or were easy to identify, for example, because of their proximity to the site or because of labeled material found at the site. As further investigation of the site occurs and as remediation activities take place, additional potentially responsible parties may be identified. Once identified, the additional potentially responsible parties would be reclassified from this category to either the participating potentially responsible party or recalcitrant potentially responsible party category. The total number of parties in this category and their aggregate allocable share of the remediation liability varies by site and cannot be reliably determined before the specific identification of individual potentially responsible parties. For example, some ultimately may be dropped from the potentially responsible party list because no substantive evidence is found to link them to the site. For others, substantive evidence eventually may be found that points to their liability. The presentation of that evidence to the entity would result in a reclassification of the party from this category of potentially responsible parties (sometimes referred to as hiding in the weeds) to either the
+or
+category.
+Glossary Term Usage |
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Costs related to a property that are incurred for the express purpose of, but prior to, obtaining that property. Examples of preacquisition costs may be costs of surveying, zoning or traffic studies, or payments to obtain an option on the property.
+Glossary Term Usage |
+,
+A security that has preferential rights compared to common stock.
+SEC Definition | Glossary Term Usage |
+SEC Definition | Glossary Term Usage |
+Glossary Term Usage |
+When a computer software project is in the preliminary project stage, entities will likely do the following:
+a. Make strategic decisions to allocate resources between alternative projects at a given point in time. For example, should programmers develop a new payroll system or direct their efforts toward correcting existing problems in an operating payroll system?
+b. Determine the performance requirements (that is, what it is that they need the software to do) and systems requirements for the computer software project it has proposed to undertake.
+c. Invite vendors to perform demonstrations of how their software will fulfill an entity's needs.
+d. Explore alternative means of achieving specified performance requirements. For example, should an entity make or buy the software? Should the software run on a mainframe or a client server system?
+e. Determine that the technology needed to achieve performance requirements exists.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+f. Select a vendor if an entity chooses to obtain software.
+g. Select a consultant to assist in the development or installation of the software.
+December 16, 2027;
+December 16, 2027
+Glossary Term Usage |
+During the prematurity period, the cable television system is partially under construction and partially in service. The prematurity period begins when revenue from the first subscriber is recognized in accordance with Topic
+on revenue from contracts with customers. Its end will vary with
+circumstances of the system but will be determined based on plans for completion of the first major construction period or achievement of a specified predetermined subscriber level at which no additional investment will be required for other than cable television plant. The construction period of a cable television system varies with the size of the franchise area, density of population, and difficulty of physical construction. The construction period is not completed until the head-end, main cable, and distribution cables are installed, and includes a reasonable time to provide for installation of subscriber drops and related hardware. During the construction period, many system operators complete installation of drops and begin to provide service to some subscribers in some parts of the system while construction continues. Providing the signal for the first time is referred to as energizing the system. The length of the prematurity period varies with the franchise development and construction plans. Such plans may consist of any of the following:
+a. Small franchise that is characterized by the absence of free television signal and a short construction period. The entire system is energized at one time near the end of the construction period.
+b. Medium-size franchise that is characterized by some direct competition from free television and by a more extensive geographical franchise area lending itself to incremental construction. Some parts of the system are energized as construction progresses.
+c. Large metropolitan franchise that is characterized by heavy direct competition from free television and fringe area signal inadequacy, high cost, and difficult construction. Many parts of the system are energized as construction progresses.
+Except in the smallest systems, programming is usually delivered to portions of the system and some revenues are obtained before construction of the entire system is complete. Thus, virtually every cable television system experiences a prematurity period during which it is receiving some revenue while continuing to incur substantial costs related to the establishment of the total system.
+Glossary Term Usage |
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+The excess of the net proceeds, after expense, received upon issuance of debt over the amount repayable at its maturity. See
+.
+Glossary Term Usage |
+Offsets against premium taxes levied on insurance entities by states.
+Glossary Term Usage |
+The premiums on all policies an entity has issued in a period.
+Glossary Term Usage |
+Preoperating costs include flight crew training, maintenance training, prerevenue flight expenses, insurance, and depreciation. Preoperating costs relate directly to specific preoperating projects, such as the preparation for operation of new routes or integration of new types of aircraft.
+Glossary Term Usage |
+Any form of health care service provided to a member in exchange for a scheduled payment (or payments) established before care is provided, regardless of the level of service subsequently provided.
+Glossary Term Usage |
+Entities that provide or arrange for the delivery of health care services in accordance with the terms and provisions of a prepaid health care plan. Providers assume the financial risk of the cost of delivering health care services in excess of preestablished fixed premiums. However, some or all of the financial risk may be contractually transferred to other providers (affiliated entities) or by purchasing stop-loss insurance. Other providers of prepaid health care services may include comprehensive medical plans, physicians groups (for example, independent practice associations), and hospitals.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Glossary Term Usage |
+A prepaid interest rate swap contract obligates one party to make periodic payments to another party that are based on a variable interest rate applied to an effective notional amount. It is characterized as an at-the-money interest rate swap for which the fixed leg has been fully prepaid, with the result that the party that receives the variable-leg-based payments has no obligation whatsoever to make any future payments under the swap. Under that characterization, the fair value of the fixed leg and the fair value of the variable leg are equal and offsetting because the at-the-money interest rate swap has an overall fair value of zero.
+Glossary Term Usage |
+Amounts paid to the reinsurer relating to the unexpired portion of reinsured contracts.
+Glossary Term Usage |
+Able to be settled by either party before its scheduled maturity.
+Glossary Term Usage |
+Liabilities that were incurred by an entity before its filing of a petition for protection under the
+including those considered by the
+to be prepetition
+as a rejection of a lease for real property.
+Glossary Term Usage |
+A tool used to link future amounts (cash flows or values) to a present amount using a discount rate (an application of the income approach). Present value techniques differ in how they adjust for risk and in the type of cash flows they use. See
+.
+Glossary Term Usage |
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+, such
+States Government.
+1/26/2026, 3:33 AM
+Master Glossary
+used to allocate principal payments on receivables in a trust to investors. The preset
+participation method is similar to the
+except that the percentage used to
+determine the principal payments allocated to the investors is preset higher than the investors' expected participation interests in the receivables in the trust at the end of the reinvestment period. This method results in a faster payout to the investors than the fixed participation method because a higher percentage of the principal payments is allocated to the investors.
+Glossary Term Usage |
+The distribution of earnings on the basis of patronage.
+Glossary Term Usage |
+,
+An entity that consolidates a variable interest entity (VIE). See paragraphs
+for guidance on determining the primary beneficiary.
+Glossary Term Usage |
+,
+,
+The market with the greatest volume and level of activity for the asset or liability.
+Glossary Term Usage |
+Owners of record or known beneficial owners of more than 10 percent of the voting interests of the entity.
+Glossary Term Usage |
+A market in which transactions, both originations and resales, are negotiated independently with no intermediary. Little information about those transactions may be made available publicly.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+States Government.
+1/26/2026, 3:33 AM
+Master Glossary
+Glossary Term Usage |
+The cost of retroactive benefits granted in a plan amendment. Retroactive benefits are benefits granted in a plan amendment (or initiation) that are attributed by the benefit formula to employee services rendered in periods before the amendment.
+Glossary Term Usage |
+See
+.
+Glossary Term Usage |
+,
+,
+,
+,
+,
+An entity other than a
+, a
+, or an employee benefit plan within
+the scope of Topics 960 through 965 on plan accounting.
+Glossary Term Usage |
+Private label credit cards are those credit cards that are issued by, or on behalf of, a merchandising entity for the purchase of goods or services that are sold at that entity's place(s) of business.
+Glossary Term Usage |
+The method of estimation of
+or
+is called probabilistic when the full range of values
+that could reasonably occur for each unknown parameter (from the geoscience and engineering data) is used to generate a full range of possible outcomes and their associated probabilities of occurrence.
+Glossary Term Usage |
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+The future event or events are likely to occur.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+States Government.
+1/26/2026, 3:33 AM
+Master Glossary
+Glossary Term Usage |
+,
+Probable reserves are reserves for which quantity and grade and/or quality are computed from information similar to that used for proven reserves, but the sites for inspection, sampling, and measurement are farther apart or are otherwise less adequately spaced. The degree of assurance, although lower than that for proven (measured) reserves, is high enough to assume continuity between points of observation.
+Glossary Term Usage |
+,
+,
+,
+, or other assets that are obtained in
+a transfer of financial assets, less any liabilities incurred.
+Glossary Term Usage |
+An individual or an entity that produces and has a financial interest in films for exhibition in movie theaters, on television, or elsewhere.
+Glossary Term Usage |
+A logical representation of all product functions in sufficient detail to serve as product specifications.
+Glossary Term Usage |
+Improvements to an existing product that are intended to extend the life or improve significantly the marketability of the original product. Enhancements normally require a product design and may require a redesign of all or part of the existing product.
+Glossary Term Usage |
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+States Government.
+1/26/2026, 3:33 AM
+A product financing arrangement is a transaction in which an entity sells and agrees to repurchase inventory with the repurchase price equal to the original sale price plus carrying and financing costs, or other similar transactions.
+Glossary Term Usage |
+An agreement to perform certain agreed-upon services to maintain a product for a specified period of time. The terms of the contract may take different forms, such as an agreement to periodically perform a particular service a specified number of times over a specified period of time, or an agreement to perform a particular service as the need arises over the term of the contract.
+Glossary Term Usage |
+A completed version, ready for copying, of the computer software product, the documentation, and the training materials that are to be sold, leased, or otherwise marketed.
+Glossary Term Usage |
+Production involves lifting the crude oil and natural gas to the surface, extracting
+, in the solid, liquid, or gaseous state from oil sands, shale, coalbeds, or other
+nonrenewable natural resources that are intended to be upgraded into synthetic oil or gas, gathering, treating, field processing (as in the case of processing gas to extract liquid hydrocarbons), and field storage. The oil and gas production function shall be regarded as ending at a terminal point, which is the outlet valve on the lease or field storage tank. If unusual physical or operational circumstances exist, it may be appropriate to regard the terminal point for the production function as:
+a. The first point at which oil, gas, or gas liquids, natural or synthetic, are delivered to a main pipeline, a common carrier, a refinery, or a marine terminal
+b. In the case of natural resources that are intended to be upgraded into synthetic oil or gas, if those natural resources are delivered to a purchaser before upgrading, the first point at which the natural resources are delivered to a main pipeline, a common carrier, a refinery, a marine terminal, or a facility that upgrades such natural resources into synthetic oil or gas.
+Glossary Term Usage |
+Production animals provide a service or primary product other than their progeny. Examples are dairy cows (milk), poultry (meat and eggs), and sheep (meat and wool).
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+SEC Definition | Glossary Term Usage |
+See paragraph
+, Regulation S-X Rule 4-10(a)(20), for the definition of production costs as
+used within that Rule.
+Glossary Term Usage |
+The production phase of a mine is deemed to begin when saleable minerals are extracted (produced) from an ore body, regardless of the level of production. However, the production phase does not commence with the removal of de minimis saleable mineral material that occurs in conjunction with the removal of overburden or waste material for the purpose of obtaining access to an ore body.
+Glossary Term Usage |
+Productive assets are assets held for or used in the production of goods or services by the entity. Productive assets include an investment in another entity if the investment is accounted for by the equity method but exclude an investment not accounted for by that method. Similar productive assets are productive assets that are of the same general type, that perform the same function, or that are employed in the same line of business.
+Glossary Term Usage |
+Offspring of animals or plants.
+Glossary Term Usage |
+The activities that result in goods and services being distributed to beneficiaries, customers, or members that fulfill the purposes or mission for which the not-for-profit entity (NFP) exists. Those services are the major purpose for and the major output of the NFP and often relate to several major programs.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Glossary Term Usage |
+The activity of making loans or other investments that are directed at carrying out a not-for-profit entity's purpose for existence rather than investing in the general production of income or appreciation of an asset (for example, total return investing). An example of programmatic investing is a loan made to lower-income individuals to promote home ownership.
+Glossary Term Usage |
+A time-sharing development; some projects may be completed in a single phase, such as a single, one- story building containing several time-sharing units. Other projects may be completed in several phases, for example:
+a. A hotel that is being converted to time-sharing units one floor at a time while the unconverted
+units continue to be rented
+b. A number of buildings, each containing several time-sharing units, being built on a piece of
+property over an extended period of time.
+Glossary Term Usage |
+Costs clearly associated with the acquisition, development, and construction of a real estate project.
+Glossary Term Usage |
+The actuarial present value as of a date of all benefits attributed by the pension benefit formula to employee service rendered before that date. The projected benefit obligation is measured using assumptions as to future compensation levels if the pension benefit formula is based on those future compensation levels (pay-related, final-pay, final-average-pay, or career-average-pay plans).
+Glossary Term Usage |
+,
+,
+,
+,
+A written or oral agreement to contribute cash or other assets to another entity. A promise carries rights and obligations—the recipient of a promise to give has a right to expect that the promised assets will be transferred in the future, and the maker has a social and moral obligation, and generally a legal obligation, to make the promised transfer. A promise to give may be either conditional or unconditional.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Glossary Term Usage |
+Amenities that a developer is obligated to construct under the terms of time-sharing contracts with purchasers. See also
+.
+Glossary Term Usage |
+"The principle that a promise made without consideration may nonetheless be enforced to prevent injustice if the promisor should have reasonably expected the promisee to rely on the promise and if the promisee did actually rely on the promise to his or her detriment." (See Black's Law Dictionary, seventh edition.)
+Glossary Term Usage |
+Mineral interests in properties (hereinafter referred to as properties), which include all of the following:
+a. Fee ownership or a lease
+b. Concession
+c. Other interest representing the legal right to produce or a revenue interest in the production of oil or gas subject to such terms as may be imposed by the conveyance of that interest.
+Properties also include:
+a. Royalty interests
+b. Production payments payable in oil or gas
+c. Other nonoperating interests in properties operated by others.
+Properties include those agreements with foreign governments or authorities under which an entity participates in the operation of the related properties or otherwise serves as producer of the underlying
+(see paragraph
+); but properties do not include other supply agreements or
+contracts that represent the right to purchase (as opposed to extract) oil and gas. Properties are classified as
+or
+.
+Glossary Term Usage |
+An entity that issues insurance contracts providing protection against either of the following:
+a. Damage to or loss of property caused by various perils, such as fire and theft
+b. Legal liability resulting from injuries to other persons or damage to their property.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Property and liability insurance entities may be either stock or mutual entities.
+Glossary Term Usage |
+An entity that issues insurance contracts providing protection against either of the following:
+a. Damage to, or loss of, property caused by various perils, such as fire and theft
+b. Legal liability resulting from injuries to other persons or damage to their property.
+Property and liability insurance entities also can issue accident and health insurance contracts. The term property and liability insurance entity is the current terminology used to describe a fire and casualty insurance entity. Property and liability insurance entities may be either stock or mutual entities.
+Glossary Term Usage |
+Transactions in financial instruments that broker-dealers execute for their own account.
+Glossary Term Usage |
+Reinsurance in which an assuming entity agrees to reimburse a ceding entity for losses that may be incurred as a result of future insurable events covered under contracts subject to the reinsurance. A reinsurance contract may include both prospective and retroactive reinsurance provisions.
+Glossary Term Usage |
+Provisions in some contracts to sell or transfer mortgage servicing rights that could affect the amount ultimately paid to the transferor. For example, the transferor may agree to adjust the sales price for loan prepayments, defaults, or foreclosures that occur within a specified period of time.
+Glossary Term Usage |
+Rights designed to protect the interests of the party holding those rights without giving that party a controlling financial interest in the entity to which they relate. For example, they include any of the
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+following:
+a. Approval or veto rights granted to other parties that do not affect the activities that most significantly impact the entity's economic performance. Protective rights often apply to fundamental changes in the activities of an entity or apply only in exceptional circumstances. Examples include both of the following:
+1. A lender might have rights that protect the lender from the risk that the entity will change its activities to the detriment of the lender, such as selling important assets or undertaking activities that change the credit risk of the entity.
+2. Other interests might have the right to approve a capital expenditure greater than a
+particular amount or the right to approve the issuance of equity or debt instruments.
+b. The ability to remove the reporting entity that has a controlling financial interest in the entity in
+circumstances such as bankruptcy or on breach of contract by that reporting entity.
+c. Limitations on the operating activities of an entity. For example, a franchise agreement for which
+the entity is the franchisee might restrict certain activities of the entity but may not give the franchisor a controlling financial interest in the franchisee. Such rights may only protect the brand of the franchisor.
+Glossary Term Usage |
+,
+Rights that are only protective in nature and that do not allow the limited partners or noncontrolling shareholders to participate in significant financial and operating decisions of the limited partnership or corporation that are made in the ordinary course of business.
+Glossary Term Usage |
+A proved area is the part of a property to which proved reserves have been specifically attributed.
+Glossary Term Usage |
+Proved developed oil and gas reserves are proved
+that can be expected to be recovered:
+a. Through existing wells with existing equipment and operating methods or in which the cost of the required equipment is relatively minor compared with the cost of a new well
+b. Through installed extraction equipment and infrastructure operational at the time of the reserves estimate if the extraction is by means not involving a well.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Master Glossary
+Glossary Term Usage |
+Proved oil and gas reserves are those quantities of oil and gas, which, by analysis of geoscience and engineering data, can be estimated with
+to be
+from a
+given date forward, from known
+, and under existing economic conditions, operating
+methods, and government regulation before the time at which contracts providing the right to operate expire, unless evidence indicates that renewal is reasonably certain, regardless of whether the estimate is a
+or
+.
+The project to extract the hydrocarbons must have commenced, or the operator must be reasonably certain that it will commence the project, within a reasonable time. The area of the reservoir considered as proved includes all of the following:
+a. The area identified by drilling and limited by fluid contacts, if any
+b. Adjacent undrilled portions of the reservoir that can, with reasonable certainty, be judged to be continuous with it and to contain economically producible oil or gas on the basis of available geoscience and engineering data.
+In the absence of data on fluid contacts, proved quantities in a reservoir are limited by the lowest known hydrocarbons as seen in a well penetration unless geoscience, engineering, or performance data and
+establish a lower contact with reasonable certainty.
+Where direct observation from well penetrations has defined a highest known oil elevation and the potential exists for an associated gas cap, proved oil reserves may be assigned in the structurally higher portions of the reservoir only if geoscience, engineering, or performance data and reliable technology establish the higher contact with reasonable certainty.
+that can be produced economically through application of improved recovery techniques
+(including, but not limited to, fluid injection) are included in the proved classification when both of the following occur:
+a. Successful testing by a pilot project in an area of the reservoir with properties no more favorable than in the reservoir as a whole, the operation of an installed program in the reservoir or an , or other evidence using reliable technology establishes the reasonable
+certainty of the engineering analysis on which the project or program was based.
+b. The project has been approved for development by all necessary parties and entities, including governmental entities.
+Existing economic conditions include prices and costs at which economic producibility from a reservoir is to be determined. The price shall be the average price during the 12-month period before the ending date of the period covered by the report, determined as an unweighted arithmetic average of the first- day-of-the-month price for each month within such period, unless prices are defined by contractual arrangements, excluding escalations based upon future conditions.
+Glossary Term Usage |
+Proved properties are properties with proved reserves.
+Glossary Term Usage |
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+States Government.
+1/26/2026, 3:33 AM
+Master Glossary
+Proved undeveloped oil and gas
+are proved reserves that are expected to be recovered from
+new wells on undrilled acreage, or from existing wells where a relatively major expenditure is required for recompletion. Reserves on undrilled acreage shall be limited to those directly offsetting development spacing areas that are reasonably certain of production when drilled, unless evidence using reliable technology exists that establishes
+of
+at greater distances.
+Undrilled locations can be classified as having undeveloped reserves only if a development plan has been adopted indicating that they are scheduled to be drilled within five years, unless the specific circumstances, justify a longer time. Under no circumstances shall estimates for proved undeveloped reserves be attributable to any acreage for which an application of fluid injection or other improved recovery technique is contemplated, unless such techniques have been proved effective by actual projects in the same reservoir or an
+, or by other evidence using
+establishing reasonable certainty.
+Glossary Term Usage |
+,
+Proven reserves are reserves for which both of the following conditions are met:
+a. Quantity is computed from dimensions revealed in outcrops, trenches, workings, or drill holes;
+grade and/or quality are computed from the results of detailed sampling.
+b. The sites for inspection, sampling, and measurement are spaced so closely and the geologic character is so well defined that size, shape, depth, and mineral content of reserves are well established.
+Glossary Term Usage |
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+A public business entity is a business entity meeting any one of the criteria below. Neither a
+nor an employee benefit plan is a business entity.
+a. It is required by the U.S. Securities and Exchange Commission (SEC) to file or furnish financial statements, or does file or furnish financial statements (including voluntary filers), with the SEC (including other entities whose financial statements or financial information are required to be or are included in a filing).
+b. It is required by the Securities Exchange Act of 1934 (the Act), as amended, or rules or regulations promulgated under the Act, to file or furnish financial statements with a regulatory agency other than the SEC.
+c. It is required to file or furnish financial statements with a foreign or domestic regulatory agency in preparation for the sale of or for purposes of issuing securities that are not subject to contractual restrictions on transfer.
+d. It has issued, or is a conduit bond obligor for,
+that are traded, listed, or quoted on an
+exchange or an over-the-counter market.
+e. It has one or more securities that are not subject to contractual restrictions on transfer, and it is required by law, contract, or regulation to prepare U.S. GAAP financial statements (including notes)
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+States Government.
+1/26/2026, 3:33 AM
+and make them publicly available on a periodic basis (for example, interim or annual periods). An entity must meet both of these conditions to meet this criterion.
+An entity may meet the definition of a public business entity solely because its financial statements or financial information is included in another entity's filing with the SEC. In that case, the entity is only a public business entity for purposes of financial statements that are filed or furnished with the SEC.
+Glossary Term Usage |
+A public debt issuance occurs when a debtor issues a number of identical debt instruments to an underwriter that sells the debt instruments (in the form of securities) to various investors.
+Definition 1 | Glossary Term Usage |
+,
+,
+,
+,
+A business entity or a not-for-profit entity that meets any of the following conditions:
+a. It has issued debt or equity securities or is a conduit bond obligor for
+that are traded in a public market (a domestic or foreign stock exchange or an over-the-counter market, including local or regional markets).
+b. It is required to file financial statements with the Securities and Exchange Commission (SEC).
+c. It provides financial statements for the purpose of issuing any class of securities in a public market.
+Definition 2 | Glossary Term Usage |
+An entity that meets any of the following criteria:
+a. Its debt or equity securities are traded in a public market, including those traded on a stock exchange or in the over-the-counter market (including securities quoted only locally or regionally).
+b. It is a conduit bond obligor for
+that are traded in a public market (a
+domestic or foreign stock exchange or an over-the-counter market, including local or regional markets).
+c. Its financial statements are filed with a regulatory agency in preparation for the sale of any class of securities.
+Definition 3 | Glossary Term Usage |
+An entity that meets any of the following criteria:
+a. Has equity securities that trade in a public market, either on a stock exchange (domestic or
+foreign) or in an over-the-counter market, including securities quoted only locally or regionally
+b. Makes a filing with a regulatory agency in preparation for the sale of any class of equity securities
+in a public market
+c. Is controlled by an entity covered by the preceding criteria. That is, a subsidiary of a public entity
+is itself a public entity.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Master Glossary
+An entity that has only debt securities trading in a public market (or that has made a filing with a regulatory agency in preparation to trade only debt securities) is not a public entity.
+Definition 1 | Glossary Term Usage |
+,
+A publicly traded company includes any company whose securities trade in a public market on either of the following:
+a. A stock exchange (domestic or foreign)
+b. In the over-the-counter market (including securities quoted only locally or regionally), or any company that is a conduit bond obligor for conduit debt securities that are traded in a public market (a domestic or foreign stock exchange or an over-the-counter market, including local or regional markets).
+Additionally, when a company is required to file or furnish financial statements with the SEC or makes a filing with a regulatory agency in preparation for sale of its securities in a public market it is considered a publicly traded company for this purpose.
+Conduit debt securities refers to certain limited-obligation revenue bonds, certificates of participation, or similar debt instruments issued by a state or local governmental entity for the express purpose of providing financing for a specific third party (the conduit bond obligor) that is not a part of the state or local government's financial reporting entity. Although conduit debt securities bear the name of the governmental entity that issues them, the governmental entity often has no obligation for such debt beyond the resources provided by a lease or loan agreement with the third party on whose behalf the securities are issued. Further, the conduit bond obligor is responsible for any future financial reporting requirements.
+Definition 2 | Glossary Term Usage |
+A business entity that has any of the following characteristics:
+a. Whose securities are traded in a public market on a domestic stock exchange or in the domestic over-the-counter market (including securities quoted only locally or regionally)
+b. That is a conduit bond obligor for
+that are traded in a public market (a
+domestic or foreign stock exchange or an over-the-counter market, including local or regional markets)
+c. Whose financial statements are filed with a regulatory agency in preparation for the sale of any class of securities in a domestic market.
+Glossary Term Usage |
+Any entity that does not meet the definition of a
+.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+States Government.
+1/26/2026, 3:33 AM
+See
+.
+Glossary Term Usage |
+A contract that allows the reporting entity to buy a specified quantity of its own stock from the writer of the contract at a fixed price for a given period. See
+.
+Glossary Term Usage |
+,
+,
+,
+,
+,
+Acquired individual
+(or acquired groups of financial assets with similar risk
+characteristics) that as of the date of acquisition have experienced a more-than-insignificant deterioration in credit quality since origination, as determined by an acquirer's assessment. See paragraph
+for more information on the meaning of similar risk characteristics for assets
+measured on an amortized cost basis.
+Glossary Term Usage |
+,
+,
+,
+December 16, 2026;
+December 16, 2026
+Paragraphs
+define the term purchased seasoned loans.
+Glossary Term Usage |
+The rate that, at the inception of an unconditional purchase obligation, the purchaser would have incurred to borrow over a similar term the funds necessary to discharge the obligation.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
+States Government.
+1/26/2026, 3:33 AM
+Glossary Term Usage |
+Purchasing cooperatives purchase, manufacture, distribute, and provide feed, petroleum products, fertilizer, chemicals, farm supplies, and services of various kinds to their patrons. See
+.
+Glossary Term Usage |
+The net gain or loss determined by restating in units of constant purchasing power the opening and closing balances of, and transactions in, monetary assets and liabilities.
+Glossary Term Usage |
+Use of the
+basis in the preparation of the
+separate financial statements.
+Glossary Term Usage |
+A contract that allows the holder to sell a specified quantity of stock to the writer of the contract at a fixed price during a given period.
+Copyright © 2026 by Financial Accounting Foundation. All rights reserved. Certain portions may include material copyrighted by American Institute of Certified Public Accountants. Content copyrighted by Financial Accounting Foundation, or any third parties who have not
+provided specific permission, may not be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of Financial Accounting Foundation or such
+applicable third party. Financial Accounting Foundation claims no copyright in any portion hereof that constitutes a work of the United S
+G
+Master Glossary
