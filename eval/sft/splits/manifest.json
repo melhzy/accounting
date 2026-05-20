@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-20T03:54:22.370956+00:00",
-  "source_jsonl": "eval\\spiceland9e.jsonl",
-  "source_jsonl_sha256": "95f1ae448c693088b893758ffd24f667aed08593bc107611c9af722ff8f54e4b",
+  "generated_at": "2026-05-20T16:57:53.181685+00:00",
+  "source_jsonl": "eval/spiceland9e.jsonl",
+  "source_jsonl_sha256": "fed6eb17de8be1e493b1a54277bdb70175502e517ea4cd4e6877914f437d213b",
   "seedhash_input": "spiceland9e-finetune-robustness-2026-05-19",
   "seedhash_package_version": "0.1.0",
   "n_seeds": 5,
@@ -11,11 +11,11 @@
     "test": 0.1
   },
   "input_records": 4453,
-  "eligible_records": 4451,
+  "eligible_records": 4452,
   "skipped": {
-    "no_gold_answer": 2
+    "exclude_from_scoring": 1
   },
-  "n_scenarios": 3424,
+  "n_scenarios": 3425,
   "tokenizer_pin": null,
   "system_prompt": "You are a graduate-level intermediate financial accounting tutor with deep knowledge of US GAAP (FASB ASC) and the Spiceland 9e curriculum. When you answer, cite the controlling chapter and learning objective if given, show your reasoning step by step for computational problems, and present journal entries in standard debit-on-top format. Use exact-decimal arithmetic for money amounts; do not round prematurely. If a problem provides tables, preserve and reference them in your reasoning.",
   "seeds": [
@@ -23,40 +23,40 @@
       "seed_index": 0,
       "seed_int": 351199285,
       "split_counts": {
-        "train": 3537,
+        "train": 3538,
         "valid": 450,
         "test": 464
       },
       "scenarios_per_split": {
-        "train": 2739,
+        "train": 2740,
         "valid": 344,
         "test": 341
       },
       "cross_split_scenario_overlap": 0,
       "file_sha256": {
-        "train": "91b530cfb89fbca14c56338c1d30a39d2a64cf51bf9b2df3c79e0146da9ba689",
-        "valid": "53e5c750e9c2b21e9c19b60a61ba8bbe32ef77dba5dadaf123e85a92b8c79f6c",
-        "test": "a0a26707839738778a6a9590b375d764128ac97f6c9d791962dda40b634394c5"
+        "train": "5dce67f97fe300c141c2c637af1cbfe6503b2063e3339bf0939dd741f2b30462",
+        "valid": "e01a5ccbd2d3e27f36f6b4b54d2e863f127eaa9184498c129a6f2bc6c22b509a",
+        "test": "86e2914fb83d221c86ef3db745a31164d756b7d0525ec76051cf6ef92b0857e7"
       }
     },
     {
       "seed_index": 1,
       "seed_int": 1884065545,
       "split_counts": {
-        "train": 3540,
+        "train": 3541,
         "valid": 453,
         "test": 458
       },
       "scenarios_per_split": {
         "valid": 344,
-        "train": 2739,
+        "train": 2740,
         "test": 341
       },
       "cross_split_scenario_overlap": 0,
       "file_sha256": {
-        "train": "019d04f481a9d4461fdfd05c88c7dfe98a11ae5630a44a9cc04e0ce8f343ed4e",
-        "valid": "ac92f2d6d9182fa4e79b7cf693657ca380f1deecc6b7f045c72bdfae1a5e0962",
-        "test": "582eac7e9888d65675a2cafb72e9bba72f53f5275d11830b475a18756e7e4299"
+        "train": "cd747de4bee3d6f7dd2a83a0a20b58fb9473897dab0b6d4dae830c0733b6ab50",
+        "valid": "0c43b11e2921081ac97954e981c650cc216dc02370724cf0ef87033d6ef5dcf8",
+        "test": "a091c41c4cf6e884fd11b0139794777db345ec6b3058c68cdb043cb12ad55902"
       }
     },
     {
@@ -64,59 +64,59 @@
       "seed_int": 1805455021,
       "split_counts": {
         "train": 3535,
-        "valid": 452,
+        "valid": 453,
         "test": 464
       },
       "scenarios_per_split": {
-        "train": 2739,
+        "train": 2740,
         "test": 341,
         "valid": 344
       },
       "cross_split_scenario_overlap": 0,
       "file_sha256": {
-        "train": "6aa7acb9a706089d837c9dcdaa4d293ef54442a6004153dd96eca1b40f8a1290",
-        "valid": "81526e6f3a6faeace18ef1aa89b16ab2d0429b1b58255962fd7fb5ef38578899",
-        "test": "248785ea65631639fab61e85ab4b429941c25f07a0f692dcdd23b113e6fb0871"
+        "train": "c8fe870e0d74e3ff5d7a970b0e85d03b5e7a610cd97637cae5f8bac5a1ae2efd",
+        "valid": "a95a457fb004876ea0029eb4c78034184bc9a6df9f1b43e865c16906a0aed3e8",
+        "test": "220cbf4106583e96f4f32e117315b80818bd41c8adbcbb6fdef916ea892d3d84"
       }
     },
     {
       "seed_index": 3,
       "seed_int": 880639735,
       "split_counts": {
-        "train": 3553,
+        "train": 3554,
         "valid": 467,
         "test": 431
       },
       "scenarios_per_split": {
-        "train": 2739,
+        "train": 2740,
         "test": 341,
         "valid": 344
       },
       "cross_split_scenario_overlap": 0,
       "file_sha256": {
-        "train": "d189ff9cffe0f3c28d00494d15662a1ba57c41d69bb92f1f2eceaac6caa03ef3",
-        "valid": "509c80ae667cf8de54ccfd39cf8f437a738cab36967c70605f1fda526a957ece",
-        "test": "abec5efe0f49bb892017cf708f220c43664a850fba4ea65869bf60c140c162a3"
+        "train": "956f4201008f3499301242f1a7d4c4e5065b203f0631fe5df9096927a8f2defa",
+        "valid": "262336cf476f6ab5cebb14b340e002e3707a2180c1233c97667c2208bba0172b",
+        "test": "36df7cfd15510c0c6e473b0e659bfc06b9ae15f88e04e796b05e0eb90a3daebb"
       }
     },
     {
       "seed_index": 4,
       "seed_int": 1797866777,
       "split_counts": {
-        "train": 3558,
+        "train": 3559,
         "valid": 448,
         "test": 445
       },
       "scenarios_per_split": {
-        "train": 2739,
+        "train": 2740,
         "valid": 344,
         "test": 341
       },
       "cross_split_scenario_overlap": 0,
       "file_sha256": {
-        "train": "558edc3940866f6a0c49662ecbd5ee1da0089e10697ba935b5ddc7ae47c2922a",
-        "valid": "69a8a6ef0236e15d79d75bee8b516ff7b7b076bfe1c9625ed8525dac5eaa2558",
-        "test": "11a3f3fbf740d95d95b2bad4dcefd562dca7878464156538437eba079b447b80"
+        "train": "5121a69cd61fd507d9da722b5a9daceda4c689b7933c98e706874f9adf7043e6",
+        "valid": "d5f37631d56d62bb9470870dd11cf7ea2fa31d790ebb1f3f69c3c17edda31a4c",
+        "test": "e6b79210cfb4497f5c8faafd1b14019b783880bfb04261227ab7e8050f1b8bb2"
       }
     }
   ]

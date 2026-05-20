@@ -128,6 +128,9 @@ def build_messages(rec: dict) -> list[dict]:
 
 def should_skip(rec: dict) -> str | None:
     """Skip rules. Return reason or None."""
+    meta = rec.get("meta") or {}
+    if meta.get("exclude_from_scoring"):
+        return "exclude_from_scoring"
     if not rec.get("gold_answer"):
         return "no_gold_answer"
     if not (rec.get("prompt") or "").strip():

@@ -2,8 +2,8 @@
   "seed_index": 2,
   "seed_int": 1805455021,
   "seedhash_input": "spiceland9e-finetune-robustness-2026-05-19",
-  "generated_at": "2026-05-20T03:54:21.999411+00:00",
-  "source_jsonl_sha256": "95f1ae448c693088b893758ffd24f667aed08593bc107611c9af722ff8f54e4b",
+  "generated_at": "2026-05-20T16:57:53.040827+00:00",
+  "source_jsonl_sha256": "fed6eb17de8be1e493b1a54277bdb70175502e517ea4cd4e6877914f437d213b",
   "split_fractions": {
     "train": 0.8,
     "valid": 0.1,
@@ -11,38 +11,38 @@
   },
   "split_counts": {
     "train": 3535,
-    "valid": 452,
+    "valid": 453,
     "test": 464
   },
   "scenarios_per_split": {
-    "train": 2739,
+    "train": 2740,
     "test": 341,
     "valid": 344
   },
   "cross_split_scenario_overlap": 0,
   "worked_solution_by_split": {
     "train": {
-      "worked": 1717,
-      "stub": 1818
+      "worked": 1719,
+      "stub": 1816
     },
     "test": {
-      "worked": 200,
-      "stub": 264
+      "worked": 201,
+      "stub": 263
     },
     "valid": {
-      "worked": 218,
-      "stub": 234
+      "worked": 216,
+      "stub": 237
     }
   },
   "primary_bloom_by_split": {
     "train": {
-      "Remember": 890,
+      "Remember": 889,
       "Understand": 947,
       "Evaluate": 30,
       "Apply": 1175,
       "Create": 15,
       "Analyze": 449,
-      "Unknown": 29
+      "Unknown": 30
     },
     "test": {
       "Remember": 107,
@@ -54,13 +54,13 @@
       "Evaluate": 4
     },
     "valid": {
-      "Remember": 110,
+      "Remember": 111,
       "Evaluate": 3,
       "Understand": 109,
       "Analyze": 51,
       "Apply": 173,
-      "Create": 2,
-      "Unknown": 4
+      "Unknown": 4,
+      "Create": 2
     }
   },
   "chapter_by_split": {
@@ -74,14 +74,14 @@
       "14": 202,
       "7": 177,
       "8": 161,
-      "9": 164,
+      "9": 161,
       "10": 157,
       "11": 183,
       "12": 164,
       "13": 152,
       "15": 222,
       "16": 144,
-      "17": 208,
+      "17": 211,
       "18": 145,
       "19": 190,
       "20": 114,
@@ -92,11 +92,11 @@
       "2": 21,
       "3": 5,
       "4": 6,
-      "5": 43,
+      "5": 42,
       "6": 10,
       "7": 17,
       "8": 13,
-      "9": 5,
+      "9": 6,
       "10": 16,
       "11": 25,
       "12": 31,
@@ -115,19 +115,19 @@
       "2": 24,
       "3": 16,
       "4": 33,
-      "5": 34,
+      "5": 35,
       "6": 10,
       "7": 30,
       "8": 13,
-      "9": 26,
+      "9": 28,
       "10": 21,
       "11": 20,
-      "12": 21,
+      "12": 22,
       "13": 24,
       "14": 21,
       "15": 33,
       "16": 22,
-      "17": 21,
+      "17": 18,
       "18": 19,
       "19": 19,
       "20": 14,
@@ -136,10 +136,10 @@
   },
   "type_by_split": {
     "train": {
-      "True/False": 355,
+      "True/False": 354,
       "Multiple Choice": 1711,
       "Matching": 543,
-      "Essay/Problem": 926
+      "Essay/Problem": 927
     },
     "test": {
       "True/False": 31,
@@ -148,16 +148,16 @@
       "Matching": 106
     },
     "valid": {
-      "True/False": 40,
+      "True/False": 41,
       "Multiple Choice": 219,
       "Essay/Problem": 136,
       "Matching": 57
     }
   },
   "file_sha256": {
-    "train": "6aa7acb9a706089d837c9dcdaa4d293ef54442a6004153dd96eca1b40f8a1290",
-    "valid": "81526e6f3a6faeace18ef1aa89b16ab2d0429b1b58255962fd7fb5ef38578899",
-    "test": "248785ea65631639fab61e85ab4b429941c25f07a0f692dcdd23b113e6fb0871"
+    "train": "c8fe870e0d74e3ff5d7a970b0e85d03b5e7a610cd97637cae5f8bac5a1ae2efd",
+    "valid": "a95a457fb004876ea0029eb4c78034184bc9a6df9f1b43e865c16906a0aed3e8",
+    "test": "220cbf4106583e96f4f32e117315b80818bd41c8adbcbb6fdef916ea892d3d84"
   },
   "tokenizer_pin": null,
   "system_prompt": "You are a graduate-level intermediate financial accounting tutor with deep knowledge of US GAAP (FASB ASC) and the Spiceland 9e curriculum. When you answer, cite the controlling chapter and learning objective if given, show your reasoning step by step for computational problems, and present journal entries in standard debit-on-top format. Use exact-decimal arithmetic for money amounts; do not round prematurely. If a problem provides tables, preserve and reference them in your reasoning."

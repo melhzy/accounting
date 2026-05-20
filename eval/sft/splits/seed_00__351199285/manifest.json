@@ -2,27 +2,27 @@
   "seed_index": 0,
   "seed_int": 351199285,
   "seedhash_input": "spiceland9e-finetune-robustness-2026-05-19",
-  "generated_at": "2026-05-20T03:54:21.616218+00:00",
-  "source_jsonl_sha256": "95f1ae448c693088b893758ffd24f667aed08593bc107611c9af722ff8f54e4b",
+  "generated_at": "2026-05-20T16:57:52.898750+00:00",
+  "source_jsonl_sha256": "fed6eb17de8be1e493b1a54277bdb70175502e517ea4cd4e6877914f437d213b",
   "split_fractions": {
     "train": 0.8,
     "valid": 0.1,
     "test": 0.1
   },
   "split_counts": {
-    "train": 3537,
+    "train": 3538,
     "valid": 450,
     "test": 464
   },
   "scenarios_per_split": {
-    "train": 2739,
+    "train": 2740,
     "valid": 344,
     "test": 341
   },
   "cross_split_scenario_overlap": 0,
   "worked_solution_by_split": {
     "train": {
-      "worked": 1697,
+      "worked": 1698,
       "stub": 1840
     },
     "valid": {
@@ -42,7 +42,7 @@
       "Create": 14,
       "Apply": 1176,
       "Analyze": 449,
-      "Unknown": 29
+      "Unknown": 30
     },
     "valid": {
       "Remember": 108,
@@ -77,15 +77,15 @@
       "9": 155,
       "10": 146,
       "11": 182,
-      "12": 179,
+      "12": 180,
       "13": 147,
-      "15": 270,
+      "15": 269,
       "16": 147,
       "17": 207,
       "18": 142,
       "19": 192,
       "20": 124,
-      "21": 155
+      "21": 156
     },
     "valid": {
       "1": 18,
@@ -102,13 +102,13 @@
       "12": 22,
       "13": 38,
       "14": 21,
-      "15": 21,
+      "15": 22,
       "16": 16,
       "17": 23,
       "18": 21,
       "19": 16,
       "20": 16,
-      "21": 21
+      "21": 20
     },
     "test": {
       "1": 12,
@@ -139,7 +139,7 @@
       "True/False": 339,
       "Multiple Choice": 1703,
       "Matching": 553,
-      "Essay/Problem": 942
+      "Essay/Problem": 943
     },
     "valid": {
       "True/False": 47,
@@ -155,9 +155,9 @@
     }
   },
   "file_sha256": {
-    "train": "91b530cfb89fbca14c56338c1d30a39d2a64cf51bf9b2df3c79e0146da9ba689",
-    "valid": "53e5c750e9c2b21e9c19b60a61ba8bbe32ef77dba5dadaf123e85a92b8c79f6c",
-    "test": "a0a26707839738778a6a9590b375d764128ac97f6c9d791962dda40b634394c5"
+    "train": "5dce67f97fe300c141c2c637af1cbfe6503b2063e3339bf0939dd741f2b30462",
+    "valid": "e01a5ccbd2d3e27f36f6b4b54d2e863f127eaa9184498c129a6f2bc6c22b509a",
+    "test": "86e2914fb83d221c86ef3db745a31164d756b7d0525ec76051cf6ef92b0857e7"
   },
   "tokenizer_pin": null,
   "system_prompt": "You are a graduate-level intermediate financial accounting tutor with deep knowledge of US GAAP (FASB ASC) and the Spiceland 9e curriculum. When you answer, cite the controlling chapter and learning objective if given, show your reasoning step by step for computational problems, and present journal entries in standard debit-on-top format. Use exact-decimal arithmetic for money amounts; do not round prematurely. If a problem provides tables, preserve and reference them in your reasoning."

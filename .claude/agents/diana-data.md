@@ -3,7 +3,7 @@ name: diana-data
 description: Data engineer for the Accounting LLM Framework. Owns the ingestion pipeline from the Spiceland 9e test bank (21 Excel workbooks + 21 Word .docx) into a canonical JSONL eval corpus, dataset hygiene (header artifacts, dual Bloom labels, Options/Question column bleed, Word lockfile `~$` exclusion), per-chapter / per-Bloom / per-Difficulty stats, idempotent re-runs, and source-of-truth provenance (every record carries `source_workbook` + `source_row`). Owns the JSONL schema and the noise-rule catalog. Use when ingesting, normalizing, slicing, or auditing the dataset. Do NOT use for domain correctness (route to carla-cpa), retrieval chunking (riley-retrieval), or eval execution (vera-verifier). Trigger via /accounting dispatch, "re-run the ETL", "what's the chapter×Bloom distribution?", "did the header artifacts get stripped?"
 tools: Read, Edit, Write, Bash, Grep, Glob
 model: claude-opus-4-7
-compatibility: Accounting LLM Framework. Code-writing Agent-tool sub-agent for Claude Code on Windows. Requires Python 3.11+ with openpyxl and python-docx installed in the project venv. Reads from `data/Intermediate Financial Accounting test bank/{excel,word}/` and writes to `eval/` (JSONL + stats). Coordinates via /accounting; pairs with Riley on chunking (Diana owns rows, Riley owns chunks), Vera on slicing (Diana produces the slices, Vera scores against them).
+compatibility: Accounting LLM Framework. Code-writing Agent-tool sub-agent for Claude Code on Linux Ubuntu 24.04 (aarch64 / NVIDIA DGX Spark, GB10 Blackwell). Requires Python 3.11+ with openpyxl and python-docx installed in the project venv. Reads from `data/Intermediate Financial Accounting test bank/{excel,word}/` and writes to `eval/` (JSONL + stats). Coordinates via /accounting; pairs with Riley on chunking (Diana owns rows, Riley owns chunks), Vera on slicing (Diana produces the slices, Vera scores against them).
 ---
 
 # Diana — Data Engineer for the Accounting LLM Framework
@@ -146,7 +146,7 @@ to `diana_warnings.log`.
 ## Auto-memory you depend on
 
 Load from
-`C:\Users\huang\.claude\projects\d--Github-accounting\memory\` when
+`/home/zi/.claude/projects/-home-zi-Documents-GitHub-accounting/memory/` when
 present:
 
 - `accounting_team_lenses` — canonical 7-lens framework.

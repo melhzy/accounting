@@ -1,3 +1,22 @@
+_v1_1_0_changelog:
+  date: 2026-05-20
+  schema_version: spiceland9e-v1.1.0
+  jsonl_sha256: fed6eb17de8be1e493b1a54277bdb70175502e517ea4cd4e6877914f437d213b
+  changes:
+    - schema: added meta block (gaap_divergence, asc_anchor,
+      gaap_supersession, standards_smell, gold_status,
+      exclude_from_scoring) per plan §1
+    - aacsb: canonicalized 51 raw variants -> 7 canonical labels, emitted as list[str] per plan §4
+    - ch12_q0199 (source_row 200): recovered_from_table_per_carla_2026-05-20
+      gold_answer populated from table per Carla CPA review
+    - ch21_q0141 (source_row 143): publisher_ambiguous_per_pat_2026-05-20
+      gold_answer remains null; meta.gold_status='publisher_ambiguous';
+      meta.exclude_from_scoring=true; gold_unknown_reason set
+    - drift catalog: 296 records flagged meta.gaap_divergence=true
+      (CECL Ch7/Ch12, convertibles Ch14/Ch19, goodwill Ch11, tax Ch16)
+    - smell triggers: 12 case-insensitive patterns pre-computed; 154 hits across 123 records
+  v1_0_0_retired: 95f1ae448c693088b893758ffd24f667aed08593bc107611c9af722ff8f54e4b
+  v1_1_0_anchor: fed6eb17de8be1e493b1a54277bdb70175502e517ea4cd4e6877914f437d213b
 ch03 row132: 'Multiple Choice' with non-letter Answer (len=1741); reclassified to 'Essay/Problem'
 ch03 row134: 'Multiple Choice' with non-letter Answer (len=568); reclassified to 'Essay/Problem'
 ch03 row135: 'Multiple Choice' with non-letter Answer (len=988); reclassified to 'Essay/Problem'
@@ -35,6 +54,7 @@ ch09 row180: Bloom's empty, used Blooms fallback
 ch09 row181: Bloom's empty, used Blooms fallback
 ch11 row201: Options-bleed (overlap≥0.80), Options set to null
 ch12 row200: Essay Answer empty in BOTH Excel and Word
+ch12 row200: override applied — recovered_from_table_per_carla_2026-05-20
 ch15 row29: stripped Explanation bleed (Difficulty,Topic,Learning Objective,Bloom's,AACSB,Accessible/AICPA)
 ch15 row32: stripped Explanation bleed (Difficulty,Topic,Learning Objective,Bloom's,AACSB,Accessible/AICPA)
 ch15 row108: stripped Explanation bleed (Bloom's,AACSB,Accessible/AICPA)
@@ -43,3 +63,4 @@ ch15 row313: missing/unparseable Question_Number
 ch15 row314: missing/unparseable Question_Number
 ch18 row162: Options-bleed (overlap≥0.80), Options set to null
 ch21 row143: Essay Answer empty in BOTH Excel and Word
+ch21 row143: override applied — publisher_ambiguous_per_pat_2026-05-20

@@ -8,6 +8,39 @@ into SFT-ready chat-template training data for fine-tuning.
 **Word is the authoritative source.** When the Excel disagrees with Word
 (LO text missing, MC mislabels, etc.), Word wins.
 
+## See also
+
+- [`.meta/sources_relationship.md`](../.meta/sources_relationship.md) —
+  doctrine governing the relationship between the Spiceland test-bank
+  gold (eval target) and the FASB ASC GAAP corpus (substantive
+  authority). Diana and Carla co-author. Pat signs off.
+- [`data/Intermediate Financial Accounting test bank/PROVENANCE.md`](../data/Intermediate%20Financial%20Accounting%20test%20bank/PROVENANCE.md)
+  — test-bank dating evidence, ISBN, ASU coverage limits, corpus stats.
+- [`data/GAAP Data/PROVENANCE.md`](../data/GAAP%20Data/PROVENANCE.md)
+  — GAAP corpus as-of date, ASU citations, garbled-file inventory.
+
+## Provenance & authority order
+
+- Test bank corpus: `data/Intermediate Financial Accounting test bank/`
+  — Spiceland *Intermediate Accounting* 9th ed., ©2018 McGraw-Hill,
+  drafted mid-2017. See
+  `data/Intermediate Financial Accounting test bank/PROVENANCE.md`.
+- GAAP corpus: `data/GAAP Data/` — FASB Accounting Standards
+  Codification, late-January 2026 export, ASUs through 2025-12. See
+  `data/GAAP Data/PROVENANCE.md`.
+- **Doctrine**: see `.meta/sources_relationship.md`. Test-bank gold
+  remains the eval target; the GAAP corpus is authoritative for
+  substantive correctness. The solver emits a structured
+  `meta.gaap_supersession` block on the ~296 drift-affected questions
+  at training and inference time. The 12 standards-version smell
+  triggers in `meta.standards_smell` are pre-computed at ingest;
+  Vera's `eval/mechanical_checks.py` (forthcoming) consumes them at
+  eval time.
+- **Current pin**: `spiceland9e-v1.1.0`, sha256
+  `fed6eb17de8be1e493b1a54277bdb70175502e517ea4cd4e6877914f437d213b`.
+  The previous `v1.0.0 = 95f1ae448c693088…` is retired 2026-05-20. All
+  5 SFT seed splits re-emit from this anchor.
+
 ## Layout
 
 ```
@@ -53,7 +86,7 @@ python eval/split_multi_seed.py       # ~5 s
 
 ## Output schema
 
-### `spiceland9e.jsonl` (canonical)
+### `spiceland9e.jsonl` (canonical, v1.1.0)
 
 ```jsonc
 {
@@ -69,11 +102,19 @@ python eval/split_multi_seed.py       # ~5 s
   "difficulty": "2 Medium",
   "lo": {"code": "05-09", "text": "..."},
   "topic": "...",
-  "aacsb": "Knowledge Application",
+  "aacsb": ["Knowledge Application"],   // v1.1.0: canonicalized list[str]
   "aicpa": ["BB Industry", "FN Measurement"],
   "tables": [...],                      // from spiceland9e_tables.jsonl
   "source_workbook": "...",
-  "source_row": 86
+  "source_row": 86,
+  "meta": {                             // v1.1.0 — every record carries this
+    "gaap_divergence": false,           // true for ~296 drift-affected records
+    "asc_anchor": null,                 // {topic, subtopic, section} | null
+    "gaap_supersession": null,          // {asu_number, effective_date, modern_answer_hint, asc_pdf_path} | null
+    "standards_smell": [],              // list of {label, span, source_field}
+    "gold_status": "ok",                // "ok" | "publisher_ambiguous" | "table_only"
+    "exclude_from_scoring": false       // true for ch21_q0141
+  }
 }
 ```
 

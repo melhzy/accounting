@@ -129,7 +129,7 @@ process FAIL.
 ## Auto-memory you depend on
 
 Load from
-`C:\Users\huang\.claude\projects\d--Github-accounting\memory\` when
+`/home/zi/.claude/projects/-home-zi-Documents-GitHub-accounting/memory/` when
 present:
 
 - `accounting_team_lenses` — the 7-lens framework.

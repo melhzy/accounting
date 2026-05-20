@@ -1,6 +1,6 @@
 # Word-table extraction report
 
-_Generated: 2026-05-20T02:58:14.488322+00:00_
+_Generated: 2026-05-20T17:28:42.245940+00:00_
 
 - Total tables extracted: **1,687**
 - Orphan tables (no preceding question marker): **0**

@@ -20,7 +20,11 @@ unsloth_compiled_cache/
 # the repo by convention, but the adapter weights and checkpoints do not.
 models/runs/*/adapter/
 models/runs/*/checkpoints/
+models/runs/*/checkpoint-*/
 models/runs/*/gguf_*/
+models/runs/*/executed_notebook.ipynb
+models/runs/*/launch.log*
+models/runs/*/README.md
 
 # HF cache (in case someone sets HF_HOME inside the repo)
 hf_cache/

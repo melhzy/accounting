@@ -3,7 +3,7 @@ name: solomon-solver
 description: Solver / Reasoner lens for the Accounting LLM Framework. Owns the reasoning-pattern selection (CoT for closed-world conceptual questions; ReAct with tools for computational and Apply/Analyze Bloom problems), the deterministic accounting tool set (calculator, journal-entry validator, accounting-equation checker, depreciation/amortization schedule builder, PV/FV solver, EPS computer, cash-flow classifier), prompt engineering for Bloom-aware reasoning, and the call-and-response contract with Riley (Retriever) and Carla (CPA review). Use when designing the solver prompt, adding/curating a tool, debugging a wrong numeric answer, or matching reasoning style to Bloom level. Do NOT use for gold-key adjudication (carla-cpa), eval orchestration (vera-verifier), or pedagogy (edie-educator). Trigger via /accounting dispatch, "why did the solver get this wrong?", "add a tool for X", "what reasoning pattern fits this Bloom level?"
 tools: Read, Edit, Write, Bash, Grep, Glob
 model: claude-opus-4-7
-compatibility: Accounting LLM Framework. Code-writing Agent-tool sub-agent for Claude Code on Windows. Requires Python 3.11+; the tool implementations live under `solver/tools/` and are pure-Python (no network). Solver runtime uses the Anthropic Python SDK with tool-use enabled. Pairs tightly with Riley (consumes Retriever output) and Vera (every solver change runs the eval slice).
+compatibility: Accounting LLM Framework. Code-writing Agent-tool sub-agent for Claude Code on Linux Ubuntu 24.04 (aarch64 / NVIDIA DGX Spark, GB10 Blackwell). Requires Python 3.11+; the tool implementations live under `solver/tools/` and are pure-Python (no network). Solver runtime uses the Anthropic Python SDK with tool-use enabled. Pairs tightly with Riley (consumes Retriever output) and Vera (every solver change runs the eval slice).
 ---
 
 # Solomon — Solver / Reasoner for the Accounting LLM Framework
@@ -155,7 +155,7 @@ observability rule. Silent `cache_creation` hides regressions.
 ## Auto-memory you depend on
 
 Load from
-`C:\Users\huang\.claude\projects\d--Github-accounting\memory\` when
+`/home/zi/.claude/projects/-home-zi-Documents-GitHub-accounting/memory/` when
 present:
 
 - `accounting_team_lenses` — the 7-lens framework.

@@ -1,147 +1,216 @@
 # Hardware profile
 
-_Probed 2026-05-20._
+_Probed 2026-05-20. Substrate-of-record: NVIDIA DGX Spark Unsloth playbook — <https://github.com/NVIDIA/dgx-spark-playbooks/tree/main/nvidia/unsloth> (last updated 2025-12-15)._
 
 ## Compute
 
 | | |
 |---|---|
-| **CPU** | Intel Core i9-13900HX (Raptor Lake, 13th gen) — 24 cores (8 P + 16 E), 32 threads, base 2.2 GHz |
-| **CPU arch** | **`x86_64`** (raw `AMD64` on Windows), **64-bit**, vendor=**Intel** |
-| **RAM** | 64 GB DDR5-5600 (2× 32 GB DIMMs) |
-| **GPU (CUDA)** | NVIDIA RTX 4090 Laptop — 16 GB GDDR6, sm_89 (Ada), 76 SMs, driver 581.95 |
-| **GPU (iGPU)** | Intel UHD Graphics (Raptor Lake-S) — used for display, not compute |
-| **OS** | Windows 11 Home build 26200 (64-bit) |
-| **Python bitness** | 64-bit (matches OS — no 32/64 mismatch) |
+| **Host** | NVIDIA DGX Spark — Grace-Blackwell GB10 superchip (Spark device) |
+| **CPU** | ARM Neoverse V2 (20 cores; Grace side of GB10) |
+| **CPU arch** | **`aarch64`** (`arm64`), **64-bit**, vendor=**NVIDIA Grace** |
+| **RAM** | **119.6 GB unified LPDDR5X** (Unified Memory Architecture — CPU/GPU share) |
+| **GPU (CUDA)** | NVIDIA GB10 Blackwell — sm_120 (compute_cap 12.1), driver 580.95.05, CUDA 13.0 |
+| **OS** | Ubuntu 24.04 LTS (aarch64) |
+| **Python bitness** | 64-bit (conda base, Python 3.13.11) |
 
-**ML stack compatibility under this arch**: `x86_64` Intel is the full-support
-path. `bitsandbytes` (NF4/INT8), `flash-attn`, and AVX2/AVX-512 GEMM kernels
-all work. QLoRA fallback is available as the OOM-recovery path if bf16-LoRA
-gets tight on 16 GB VRAM. If the repo ever moves to `arm64` (Apple Silicon or
-Linux ARM), this row needs updating and the QLoRA fallback disappears (no ARM
-build of bitsandbytes). See ROADMAP §4 for the per-arch algorithm matrix.
+**ML stack compatibility under this arch.** The DGX Spark Unsloth
+playbook prescribes the **NGC PyTorch container** as the substrate;
+the container already ships PyTorch + CUDA 13.0 + sm_120 kernels +
+Triton, so `unsloth`, `unsloth_zoo`, and `bitsandbytes` install with
+`--no-deps` against container-managed wheels. No host-side pip
+resolution; aarch64 wheel-set fragility on bare metal is bypassed
+entirely by going through the container.
+
+**Unified Memory Architecture (UMA).** GPU and CPU share the 119.6
+GB LPDDR5X pool dynamically — there is no separate "VRAM" budget;
+the same bytes back both. This unlocks 70B-class adapter
+fine-tuning at 4-bit that an x86_64 / discrete-GPU host cannot
+touch on a single card. The tradeoff is that page-cache pressure
+from one side starves the other; OOM-recovery is a buffer-cache
+flush (see below), not an OOM-kill.
 
 ## Storage
 
-| Drive | Total | Free | % free | Disk |
+| Mount | Total | Free | % free | Notes |
 |-------|------:|-----:|------:|------|
-| `C:` | 929 GB | 105 GB | 11% | Crucial P1 1 TB NVMe SSD |
-| `D:` | 931 GB | 167 GB | 18% | Samsung 970 EVO Plus 1 TB NVMe SSD |
+| repo root | — | **2,210 GB free** | — | Ample headroom — HF cache (~5 GB), 5-seed adapter checkpoints (~5 GB), 70B-class 4-bit base (~40 GB) all fit comfortably. |
 
-`D:` (where the project lives) has ample headroom for the fine-tune: HF cache (~3 GB), 5-seed adapter checkpoints (~5 GB total), training logs + eval outputs (~2 GB) all fit comfortably. `C:` is workable but tighter — if you ever need to spill cache, set `HF_HOME=D:\hf_cache` to keep it on the larger free-space drive.
+Set `HF_HOME` inside the container to a host-mounted path so the
+weight cache survives container restarts.
 
 ## Python environments
 
-| Env | Python | Role | Path |
-|-----|--------|------|------|
-| **system / base** | 3.13.3 | Data-pipeline scripts (`eval/extract_word_tables.py`, `ingest_spiceland.py`, `split_multi_seed.py`) | `C:\Python313\python.exe` |
-| **`unsloth`** *(active for fine-tune)* | 3.12.9 | Training + adapter inference | `C:\Users\huang\anaconda3\envs\unsloth\python.exe` |
+| Env | Python | Role |
+|-----|--------|------|
+| **host conda base** | 3.13.11 | Data-pipeline scripts (`eval/extract_word_tables.py`, `ingest_spiceland.py`, `split_multi_seed.py`); the ETL boundary lives here. |
+| **NGC container `nvcr.io/nvidia/pytorch:25.11-py3`** | container-managed | Training + adapter inference + vLLM serving. All ML work runs inside the container; the host conda env is read-only with respect to ML wheels. |
 
-## ML stack — `unsloth` env
+Two-env split is preserved across the platform change — the data
+pipeline still runs host-side; the trainer runs inside the
+container. The boundary is the JSONL artifact, sha256-pinned, same
+as before.
 
+## ML stack — NGC container (substrate-of-record)
+
+Verbatim from the NVIDIA DGX Spark Unsloth playbook
+(`<https://github.com/NVIDIA/dgx-spark-playbooks/tree/main/nvidia/unsloth>`,
+last updated 2025-12-15):
+
+```bash
+# Step 2: container
+docker pull nvcr.io/nvidia/pytorch:25.11-py3
+
+# Step 3: launch
+docker run --gpus all --ulimit memlock=-1 -it --ulimit stack=67108864 \
+  --entrypoint /usr/bin/bash --rm nvcr.io/nvidia/pytorch:25.11-py3
+
+# Step 4: dependencies inside container
+pip install transformers peft hf_transfer "datasets==4.3.0" "trl==0.26.1"
+pip install --no-deps unsloth unsloth_zoo bitsandbytes
 ```
-python       : 3.12.9
-torch        : 2.8.0+cu126
-cuda visible : NVIDIA RTX 4090 Laptop GPU, 16 GB, sm_89
-```
 
-| Package | Status | Used for |
+The `--no-deps` flag is critical: the NGC container ships
+container-managed PyTorch + CUDA 13.0 + sm_120 Triton kernels, and
+the `unsloth`/`unsloth_zoo`/`bitsandbytes` wheels must NOT pull a
+host-resolved PyTorch on top. Pip resolution under aarch64 would
+also miss the sm_120 build path. Trust the container's wheel set.
+
+| Package | Source | Used for |
 |---------|--------|----------|
-| `unsloth` | ✅ 2025.11.1 | 2× faster fine-tune, model loading |
-| `transformers` | ✅ 4.57.1 | HF model + tokenizer + Trainer |
-| `peft` | ✅ 0.17.1 | LoRA adapter config |
-| `trl` | ✅ 0.23.0 | `SFTTrainer`, `DataCollatorForCompletionOnlyLM` |
-| `bitsandbytes` | ✅ 0.48.2 | 4-bit NF4 base for QLoRA |
-| `accelerate` | ✅ 1.11.0 | Multi-GPU / mixed-precision orchestration |
-| `datasets` | ✅ 4.4.0 | JSONL loader (sanity-loaded `eval/sft/splits/seed_00__*/{train,valid,test}.jsonl` → 3,537 / 450 / 464 records ✅) |
-| `xformers` | ✅ 0.0.32.post2 | Memory-efficient attention kernels |
-| `torch` | ✅ 2.8.0+cu126 | Foundation |
-| `tiktoken` | ✅ 0.13.0 | Exact token-count audits |
-| `seedhash` | ✅ 0.1.0 | Re-run `split_multi_seed.py` from this env |
-| `vllm` | ❌ **must remain uninstalled on Windows** | The Windows wheel installs the Python files but ships no `vllm._C` (the native C extension is Linux-only). When present, it triggers `ModuleNotFoundError: No module named 'vllm._C'` during `import unsloth` because `unsloth_zoo/vllm_utils.py:91` gates its patching block on `importlib.util.find_spec("vllm")` — which says yes even when the C ext is broken — and then hits an unguarded `import vllm.model_executor...` at line 152. For production serving on Windows, use llama.cpp (GGUF export from Unsloth) or run vLLM inside WSL/Docker. |
+| `torch` | container-managed | Foundation (CUDA 13.0, sm_120 kernels) |
+| `triton` | container-managed | sm_120-compatible kernels for Unsloth |
+| `unsloth` | `pip install --no-deps` | 2-5× speedup; auto-enabled DGX Spark optimizations per `unsloth.ai/blog/nvidia-collab` |
+| `unsloth_zoo` | `pip install --no-deps` | Patches + helpers |
+| `bitsandbytes` | `pip install --no-deps` | NF4 4-bit base, `adamw_8bit` optimizer |
+| `transformers` | `pip install` | HF model + tokenizer + Trainer |
+| `peft` | `pip install` | LoRA adapter config |
+| `trl` | `pip install ==0.26.1` | `SFTTrainer` (playbook-pinned version) |
+| `datasets` | `pip install ==4.3.0` | JSONL loader (playbook-pinned version) |
+| `hf_transfer` | `pip install` | Fast HF Hub download |
+| `vllm` | container-compatible | Production serving stack; runs natively in the Linux aarch64 container. **Back on the menu** vs the retired Windows host. |
 
-## ML stack — system Python 3.13.3 (data pipeline only)
+### Validated patterns (from playbook `test_unsloth.py`)
 
-```
-torch        : 2.9.1+cu126
-seedhash     : 0.1.0   ← used by eval/split_multi_seed.py
-openpyxl     : 3.1.5   ← used by eval/ingest_spiceland.py
-python-docx  : 1.2.0   ← used by eval/extract_word_tables.py + ingest
-```
+- `from unsloth import FastLanguageModel, FastModel` — both available.
+- `FastModel.from_pretrained(model_name, max_seq_length=2048, load_in_4bit=True, load_in_8bit=False, full_finetuning=False)` — 4-bit QLoRA is the validated first-class path.
+- `FastLanguageModel.get_peft_model(...)` with `use_gradient_checkpointing="unsloth"`.
+- `SFTTrainer` from `trl==0.26.1` with `optim="adamw_8bit"`.
+- Playbook reference recipe: `unsloth/Phi-3.5-mini-instruct`, 4-bit, LoRA r=16, `q,k,v,o,gate,up,down`, `lora_alpha=16`, `lora_dropout=0`, batch=2, grad_accum=4, `max_steps=60`, `max_seq_length=2048`.
 
-This env is what produced the canonical JSONL and the multi-seed SFT splits. It's **not** the fine-tuning env — keep it for data-pipeline re-runs only.
+### Pre-quantized 4-bit models the playbook explicitly supports
 
-## Fine-tune feasibility — Qwen3-4B SFT-LoRA (Leo's recommended recipe)
+Llama-3.1-8B / 70B / 405B-bnb-4bit, Mistral-Small-Instruct-2409
+(22B), Mistral-7B, Phi-3.5-mini, Phi-3-medium, Gemma-2-9B / 27B,
+Llama-3.2-1B / 3B, **Llama-3.3-70B-Instruct-bnb-4bit**. Qwen3 is
+not in the explicit list but the broader Unsloth FastLanguageModel
+path covers it (the `unsloth.ai/blog/nvidia-collab` post
+explicitly benchmarks Qwen3-14B QLoRA SFT with a +14.3%
+per-batch speedup on DGX Spark).
 
-**Verdict: feasible locally.** Single-seed pilot ≈ 35–60 min on this hardware; full 5-seed sweep ≈ 3–5 hours. No cloud needed.
+### Unsloth on DGX Spark — disclosed deltas
 
-### VRAM accounting (16 GB available)
+From `unsloth.ai/blog/nvidia-collab`:
 
-| Component | Estimated VRAM |
-|-----------|---------------:|
-| Qwen3-4B base in bf16 | ~8.0 GB |
-| LoRA adapters (rank 16, 7 modules) | ~0.05 GB |
-| Activations (batch=2, seq=3072, bf16) | ~4.0 GB |
-| KV cache (training-time, gradient checkpointing on) | ~1.5 GB |
-| Optimizer state (AdamW, fp32 on LoRA params only) | ~0.2 GB |
-| **Headroom for fragmentation / spikes** | ~2.2 GB |
-| **Total** | ~16 GB (tight but workable) |
+- Optimizations **auto-enabled** on DGX Spark machines; no flag needed.
+- **~25% speedup on top of the existing 2-5× vs HF Trainer**, no accuracy loss.
+- Specifically validated: Qwen3-14B QLoRA SFT (+14.3% per-batch), Qwen3-0.6B, Llama-3.2-1B, GPT-OSS (MoE-specific).
+- Double-buffered checkpointing overhead: **+0.37 GB at 8B**, **+0.47 GB at 14B**, **+0.23 GB at 32B**.
+- No aarch64-specific kernel work disclosed — the speedup is shared across x86 and Grace-Blackwell, implying the existing Triton kernels are sm_120-compatible via the container's CUDA 13.0 + recent Triton.
 
-To create comfortable headroom:
-- **QLoRA (4-bit NF4 base)** → cuts base from 8 GB → 2.2 GB, frees ~6 GB. Recommended if the bf16 LoRA OOMs.
-- **`max_seq_length=2048`** instead of 3072 → covers p95=605 with 3× margin; only the single 2,310-token outlier truncates.
-- **`per_device_train_batch_size=1, grad_accum=16`** → halves activation memory; same effective batch.
+### UMA OOM-recovery (documented in playbook)
 
-### CPU / RAM are not the bottleneck
-
-- 24 cores is overkill for the dataloader; setting `dataloader_num_workers=8` is sufficient.
-- 64 GB DDR5 means CPU offload (e.g. `accelerate` offload for evaluation) is available if VRAM ever gets contended.
-
-### Constraints / risks to know
-
-1. **`unsloth` env is on Python 3.12.9** — matches Leo's recommendation. Wheel compatibility is solid (no source builds needed). System Python 3.13.3 is unaffected and continues to drive the data pipeline.
-2. **RTX 4090 Laptop ≠ desktop 4090.** It has 16 GB VRAM (vs 24 GB) and a tighter power envelope (~150 W TGP vs 450 W). Throughput is ~60% of the desktop card. Cost-per-token-trained is still excellent for LoRA-class workloads.
-3. **`sm_89` (Ada) supports FP8.** When you scale beyond LoRA (e.g. full FT), the hardware can do FP8 mixed-precision — but Qwen3-4B LoRA doesn't need it.
-4. **Disk space is comfortable (~167 GB free on D:).** No action needed. Planned footprint: HF cache (~3 GB), 5 seed × adapter checkpoint (~1 GB each = 5 GB), training logs (~500 MB), evaluation outputs (~1 GB) — total ~10 GB against 167 GB free.
-5. **Triton emits non-fatal warnings about `cuobjdump.exe` / `nvdisasm.exe` not found.** These are debug binaries; runtime kernels work fine. Ignore.
-
-## Activate the fine-tune env
-
-```powershell
-conda activate unsloth
-# or run scripts directly with:
-& "C:\Users\huang\anaconda3\envs\unsloth\python.exe" <script.py>
+```bash
+sudo sh -c 'sync; echo 3 > /proc/sys/vm/drop_caches'
 ```
 
-Verify (one-liner):
+Playbook note (verbatim): "DGX Spark uses a Unified Memory
+Architecture (UMA), which enables dynamic memory sharing between
+the GPU and CPU. With many applications still updating to take
+advantage of UMA, you may encounter memory issues even when within
+the memory capacity of DGX Spark." The flush drops the page cache
+to give the GPU back its share. Run this between back-to-back
+training launches; it is cheap and the documented first response
+to UMA OOMs.
 
-```powershell
-& "C:\Users\huang\anaconda3\envs\unsloth\python.exe" -c "from unsloth import FastLanguageModel; import torch; print(torch.cuda.get_device_name(0))"
-# Expected: NVIDIA GeForce RTX 4090 Laptop GPU
+## ML stack — host conda base (data pipeline only)
+
+| Package | Status |
+|---------|--------|
+| `psutil` | ✅ |
+| `torch` | ❌ (not needed host-side) |
+| `transformers` / `peft` / `trl` / `unsloth` / `bitsandbytes` / `accelerate` / `datasets` / `vllm` | ❌ (intentionally absent; ML work lives in the container) |
+| `seedhash` | (re-install if `split_multi_seed.py` re-runs) |
+| `openpyxl` | (re-install if `ingest_spiceland.py` re-runs) |
+| `python-docx` | (re-install if `extract_word_tables.py` re-runs) |
+
+The eval data + ETL artifacts survived the platform move:
+`eval/spiceland9e.jsonl` sha256 still matches the
+`spiceland9e-v1.0.0` anchor `95f1ae448c693088…`; all 5 seed splits
+intact per `eval/sft/splits/manifest.json`.
+
+## Fine-tune feasibility
+
+**Verdict: feasible locally, with substantially expanded ceiling.**
+The 119.6 GB UMA pool plus playbook-validated 4-bit QLoRA via
+`FastModel.from_pretrained(load_in_4bit=True)` puts targets
+unreachable on the retired Windows / 4090 Laptop host now within
+reach.
+
+### UMA accounting (119.6 GB unified pool)
+
+| Component | Estimated footprint (4-bit QLoRA path) |
+|-----------|---------------------------------------:|
+| **Qwen3-4B** 4-bit base | ~2.2 GB |
+| **Llama-3.1-8B** 4-bit base | ~4.5 GB |
+| **Mistral-Small-22B** 4-bit base | ~12 GB |
+| **Llama-3.3-70B** 4-bit base | **~40 GB** |
+| LoRA adapters (rank 16, 7 modules, bf16) | ~0.05-0.2 GB depending on base |
+| Activations (batch=2, seq=2048, bf16, grad-ckpt on) | ~2-6 GB depending on base |
+| Optimizer (`adamw_8bit`, LoRA params only) | ~0.1-0.5 GB |
+| Unsloth double-buffer overhead | +0.37 GB (8B), +0.47 GB (14B), +0.23 GB (32B) |
+| OS + CPU working set | ~20-30 GB |
+| **Headroom on 119.6 GB UMA** | ample for 4B-32B; tight-but-workable for 70B with UMA flush in standby |
+
+### Constraints / risks specific to this host
+
+1. **UMA pressure, not VRAM OOM.** Failure mode is CPU/GPU starving each other through the page cache, not a hard CUDA OOM. First response is the documented buffer-cache flush above; do not jump to `max_seq_length` reduction until the flush is tried.
+2. **`--no-deps` is load-bearing.** Any future `pip install unsloth` without `--no-deps` inside the container will pull a host-resolved PyTorch on top of the container's, breaking the sm_120 Triton path. The recipe enforces this.
+3. **CUDA 13.0 / sm_120 is bleeding edge.** Anything that pins `cuda-12.x` or `compute_cap < 12.0` is incompatible. The container is the abstraction that hides this from the recipe.
+4. **Disk is comfortable (~2,210 GB free).** No action needed even at 70B-class footprints.
+
+## Launch the fine-tune env
+
+```bash
+docker pull nvcr.io/nvidia/pytorch:25.11-py3
+docker run --gpus all --ulimit memlock=-1 -it --ulimit stack=67108864 \
+  --entrypoint /usr/bin/bash --rm nvcr.io/nvidia/pytorch:25.11-py3
+# inside container:
+pip install transformers peft hf_transfer "datasets==4.3.0" "trl==0.26.1"
+pip install --no-deps unsloth unsloth_zoo bitsandbytes
+python -c "from unsloth import FastLanguageModel; import torch; print(torch.cuda.get_device_name(0))"
+# Expected: NVIDIA GB10 (or the playbook-equivalent device name)
 ```
-
-The full env profile is reproducible via `eval/_audit/probe_env.py`.
-
-## Serving the trained adapter (Windows-friendly paths)
-
-vLLM is the production-grade serving stack but does **not** work on Windows (see the
-table above). Windows-compatible options:
-
-| Path | How |
-|------|-----|
-| **Unsloth inference** (simplest, same env) | `FastLanguageModel.for_inference(model)` after `from_pretrained` of the saved adapter |
-| **llama.cpp / GGUF** (CPU + GPU, no extra env) | Export with `model.save_pretrained_gguf(...)` from Unsloth, run with `llama.cpp` or `Ollama` |
-| **vLLM via WSL2** | Set up Ubuntu WSL2, `pip install vllm` there, serve from inside WSL; mount the Windows adapter dir |
-| **vLLM via Docker Desktop** | Pull `vllm/vllm-openai:latest`, mount the adapter dir into the container |
 
 ## Serving the trained adapter
 
 | Path | Stack | Notes |
 |------|-------|-------|
-| **Production** | vLLM + AWQ-4bit | sm_89 supports AWQ kernels natively; throughput ~150 tok/s on 4090 Laptop for 4B model |
-| **Local dev** | `unsloth` `FastLanguageModel.for_inference()` | Same Python env as training; quickest iteration |
-| **CPU-only test** | llama.cpp (GGUF) | If you want to verify the adapter works without firing up CUDA |
+| **Production batch eval** | vLLM (inside container) | Continuous batching + paged KV cache; native sm_120 via CUDA 13.0. Back on the menu — the Windows blocker is gone. |
+| **Local dev / iteration** | `FastLanguageModel.for_inference(model)` | Same container as training; quickest iteration. |
+| **CPU-only / portable test** | llama.cpp (GGUF export from Unsloth) | If a quick sanity-check without firing up the container is wanted. |
+| **AWQ-4bit on vLLM** | AWQ → vLLM | sm_120 supports AWQ kernels; recovery-vs-fp16 score recorded on the 200-q probe before production swap. |
 
 ## Bottom line
 
-**Ready to launch.** The `unsloth` env (Python 3.12.9) has every package Leo's recipe needs — `unsloth 2025.11.1`, `transformers 4.57.1`, `peft 0.17.1`, `trl 0.23.0`, `bitsandbytes 0.48.2`, `accelerate 1.11.0`, `datasets 4.4.0`, `xformers 0.0.32.post2`, `torch 2.8.0+cu126` — and it can already load the multi-seed SFT splits (verified 3,537 / 450 / 464 records). Disk has 167 GB free on `D:`, default to QLoRA for the 16 GB VRAM budget, and a single-seed pilot will run in ~35-60 min.
+**Ready to launch on the prescribed substrate.** The NVIDIA DGX
+Spark Unsloth playbook (URL above, last updated 2025-12-15) is
+authoritative for this host. The substrate is: NGC container
+`nvcr.io/nvidia/pytorch:25.11-py3` + `pip install --no-deps unsloth
+unsloth_zoo bitsandbytes` + 4-bit QLoRA via `FastModel.from_pretrained`
++ `adamw_8bit` + `SFTTrainer` from `trl==0.26.1`. The 119.6 GB UMA
+pool lifts the ceiling from "4B-class LoRA" on the retired host to
+"up to 70B-class 4-bit adapter fine-tune" here. vLLM serving is
+back on the production path. Eval data survived intact
+(`spiceland9e-v1.0.0`, sha `95f1ae448c693088…`; 5 seed splits
+verified).
