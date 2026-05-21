@@ -125,4 +125,24 @@ After scouting `.code_base/notebooks/`, Leo picked **SFT-LoRA on Qwen3-4B-Instru
 
 ---
 
+---
+
+## 2026-05-20 (later) — Session 3 · Multi-host doctrine correction
+
+**Context**: After pulling 8 commits from GitHub (DGX Spark substrate, r0 baseline, etc.), the agents-team's synthesis treated the host change (Windows → DGX Spark) as a **substrate replacement**: hardware.md was rewritten for DGX Spark only, ROADMAP §0 called the Windows host "RETIRED", and the bf16-LoRA Windows recipe got called "retired bf16 notebook" in §1 and "withdrawn" in §4.
+
+**User correction**: "this repository should be compatible to all OS and CPU arch — Windows, macOS, and Linux with different kinds of hardware." The host change is a **switch of the ACTIVE pointer in a compatibility matrix**, not a retirement of the previous host.
+
+**Fixed in this session**:
+
+- **`.meta/hardware.md`** — added a compatibility-matrix table at the top with one row per supported host (★ ACTIVE = DGX Spark, `dormant` = Windows + RTX 4090 Laptop, `future` = macOS Apple Silicon / Linux x86_64 NVIDIA / Linux x86_64 AMD ROCm / Linux aarch64 non-DGX). Added a "Dormant host details — Windows + RTX 4090 Laptop" section that preserves the Windows row's prescribed path (bf16 LoRA, no vLLM, `dataloader_num_workers=0`, etc.). De-retired the inline language ("retired Windows host" → "Windows dormant row").
+- **`.meta/ROADMAP.md`**:
+  - **§0** rewritten to frame the host check as moving the ACTIVE pointer; never retiring previous hosts. Bullets sharpened: "switch §4 ACTIVE-row pointer", not "ROADMAP must be refreshed".
+  - **§1 Model run versioning** — both `qwen3-4b-4bit-qlora-s00-r0` (DGX Spark ACTIVE row, executed) and `qwen3-4b-bf16-lora-s00-r0` (Windows dormant row, alive) are now listed as live targets that bind to the same seed_00 corpus and become directly comparable as a cross-row baseline.
+  - **§4** restructured with explicit "★ ACTIVE — DGX Spark / dormant — Windows / future — macOS+Linux variants" matrix headers. The DGX Spark bullets are retained as the ACTIVE block; the Windows row gets a parallel dormant block. The "QLoRA fallback is gone", "earlier framing retired", "vLLM is back on the menu" framings replaced with "this row prescribes X; the dormant row prescribes Y".
+  - **Forward statement** reframed: pilot runs on ACTIVE (DGX Spark, executed at 69.2%) and on dormant (Windows, recipe alive, not yet executed) bind to the same dataset sha + holdout, so they are a cross-row baseline once both run.
+- **`.claude/agents/pat-pm.md`** — added a **Cardinal rule** to the session-start check section: "matrix, not substrate replacement". Forbidden phrasings ("X is retired", "§4 must be refreshed") and required phrasings ("ACTIVE pointer moved", "X is dormant, alive") spelled out. Steps 2-3 updated to explicitly mandate "switch the ★ ACTIVE pointer" and "add a new row" (never overwrite) when the OS/arch shifts.
+
+**Lesson for the team**: the pat-pm.md doctrine already enumerated 6 platform combinations as a matrix, but the language "HARD WARNING → ROADMAP must be refreshed" nudged whoever synthesized the post-pull state to rewrite §4 for DGX Spark. The fix is at the language level — Pat now has explicit forbidden phrasings.
+
 _Next entry below this line. Keep newest-on-top per phase; each phase H2-dated._

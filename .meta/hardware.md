@@ -1,6 +1,25 @@
 # Hardware profile
 
-_Probed 2026-05-20. Substrate-of-record: NVIDIA DGX Spark Unsloth playbook — <https://github.com/NVIDIA/dgx-spark-playbooks/tree/main/nvidia/unsloth> (last updated 2025-12-15)._
+_Probed 2026-05-20. The repo is portable across Windows / macOS / Linux on x86_64 / arm64. Pat's session-start check (`.claude/agents/pat-pm.md` §"Session-start host check") identifies which row is **active** for the current session and points algorithm defaults at that row's prescribed path. All rows below are first-class supported targets; dormant rows are preserved for future runs on those platforms — **never retired**._
+
+## Supported host platforms (compatibility matrix)
+
+| Status | Host | OS | CPU arch | GPU | RAM | Prescribed recipe |
+|--------|------|----|----------|-----|-----|-------------------|
+| ★ **ACTIVE** | NVIDIA DGX Spark | Ubuntu 24.04 LTS aarch64 | ARM Neoverse V2 (20c, Grace) | NVIDIA GB10 Blackwell sm_120 | 119.6 GB UMA (CPU+GPU shared) | NGC container + 4-bit QLoRA — `models/recipes/dgx_spark/qwen3_4b_4bit_qlora_s00_r0.ipynb` |
+| **dormant** | Windows + RTX 4090 Laptop | Windows 11 x86_64 | Intel i9-13900HX (24c/32t) | NVIDIA RTX 4090 Laptop sm_89 | 64 GB DDR5-5600 | Unsloth + bf16-LoRA — `models/recipes/qwen3_4b_seed00_bf16_lora.ipynb` |
+| future | macOS Apple Silicon | macOS arm64 | Apple M-series | Apple MPS (unified memory) | unified | template TBD — bf16-LoRA only (no bitsandbytes on arm64), serve via llama.cpp/Ollama |
+| future | Linux x86_64 + NVIDIA | Linux | Intel/AMD | any NVIDIA CUDA | discrete VRAM | template TBD — full Unsloth stack incl. vLLM |
+| future | Linux x86_64 + AMD ROCm | Linux | AMD EPYC/Ryzen | AMD Instinct / MI | discrete VRAM | template TBD — Unsloth + bitsandbytes-rocm |
+| future | Linux aarch64 (other) | Linux | ARM Neoverse / Ampere / etc. | varies | varies | template TBD — community ARM wheels |
+
+**Source-of-truth pointers per row**:
+
+- **★ ACTIVE — DGX Spark**: detailed below + the NVIDIA DGX Spark Unsloth playbook (<https://github.com/NVIDIA/dgx-spark-playbooks/tree/main/nvidia/unsloth>, last updated 2025-12-15).
+- **dormant — Windows + RTX 4090 Laptop**: detailed in the [Dormant host details](#dormant-host-details--windows--rtx-4090-laptop) section below.
+- **future** rows: populate when probe_host.py runs on that platform for the first time.
+
+---
 
 ## Compute
 
@@ -88,7 +107,7 @@ also miss the sm_120 build path. Trust the container's wheel set.
 | `trl` | `pip install ==0.26.1` | `SFTTrainer` (playbook-pinned version) |
 | `datasets` | `pip install ==4.3.0` | JSONL loader (playbook-pinned version) |
 | `hf_transfer` | `pip install` | Fast HF Hub download |
-| `vllm` | container-compatible | Production serving stack; runs natively in the Linux aarch64 container. **Back on the menu** vs the retired Windows host. |
+| `vllm` | container-compatible | Production serving stack; runs natively in the Linux aarch64 container. Available on this row; the dormant Windows row has no `vllm._C` so its prescribed stack is Unsloth-native + llama.cpp/Ollama instead. |
 
 ### Validated patterns (from playbook `test_unsloth.py`)
 
@@ -151,11 +170,11 @@ intact per `eval/sft/splits/manifest.json`.
 
 ## Fine-tune feasibility
 
-**Verdict: feasible locally, with substantially expanded ceiling.**
+**Verdict (this row only): feasible locally, with substantially expanded ceiling.**
 The 119.6 GB UMA pool plus playbook-validated 4-bit QLoRA via
-`FastModel.from_pretrained(load_in_4bit=True)` puts targets
-unreachable on the retired Windows / 4090 Laptop host now within
-reach.
+`FastModel.from_pretrained(load_in_4bit=True)` puts targets unreachable
+on the Windows dormant row's 16 GB VRAM ceiling now within reach on
+the DGX Spark active row.
 
 ### UMA accounting (119.6 GB unified pool)
 
@@ -201,16 +220,76 @@ python -c "from unsloth import FastLanguageModel; import torch; print(torch.cuda
 | **CPU-only / portable test** | llama.cpp (GGUF export from Unsloth) | If a quick sanity-check without firing up the container is wanted. |
 | **AWQ-4bit on vLLM** | AWQ → vLLM | sm_120 supports AWQ kernels; recovery-vs-fp16 score recorded on the 200-q probe before production swap. |
 
-## Bottom line
+## Bottom line — ACTIVE row
 
-**Ready to launch on the prescribed substrate.** The NVIDIA DGX
-Spark Unsloth playbook (URL above, last updated 2025-12-15) is
-authoritative for this host. The substrate is: NGC container
+**Ready to launch on the active row's prescribed substrate.** The NVIDIA DGX
+Spark Unsloth playbook (URL above, last updated 2025-12-15) is the
+prescribed path for this row. The substrate is: NGC container
 `nvcr.io/nvidia/pytorch:25.11-py3` + `pip install --no-deps unsloth
 unsloth_zoo bitsandbytes` + 4-bit QLoRA via `FastModel.from_pretrained`
 + `adamw_8bit` + `SFTTrainer` from `trl==0.26.1`. The 119.6 GB UMA
-pool lifts the ceiling from "4B-class LoRA" on the retired host to
-"up to 70B-class 4-bit adapter fine-tune" here. vLLM serving is
-back on the production path. Eval data survived intact
-(`spiceland9e-v1.0.0`, sha `95f1ae448c693088…`; 5 seed splits
-verified).
+pool permits a 70B-class 4-bit adapter fine-tune on this row, which
+the Windows dormant row's 16 GB VRAM cannot reach — different rows,
+different ceilings, both first-class.
+
+Eval data + ETL artifacts are platform-agnostic and survived intact across
+the row switch: `eval/spiceland9e.jsonl` sha `95f1ae448c693088…` matches
+the `spiceland9e-v1.0.0` anchor; all 5 seed splits verified.
+
+---
+
+## Dormant host details — Windows + RTX 4090 Laptop
+
+Last active 2026-05-19. Preserved as a first-class supported target; the
+bf16-LoRA recipe at `models/recipes/qwen3_4b_seed00_bf16_lora.ipynb` remains
+the prescribed path when the repo runs on this host again. Detailed
+configuration:
+
+| | |
+|---|---|
+| **Host** | Personal workstation, Windows 11 |
+| **CPU** | Intel Core i9-13900HX (Raptor Lake, 13th gen) — 24 cores (8 P + 16 E), 32 threads, base 2.2 GHz |
+| **CPU arch** | `x86_64` (raw `AMD64` on Windows), 64-bit, vendor=**Intel** |
+| **RAM** | 64 GB DDR5-5600 (2× 32 GB DIMMs) |
+| **GPU (CUDA)** | NVIDIA RTX 4090 Laptop — 16 GB GDDR6, sm_89 (Ada), 76 SMs, driver 581.95 |
+| **OS** | Windows 11 Home build 26200, 64-bit |
+| **Python env** | conda `unsloth` env on Python 3.12.9, torch 2.8.0+cu126 |
+
+**Row-specific prescribed path** (when this row is ACTIVE):
+
+- Substrate: native Windows + Unsloth in the `unsloth` conda env (NOT a container).
+- Quantization: bf16 LoRA at `r=16, batch=2, seq=2048, grad_accum=8`; QLoRA held as OOM-recovery fallback.
+- Serving: Unsloth-native inference, llama.cpp/Ollama for portable runs. **vLLM is NOT available on Windows** (`vllm._C` is Linux-only; presence breaks `import unsloth` via `unsloth_zoo/vllm_utils.py:91-152` — the recipe asserts `find_spec("vllm") is None`).
+- DataLoader: `num_workers=0` (Windows uses spawn which re-imports the notebook module).
+- HF cache: `HF_HOME=D:\hf_cache` so the ~4 GB base download goes to the larger free-space drive.
+
+**Row-specific limits** (when this row is ACTIVE):
+
+- 16 GB VRAM ceiling: rules out 7B+ in bf16, all full FT, batch>2 at seq 2048.
+- ~50-70 min per epoch on Qwen3-4B-LoRA; ~$0/$1.50/$3 per seed if measured against rental A100 pricing.
+
+The full Windows-host profile that drove the initial ETL + the `qwen3_4b_seed00_bf16_lora.ipynb` recipe lives in git history at commit `77382a02` (initial commit) and is recoverable in full via `git show 77382a02:.meta/hardware.md` if a Windows-targeted run needs deeper context.
+
+---
+
+## Future host details — templates
+
+When a `future` row in the matrix becomes ACTIVE for the first time, populate
+this section with the same shape as the Dormant section above. The
+`probe_host.py` output for that host plus the per-row prescribed path
+(quantization choice, serving stack, DataLoader posture, HF cache location)
+goes here, and the corresponding row in the matrix flips `future` → `★ ACTIVE`
+while the previous ★ flips to `dormant`.
+
+Templates for the unconfigured rows:
+
+- **macOS Apple Silicon**: torch.backends.mps, unified memory == effective VRAM,
+  no bitsandbytes (no QLoRA path), no flash-attn, bf16 LoRA only, serve via
+  llama.cpp/Ollama.
+- **Linux x86_64 + NVIDIA**: full stack — bf16 or 4-bit, flash-attn, FP8 on
+  Ada/Hopper, vLLM serving native. Fork-based multiprocess permits
+  `dataloader_num_workers > 0`.
+- **Linux x86_64 + AMD ROCm**: vLLM (ROCm build) + bitsandbytes-rocm +
+  flash-attn AMD fork.
+- **Linux aarch64 (non-DGX)**: partial — bitsandbytes via community ARM build,
+  no flash-attn, PyTorch ARM wheels OK.

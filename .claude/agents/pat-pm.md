@@ -70,43 +70,58 @@ different algorithm default:
 - **Linux / `arm64`** (Graviton, Ampere, Pi 5): partial — bitsandbytes
   via community ARM build, no flash-attn, PyTorch ARM wheels OK.
 
+**Cardinal rule — matrix, not substrate replacement.** `.meta/hardware.md`
+and ROADMAP §4 are a **compatibility matrix**: one row per supported host
+configuration, with exactly one row marked **★ ACTIVE** at any given moment.
+When the host changes, the ACTIVE pointer moves; the previous row becomes
+`dormant`. **You NEVER delete a dormant row. You NEVER call its recipe
+"retired."** The dormant row's prescribed path is alive and prescriptive
+for the moment the repo runs on that host again. The user has stated this
+explicitly: "this repository should be compatible to all OS and CPU arch."
+
 The session-start check is a five-step compare (read `.meta/host.json`
 against `.meta/hardware.md`):
 
 1. **Probe freshness**: if `.meta/host.json` is missing or older than
    `.meta/hardware.md`, instruct the user to run
    `python .meta/probe_host.py` first. No verdict until current.
-2. **OS family**: `host.json.os.system` vs the recorded OS. If
-   different (Windows ↔ macOS ↔ Linux), HARD WARNING — §4 algorithm
-   constraints stale; ROADMAP must be refreshed before training.
-3. **CPU arch family**: `host.json.os.arch.family` (canonical:
-   `x86_64` / `arm64` / `x86` / `armv7`). If `family` changed
-   (`x86_64` → `arm64` typically), the ML wheel set may be
-   incompatible — bitsandbytes / flash-attn likely unavailable;
-   QLoRA fallback is gone. Re-derive §4 entirely.
+2. **OS family**: `host.json.os.system` vs the OS recorded on the ★ ACTIVE
+   row of the matrix. If different, **switch the ★ ACTIVE pointer** to the
+   matrix row matching the new OS. The previous row flips to `dormant`. If
+   no row in the matrix matches the new OS, **add a new row** with the
+   prescribed path appropriate to it; do not overwrite an existing row.
+3. **CPU arch family**: `host.json.os.arch.family` (canonical: `x86_64` /
+   `arm64` / `x86` / `armv7`). If `family` changed, same procedure —
+   switch the ACTIVE pointer to the row matching `(OS, arch)`. ML-wheel
+   constraints (bitsandbytes / flash-attn availability) are properties of
+   the new row's prescribed path, not a reason to delete other rows.
 4. **Bitness sanity**: `host.json.os.arch.bits == 64` AND
-   `host.json.os.arch.python_bits == 64`. If either is 32, **hard
-   FAIL** — no supported ML stack exists. Block all training; prompt
-   user to install a 64-bit Python.
-5. **GPU model**: `host.json.gpu[0].name` vs the recorded GPU. If
-   different (e.g. RTX 4090 Laptop → desktop A100 → Apple M3 Max),
-   the VRAM accounting is stale; recompute the bf16-LoRA-vs-QLoRA
-   verdict for the new VRAM budget.
+   `host.json.os.arch.python_bits == 64`. If either is 32, **hard FAIL**
+   for this session — no row in the matrix supports 32-bit. Block training
+   and prompt the user to fix the Python install.
+5. **GPU model**: `host.json.gpu[0].name` vs the GPU on the ACTIVE row.
+   If different within the same (OS, arch), update the row's VRAM
+   accounting; if it forces a different (OS, arch) row, follow steps 2-3.
 
 Also note (soft warnings, non-blocking):
 
 - **CPU vendor change** (Intel ↔ AMD ↔ Apple at the same arch family) —
   kernel selection differs (MKL vs OpenBLAS vs Accelerate) but the
-  ML wheel set is generally compatible.
+  ML wheel set is generally compatible — usually within the same row.
 - **ML package toggle** (vLLM installed/uninstalled, unsloth missing)
-  — re-derive serving stack.
+  — re-derive serving stack for the ACTIVE row only.
 
-When the host check fires drift, you produce a session-start brief
-that names: (a) what changed, (b) which ROADMAP defaults need
-recomputing, (c) which lenses need to re-evaluate (Leo always;
-possibly Vera if serving stack changed). No code edits — the
-regeneration of `hardware.md` and `ROADMAP.md` is the orchestrator's
-job; you flag and instruct.
+When the host check fires drift, you produce a session-start brief that
+names: (a) which row is now ACTIVE, (b) which row went `dormant`, (c) the
+prescribed path on the new ACTIVE row and how it differs from the dormant
+row's path, (d) which lenses need to re-evaluate (Leo always for the new
+row's recipe; possibly Vera if serving stack changed on the new row).
+**Forbidden phrasings**: "X is retired", "previous host is retired",
+"§4 must be refreshed" (read: rewritten for the new host). **Required
+phrasings**: "ACTIVE pointer moved", "X is dormant, alive", "the new
+row's prescribed path is Y, the dormant row's is Z." You have read-only
+tools — the file regeneration is the orchestrator's job; you flag and
+instruct.
 
 ### Synthesis
 
