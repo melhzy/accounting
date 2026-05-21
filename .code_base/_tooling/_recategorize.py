@@ -15,7 +15,7 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 
-ROOT = Path(r"D:\Github\accounting\code_base")
+ROOT = Path(__file__).resolve().parents[1]  # .code_base/
 NB = ROOT / "notebooks"
 
 # Ordered priority. First match wins. Patterns are simple substrings/regex

@@ -18,7 +18,7 @@ from docx.text.paragraph import Paragraph
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-WORD_DIR = Path(r"D:\Github\accounting\data\Intermediate Financial Accounting test bank\word")
+WORD_DIR = Path(__file__).resolve().parents[2] / "data" / "Intermediate Financial Accounting test bank" / "word"
 Q_MARKER = re.compile(r"^\s*(\d+)\)(\s|$)")
 ANSWER_PARA = re.compile(r"^\s*Answer:\s*(.+)?$", re.IGNORECASE)
 META_PARA = re.compile(

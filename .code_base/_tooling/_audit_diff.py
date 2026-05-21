@@ -3,7 +3,7 @@ from __future__ import annotations
 import difflib
 from pathlib import Path
 
-ROOT = Path(r"D:\Github\accounting\code_base")
+ROOT = Path(__file__).resolve().parents[1]  # .code_base/
 NB = ROOT / "nb"
 PS = ROOT / "python_scripts"
 

@@ -2,9 +2,18 @@
 One-shot script: convert all .ipynb under SRC to .py, and copy all .py under SRC,
 mirroring the source directory layout into DST. Source layout is preserved to
 avoid the 108 filename collisions across subfolders (e.g. nb/ vs python_scripts/).
+
+Usage (any OS):
+    python _convert_notebooks.py <SRC> [DST]
+    # or via env:
+    NOTEBOOKS_SRC=/path/to/unsloth-notebooks-clone python _convert_notebooks.py
+
+SRC has no portable default — it points at an external clone of unslothai/notebooks.
+DST defaults to this repo's `.code_base/` directory (the parent of `_tooling/`).
 """
 from __future__ import annotations
 
+import os
 import shutil
 import sys
 import time
@@ -14,8 +23,20 @@ from pathlib import Path
 import nbformat
 from nbconvert import PythonExporter
 
-SRC = Path(r"D:\Github\notebooks")
-DST = Path(r"D:\Github\accounting\code_base")
+_DEFAULT_DST = Path(__file__).resolve().parents[1]  # .code_base/
+
+
+def _resolve_paths(argv: list[str]) -> tuple[Path, Path]:
+    src_str = argv[1] if len(argv) > 1 else os.environ.get("NOTEBOOKS_SRC")
+    if not src_str:
+        raise SystemExit(
+            "SRC is required: pass it as argv[1] or set NOTEBOOKS_SRC. "
+            "It should point at a local clone of unslothai/notebooks."
+        )
+    dst_str = argv[2] if len(argv) > 2 else os.environ.get("NOTEBOOKS_DST")
+    return Path(src_str).expanduser().resolve(), (
+        Path(dst_str).expanduser().resolve() if dst_str else _DEFAULT_DST
+    )
 
 def convert_ipynb(src: Path, dst: Path, exporter: PythonExporter) -> None:
     nb = nbformat.read(src, as_version=4)
@@ -24,6 +45,7 @@ def convert_ipynb(src: Path, dst: Path, exporter: PythonExporter) -> None:
     dst.write_text(body, encoding="utf-8")
 
 def main() -> int:
+    SRC, DST = _resolve_paths(sys.argv)
     DST.mkdir(parents=True, exist_ok=True)
     exporter = PythonExporter()
 

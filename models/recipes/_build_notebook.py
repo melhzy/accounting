@@ -48,7 +48,7 @@ C = CELLS.append
 # ============================================================================
 # Header
 # ============================================================================
-C(md("""# Qwen3-4B-Instruct · bf16-LoRA · seed_00 · Windows
+C(md("""# Qwen3-4B-Instruct · bf16-LoRA · seed_00
 
 Fine-tune Qwen3-4B-Instruct on the Spiceland 9e accounting test bank using
 **bf16 LoRA** (r=16, alpha=32), seed_00 split from `eval/sft/splits/`.
@@ -61,46 +61,66 @@ Key differences from upstream: bf16 not 4-bit, r=16 not r=32, 3 epochs not max_s
 custom data path, train_on_responses_only for completion-only loss masking, post-training
 eval on the held-out test split.
 
-### Windows-specific adjustments
+### Cross-platform — runs on Windows, macOS, and Linux
 
-- `dataloader_num_workers=0` — Windows uses spawn (not fork) for multiprocess data loaders; subprocess pickling chokes in Jupyter. Single-process loading is bulletproof and the throughput cost is negligible for this workload.
-- `HF_HOME` set to `D:\\hf_cache` so the ~4 GB Qwen3-4B base download lands on the larger free-space drive (`D:` has 167 GB free vs `C:` 105 GB).
-- **vLLM is OFF the serving menu on Windows** (no native `vllm._C` extension). Adapter export goes to **GGUF (llama.cpp / Ollama)** or stays in **Unsloth-native inference** — see the final cells.
-- Triton emits non-fatal warnings about `cuobjdump.exe` / `nvdisasm.exe` not found at first import. These are debug binaries; the runtime kernels are unaffected. Ignore."""))
+This notebook is OS-portable. Where behavior must branch by OS, it branches inside the cell:
+
+- `REPO_ROOT` is discovered at runtime by walking up from the notebook's working directory until a `.git/` or `eval/sft/splits/` marker is found. No hardcoded absolute paths.
+- `HF_HOME` honors the env var if set; otherwise `huggingface_hub` falls back to its own per-OS default (`~/.cache/huggingface` on Linux/macOS, `%LOCALAPPDATA%\\huggingface` on Windows). To pin the model cache to a specific drive, export `HF_HOME` before launching Jupyter (e.g. `HF_HOME=D:\\hf_cache` on Windows, `HF_HOME=/mnt/data/hf_cache` on Linux).
+- `dataloader_num_workers` is `0` on Windows (spawn semantics break subprocess pickling in Jupyter) and `2` on Linux/macOS (fork is safe).
+- The `vllm` import guard only fires on Windows, where `vllm._C` is absent. On Linux/macOS, `vllm` is allowed but unused by this notebook — adapter export still goes to **GGUF (llama.cpp / Ollama)** or stays in **Unsloth-native inference**.
+- Triton may emit non-fatal warnings about missing debug binaries (`cuobjdump.exe`/`nvdisasm.exe` on Windows; equivalents on Linux). Runtime kernels are unaffected. Ignore."""))
 
 # ============================================================================
 # Setup
 # ============================================================================
 C(md("""## 1. Setup
 
-Verify the env is the `unsloth` conda env on Python 3.12 with a CUDA-visible GPU.
-Also sets `HF_HOME` to the larger drive **before** importing anything that touches HuggingFace,
-and asserts vLLM is NOT installed (it breaks unsloth import on Windows — see notebook header)."""))
+Verify a CUDA-visible GPU is available and the unsloth stack imports cleanly.
+`HF_HOME` is read from the environment if set; otherwise `huggingface_hub` uses
+its per-OS default (`~/.cache/huggingface` on Linux/macOS, `%LOCALAPPDATA%\\huggingface` on Windows).
+On Windows only, this cell also asserts vLLM is absent (its missing `vllm._C`
+extension breaks `import unsloth`)."""))
 
-C(code("""import os
-# Pin the HuggingFace cache to D:\\ (larger free-space drive) — must be set BEFORE
-# importing transformers / datasets / unsloth.
-os.environ.setdefault("HF_HOME", r"D:\\hf_cache")
+C(code("""import os, sys, platform, importlib.util
+from pathlib import Path
+import torch
+
+# HF cache: honor env if set, otherwise let huggingface_hub use its per-OS default.
+# To pin to a specific drive on Windows, export HF_HOME=D:\\\\hf_cache before launching Jupyter.
 os.environ.setdefault("HF_HUB_ENABLE_HF_TRANSFER", "1")  # faster model downloads
 
-import sys, platform, importlib.util
-import torch
+# Single-GPU bf16-LoRA escape hatch: Unsloth's bf16 path loads with
+# `device_map="auto"` under the hood, and on some hosts (notably the NGC
+# `nvcr.io/nvidia/pytorch` container on DGX Spark) Accelerate flips its
+# distributed_type away from NO during dispatch_model. The Trainer then refuses
+# with: "You can't train a model that has been loaded with device_map='auto'
+# in any distributed mode." We are single-GPU here (asserted below) so this
+# guardrail does not apply; set the documented bypass before importing
+# transformers/accelerate/unsloth.
+os.environ.setdefault("ACCELERATE_BYPASS_DEVICE_MAP", "true")
+
+IS_WINDOWS = platform.system() == "Windows"
+IS_MACOS   = platform.system() == "Darwin"
+IS_LINUX   = platform.system() == "Linux"
 
 print("python      :", platform.python_version())
 print("executable  :", sys.executable)
-print("HF_HOME     :", os.environ["HF_HOME"])
+print("os          :", platform.system(), platform.release())
+print("HF_HOME     :", os.environ.get("HF_HOME", "(unset — huggingface_hub will use its per-OS default)"))
 print("torch       :", torch.__version__)
 print("cuda_avail  :", torch.cuda.is_available())
-assert torch.cuda.is_available(), "No CUDA GPU visible — activate the unsloth conda env first."
+assert torch.cuda.is_available(), "No CUDA GPU visible — activate the unsloth env first."
 p = torch.cuda.get_device_properties(0)
 print(f"gpu         : {p.name}  ({p.total_memory/1024**3:.1f} GB, sm_{p.major}{p.minor})")
 
-# Windows guardrail: vllm 0.21.0 installs on Windows but ships no native C ext,
+# Windows-only guardrail: vllm 0.21.0 installs on Windows but ships no native C ext,
 # and unsloth_zoo's vllm_utils.py blindly imports vllm.model_executor — which then
-# blows up with `No module named 'vllm._C'`. Uninstall vllm before training.
-assert importlib.util.find_spec("vllm") is None, \\
-    "vllm is installed and will break `import unsloth` on Windows. " \\
-    "Run: pip uninstall vllm -y"
+# blows up with `No module named 'vllm._C'`. On Linux/macOS, vllm is fine.
+if IS_WINDOWS:
+    assert importlib.util.find_spec("vllm") is None, \\
+        "vllm is installed and will break `import unsloth` on Windows. " \\
+        "Run: pip uninstall vllm -y"
 
 import unsloth, transformers, peft, trl, datasets, accelerate
 print()
@@ -121,7 +141,27 @@ All knobs live here so the rest of the notebook is run-as-is."""))
 C(code("""from pathlib import Path
 
 # ---- Paths --------------------------------------------------------------
-REPO_ROOT = Path(r"D:\\Github\\accounting")
+def _find_repo_root(start: Path | None = None) -> Path:
+    \"\"\"Walk up from `start` (default: cwd) to locate the repo root.
+
+    Markers, in order: a `.git/` directory (any git checkout) or the repo-specific
+    `eval/sft/splits/` tree. Works on Windows, macOS, and Linux without hardcoding.
+    Override by setting the REPO_ROOT env var to an absolute path.
+    \"\"\"
+    import os
+    forced = os.environ.get("REPO_ROOT")
+    if forced:
+        return Path(forced).resolve()
+    p = (start or Path.cwd()).resolve()
+    for d in [p, *p.parents]:
+        if (d / ".git").is_dir() or (d / "eval" / "sft" / "splits").is_dir():
+            return d
+    raise RuntimeError(
+        f"could not find repo root from {p}; "
+        f"set the REPO_ROOT env var to the absolute path of the accounting checkout"
+    )
+
+REPO_ROOT = _find_repo_root()
 SEED_DIR  = REPO_ROOT / "eval" / "sft" / "splits" / "seed_00__351199285"
 TRAIN_JSONL = SEED_DIR / "train.jsonl"
 VALID_JSONL = SEED_DIR / "valid.jsonl"
@@ -132,6 +172,7 @@ assert TRAIN_JSONL.exists() and VALID_JSONL.exists() and TEST_JSONL.exists(), \\
 RUN_ID  = "qwen3_4b_seed00_bf16_lora"
 RUN_DIR = REPO_ROOT / "models" / "runs" / RUN_ID
 RUN_DIR.mkdir(parents=True, exist_ok=True)
+print(f"REPO_ROOT:    {REPO_ROOT}")
 
 # ---- Model -------------------------------------------------------------
 BASE_MODEL      = "unsloth/Qwen3-4B-Instruct-2507"  # Leo's pick; sm_89-compatible
@@ -301,10 +342,11 @@ trainer = SFTTrainer(
         logging_steps     = 10,
         output_dir        = str(RUN_DIR / "checkpoints"),
         report_to         = "none",
-        # Windows: keep dataloader single-process. PyTorch on Windows uses spawn
-        # for num_workers>0, which re-imports the notebook module and chokes
-        # in Jupyter. Throughput cost is negligible for this dataset size.
-        dataloader_num_workers = 0,
+        # OS-aware dataloader workers: PyTorch on Windows uses spawn for
+        # num_workers>0, which re-imports the notebook module and chokes in
+        # Jupyter. fork on Linux/macOS is safe. Throughput cost of 0 is
+        # negligible at this dataset size either way.
+        dataloader_num_workers = 0 if IS_WINDOWS else 2,
     ),
 )
 trainer.add_callback(EarlyStoppingCallback(early_stopping_patience=EARLY_STOPPING_PATIENCE))
@@ -591,12 +633,14 @@ print(f"wrote {RUN_DIR / 'test_metrics.json'}")"""))
 # ============================================================================
 C(md("""## 13. (Optional) Export to GGUF for llama.cpp / Ollama serving
 
-vLLM does not work on Windows (no native `vllm._C`). For Windows-native production
-serving, export the merged model to GGUF and load it with **llama.cpp** or **Ollama**.
+GGUF is the most portable serving format — runs on Windows (where vLLM has no
+`vllm._C`), macOS (Metal backend via llama.cpp), and Linux/aarch64 (Apple Silicon,
+DGX Spark, x86). For Linux x86, vLLM on the merged adapter is faster but
+heavier-weight; pick GGUF when you want a single binary that runs anywhere.
 
 Flip the `if False:` guard to `if True:` to run. Pick one quantization:
 
-- `q4_k_m` — recommended for a 4B model on a 4090 Laptop. ~2.5 GB file, near-full accuracy.
+- `q4_k_m` — recommended for a 4B model on a 4090 Laptop / M-series Mac. ~2.5 GB file, near-full accuracy.
 - `q8_0` — larger (~4.3 GB) but lower quantization loss; use if you have spare disk.
 - `f16` — full bf16 export (~7.5 GB), no quantization loss.
 

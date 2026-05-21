@@ -14,7 +14,8 @@ from docx import Document
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-ROOT = Path(r"D:\Github\accounting\data\Intermediate Financial Accounting test bank")
+REPO_ROOT = Path(__file__).resolve().parents[2]
+ROOT = REPO_ROOT / "data" / "Intermediate Financial Accounting test bank"
 EXCEL_DIR = ROOT / "excel"
 WORD_DIR = ROOT / "word"
 

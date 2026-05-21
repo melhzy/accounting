@@ -31,7 +31,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
 
-ROOT = Path(r"D:\Github\accounting\code_base")
+ROOT = Path(__file__).resolve().parents[1]  # .code_base/
 
 # ----- Categorization -----
 

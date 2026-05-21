@@ -10,7 +10,7 @@ import openpyxl
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-EXCEL_DIR = Path(r"D:\Github\accounting\data\Intermediate Financial Accounting test bank\excel")
+EXCEL_DIR = Path(__file__).resolve().parents[2] / "data" / "Intermediate Financial Accounting test bank" / "excel"
 
 # (chapter, extra_col_name, expected_col_index, "compare-with-col-name", compare-col-index)
 PROBES = [

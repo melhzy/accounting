@@ -1,0 +1,222 @@
+{
+  "run_id": "qwen3-4b-4bit-qlora-s00-r0",
+  "model_dir": "/workspace/models/runs/qwen3-4b-4bit-qlora-s00-r0/gguf",
+  "test_split": "/workspace/eval/sft/splits/seed_00__351199285/test.jsonl",
+  "generated_at": "2026-05-21T20:21:38+0000",
+  "n_questions": 464,
+  "n_scorable": 464,
+  "n_judge_pending": 0,
+  "overall_accuracy_scorable": 0.6228,
+  "by_question_type": {
+    "Multiple Choice": {
+      "correct": 150,
+      "scorable": 234,
+      "judge_pending": 0,
+      "accuracy": 0.6410256410256411
+    },
+    "Essay/Problem": {
+      "correct": 45,
+      "scorable": 117,
+      "judge_pending": 0,
+      "accuracy": 0.38461538461538464
+    },
+    "True/False": {
+      "correct": 30,
+      "scorable": 40,
+      "judge_pending": 0,
+      "accuracy": 0.75
+    },
+    "Matching": {
+      "correct": 64,
+      "scorable": 73,
+      "judge_pending": 0,
+      "accuracy": 0.8767123287671232
+    }
+  },
+  "by_primary_bloom": {
+    "Analyze": {
+      "correct": 29,
+      "scorable": 53,
+      "judge_pending": 0,
+      "accuracy": 0.5471698113207547
+    },
+    "Apply": {
+      "correct": 81,
+      "scorable": 163,
+      "judge_pending": 0,
+      "accuracy": 0.49693251533742333
+    },
+    "Create": {
+      "correct": 1,
+      "scorable": 2,
+      "judge_pending": 0,
+      "accuracy": 0.5
+    },
+    "Evaluate": {
+      "correct": 3,
+      "scorable": 5,
+      "judge_pending": 0,
+      "accuracy": 0.6
+    },
+    "Remember": {
+      "correct": 70,
+      "scorable": 109,
+      "judge_pending": 0,
+      "accuracy": 0.6422018348623854
+    },
+    "Understand": {
+      "correct": 104,
+      "scorable": 129,
+      "judge_pending": 0,
+      "accuracy": 0.8062015503875969
+    },
+    "Unknown": {
+      "correct": 1,
+      "scorable": 3,
+      "judge_pending": 0,
+      "accuracy": 0.3333333333333333
+    }
+  },
+  "by_chapter": {
+    "1": {
+      "correct": 8,
+      "scorable": 12,
+      "judge_pending": 0,
+      "accuracy": 0.6666666666666666
+    },
+    "2": {
+      "correct": 12,
+      "scorable": 15,
+      "judge_pending": 0,
+      "accuracy": 0.8
+    },
+    "3": {
+      "correct": 16,
+      "scorable": 19,
+      "judge_pending": 0,
+      "accuracy": 0.8421052631578947
+    },
+    "4": {
+      "correct": 18,
+      "scorable": 33,
+      "judge_pending": 0,
+      "accuracy": 0.5454545454545454
+    },
+    "5": {
+      "correct": 16,
+      "scorable": 28,
+      "judge_pending": 0,
+      "accuracy": 0.5714285714285714
+    },
+    "6": {
+      "correct": 12,
+      "scorable": 26,
+      "judge_pending": 0,
+      "accuracy": 0.46153846153846156
+    },
+    "7": {
+      "correct": 12,
+      "scorable": 26,
+      "judge_pending": 0,
+      "accuracy": 0.46153846153846156
+    },
+    "8": {
+      "correct": 25,
+      "scorable": 34,
+      "judge_pending": 0,
+      "accuracy": 0.7352941176470589
+    },
+    "9": {
+      "correct": 15,
+      "scorable": 17,
+      "judge_pending": 0,
+      "accuracy": 0.8823529411764706
+    },
+    "10": {
+      "correct": 17,
+      "scorable": 23,
+      "judge_pending": 0,
+      "accuracy": 0.7391304347826086
+    },
+    "11": {
+      "correct": 15,
+      "scorable": 27,
+      "judge_pending": 0,
+      "accuracy": 0.5555555555555556
+    },
+    "12": {
+      "correct": 11,
+      "scorable": 15,
+      "judge_pending": 0,
+      "accuracy": 0.7333333333333333
+    },
+    "13": {
+      "correct": 24,
+      "scorable": 32,
+      "judge_pending": 0,
+      "accuracy": 0.75
+    },
+    "14": {
+      "correct": 18,
+      "scorable": 33,
+      "judge_pending": 0,
+      "accuracy": 0.5454545454545454
+    },
+    "15": {
+      "correct": 4,
+      "scorable": 19,
+      "judge_pending": 0,
+      "accuracy": 0.21052631578947367
+    },
+    "16": {
+      "correct": 12,
+      "scorable": 18,
+      "judge_pending": 0,
+      "accuracy": 0.6666666666666666
+    },
+    "17": {
+      "correct": 13,
+      "scorable": 21,
+      "judge_pending": 0,
+      "accuracy": 0.6190476190476191
+    },
+    "18": {
+      "correct": 14,
+      "scorable": 21,
+      "judge_pending": 0,
+      "accuracy": 0.6666666666666666
+    },
+    "19": {
+      "correct": 16,
+      "scorable": 23,
+      "judge_pending": 0,
+      "accuracy": 0.6956521739130435
+    },
+    "20": {
+      "correct": 4,
+      "scorable": 10,
+      "judge_pending": 0,
+      "accuracy": 0.4
+    },
+    "21": {
+      "correct": 7,
+      "scorable": 12,
+      "judge_pending": 0,
+      "accuracy": 0.5833333333333334
+    }
+  },
+  "generation_config": {
+    "max_new_tokens_short": 32,
+    "max_new_tokens_long": 512,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "do_sample": false
+  },
+  "judge": {
+    "method": "canonical_v2",
+    "extractor_model": "gpt-oss:20b",
+    "judge_model": "gpt-oss:20b",
+    "canonical_path": "/workspace/eval/sft/splits/seed_00__351199285/test_canonical_answers.jsonl",
+    "n_essay_llm_judgments": 117
+  }
+}
