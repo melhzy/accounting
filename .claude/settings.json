@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "deny": [
+      "Read(**/unsloth_compiled_cache/**)",
+      "Read(**/__pycache__/**)",
+      "Read(**/.ipynb_checkpoints/**)",
+      "Read(**/hf_cache/**)",
+      "Read(**/.venv/**)",
+      "Read(**/node_modules/**)",
+      "Read(models/runs/**/adapter_model.safetensors)",
+      "Read(models/runs/**/tokenizer.json)",
+      "Read(models/runs/**/training_args.bin)",
+      "Read(models/runs/**/checkpoints/**)",
+      "Read(models/runs/**/checkpoint-*/**)",
+      "Read(models/runs/**/adapter/**)",
+      "Read(models/runs/**/gguf/**)",
+      "Read(models/runs/**/gguf_*/**)",
+      "Read(models/runs/**/executed_notebook.ipynb)",
+      "Read(**/~$*.docx)",
+      "Read(**/~$*.xlsx)",
+      "Bash(rm -rf:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git clean -fd:*)",
+      "Bash(git branch -D:*)"
+    ],
+    "allow": [
+      "Bash(python .meta/probe_host.py)",
+      "Bash(python eval/extract_word_tables.py)",
+      "Bash(python eval/ingest_spiceland.py)",
+      "Bash(python eval/split_multi_seed.py)",
+      "Bash(python eval/run.py:*)",
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(sha256sum:*)"
+    ]
+  },
+  "env": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude/hooks/session_start.py"
+          }
+        ]
+      },
+      {
+        "matcher": "resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude/hooks/session_start.py"
+          }
+        ]
+      }
+    ]
+  }
+}

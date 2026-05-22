@@ -33,3 +33,6 @@ models/runs/*/training_args.bin
 
 # HF cache (in case someone sets HF_HOME inside the repo)
 hf_cache/
+
+# Claude Code harness — per-developer overrides (settings.json is checked in)
+.claude/settings.local.json
