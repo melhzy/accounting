@@ -83,6 +83,8 @@ def _generation_token_count_approx(generation: str) -> int:
 def run_checks(
     predictions: list[dict[str, Any]],
     canonical: dict[str, Any],
+    solver_emits_citations: bool = False,
+    solver_emits_tool_calls: bool = False,
 ) -> dict[str, Any]:
     """
     Run all 4 mechanical checks + smell aggregation on the prediction list.
@@ -90,17 +92,37 @@ def run_checks(
     Each prediction dict must have at minimum:
         question_id, type, primary_bloom, generation,
         (optional) tool_calls, citations
+
+    Capability flags (Vera audit 2026-05-21): checks 2 + 3 only fire when the
+    corresponding solver capability is wired. Without these, r0-class runs that
+    emit `citations=[]` and `tool_calls=[]` trigger blanket violations that
+    make `gate_pass` permanently False regardless of model accuracy. The flags
+    default False; the solver-loop owner flips them on once Solomon's
+    citation/tool layer is in place.
     """
     results: dict[str, Any] = {
+        # Capability flags echoed back so the verdict is interpretable
+        "capability_flags": {
+            "solver_emits_citations":  solver_emits_citations,
+            "solver_emits_tool_calls": solver_emits_tool_calls,
+        },
         # Check 1 – JE balance (only applicable when tool_calls has journal_entry_validator)
         "je_balance_violations": 0,
         "je_balance_violation_ids": [],
         # Check 2 – citation present at Bloom Remember/Understand
         "missing_citation_violations": 0,
         "missing_citation_violation_ids": [],
+        "missing_citation_check_status": (
+            "active" if solver_emits_citations
+            else "n/a (solver_emits_citations=False)"
+        ),
         # Check 3 – arithmetic in prose at Apply+
         "arith_in_prose_violations": 0,
         "arith_in_prose_violation_ids": [],
+        "arith_in_prose_check_status": (
+            "active" if solver_emits_tool_calls
+            else "n/a (solver_emits_tool_calls=False)"
+        ),
         # Check 4 – reasoning pattern matches Bloom (single-token at Apply+ flagged)
         "reasoning_pattern_drift": 0,
         "reasoning_pattern_drift_ids": [],
@@ -129,13 +151,15 @@ def run_checks(
                     break
 
         # ── Check 2: citation at Remember/Understand ────────────────────────
-        if bloom_lower in BLOOM_LOWER_GROUPS:
+        # Only fires when the solver is configured to emit citations.
+        if solver_emits_citations and bloom_lower in BLOOM_LOWER_GROUPS:
             if not citations:
                 results["missing_citation_violations"] += 1
                 results["missing_citation_violation_ids"].append(qid)
 
         # ── Check 3: arithmetic in prose at Apply+ ──────────────────────────
-        if bloom_lower in BLOOM_UPPER_GROUPS:
+        # Only fires when the solver is configured to emit tool_calls.
+        if solver_emits_tool_calls and bloom_lower in BLOOM_UPPER_GROUPS:
             tool_result_numbers: set[str] = set()
             for tc in tool_calls:
                 if isinstance(tc, dict):
@@ -187,13 +211,24 @@ def run_checks(
                 {"id": qid, "introduced": sorted(introduced)}
             )
 
-    # Mechanical gate summary (PASS = all violation counts == 0)
+    # Mechanical gate summary. N/A checks do not block (their violation counts
+    # stay 0 by construction, but we record the status separately so a reader
+    # can tell PASS-because-active from PASS-because-skipped).
     results["gate_pass"] = (
         results["je_balance_violations"] == 0
         and results["missing_citation_violations"] == 0
         and results["arith_in_prose_violations"] == 0
         and results["reasoning_pattern_drift"] == 0
     )
+    results["gate_active_checks"] = [
+        name for name, active in [
+            ("je_balance",         True),    # always active (no-op when tool_calls=[])
+            ("missing_citation",   solver_emits_citations),
+            ("arith_in_prose",     solver_emits_tool_calls),
+            ("reasoning_pattern",  True),
+        ]
+        if active
+    ]
     # Smell gate is advisory (non-blocking for r0; Carla adjudicates)
     results["smell_gate_pass"] = results["smell_introduced_by_model"] == 0
 

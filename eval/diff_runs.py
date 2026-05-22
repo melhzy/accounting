@@ -137,6 +137,23 @@ def build_report(
         lines.append(f"| {qt} | {pct(b_acc)} | {pct(c_acc)} | {delta_str(b_acc, c_acc)}{flag} |")
     lines.append("")
 
+    # by_difficulty (canonical values look like "1 Easy" / "2 Medium" / "3 Hard"
+    # so lexical sort matches the natural ordering)
+    lines.append("## By Difficulty")
+    lines.append("| Difficulty | Baseline | Candidate | Delta |")
+    lines.append("|---|---|---|---|")
+    diffs = sorted(
+        set(list(bm.get("by_difficulty", {}).keys()) + list(cm.get("by_difficulty", {}).keys()))
+    )
+    for d in diffs:
+        b_acc = (bm.get("by_difficulty", {}).get(d) or {}).get("accuracy")
+        c_acc = (cm.get("by_difficulty", {}).get(d) or {}).get("accuracy")
+        flag = " <<< REGRESSION" if regression(b_acc, c_acc, regression_threshold) else ""
+        if regression(b_acc, c_acc, regression_threshold):
+            has_regression = True
+        lines.append(f"| {d} | {pct(b_acc)} | {pct(c_acc)} | {delta_str(b_acc, c_acc)}{flag} |")
+    lines.append("")
+
     # Mechanical checks
     lines.append("## Mechanical Checks")
     bmc = bm.get("mechanical_checks", {})

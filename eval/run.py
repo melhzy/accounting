@@ -293,6 +293,14 @@ def main() -> None:
                     help="only process first N questions (smoke test)")
     ap.add_argument("--canonical", default=None,
                     help="override path to canonical JSONL (default: eval/spiceland9e.jsonl)")
+    ap.add_argument("--solver-emits-citations", action="store_true",
+                    help="solver layer emits citations -> activates mechanical check #2 "
+                         "(citation at Bloom Remember/Understand). Default off; r0-class "
+                         "runs without a citation-emitting solver should leave this off.")
+    ap.add_argument("--solver-emits-tool-calls", action="store_true",
+                    help="solver layer emits tool_calls -> activates mechanical check #3 "
+                         "(arithmetic-in-prose at Apply+). Default off; r0-class runs "
+                         "without a tool layer should leave this off.")
     args = ap.parse_args()
 
     split_path   = Path(args.split).resolve()
@@ -339,9 +347,10 @@ def main() -> None:
         chapter = meta["chapter"]
         bloom   = meta.get("primary_bloom", "Unknown")
 
-        # Gold answer from canonical record
-        can_rec = canonical.get(qid, {})
-        gold    = can_rec.get("gold_answer", "")
+        # Gold answer + difficulty from canonical record
+        can_rec    = canonical.get(qid, {})
+        gold       = can_rec.get("gold_answer", "")
+        difficulty = can_rec.get("difficulty") or "Unknown"
 
         # Build messages: use the prompt from the split (includes system + user)
         # strip the last assistant turn (that's what we predict)
@@ -388,6 +397,7 @@ def main() -> None:
             "type":           qtype,
             "primary_bloom":  bloom,
             "chapter":        chapter,
+            "difficulty":     difficulty,
             "gold":           gold,
             "pred":           pred,
             "correct":        correct,
@@ -414,7 +424,12 @@ def main() -> None:
 
     # ── 6. Run mechanical checks ─────────────────────────────────────────────
     print("[run.py] running mechanical checks ...", flush=True)
-    mech = run_checks(predictions, canonical)
+    mech = run_checks(
+        predictions,
+        canonical,
+        solver_emits_citations=args.solver_emits_citations,
+        solver_emits_tool_calls=args.solver_emits_tool_calls,
+    )
 
     # ── 7. Build slice tables ─────────────────────────────────────────────────
     def slice_accuracy(preds: list[dict]) -> dict[str, Any]:
@@ -454,6 +469,13 @@ def main() -> None:
         subset = [p for p in predictions if p["chapter"] == ch]
         by_chapter[str(ch)] = slice_accuracy(subset)
 
+    # by_difficulty (canonical JSONL carries values like "1 Easy" / "2 Medium" / "3 Hard")
+    difficulties_present = sorted({p["difficulty"] for p in predictions})
+    by_difficulty: dict[str, Any] = {}
+    for d in difficulties_present:
+        subset = [p for p in predictions if p["difficulty"] == d]
+        by_difficulty[d] = slice_accuracy(subset)
+
     overall_acc = round(n_correct / n_scorable, 4) if n_scorable else None
 
     metrics: dict[str, Any] = {
@@ -468,12 +490,15 @@ def main() -> None:
         "by_question_type":    by_type,
         "by_primary_bloom":    by_bloom,
         "by_chapter":          by_chapter,
+        "by_difficulty":       by_difficulty,
         "generation_config": {
-            "max_new_tokens_short": args.max_new_tokens_short,
-            "max_new_tokens_long":  args.max_new_tokens_long,
-            "temperature":          args.temperature,
-            "top_p":                args.top_p,
-            "limit":                args.limit,
+            "max_new_tokens_short":     args.max_new_tokens_short,
+            "max_new_tokens_long":      args.max_new_tokens_long,
+            "temperature":              args.temperature,
+            "top_p":                    args.top_p,
+            "limit":                    args.limit,
+            "solver_emits_citations":   args.solver_emits_citations,
+            "solver_emits_tool_calls":  args.solver_emits_tool_calls,
         },
         "mechanical_checks": mech,
     }
