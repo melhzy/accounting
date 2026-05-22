@@ -1,92 +1,77 @@
 {
-  "generated_at": "2026-05-20T15:00:50.740710+00:00",
+  "generated_at": "2026-05-21T23:00:39.961107+00:00",
   "os": {
-    "system": "Linux",
-    "platform": "Linux-6.14.0-1015-nvidia-aarch64-with-glibc2.39",
+    "system": "Windows",
+    "platform": "Windows-11-10.0.26200-SP0",
     "arch": {
-      "raw": "aarch64",
-      "family": "arm64",
+      "raw": "AMD64",
+      "family": "x86_64",
       "bits": 64,
       "python_bits": 64
     },
-    "release": "6.14.0-1015-nvidia",
-    "distro": "Ubuntu 24.04.4 LTS"
+    "release": "11",
+    "build": "10.0.26200"
   },
   "python": {
-    "version": "3.13.11",
+    "version": "3.13.3",
     "implementation": "CPython",
-    "executable": "/home/zi/miniconda3/bin/python",
-    "prefix": "/home/zi/miniconda3",
-    "in_conda_env": true,
-    "conda_env_name": "base"
+    "executable": "C:\\Python313\\python.exe",
+    "prefix": "C:\\Python313",
+    "in_conda_env": false,
+    "conda_env_name": null
   },
   "cpu": {
     "arch": {
-      "raw": "aarch64",
-      "family": "arm64",
+      "raw": "AMD64",
+      "family": "x86_64",
       "bits": 64,
       "python_bits": 64
     },
-    "logical_count": 20,
-    "model": null,
-    "vendor": "arm",
-    "physical_count": null,
-    "max_clock_mhz": null
+    "logical_count": 32,
+    "model": "13th Gen Intel(R) Core(TM) i9-13900HX",
+    "vendor": "intel",
+    "physical_count": 24,
+    "max_clock_mhz": 2200,
+    "wmi_arch_code": 9
   },
   "ram": {
-    "total_gb": 119.6,
-    "available_gb": 109.9
+    "total_gb": 63.7,
+    "available_gb": 35.6
   },
   "gpu": [
     {
       "vendor": "nvidia",
-      "name": "NVIDIA GB10",
-      "vram_gb": null,
-      "source": "nvidia-smi",
-      "driver": "580.95.05",
-      "compute_capability": "12.1"
+      "name": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "vram_gb": 16.0,
+      "compute_capability": "8.9",
+      "multi_processor_count": 76,
+      "source": "torch.cuda",
+      "driver": "581.95",
+      "vram_free_gb": 12.0
     }
   ],
   "storage": [
     {
-      "mount": "/",
-      "total_gb": 3666.0,
-      "free_gb": 2210.4,
-      "pct_free": 60.3
+      "mount": "C:",
+      "total_gb": 929.5,
+      "free_gb": 57.4,
+      "pct_free": 6.2
     },
     {
-      "mount": "/home/zi",
-      "total_gb": 3666.0,
-      "free_gb": 2210.4,
-      "pct_free": 60.3
+      "mount": "D:",
+      "total_gb": 931.4,
+      "free_gb": 160.7,
+      "pct_free": 17.2
     },
     {
-      "mount": "/home",
-      "total_gb": 3666.0,
-      "free_gb": 2210.4,
-      "pct_free": 60.3
-    },
-    {
-      "mount": "/mnt",
-      "total_gb": 3666.0,
-      "free_gb": 2210.4,
-      "pct_free": 60.3
-    },
-    {
-      "mount": "/tmp",
-      "total_gb": 3666.0,
-      "free_gb": 2210.4,
-      "pct_free": 60.3
-    },
-    {
-      "mount": "<repo_root: /home/zi/Documents/GitHub/accounting>",
-      "total_gb": 3666.0,
-      "free_gb": 2210.4,
-      "pct_free": 60.3
+      "mount": "<repo_root: D:\\Github\\accounting>",
+      "total_gb": 931.4,
+      "free_gb": 160.7,
+      "pct_free": 17.2
     }
   ],
   "ml_stack": {
-    "torch": null,
+    "torch": "2.9.1+cu126",
     "unsloth": null,
     "transformers": null,
     "peft": null,
@@ -96,14 +81,14 @@
     "datasets": null,
     "vllm": null,
     "tiktoken": null,
-    "seedhash": null,
-    "openpyxl": null,
-    "docx": null,
+    "seedhash": "0.1.0",
+    "openpyxl": "3.1.5",
+    "docx": "1.2.0",
     "xformers": null,
-    "psutil": "7.2.2"
+    "psutil": "7.1.3"
   },
   "probe_run_from": {
-    "cwd": "/home/zi/Documents/GitHub/accounting",
-    "script": "/home/zi/Documents/GitHub/accounting/.meta/probe_host.py"
+    "cwd": "D:\\Github\\accounting",
+    "script": "D:\\Github\\accounting\\.meta\\probe_host.py"
   }
 }

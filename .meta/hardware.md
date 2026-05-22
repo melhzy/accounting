@@ -1,13 +1,13 @@
 # Hardware profile
 
-_Probed 2026-05-20. The repo is portable across Windows / macOS / Linux on x86_64 / arm64. Pat's session-start check (`.claude/agents/pat-pm.md` §"Session-start host check") identifies which row is **active** for the current session and points algorithm defaults at that row's prescribed path. All rows below are first-class supported targets; dormant rows are preserved for future runs on those platforms — **never retired**._
+_Probed 2026-05-21. ★ ACTIVE = Windows 11 + RTX 4090 Laptop (sm_89). The repo is portable across Windows / macOS / Linux on x86_64 / arm64. Pat's session-start check (`.claude/agents/pat-pm.md` §"Session-start host check") identifies which row is **active** for the current session and points algorithm defaults at that row's prescribed path. All rows below are first-class supported targets; dormant rows are preserved for future runs on those platforms — **never retired**._
 
 ## Supported host platforms (compatibility matrix)
 
 | Status | Host | OS | CPU arch | GPU | RAM | Prescribed recipe |
 |--------|------|----|----------|-----|-----|-------------------|
-| ★ **ACTIVE** | NVIDIA DGX Spark | Ubuntu 24.04 LTS aarch64 | ARM Neoverse V2 (20c, Grace) | NVIDIA GB10 Blackwell sm_120 | 119.6 GB UMA (CPU+GPU shared) | NGC container + 4-bit QLoRA — `models/recipes/dgx_spark/qwen3_4b_4bit_qlora_s00_r0.ipynb` |
-| **dormant** | Windows + RTX 4090 Laptop | Windows 11 x86_64 | Intel i9-13900HX (24c/32t) | NVIDIA RTX 4090 Laptop sm_89 | 64 GB DDR5-5600 | Unsloth + bf16-LoRA — `models/recipes/qwen3_4b_seed00_bf16_lora.ipynb` |
+| ★ **ACTIVE** | Windows + RTX 4090 Laptop | Windows 11 x86_64 | Intel i9-13900HX (24c/32t) | NVIDIA RTX 4090 Laptop sm_89 | 64 GB DDR5-5600 | Unsloth + bf16-LoRA — `models/recipes/windows/qwen3_4b_seed00_bf16_lora.ipynb` |
+| **dormant** | NVIDIA DGX Spark | Ubuntu 24.04 LTS aarch64 | ARM Neoverse V2 (20c, Grace) | NVIDIA GB10 Blackwell sm_120 | 119.6 GB UMA (CPU+GPU shared) | NGC container + 4-bit QLoRA — `models/recipes/dgx_spark/qwen3_4b_4bit_qlora_s00_r0.ipynb` (executed; metrics at `models/runs/dgx_spark/qwen3-4b-4bit-qlora-s00-r0/test_metrics.json`, 69.2%) |
 | future | macOS Apple Silicon | macOS arm64 | Apple M-series | Apple MPS (unified memory) | unified | template TBD — bf16-LoRA only (no bitsandbytes on arm64), serve via llama.cpp/Ollama |
 | future | Linux x86_64 + NVIDIA | Linux | Intel/AMD | any NVIDIA CUDA | discrete VRAM | template TBD — full Unsloth stack incl. vLLM |
 | future | Linux x86_64 + AMD ROCm | Linux | AMD EPYC/Ryzen | AMD Instinct / MI | discrete VRAM | template TBD — Unsloth + bitsandbytes-rocm |
@@ -15,11 +15,15 @@ _Probed 2026-05-20. The repo is portable across Windows / macOS / Linux on x86_6
 
 **Source-of-truth pointers per row**:
 
-- **★ ACTIVE — DGX Spark**: detailed below + the NVIDIA DGX Spark Unsloth playbook (<https://github.com/NVIDIA/dgx-spark-playbooks/tree/main/nvidia/unsloth>, last updated 2025-12-15).
-- **dormant — Windows + RTX 4090 Laptop**: detailed in the [Dormant host details](#dormant-host-details--windows--rtx-4090-laptop) section below.
+- **★ ACTIVE — Windows + RTX 4090 Laptop**: detailed in the [★ ACTIVE host details](#-active-host-details--windows--rtx-4090-laptop) section below. Prescribed path: native conda `unsloth` env + bf16 LoRA + llama.cpp/Ollama serving (no vLLM on Windows).
+- **dormant — NVIDIA DGX Spark**: detailed in the [Dormant host details — NVIDIA DGX Spark](#dormant-host-details--nvidia-dgx-spark) section below + the NVIDIA DGX Spark Unsloth playbook (<https://github.com/NVIDIA/dgx-spark-playbooks/tree/main/nvidia/unsloth>, last updated 2025-12-15). Executed baseline: `qwen3-4b-4bit-qlora-s00-r0` at 69.2%.
 - **future** rows: populate when probe_host.py runs on that platform for the first time.
 
 ---
+
+## Dormant host details — NVIDIA DGX Spark
+
+_Last active 2026-05-20. Row is alive — the detail blocks below (Compute / Storage / Python environments / ML stack / Fine-tune feasibility / Launch / Serving) are the prescribed path the moment a session runs on this host again. The executed `qwen3-4b-4bit-qlora-s00-r0` baseline (69.2% on the 464-row scorable test split) lives at `models/runs/dgx_spark/qwen3-4b-4bit-qlora-s00-r0/test_metrics.json` and remains the cross-row anchor a Windows-row run will diff against._
 
 ## Compute
 
@@ -220,9 +224,9 @@ python -c "from unsloth import FastLanguageModel; import torch; print(torch.cuda
 | **CPU-only / portable test** | llama.cpp (GGUF export from Unsloth) | If a quick sanity-check without firing up the container is wanted. |
 | **AWQ-4bit on vLLM** | AWQ → vLLM | sm_120 supports AWQ kernels; recovery-vs-fp16 score recorded on the 200-q probe before production swap. |
 
-## Bottom line — ACTIVE row
+## Bottom line — DGX Spark (dormant) row
 
-**Ready to launch on the active row's prescribed substrate.** The NVIDIA DGX
+**Ready to launch when this row is ACTIVE again.** The NVIDIA DGX
 Spark Unsloth playbook (URL above, last updated 2025-12-15) is the
 prescribed path for this row. The substrate is: NGC container
 `nvcr.io/nvidia/pytorch:25.11-py3` + `pip install --no-deps unsloth
@@ -238,12 +242,9 @@ the `spiceland9e-v1.0.0` anchor; all 5 seed splits verified.
 
 ---
 
-## Dormant host details — Windows + RTX 4090 Laptop
+## ★ ACTIVE host details — Windows + RTX 4090 Laptop
 
-Last active 2026-05-19. Preserved as a first-class supported target; the
-bf16-LoRA recipe at `models/recipes/qwen3_4b_seed00_bf16_lora.ipynb` remains
-the prescribed path when the repo runs on this host again. Detailed
-configuration:
+_Probed 2026-05-21. This row is ★ ACTIVE for the current session — algorithm defaults derive from this block. The bf16-LoRA recipe at `models/recipes/windows/qwen3_4b_seed00_bf16_lora.ipynb` is alive and prescriptive; the pilot run `qwen3-4b-bf16-lora-s00-r0` is the immediate Leo deliverable per ROADMAP §3 item #2. Detailed configuration:_
 
 | | |
 |---|---|

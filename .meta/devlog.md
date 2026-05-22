@@ -107,7 +107,7 @@ After scouting `.code_base/notebooks/`, Leo picked **SFT-LoRA on Qwen3-4B-Instru
 
 ### Training notebook
 
-`models/recipes/qwen3_4b_seed00_bf16_lora.ipynb` — 31 cells. bf16-LoRA (not QLoRA), r=16/α=32, 3 epochs cosine LR + 5% warmup, EarlyStopping(patience=3), `train_on_responses_only` masking, post-training eval on test split with type/Bloom/chapter accuracy breakdown.
+`models/recipes/windows/qwen3_4b_seed00_bf16_lora.ipynb` — 31 cells. bf16-LoRA (not QLoRA), r=16/α=32, 3 epochs cosine LR + 5% warmup, EarlyStopping(patience=3), `train_on_responses_only` masking, post-training eval on test split with type/Bloom/chapter accuracy breakdown.
 
 ### Windows-specific adjustments
 
@@ -146,3 +146,30 @@ After scouting `.code_base/notebooks/`, Leo picked **SFT-LoRA on Qwen3-4B-Instru
 **Lesson for the team**: the pat-pm.md doctrine already enumerated 6 platform combinations as a matrix, but the language "HARD WARNING → ROADMAP must be refreshed" nudged whoever synthesized the post-pull state to rewrite §4 for DGX Spark. The fix is at the language level — Pat now has explicit forbidden phrasings.
 
 _Next entry below this line. Keep newest-on-top per phase; each phase H2-dated._
+
+---
+
+## 2026-05-21 — Session 4 · Claude Code harness layer + host drift
+
+Two events this session.
+
+**Harness layer (commit `a51d9c3`).** Shipped Anthropic's Claude Code harness blueprint, scoped to net-new value:
+- `CLAUDE.md` (root) — lean pointers + project-wide critical gotchas; points at existing READMEs and `.claude/agents/` for layered context rather than duplicating them.
+- `.claude/settings.json` — destructive-Bash deny (`rm -rf`, force-push, reset --hard, branch -D), build-artifact noise filters (cache dirs, Word lockfiles, adapter weights), `SessionStart` hook wiring (matchers: `startup`, `resume`).
+- `.claude/hooks/session_start.py` — cross-platform stdlib hook (~130 LoC); auto-runs `probe_host.py`, then surfaces `[read first]` ROADMAP pointer, `[host]` current row summary, `[pins]` dataset / pipeline / run-id pins, `[lenses]` dispatch roster. ASCII-only output for Windows cp1252 stdout compatibility.
+- `.gitignore` — `.claude/settings.local.json` (per-developer overrides, not checked in).
+
+Deliberately not added: subdirectory `CLAUDE.md` files, skills, `HARNESS.md`, MCP servers, plugins. The existing per-directory READMEs + 8-lens agent system already satisfy the blog's "layered context" and "specialized expertise on demand" intents; duplicating them would be the bloat the blog explicitly warns about. Earlier in the session I created the redundant pieces speculatively, then walked them back after a candid review. Lesson for future harness work in this repo: **the agents/ + READMEs surface is the layered-context mechanism; harness work should reference it, not parallel it.** The commit also folded in 14 pre-staged DGX Spark layout renames that were in the index — bundled label is "Claude Code harness layer" but the commit description in `git show a51d9c3` lists both. Classifier blocked the `--amend` to expand the message.
+
+**Host drift (Pat verdict).** The new `SessionStart` hook fired and regenerated `.meta/host.json`. The current host is Windows 11 + i9-13900HX + RTX 4090 Laptop sm_89 — the row that was `dormant` since 2026-05-20. Per the §0 protocol the ★ ACTIVE pointer in `.meta/hardware.md` matrix and ROADMAP §0/§4 moves to the Windows row; DGX Spark becomes `dormant`, alive. The executed `qwen3-4b-4bit-qlora-s00-r0` baseline (69.2% on the 464-row scorable test split) and `models/recipes/dgx_spark/qwen3_4b_4bit_qlora_s00_r0.ipynb` stay prescriptive for the moment a session runs on DGX Spark again — neither retired.
+
+ROADMAP §3 reordered by ACTIVE-row actionability (Pat). Items now ranked: (1) extract notebook eval block into `eval/run.py` — Vera, cross-row; (2) execute `qwen3-4b-bf16-lora-s00-r0` on the Windows row — Leo + user, produces the cross-row baseline against the executed dormant-row r0; (3) GGUF export + Ollama smoke-test of the dormant-row adapter — Leo, cross-row applicable; (4) Vera A/B harness diffing `test_metrics.json`; (5) re-launch DGX Spark 4-bit QLoRA r1+ sweeps — deferred until that host is ACTIVE again; (6) seeds 01-04 variance — same defer condition.
+
+**hardware.md restructure**: minimal-edit pass (preserved detail, flipped headers). The header (line 3) now reads "Probed 2026-05-21. ★ ACTIVE = Windows…"; matrix table ★ swapped; "Source-of-truth pointers per row" swapped; a new `## Dormant host details — NVIDIA DGX Spark` H2 introduces the previously-ACTIVE detail block; the previously-`Dormant host details — Windows + RTX 4090 Laptop` H2 was renamed to `## ★ ACTIVE host details — Windows + RTX 4090 Laptop`. The Bottom line H2 was relabeled to "DGX Spark (dormant) row". The DGX Spark detail blocks (Compute / Storage / Python environments / ML stack / Fine-tune feasibility / Launch / Serving) were left in place rather than physically swapped under the ACTIVE block — the matrix table + section headers carry the truth; physically swapping ~230 lines on every host switch is overkill and Pat's verdict explicitly said "swap ★ marker + headers", with content reordering listed as a nice-to-have not blocker.
+
+**Post-implementation checklist (Pat, abbreviated)**: Eval-harness re-run N/A · Destructive gates PASS (settings.json deny list lands) · Observability N/A · Failure-mode handlers HOLD (verify `session_start.py` handles `probe_host.py` non-zero exit / missing host.json / JSON parse error — P2 follow-up, non-blocking) · Open follow-ups PASS-on-apply · Citation discipline N/A.
+
+**Open follow-ups**:
+- (P2) Verify `.claude/hooks/session_start.py` graceful degradation on probe failure paths.
+- (P3) Once Vera ships `eval/run.py` (§3 #1), extend the hook to surface "last baseline slice-table" line.
+- (P3) Confirm `.gitignore` rules still exclude adapter weights but keep `manifest.json` / `test_metrics.json` / `test_predictions.jsonl` in-repo under the new `models/runs/dgx_spark/...` host-nested path (the two-star pattern update in `.gitignore` is in working tree, not yet committed — will land with the next DGX Spark commit).
