@@ -11,7 +11,7 @@ Usage
 python eval/run.py \\
     --run-id qwen3-4b-4bit-qlora-s00-r0 \\
     --split  eval/sft/splits/seed_00__351199285/test.jsonl \\
-    --adapter models/runs/qwen3-4b-4bit-qlora-s00-r0 \\
+    --adapter models/runs/dgx_spark/qwen3-4b-4bit-qlora-s00-r0 \\
     [--max-new-tokens-short 32] [--max-new-tokens-long 512] \\
     [--temperature 0.0] [--top-p 1.0] \\
     [--limit N]
@@ -33,9 +33,10 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT   = SCRIPT_DIR.parent
 CANONICAL_JSONL = REPO_ROOT / "eval" / "spiceland9e.jsonl"
 
-# ── import mechanical checks (same package) ──────────────────────────────────
+# ── import mechanical checks + seeding (same flat-module package) ───────────
 sys.path.insert(0, str(SCRIPT_DIR))
 from mechanical_checks import run_checks  # noqa: E402
+from seeding import seed_everything  # noqa: E402
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -301,6 +302,12 @@ def main() -> None:
                     help="solver layer emits tool_calls -> activates mechanical check #3 "
                          "(arithmetic-in-prose at Apply+). Default off; r0-class runs "
                          "without a tool layer should leave this off.")
+    ap.add_argument("--seed", type=int, default=None,
+                    help="Override the eval seed. Default: read `seed_int` from the "
+                         "split's sibling manifest.json (per project seedhash policy).")
+    ap.add_argument("--strict-determinism", action="store_true",
+                    help="Enable cuDNN deterministic + use_deterministic_algorithms + "
+                         "CUBLAS_WORKSPACE_CONFIG (slower; for ablation reproducibility).")
     args = ap.parse_args()
 
     split_path   = Path(args.split).resolve()
@@ -308,6 +315,29 @@ def main() -> None:
     out_dir      = adapter_path  # write outputs alongside the adapter
 
     canonical_path = Path(args.canonical).resolve() if args.canonical else CANONICAL_JSONL
+
+    # ── 0. Deterministic seeding (project policy: seedhash is the sole seed
+    # derivation mechanism — see eval/seeding.py + the seeding-policy memory).
+    # Default seed: the `seed_int` baked into the split's sibling manifest, so
+    # the eval run inherits the exact same `seedhash`-derived seed that produced
+    # the split. Must run before any torch CUDA op (i.e. before model load).
+    split_manifest_path = split_path.parent / "manifest.json"
+    if args.seed is not None:
+        eval_seed = args.seed
+    elif split_manifest_path.exists():
+        eval_seed = json.loads(split_manifest_path.read_text(encoding="utf-8"))["seed_int"]
+    else:
+        raise RuntimeError(
+            f"--seed not given and no manifest.json beside {split_path}; "
+            "cannot honor the project seedhash policy."
+        )
+    seeding_report = seed_everything(seed_int=eval_seed, strict=args.strict_determinism)
+    print(
+        f"[run.py] seeding: seed_int={seeding_report.seed_int} "
+        f"per_rank_seed={seeding_report.per_rank_seed_int} "
+        f"topology={seeding_report.topology} strict={seeding_report.strict}",
+        flush=True,
+    )
 
     # ── 1. Verify split SHA ──────────────────────────────────────────────────
     test_split_sha = verify_split_sha(split_path)
@@ -500,7 +530,8 @@ def main() -> None:
             "solver_emits_citations":   args.solver_emits_citations,
             "solver_emits_tool_calls":  args.solver_emits_tool_calls,
         },
-        "mechanical_checks": mech,
+        "seeding_report":     seeding_report.to_dict(),
+        "mechanical_checks":  mech,
     }
 
     # ── 8. Write outputs ──────────────────────────────────────────────────────

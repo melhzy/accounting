@@ -139,7 +139,7 @@ print(f"\\njudge model {JUDGE_MODEL!r} is available ✓")"""))
 C(md("""## §2 — Configuration"""))
 
 C(code("""RUN_ID    = "qwen3-4b-4bit-qlora-s00-r0"
-RUN_DIR   = REPO / "models" / "runs" / RUN_ID
+RUN_DIR   = REPO / "models" / "runs" / "dgx_spark" / RUN_ID
 EVAL_DIR  = RUN_DIR / "eval_rerun"
 PRED_PATH = EVAL_DIR / "test_predictions.jsonl"
 METRICS_PATH = EVAL_DIR / "test_metrics.json"

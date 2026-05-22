@@ -77,8 +77,8 @@ tighter task than the direct-judge approach.
 | Path | What | Lifecycle |
 |---|---|---|
 | `eval/sft/splits/seed_00__351199285/test_canonical_answers.jsonl` | one row per test record with the canonical answer | one-time write, reused across runs |
-| `models/runs/qwen3-4b-4bit-qlora-s00-r0/eval_rerun/test_predictions.jsonl` | predictions updated in-place with `judge_correct`, `judge_rationale` | per-run |
-| `models/runs/qwen3-4b-4bit-qlora-s00-r0/eval_rerun/test_metrics.json` | aggregate metrics with Essay/Problem now scored | per-run |
+| `models/runs/dgx_spark/qwen3-4b-4bit-qlora-s00-r0/eval_rerun/test_predictions.jsonl` | predictions updated in-place with `judge_correct`, `judge_rationale` | per-run |
+| `models/runs/dgx_spark/qwen3-4b-4bit-qlora-s00-r0/eval_rerun/test_metrics.json` | aggregate metrics with Essay/Problem now scored | per-run |
 
 Both stages are **resumable**. Records already extracted or judged are skipped
 unless `FORCE_REEXTRACT` / `FORCE_REJUDGE` is set."""))
@@ -147,7 +147,7 @@ print(f"models : extractor={EXTRACTOR_MODEL}  judge={JUDGE_MODEL} (both verified
 C(md("""## §2 — Configuration"""))
 
 C(code("""RUN_ID    = "qwen3-4b-4bit-qlora-s00-r0"
-RUN_DIR   = REPO / "models" / "runs" / RUN_ID
+RUN_DIR   = REPO / "models" / "runs" / "dgx_spark" / RUN_ID
 EVAL_DIR  = RUN_DIR / "eval_rerun"
 PRED_PATH = EVAL_DIR / "test_predictions.jsonl"
 METRICS_PATH = EVAL_DIR / "test_metrics.json"

@@ -18,18 +18,20 @@ unsloth_compiled_cache/
 # Training artifacts — large, reproducible from the recipe + data. Per ROADMAP
 # version-tracking, the manifest.json/test_metrics.json under each run live in
 # the repo by convention, but the adapter weights and checkpoints do not.
-models/runs/*/adapter/
-models/runs/*/checkpoints/
-models/runs/*/checkpoint-*/
-models/runs/*/gguf/
-models/runs/*/gguf_*/
-models/runs/*/executed_notebook.ipynb
-models/runs/*/launch.log*
-models/runs/*/README.md
+# Patterns are two-star to match the host-nested layout:
+#   models/runs/{dgx_spark,windows,...}/<run_id>/...
+models/runs/**/adapter/
+models/runs/**/checkpoints/
+models/runs/**/checkpoint-*/
+models/runs/**/gguf/
+models/runs/**/gguf_*/
+models/runs/**/executed_notebook.ipynb
+models/runs/**/launch.log*
+models/runs/**/README.md
 # Trained weights live outside git; reproducibility lives in manifest.json
-models/runs/*/adapter_model.safetensors
-models/runs/*/tokenizer.json
-models/runs/*/training_args.bin
+models/runs/**/adapter_model.safetensors
+models/runs/**/tokenizer.json
+models/runs/**/training_args.bin
 
 # HF cache (in case someone sets HF_HOME inside the repo)
 hf_cache/

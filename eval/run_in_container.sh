@@ -26,7 +26,7 @@ EVAL_CONTAINER="accounting-eval"
 # ── default eval arguments (override by appending args to this script) ─────
 RUN_ID="qwen3-4b-4bit-qlora-s00-r0"
 SPLIT="eval/sft/splits/seed_00__351199285/test.jsonl"
-ADAPTER="models/runs/qwen3-4b-4bit-qlora-s00-r0"
+ADAPTER="models/runs/dgx_spark/qwen3-4b-4bit-qlora-s00-r0"
 EXTRA_ARGS=("$@")   # pass-through to run.py
 
 # ── safety gate: refuse if a training container is running ─────────────────

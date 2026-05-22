@@ -62,7 +62,10 @@ echo "Connect:"
 echo "  Browser  : http://127.0.0.1:${JUPYTER_PORT}/lab"
 echo "  VS Code  : Cmd-Shift-P -> 'Jupyter: Specify Jupyter Server' ->"
 echo "             http://127.0.0.1:${JUPYTER_PORT}/?token=  (empty token)"
-echo "             then open models/recipes/dgx_spark/qwen3_4b_4bit_qlora_s00_r0.ipynb"
+echo "             then open one of:"
+echo "               models/recipes/dgx_spark/qwen3_4b_4bit_qlora_s00_r0.ipynb       (executed baseline)"
+echo "               models/recipes/dgx_spark/qwen3_8b_4bit_qlora_s00_r1.ipynb       (size-ablation; prepared)"
+echo "               models/recipes/dgx_spark/dsr1_qwen3_8b_4bit_qlora_s00_r2.ipynb  (reasoning-prior ablation; prepared)"
 echo
 
 # --gpus all                 : GB10 visibility

@@ -10,7 +10,7 @@ A domain-grounded reasoning system for **intermediate financial accounting**. So
 | Splits (5-seed scenario-grouped) | **PASS** | per-seed sha pinned in [eval/sft/splits/manifest.json](eval/sft/splits/manifest.json) |
 | Pipeline (ETL) | **PASS** | `pipeline-v0.3.0`, three-stage idempotent |
 | Hardware substrate | **PASS-refreshed** | DGX Spark / GB10 Blackwell (sm_120) / aarch64 Ubuntu 24.04 / 119.6 GB UMA |
-| Training recipe | **r0 in flight** | `qwen3-4b-4bit-qlora-s00-r0` — see [models/runs/qwen3-4b-4bit-qlora-s00-r0/](models/runs/qwen3-4b-4bit-qlora-s00-r0/) |
+| Training recipe | **r0 in flight** | `qwen3-4b-4bit-qlora-s00-r0` — see [models/runs/dgx_spark/qwen3-4b-4bit-qlora-s00-r0/](models/runs/dgx_spark/qwen3-4b-4bit-qlora-s00-r0/) |
 | Eval harness | **HOLD** | `eval/run.py + diff_runs.py + mechanical_checks.py` pending Vera authoring |
 | Retrieval (RAG) | **deferred** | GAAP corpus ready; chunking + index post-r0 |
 | Solver loop | **deferred** | substrate validated; loop wires up after eval harness |

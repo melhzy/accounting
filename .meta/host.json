@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T23:00:39.961107+00:00",
+  "generated_at": "2026-05-22T03:09:58.335586+00:00",
   "os": {
     "system": "Windows",
     "platform": "Windows-11-10.0.26200-SP0",
@@ -36,7 +36,7 @@
   },
   "ram": {
     "total_gb": 63.7,
-    "available_gb": 35.6
+    "available_gb": 38.8
   },
   "gpu": [
     {
@@ -47,27 +47,27 @@
       "multi_processor_count": 76,
       "source": "torch.cuda",
       "driver": "581.95",
-      "vram_free_gb": 12.0
+      "vram_free_gb": 13.9
     }
   ],
   "storage": [
     {
       "mount": "C:",
       "total_gb": 929.5,
-      "free_gb": 57.4,
-      "pct_free": 6.2
+      "free_gb": 56.8,
+      "pct_free": 6.1
     },
     {
       "mount": "D:",
       "total_gb": 931.4,
-      "free_gb": 160.7,
-      "pct_free": 17.2
+      "free_gb": 166.9,
+      "pct_free": 17.9
     },
     {
       "mount": "<repo_root: D:\\Github\\accounting>",
       "total_gb": 931.4,
-      "free_gb": 160.7,
-      "pct_free": 17.2
+      "free_gb": 166.9,
+      "pct_free": 17.9
     }
   ],
   "ml_stack": {

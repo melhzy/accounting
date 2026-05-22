@@ -17,8 +17,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "models" / "recipes" / "qwen3_4b_seed00_bf16_lora.ipynb"
+ROOT = Path(__file__).resolve().parents[3]
+OUT = ROOT / "models" / "recipes" / "windows" / "qwen3_4b_seed00_bf16_lora.ipynb"
 OUT.parent.mkdir(parents=True, exist_ok=True)
 
 
@@ -169,8 +169,8 @@ TEST_JSONL  = SEED_DIR / "test.jsonl"
 assert TRAIN_JSONL.exists() and VALID_JSONL.exists() and TEST_JSONL.exists(), \\
     f"missing split files under {SEED_DIR}"
 
-RUN_ID  = "qwen3_4b_seed00_bf16_lora"
-RUN_DIR = REPO_ROOT / "models" / "runs" / RUN_ID
+RUN_ID  = "qwen3-4b-bf16-lora-s00-r0"  # canonical per .claude/CLAUDE.md run-id encoding
+RUN_DIR = REPO_ROOT / "models" / "runs" / "windows" / RUN_ID
 RUN_DIR.mkdir(parents=True, exist_ok=True)
 print(f"REPO_ROOT:    {REPO_ROOT}")
 
@@ -207,7 +207,20 @@ print(f"RUN_ID:       {RUN_ID}")
 print(f"RUN_DIR:      {RUN_DIR}")
 print(f"BASE_MODEL:   {BASE_MODEL}")
 print(f"LORA:         r={LORA_R}, alpha={LORA_ALPHA}, targets={LORA_TARGETS}")
-print(f"TRAIN:        {NUM_EPOCHS} epochs, LR={LEARNING_RATE}, eff_batch={PER_DEVICE_BATCH_SIZE * GRAD_ACCUM_STEPS}")"""))
+print(f"TRAIN:        {NUM_EPOCHS} epochs, LR={LEARNING_RATE}, eff_batch={PER_DEVICE_BATCH_SIZE * GRAD_ACCUM_STEPS}")
+
+# ── Deterministic seeding (project policy: seedhash is the sole derivation
+# mechanism; eval/seeding.py applies the CPU + single-GPU + multi-GPU one-host +
+# multi-host layers in a single call and returns a manifest-embeddable report).
+# Must run before any torch CUDA op, including FastLanguageModel.from_pretrained.
+import sys
+sys.path.insert(0, str(REPO_ROOT / "eval"))
+from seeding import seed_everything  # noqa: E402
+SEEDING_REPORT = seed_everything(seed_int=RANDOM_SEED)
+print(f"SEEDING:      topology={SEEDING_REPORT.topology} "
+      f"rank={SEEDING_REPORT.rank}/{SEEDING_REPORT.world_size} "
+      f"per_rank_seed={SEEDING_REPORT.per_rank_seed_int} "
+      f"strict={SEEDING_REPORT.strict}")"""))
 
 # ============================================================================
 # Load base model
@@ -445,6 +458,7 @@ manifest = {
         "valid_file_sha256": seed_manifest["file_sha256"]["valid"],
         "test_file_sha256" : seed_manifest["file_sha256"]["test"],
     },
+    "seeding_report"       : SEEDING_REPORT.to_dict(),
     "recipe": {
         "method"             : "bf16-LoRA",
         "r"                  : LORA_R,
@@ -488,7 +502,7 @@ The test split was untouched during training. We:
 3. For each test record, parse the predicted answer per question type and compare
    to `meta.id`'s gold answer recovered from the source.
 4. Compute accuracy by question type and by primary Bloom level.
-5. Save per-record predictions to `models/runs/<run_id>/test_predictions.jsonl`
+5. Save per-record predictions to `models/runs/windows/<run_id>/test_predictions.jsonl`
    and the aggregate metrics to `test_metrics.json`."""))
 
 C(code("""FastLanguageModel.for_inference(model)
@@ -645,7 +659,7 @@ Flip the `if False:` guard to `if True:` to run. Pick one quantization:
 - `f16` — full bf16 export (~7.5 GB), no quantization loss.
 
 This pulls and builds `llama.cpp` on first run (~5 min) and emits a `.gguf` file
-under `models/runs/<run_id>/`."""))
+under `models/runs/windows/<run_id>/`."""))
 
 C(code("""if False:  # flip to True to export
     GGUF_QUANT = "q4_k_m"   # or "q8_0", "q5_k_m", "f16"
@@ -661,7 +675,7 @@ C(code("""if False:  # flip to True to export
 # ============================================================================
 C(md("""## What's next
 
-Artifacts produced under `models/runs/qwen3_4b_seed00_bf16_lora/`:
+Artifacts produced under `models/runs/windows/qwen3-4b-bf16-lora-s00-r0/`:
 
 - `adapter/` — the LoRA safetensors + tokenizer + config. Re-load with `FastLanguageModel.from_pretrained` for Unsloth-native inference.
 - `manifest.json` — recipe + lineage + metrics (Leo's pin discipline).

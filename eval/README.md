@@ -181,6 +181,76 @@ In `eval/split_multi_seed.py`:
 | `SPLIT_FRACTIONS` | `{"train": 0.80, "valid": 0.10, "test": 0.10}` | Must sum to 1.0 |
 | `TOKENIZER_PIN` | `None` | Fill before fine-tune (e.g. `"Qwen/Qwen2.5-7B-Instruct@<git-sha>"`) |
 
+## Seeding policy — [`eval/seeding.py`](seeding.py)
+
+**`seedhash` ([PyPI](https://pypi.org/project/seedhash/)) is the sole seed-derivation mechanism in this repo.** No hand-picked integers, no `seed_int + rank` arithmetic. Every seed traces back to a `seedhash.SeedHashGenerator(...).generate_seeds(N)` call.
+
+Single entrypoint covers all four coverage tiers:
+
+| Tier                       | What gets seeded                                                                             |
+|---|---|
+| CPU                        | `PYTHONHASHSEED`, Python `random`, NumPy                                                     |
+| Single GPU                 | + `torch.manual_seed`, `torch.cuda.manual_seed_all`, `torch.Generator` (DataLoader shuffles) |
+| Multi-GPU one host (DDP)   | + per-rank seed derived via salted `seedhash`, DataLoader `worker_init_fn`                   |
+| Multi-GPU multi host       | + same per-rank derivation; topology auto-detected from `torch.distributed`                  |
+
+```python
+from eval.seeding import seed_everything
+
+# Path A — pass the split's seed_int directly (matches existing recipes)
+report = seed_everything(seed_int=351199285)
+
+# Path B — derive from the seedhash input + seed_index (canonical)
+report = seed_everything(
+    seedhash_input="spiceland9e-finetune-robustness-2026-05-19",
+    seed_index=0,
+)
+
+manifest["seeding_report"] = report.to_dict()  # always embed in manifest.json
+```
+
+Per-rank seeds for distributed training are derived from a salted `seedhash` call (not `seed_int + rank`):
+```
+salt = f"{seedhash_input}|seed_{seed_index:02d}|rank_{rank:04d}"
+per_rank_seed = seedhash.SeedHashGenerator(salt).generate_seeds(1)[0]
+```
+
+**Strict mode** (`strict=True`) flips on cuDNN determinism + `torch.use_deterministic_algorithms` + `CUBLAS_WORKSPACE_CONFIG=:4096:8`. Costs throughput; off by default. Use for ablation-grade reproducibility runs only.
+
+**Call sites** (all wired):
+- `eval/run.py` — seeds before model load; default seed = `seed_int` from the split's sibling `manifest.json`. Override via `--seed`. Strict mode via `--strict-determinism`.
+- `eval/split_multi_seed.py` — uses `seedhash` directly (established the convention).
+- `models/recipes/dgx_spark/qwen3_8b_4bit_qlora_s00_r1.ipynb` — §1 substrate cell.
+- `models/recipes/dgx_spark/dsr1_qwen3_8b_4bit_qlora_s00_r2.ipynb` — §1 substrate cell.
+- `models/recipes/windows/qwen3_4b_seed00_bf16_lora.ipynb` — §2 Configuration cell.
+
+**CLI sanity check** — verify the splits' seed sequence:
+```
+python eval/seeding.py --rank 0
+```
+Should print `seed_00: 351199285` and the four sibling seeds.
+
+**Frozen artifacts**: the executed `qwen3-4b-4bit-qlora-s00-r0` notebook predates this policy — it relied on `SFTConfig(seed=...)` transitively through HF Trainer. Its manifest is correct (`seed_int: 351199285`), just without the explicit `seeding_report` block. Future runs (r1, r2, Windows bf16 r0) carry the report.
+
+### Framework-coupling scope
+
+The helper covers backends layer by layer; each layer can be skipped independently if the dependency is absent.
+
+| Layer | Coupling | Behavior when dep is missing |
+|---|---|---|
+| Derivation — `seedhash` integers + salted per-rank salt | **Backend-agnostic** | n/a (required dep) |
+| CPU — `PYTHONHASHSEED`, `random.seed`, `numpy.random.seed` | **Backend-agnostic** | `numpy` line auto-skipped if NumPy isn't installed |
+| Topology — `torch.distributed.is_initialized()` + `RANK`/`WORLD_SIZE`/… env | Soft (env fallback) | Falls back to env vars or single-process defaults |
+| GPU — `torch.manual_seed`, `torch.cuda.manual_seed_all`, `torch.Generator`, strict-mode cuDNN flags + `CUBLAS_WORKSPACE_CONFIG` | **Tight to PyTorch + CUDA** — matches the substrate | Whole block skipped with a noted reason |
+| HF — `transformers.set_seed` | Soft (delegates to torch when present) | Skipped if transformers isn't installed |
+
+**Not covered today** (would need shims when the hardware matrix activates these rows):
+- **MLX on Apple Silicon** — has its own `mlx.random.seed(seed_int)`.
+- **llama.cpp / GGUF inference** — `llama_set_seed()` is a C-API call inside the llama.cpp process; not reachable from Python. Pass the seed via the GGUF Modelfile or serving launcher.
+- **vLLM serving** — global torch seed is consistent (vLLM is torch-based), but per-request determinism uses `SamplingParams(seed=...)`, which lives in the request not the global RNG.
+
+These stubs are deliberately not in `eval/seeding.py` until a row that needs them goes ACTIVE. Add them alongside the existing torch block if/when that happens.
+
 ## Auditing
 
 Diagnostic scripts and audit reports live in [`_audit/`](_audit/). They are

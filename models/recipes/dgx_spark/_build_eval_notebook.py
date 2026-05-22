@@ -37,7 +37,7 @@ C = CELLS.append
 # ============================================================================
 C(md("""# `qwen3-4b-4bit-qlora-s00-r0` — standalone test eval + visualization
 
-Re-evaluates the tuned model (merged fp16 at `models/runs/qwen3-4b-4bit-qlora-s00-r0/gguf/`)
+Re-evaluates the tuned model (merged fp16 at `models/runs/dgx_spark/qwen3-4b-4bit-qlora-s00-r0/gguf/`)
 on the seed_00 held-out test split, and visualizes accuracy slices.
 
 This is a separate notebook from the training notebook so you can re-run the eval
@@ -45,10 +45,10 @@ without re-training. Outputs go to a `eval_rerun/` subdirectory under the run di
 to avoid clobbering the in-training `test_predictions.jsonl` / `test_metrics.json`.
 
 **Inputs**
-- Model: `models/runs/qwen3-4b-4bit-qlora-s00-r0/gguf/` (merged bf16 safetensors)
+- Model: `models/runs/dgx_spark/qwen3-4b-4bit-qlora-s00-r0/gguf/` (merged bf16 safetensors)
 - Test split: `eval/sft/splits/seed_00__351199285/test.jsonl` (464 records)
 
-**Outputs** (under `models/runs/qwen3-4b-4bit-qlora-s00-r0/eval_rerun/`)
+**Outputs** (under `models/runs/dgx_spark/qwen3-4b-4bit-qlora-s00-r0/eval_rerun/`)
 - `test_predictions.jsonl` — per-record predictions
 - `test_metrics.json` — slice tables (type × Bloom × chapter)
 - Inline plots — accuracy by type/Bloom/chapter, latency histogram, original-vs-rerun comparison
@@ -99,7 +99,7 @@ print(f"torch   : {torch.__version__}")"""))
 C(md("""## §2 — Configuration"""))
 
 C(code("""RUN_ID    = "qwen3-4b-4bit-qlora-s00-r0"
-RUN_DIR   = REPO / "models" / "runs" / RUN_ID
+RUN_DIR   = REPO / "models" / "runs" / "dgx_spark" / RUN_ID
 MODEL_DIR = RUN_DIR / "gguf"            # merged bf16 safetensors (Unsloth save_pretrained_gguf intermediate)
 SEED_DIR  = REPO / "eval" / "sft" / "splits" / "seed_00__351199285"
 TEST_JSONL = SEED_DIR / "test.jsonl"
@@ -496,8 +496,8 @@ C(md("""## Artifacts produced
 
 | Path | What |
 |---|---|
-| `models/runs/qwen3-4b-4bit-qlora-s00-r0/eval_rerun/test_predictions.jsonl` | per-record predictions (464 rows) |
-| `models/runs/qwen3-4b-4bit-qlora-s00-r0/eval_rerun/test_metrics.json` | overall + slice tables (type × Bloom × chapter) |
+| `models/runs/dgx_spark/qwen3-4b-4bit-qlora-s00-r0/eval_rerun/test_predictions.jsonl` | per-record predictions (464 rows) |
+| `models/runs/dgx_spark/qwen3-4b-4bit-qlora-s00-r0/eval_rerun/test_metrics.json` | overall + slice tables (type × Bloom × chapter) |
 
 To score the 117 Essay/Problem items, run an LLM-judge pass (Vera-style) over
 `test_predictions.jsonl` — that lives in a separate notebook because it has

@@ -24,8 +24,8 @@ def find_repo() -> Path:
 
 
 REPO = find_repo()
-PRED_PATH = REPO / "models/runs/qwen3-4b-4bit-qlora-s00-r0/eval_rerun/test_predictions.jsonl"
-METRICS_PATH = REPO / "models/runs/qwen3-4b-4bit-qlora-s00-r0/eval_rerun/test_metrics.json"
+PRED_PATH = REPO / "models/runs/dgx_spark/qwen3-4b-4bit-qlora-s00-r0/eval_rerun/test_predictions.jsonl"
+METRICS_PATH = REPO / "models/runs/dgx_spark/qwen3-4b-4bit-qlora-s00-r0/eval_rerun/test_metrics.json"
 TEST_JSONL = REPO / "eval/sft/splits/seed_00__351199285/test.jsonl"
 
 
